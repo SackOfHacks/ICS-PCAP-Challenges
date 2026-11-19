@@ -1,6 +1,6 @@
 # ICSC 2021 — Round 3 — 异常的协议分析 (anomalous protocol)
 
-**CTF & conference labs** · **Medium** · 1.2 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 1.2 MB · 1 capture file(s)
 
 > CTF: Round 3 — 异常的协议分析 (anomalous protocol) (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-icsc-2021/round-3-anomalous-protocol/04.pcap' --ctf --overview
 pcapper 'data/ctf-icsc-2021/round-3-anomalous-protocol/04.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-icsc-2021/round-3-anomalous-protocol/04.pcap' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc202
 **Competition organisers; attachments archived by fghcvjk/icsc2021 (2021)** — license: None stated — credit the competition
 
 - [Dataset source — 工业信息安全技能大赛 2021 — Industrial Information Security Skills Com](https://github.com/fghcvjk/icsc2021)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

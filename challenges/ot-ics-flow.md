@@ -1,6 +1,6 @@
 # ICS-Flow — ICSSIM Modbus network attacks
 
-**Process control & PLC testbeds** · **Medium** · 1.97 GB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 1.97 GB · 1 capture file(s)
 
 > An emulated Modbus ICS under simulated attack; flows and process logs are your answer key.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ics-flow-icssim/traffic.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ics-flow-icssim/traffic.pcap' --mitre
@@ -118,7 +118,7 @@ _Dataset credit: Dehlaghi-Ghadim, A., et al. (Mälardalen University) (2023) · 
 **Dehlaghi-Ghadim, A., et al. (Mälardalen University) (2023)** — license: CC BY-NC-SA 4.0
 
 - [Dataset source — ICS-Flow — ICSSIM Modbus attacks](https://www.kaggle.com/datasets/alirezadehlaghi/icssim)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

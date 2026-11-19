@@ -20,7 +20,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [Protocol deep-dive — Beckhoff ADS/AMS (10 unique captures)](ot-lib-beckhoff-ads-ams.md) | Medium | Beckhoff ADS/AMS, protocol library, deduplicated | 1.1 MB · [`iti-ics-security-tools-pcaps`](../DATASETS.md#iti-ics-security-tools-pcaps) |
 | [Protocol deep-dive — C37.118 synchrophasor (13 unique captures)](ot-lib-c37-118-synchrophasor.md) | Medium | C37.118 synchrophasor, protocol library, deduplicated | 27.1 MB · [`cisa-icsnpp-test-traces`](../DATASETS.md#cisa-icsnpp-test-traces) +2 |
 | [Protocol deep-dive — DNP3 (221 unique captures)](ot-lib-dnp3.md) | Medium | DNP3, protocol library, deduplicated | 0.3 MB · [`automayt-ics-pcap`](../DATASETS.md#automayt-ics-pcap) +2 |
-| [Protocol deep-dive — EtherNet/IP & CIP (84 unique captures)](ot-lib-ethernet-ip-cip.md) | Medium | EtherNet/IP & CIP, protocol library, deduplicated | 0.39 GB · [`automayt-ics-pcap`](../DATASETS.md#automayt-ics-pcap) +6 |
+| [Protocol deep-dive — EtherNet/IP &amp; CIP (84 unique captures)](ot-lib-ethernet-ip-cip.md) | Medium | EtherNet/IP &amp; CIP, protocol library, deduplicated | 0.39 GB · [`automayt-ics-pcap`](../DATASETS.md#automayt-ics-pcap) +6 |
 | [Protocol deep-dive — IEC 61850 GOOSE (16 unique captures)](ot-lib-iec-61850-goose.md) | Medium | IEC 61850 GOOSE, protocol library, deduplicated | 1.2 MB · [`emreekin-ics-pcaps`](../DATASETS.md#emreekin-ics-pcaps) +2 |
 | [Protocol deep-dive — IEC 61850 MMS (76 unique captures)](ot-lib-iec-61850-mms.md) | Medium | IEC 61850 MMS, protocol library, deduplicated | 28.7 MB · [`emreekin-ics-pcaps`](../DATASETS.md#emreekin-ics-pcaps) +3 |
 | [Protocol deep-dive — IEC-104 (25 unique captures)](ot-lib-iec-104.md) | Medium | IEC-104, protocol library, deduplicated | 58.6 MB · [`automayt-ics-pcap`](../DATASETS.md#automayt-ics-pcap) +4 |
@@ -40,19 +40,19 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [ADSC IEC 61850 — Normal](ot-adsc-goose-normal.md) | Hard | GOOSE, substation, protection | 7.1 MB · [`adsc-iec61850-security`](../DATASETS.md#adsc-iec61850-security) |
 | [ADSC IEC 61850 — UnderFrequency](ot-adsc-goose-underfrequency.md) | Hard | GOOSE, substation, protection | 7.0 MB · [`adsc-iec61850-security`](../DATASETS.md#adsc-iec61850-security) |
 | [ADSC IEC 61850 — VariableLoad](ot-adsc-goose-variableload.md) | Hard | GOOSE, substation, protection | 7.2 MB · [`adsc-iec61850-security`](../DATASETS.md#adsc-iec61850-security) |
-| [AegisOT — Data from Local System (T0893)](ot-aegisot-t0893-n6.md) | Medium | Modbus/TCP, ATT&CK for ICS, T0893, Data from Local System | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — File and Directory Discovery (T1083)](ot-aegisot-t1083-n5.md) | Medium | Modbus/TCP, ATT&CK for ICS, T1083, File and Directory Discovery | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Network Enumeration (T0840)](ot-aegisot-t0840-n2.md) | Medium | Modbus/TCP, ATT&CK for ICS, T0840, Network Enumeration | 0.23 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Remote Services (T0886)](ot-aegisot-t0886-n4.md) | Medium | Modbus/TCP, ATT&CK for ICS, T0886, Remote Services | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Remote System Discovery (T0846)](ot-aegisot-t0846-n1.md) | Medium | Modbus/TCP, ATT&CK for ICS, T0846, Remote System Discovery | 90.8 MB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Data from Local System (T0893)](ot-aegisot-t0893-n6.md) | Medium | Modbus/TCP, ATT&amp;CK for ICS, T0893, Data from Local System | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — File and Directory Discovery (T1083)](ot-aegisot-t1083-n5.md) | Medium | Modbus/TCP, ATT&amp;CK for ICS, T1083, File and Directory Discovery | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Network Enumeration (T0840)](ot-aegisot-t0840-n2.md) | Medium | Modbus/TCP, ATT&amp;CK for ICS, T0840, Network Enumeration | 0.23 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Remote Services (T0886)](ot-aegisot-t0886-n4.md) | Medium | Modbus/TCP, ATT&amp;CK for ICS, T0886, Remote Services | 0.16 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Remote System Discovery (T0846)](ot-aegisot-t0846-n1.md) | Medium | Modbus/TCP, ATT&amp;CK for ICS, T0846, Remote System Discovery | 90.8 MB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
 | [AegisOT — normal operations (Normal Set1)](ot-aegisot-normal-1.md) | Medium | Modbus/TCP, baseline, AegisOT | 0.33 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
 | [AegisOT — normal operations (Normal Set2)](ot-aegisot-normal-2.md) | Medium | Modbus/TCP, baseline, AegisOT | 0.93 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — AITM (T0830)](ot-aegisot-t0830-n3.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0830, AITM | 0.15 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Change Operating Mode (T0858)](ot-aegisot-t0858-p4.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0858, Change Operating Mode | 0.19 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Detect Operating Mode (T0868)](ot-aegisot-t0868-p1.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0868, Detect Operating Mode | 99.9 MB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Modify Alarm Settings (T0838)](ot-aegisot-t0838-p5.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0838, Modify Alarm Settings | 0.18 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Modify Controller Tasking (T0821)](ot-aegisot-t0821-p2.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0821, Modify Controller Tasking | 0.17 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
-| [AegisOT — Modify Parameters (T0836)](ot-aegisot-t0836-p3.md) | Hard | Modbus/TCP, ATT&CK for ICS, T0836, Modify Parameters | 0.18 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — AITM (T0830)](ot-aegisot-t0830-n3.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0830, AITM | 0.15 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Change Operating Mode (T0858)](ot-aegisot-t0858-p4.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0858, Change Operating Mode | 0.19 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Detect Operating Mode (T0868)](ot-aegisot-t0868-p1.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0868, Detect Operating Mode | 99.9 MB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Modify Alarm Settings (T0838)](ot-aegisot-t0838-p5.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0838, Modify Alarm Settings | 0.18 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Modify Controller Tasking (T0821)](ot-aegisot-t0821-p2.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0821, Modify Controller Tasking | 0.17 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
+| [AegisOT — Modify Parameters (T0836)](ot-aegisot-t0836-p3.md) | Hard | Modbus/TCP, ATT&amp;CK for ICS, T0836, Modify Parameters | 0.18 GB · [`aegisot-ics-attacks`](../DATASETS.md#aegisot-ics-attacks) |
 | [CIARRES smart grid — GOOSE fuzzing](ot-ciarres-goose-fuzzer-anonymized.md) | Hard | GOOSE, MMS, smart grid | 0.37 GB · [`ciarres-smart-grid-attacks`](../DATASETS.md#ciarres-smart-grid-attacks) |
 | [CIARRES smart grid — GOOSE injection](ot-ciarres-goose-injector-anonymized.md) | Hard | GOOSE, MMS, smart grid | 0.32 GB · [`ciarres-smart-grid-attacks`](../DATASETS.md#ciarres-smart-grid-attacks) |
 | [CIARRES smart grid — MMS scanner](ot-ciarres-mms-scanner-anonymized.md) | Hard | GOOSE, MMS, smart grid | 10.5 MB · [`ciarres-smart-grid-attacks`](../DATASETS.md#ciarres-smart-grid-attacks) |
@@ -63,7 +63,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [CIC Modbus 2023 — attacks from an external host](ot-cic-modbus-external.md) | Hard | Modbus/TCP, substation, IED, false data injection | 0.44 GB · [`cic-modbus-2023`](../DATASETS.md#cic-modbus-2023) |
 | [CIC Modbus 2023 — attacks from a compromised IED](ot-cic-modbus-compromised-ied.md) | Expert | Modbus/TCP, substation, IED, false data injection | 4.08 GB · [`cic-modbus-2023`](../DATASETS.md#cic-modbus-2023) |
 | [CIC Modbus 2023 — attacks from a compromised SCADA HMI](ot-cic-modbus-compromised-hmi.md) | Expert | Modbus/TCP, substation, IED, false data injection | 5.28 GB · [`cic-modbus-2023`](../DATASETS.md#cic-modbus-2023) |
-| [CIP/EtherNet-IP — including a ControlLogix reboot](ot-cip-controllogix.md) | Medium | EtherNet/IP & CIP, academic dataset | 13.8 MB · [`cip-enip-engage-svg`](../DATASETS.md#cip-enip-engage-svg) |
+| [CIP/EtherNet-IP — including a ControlLogix reboot](ot-cip-controllogix.md) | Medium | EtherNet/IP &amp; CIP, academic dataset | 13.8 MB · [`cip-enip-engage-svg`](../DATASETS.md#cip-enip-engage-svg) |
 | [Coimbra Modbus SCADA — ICMP ping-flood DDoS](ot-coimbra-ping-flood.md) | Easy | Modbus/TCP, SCADA testbed, DoS | 1.10 GB · [`coimbra-modbus-tcp-scada`](../DATASETS.md#coimbra-modbus-tcp-scada) |
 | [Coimbra Modbus SCADA — clean baseline](ot-coimbra-clean.md) | Easy | Modbus/TCP, SCADA testbed, baseline | 44.6 MB · [`coimbra-modbus-tcp-scada`](../DATASETS.md#coimbra-modbus-tcp-scada) |
 | [Coimbra Modbus SCADA — Modbus query flooding](ot-coimbra-modbus-flood.md) | Medium | Modbus/TCP, SCADA testbed, DoS | 1.42 GB · [`coimbra-modbus-tcp-scada`](../DATASETS.md#coimbra-modbus-tcp-scada) |
@@ -122,7 +122,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [Tenable CTF 2022 — Strange Packets](ot-ctf-writeup-repos-ics-tenable-ctf-2022-strange-packe.md) | Medium | CTF, Modbus/TCP, writeup-repos-ics | 0.0 MB · [`ctf-writeup-repos-ics`](../DATASETS.md#ctf-writeup-repos-ics) |
 | [Cyber4OT — Nmap ping scans (-T5 … -T1)](ot-cyber4ot-pingscan.md) | Easy | Modbus/TCP, PLC hijacking, recon | 12.9 MB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
 | [Cyber4OT — normal OT activity (switch and PLC port)](ot-cyber4ot-normal.md) | Easy | Modbus/TCP, PLC hijacking, recon | 27.0 MB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
-| [Cyber4OT — Modbus Recon & PLC Hijacking](ot-cyber4ot-overview.md) | Medium | Modbus/TCP, PLC, OT recon, function-code abuse | 0.40 GB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
+| [Cyber4OT — Modbus Recon &amp; PLC Hijacking](ot-cyber4ot-overview.md) | Medium | Modbus/TCP, PLC, OT recon, function-code abuse | 0.40 GB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
 | [Cyber4OT — Nmap full port scans of each device](ot-cyber4ot-fullscan.md) | Medium | Modbus/TCP, PLC hijacking, recon | 0.31 GB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
 | [Cyber4OT — macof + tcpkill: hijacking the Modbus session](ot-cyber4ot-hijack.md) | Hard | Modbus/TCP, PLC hijacking, recon, macof | 16.8 MB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
 | [Cyber4OT — the full attack (successful and failed) and its aftermath](ot-cyber4ot-attack.md) | Expert | Modbus/TCP, PLC hijacking, recon | 37.3 MB · [`cyber4ot`](../DATASETS.md#cyber4ot) |
@@ -136,9 +136,9 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [Data4Cyber — S6 — MQTT supply-chain compromise](ot-data4cyber-s6-mqtt-supply-chain-compromise.md) | Hard | Modbus/TCP, academic dataset, power grid | 65.4 MB · [`data4cyber-distribution-grid`](../DATASETS.md#data4cyber-distribution-grid) |
 | [Data4Cyber — S7 — MQTT supply-chain compromise (alternate run)](ot-data4cyber-s7-mqtt-supply-chain-compromise-alt.md) | Hard | Modbus/TCP, academic dataset, power grid | 22.4 MB · [`data4cyber-distribution-grid`](../DATASETS.md#data4cyber-distribution-grid) |
 | [S4x15 CTF — BACnet building controllers](ot-s4x15-bacnet.md) | Medium | CTF, BACnet | 12.6 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
-| [S4x15 CTF — corporate IT host & Advantech device](ot-s4x15-it.md) | Medium | CTF | 3.4 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
-| [S4x15 CTF — the GE iFIX HMI client & server](ot-s4x15-hmi.md) | Medium | CTF, Modbus/TCP | 14.4 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
-| [S4x15 CTF — the PLCs (Modicon & MicroLogix)](ot-s4x15-plcs.md) | Medium | CTF, Modbus/TCP, EtherNet/IP & CIP | 11.0 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
+| [S4x15 CTF — corporate IT host &amp; Advantech device](ot-s4x15-it.md) | Medium | CTF | 3.4 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
+| [S4x15 CTF — the GE iFIX HMI client &amp; server](ot-s4x15-hmi.md) | Medium | CTF, Modbus/TCP | 14.4 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
+| [S4x15 CTF — the PLCs (Modicon &amp; MicroLogix)](ot-s4x15-plcs.md) | Medium | CTF, Modbus/TCP, EtherNet/IP &amp; CIP | 11.0 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
 | [S4x15 ICS Village CTF — reconstruct the competition](ot-s4x15-ctf.md) | Hard | CTF, Modbus/UMAS, EtherNet/IP, PCCC | 41.4 MB · [`digitalbond-s4x15-ctf`](../DATASETS.md#digitalbond-s4x15-ctf) |
 | [ELEGANT — normal PLC traffic (baseline)](ot-elegant-normal.md) | Easy | Modbus/TCP, PLC, ELEGANT | 57.1 MB · [`elegant-plc-dos-mitm`](../DATASETS.md#elegant-plc-dos-mitm) |
 | [ELEGANT — flood against one PLC (rate 1)](ot-elegant-flood-rate1.md) | Medium | Modbus/TCP, PLC, ELEGANT, DoS | 0.16 GB · [`elegant-plc-dos-mitm`](../DATASETS.md#elegant-plc-dos-mitm) |
@@ -155,7 +155,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [ICS CTF (工控CTF) — find the flag in industrial traffic](ot-ctf-newbee119.md) | Hard | CTF, flag hunting, Modbus/TCP | 48.6 MB · [`ics-ctf-newbee119`](../DATASETS.md#ics-ctf-newbee119) |
 | [ICS Dataset — normal vs. physical fault vs. cyber attack](ot-ics-normal-fault-attack.md) | Medium | Modbus/TCP, academic dataset | 2.24 GB · [`ics-dataset-normal-fault-attack-2025`](../DATASETS.md#ics-dataset-normal-fault-attack-2025) |
 | [ICS-Flow — ICSSIM Modbus network attacks](ot-ics-flow.md) | Medium | Modbus/TCP, ICSSIM | 1.97 GB · [`ics-flow-icssim`](../DATASETS.md#ics-flow-icssim) |
-| [IEC-104 & IEC 61850 MMS sample exchanges](ot-iec104-mms-samples.md) | Medium | IEC 61850 MMS, academic dataset | 4.2 MB · [`ics-pcaps-haolipeng`](../DATASETS.md#ics-pcaps-haolipeng) |
+| [IEC-104 &amp; IEC 61850 MMS sample exchanges](ot-iec104-mms-samples.md) | Medium | IEC 61850 MMS, academic dataset | 4.2 MB · [`ics-pcaps-haolipeng`](../DATASETS.md#ics-pcaps-haolipeng) |
 | [ICS practice — asset discovery](ot-practice-asset-discovery.md) | Easy | Modbus/TCP, practice | 0.5 MB · [`ics-practice-solymx`](../DATASETS.md#ics-practice-solymx) |
 | [ICS practice — the hidden Modbus threat](ot-practice-hidden-threat.md) | Hard | Modbus/TCP, practice | 0.2 MB · [`ics-practice-solymx`](../DATASETS.md#ics-practice-solymx) |
 | [IEC 61850 GOOSE on RTDS — high-rate poisoning attack](ot-goose-rtds-poisoning.md) | Hard | IEC 61850 GOOSE, substation, high-rate poisoning, RTDS | 1.15 GB · [`iec61850-goose-rtds-attacks`](../DATASETS.md#iec61850-goose-rtds-attacks) |
@@ -163,7 +163,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [IEC 61850 GOOSE on RTDS — message injection attack](ot-goose-rtds-message-injection.md) | Hard | IEC 61850 GOOSE, substation, message injection, RTDS | 2.52 GB · [`iec61850-goose-rtds-attacks`](../DATASETS.md#iec61850-goose-rtds-attacks) |
 | [IEC 61850 GOOSE on RTDS — replay attack](ot-goose-rtds-replay.md) | Hard | IEC 61850 GOOSE, substation, replay, RTDS | 2.77 GB · [`iec61850-goose-rtds-attacks`](../DATASETS.md#iec61850-goose-rtds-attacks) |
 | [IEEE 24-bus SDN lab — R-GOOSE on primary/backup paths](ot-rgoose-sdn.md) | Medium | IEC 61850 R-GOOSE, academic dataset | 0.0 MB · [`iec61850-rgoose-sdn-lab`](../DATASETS.md#iec61850-rgoose-sdn-lab) |
-| [KIOS — attacks on DER energy management & control](ot-kios-der.md) | Hard | Modbus/TCP, academic dataset | 0.1 MB · [`kios-der-energy-mgmt-attacks`](../DATASETS.md#kios-der-energy-mgmt-attacks) |
+| [KIOS — attacks on DER energy management &amp; control](ot-kios-der.md) | Hard | Modbus/TCP, academic dataset | 0.1 MB · [`kios-der-energy-mgmt-attacks`](../DATASETS.md#kios-der-energy-mgmt-attacks) |
 | [KIOS/ELECTRON — FDI and masquerade on a power system](ot-kios-suc4.md) | Hard | IEC 61850 GOOSE, academic dataset | 1.0 MB · [`kios-electron-suc4-power-attacks`](../DATASETS.md#kios-electron-suc4-power-attacks) |
 | [KNXnet/IP — bus scanning](ot-knx-knxa04-busscanning.md) | Hard | KNXnet/IP, academic dataset, ICS | 51.2 MB · [`knxnetip-ids`](../DATASETS.md#knxnetip-ids) |
 | [KNXnet/IP — device reset (MReset)](ot-knx-knxa02-mreset.md) | Hard | KNXnet/IP, academic dataset, ICS | 64.4 MB · [`knxnetip-ids`](../DATASETS.md#knxnetip-ids) |
@@ -177,7 +177,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [Lemay SCADA — characterization / reconnaissance](ot-lemay-recon.md) | Medium | Modbus/TCP, SCADA, intrusion detection | 1.0 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
 | [Lemay SCADA — moving files across the control network](ot-lemay-file-move.md) | Medium | Modbus/TCP, SCADA, intrusion detection | 0.3 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
 | [Lemay SCADA — the fake Modbus command](ot-lemay-fake-cmd.md) | Medium | Modbus/TCP, SCADA, intrusion detection | 0.8 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
-| [Lemay SCADA — C&C channel uploading an executable](ot-lemay-cnc.md) | Hard | Modbus/TCP, SCADA, intrusion detection, malware | 0.2 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
+| [Lemay SCADA — C&amp;C channel uploading an executable](ot-lemay-cnc.md) | Hard | Modbus/TCP, SCADA, intrusion detection, malware | 0.2 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
 | [Lemay SCADA — MS08-067 exploitation inside the control network](ot-lemay-ms08067.md) | Hard | Modbus/TCP, SCADA, intrusion detection, MS08-067 | 1.2 MB · [`lemay-scada-modbus-cset2016`](../DATASETS.md#lemay-scada-modbus-cset2016) |
 | [IEC-104 testbed traffic (QUB)](ot-maynard-iec104.md) | Medium | IEC-104 | 38.3 MB · [`maynard-iec104-testbed`](../DATASETS.md#maynard-iec104-testbed) |
 | [Medical-waste incinerator — 14 days of real S7-1500 plant traffic](ot-incinerator-normal.md) | Medium | S7comm, PROFINET, real plant, baseline | 1.88 GB · [`medical-waste-incinerator-s7-1500`](../DATASETS.md#medical-waste-incinerator-s7-1500) |
@@ -303,7 +303,7 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [APT against a power-substation network](ot-substation-apt.md) | Hard | IEC 61850 GOOSE, academic dataset | 18.7 MB · [`substation-apt-goose`](../DATASETS.md#substation-apt-goose) |
 | [Substation ML-IDS — raw IEC 61850 traffic](ot-substation-mlids-raw-iec61850.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 4.77 GB · [`substation-ml-ids-iec61850-iec104`](../DATASETS.md#substation-ml-ids-iec61850-iec104) |
 | [Substation ML-IDS — raw IEC-104 traffic](ot-substation-mlids-raw-iec104.md) | Hard | IEC-104, academic dataset, power grid | 0.22 GB · [`substation-ml-ids-iec61850-iec104`](../DATASETS.md#substation-ml-ids-iec61850-iec104) |
-| [Synthetic OT samples mapped to ATT&CK for ICS](ot-synthetic-mitre.md) | Easy | Modbus/TCP, academic dataset | 0.1 MB · [`synthetic-ot-mitre-samples`](../DATASETS.md#synthetic-ot-mitre-samples) |
+| [Synthetic OT samples mapped to ATT&amp;CK for ICS](ot-synthetic-mitre.md) | Easy | Modbus/TCP, academic dataset | 0.1 MB · [`synthetic-ot-mitre-samples`](../DATASETS.md#synthetic-ot-mitre-samples) |
 | [Synthetic OT — benign plant vs. attack scenarios](ot-synthetic-scenarios.md) | Easy | Modbus/TCP, academic dataset | 0.5 MB · [`synthetic-ot-scenarios-lindseynguyen`](../DATASETS.md#synthetic-ot-scenarios-lindseynguyen) |
 | [CybICS — Incident PCAP — the gas plant stops](ot-ctf-training-cybics-incident-pcap-the-gas-plant-st.md) | Medium | CTF, Modbus/TCP, training-cybics | 0.1 MB · [`training-cybics`](../DATASETS.md#training-cybics) |
 | [CybICS — Whispering PLC — Modbus covert C2](ot-ctf-training-cybics-whispering-plc-modbus-covert-c.md) | Medium | CTF, Modbus/TCP, training-cybics | 0.3 MB · [`training-cybics`](../DATASETS.md#training-cybics) |
@@ -313,12 +313,12 @@ Where each dataset's captures are (mirror or original source): [DATASETS.md](../
 | [TU Delft substation — Reconnaissance](ot-tudelft-cpps-reconnaissance.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 1.15 GB · [`tudelft-digital-substation-cpps`](../DATASETS.md#tudelft-digital-substation-cpps) |
 | [TU Delft substation — Resource Exhaustion](ot-tudelft-cpps-resource-exhaustion.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 1.31 GB · [`tudelft-digital-substation-cpps`](../DATASETS.md#tudelft-digital-substation-cpps) |
 | [TU Delft substation — SV Injection](ot-tudelft-cpps-sv-injection.md) | Hard | IEC 61850 SV, academic dataset, power grid | 0.69 GB · [`tudelft-digital-substation-cpps`](../DATASETS.md#tudelft-digital-substation-cpps) |
-| [TU Wien Smart Factory — OT Attack & Operations](ot-tuwien-overview.md) | Hard | MQTT, OPC UA, Modbus/TCP, OT attack | 127.15 GB · [`tuwien-smart-factory`](../DATASETS.md#tuwien-smart-factory) |
+| [TU Wien Smart Factory — OT Attack &amp; Operations](ot-tuwien-overview.md) | Hard | MQTT, OPC UA, Modbus/TCP, OT attack | 127.15 GB · [`tuwien-smart-factory`](../DATASETS.md#tuwien-smart-factory) |
 | [TU Wien Smart Factory — the unlabeled DoS attack day](ot-tuwien-dos-day.md) | Expert | DoS, OPC UA, Modbus/TCP, unlabeled | 97.52 GB · [`tuwien-smart-factory`](../DATASETS.md#tuwien-smart-factory) |
 | [DNP3 — Cold Restart Attack](ot-uowm-dnp3-20200515-dnp3-cold-restart-attack.md) | Hard | DNP3, academic dataset, ICS | 0.28 GB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
 | [DNP3 — Disable Unsolicited Messages Attack](ot-uowm-dnp3-20200514-dnp3-disable-unsolicited-messag.md) | Hard | DNP3, academic dataset, ICS | 0.29 GB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
 | [DNP3 — Enumerate](ot-uowm-dnp3-20200516-dnp3-enumerate.md) | Hard | DNP3, academic dataset, ICS | 55.1 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
-| [DNP3 — Info](ot-uowm-dnp3-20200516-dnp3-nfo.md) | Hard | DNP3, academic dataset, ICS | 56.1 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
+| [DNP3 — Info](ot-uowm-dnp3-20200516-dnp3-info.md) | Hard | DNP3, academic dataset, ICS | 56.1 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
 | [DNP3 — Initialize Data Attack](ot-uowm-dnp3-20200518-dnp3-initialize-data-attack.md) | Hard | DNP3, academic dataset, ICS | 63.3 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
 | [DNP3 — MITM DoS](ot-uowm-dnp3-20200518-dnp3-mitm-dos.md) | Hard | DNP3, academic dataset, ICS | 35.7 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |
 | [DNP3 — Replay Attack](ot-uowm-dnp3-20200518-dnp3-replay-attack.md) | Hard | DNP3, academic dataset, ICS | 27.1 MB · [`uowm-dnp3-ids`](../DATASETS.md#uowm-dnp3-ids) |

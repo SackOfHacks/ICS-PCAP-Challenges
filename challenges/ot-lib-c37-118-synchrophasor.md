@@ -15,7 +15,7 @@ Every public C37.118 synchrophasor sample in this range, deduplicated by SHA-256
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the C37.118 synchrophasor operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0815 Denial of View).
+- Map findings to ATT&amp;CK for ICS (T0855 Unauthorized Command Message · T0815 Denial of View).
 
 ## 📥 Get the captures
 
@@ -67,9 +67,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-synchrophasor/c37_pmu_clean.pcap' -
 pcapper data/cisa-icsnpp-test-traces/ --synchrophasor --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-synchrophasor/c37_pmu_clean.pcap' --mitre
@@ -134,7 +134,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (command frames (frame type 4) can turn PMU data transmission off or request configuration — normal from the PDC, suspicious from anywhere else). ATT&CK for ICS: T0855 Unauthorized Command Message · T0815 Denial of View. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (command frames (frame type 4) can turn PMU data transmission off or request configuration — normal from the PDC, suspicious from anywhere else). ATT&amp;CK for ICS: T0855 Unauthorized Command Message · T0815 Denial of View. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** C37.118 synchrophasor operations — data ×609, command ×10, config-2 ×3; dangerous-operation matches: 10 (top sources: 192.168.0.10 ×7, 192.168.0.20 ×3); top conversations in C37.118_1PMU_UDP_minimal.pcap: 192.168.0.10↔192.168.0.60 (5 pkts) (basis: 3 of 13 capture file(s), first 300,000 packets each, smallest files carrying C37.118 synchrophasor chosen)
 
@@ -149,7 +149,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (13)</summary>
 

@@ -15,7 +15,7 @@ Every public OPC UA sample in this range, deduplicated by SHA-256 across cisa-ic
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the OPC UA operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0836 Modify Parameter · T0871 Execution through API · T0861 Point & Tag Identification).
+- Map findings to ATT&amp;CK for ICS (T0836 Modify Parameter · T0871 Execution through API · T0861 Point &amp; Tag Identification).
 
 ## 📥 Get the captures
 
@@ -67,9 +67,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-opcua-binary/open62541_discover_get
 pcapper data/cisa-icsnpp-test-traces/ --opc --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-opcua-binary/open62541_discover_getendpoints_discover_urls.pcap' --mitre
@@ -134,7 +134,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Write (node 673) and Call (712, method execution); Browse (527) maps the address space; check OpenSecureChannel/CreateSession for SecurityMode None and anonymous ActivateSession). ATT&CK for ICS: T0836 Modify Parameter · T0871 Execution through API · T0861 Point & Tag Identification. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Write (node 673) and Call (712, method execution); Browse (527) maps the address space; check OpenSecureChannel/CreateSession for SecurityMode None and anonymous ActivateSession). ATT&amp;CK for ICS: T0836 Modify Parameter · T0871 Execution through API · T0861 Point &amp; Tag Identification. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** OPC UA operations — OpenSecureChannel ×3, 449 ×3, 452 ×3, GetEndpoints ×2, 554 ×2, 557 ×2, 431 ×1, CreateSession ×1; dangerous-operation matches: 0 for the OPC UA filter (30 OPC UA packets present, so the zero is real); top conversations in opycua_share.pcap: 192.168.1.101↔192.168.1.106 (7 pkts) (basis: 3 of 29 capture file(s), first 300,000 packets each, smallest files carrying OPC UA chosen)
 
@@ -149,7 +149,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (29)</summary>
 

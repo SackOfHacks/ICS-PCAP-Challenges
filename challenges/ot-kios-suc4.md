@@ -1,6 +1,6 @@
 # KIOS/ELECTRON — FDI and masquerade on a power system
 
-**Power grid & substations** · **Hard** · 1.0 MB · 4 capture file(s)
+**Power grid &amp; substations** · **Hard** · 1.0 MB · 4 capture file(s)
 
 > False-data-injection and masquerade attacks on a power-system use case, with physical measurements aligned to the packets.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/kios-electron-suc4-power-attacks/Electron_SUC4_S1_FDI_Attack_Traffic.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/kios-electron-suc4-power-attacks/Electron_SUC4_S1_FDI_Attack_Traffic.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Tekki, Eleni; Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, I
 
 - [Dataset source — KIOS/ELECTRON SUC4 — FDI and masquerade attacks on a power s](https://zenodo.org/records/12960228)
 - [DOI 10.5281/zenodo.12960228](https://doi.org/10.5281/zenodo.12960228)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

@@ -1,6 +1,6 @@
 # QUT S7comm — attacking the water tank
 
-**Process control & PLC testbeds** · **Medium** · 0.0 MB · 6 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.0 MB · 6 capture file(s)
 
 > Single S7comm writes that switch the water tank. Decode every one and build the plant's tag map.
 
@@ -60,9 +60,9 @@ One row per attack: area/DB, byte.bit address, value written, and the process ef
 ls 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215173329.WaterTankOff' 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215175616.WaterTankOnManu' 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215182026.WaterTankOnAuto'
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215182026.WaterTankOnAuto/20161215182026.WaterTankOnAuto.attacker.pcap' --mitre
@@ -128,7 +128,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 S7comm — mining-refinery testbed (64 attacks, 13 ty](https://github.com/qut-infosec/2017QUT_S7comm)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (6)</summary>
 

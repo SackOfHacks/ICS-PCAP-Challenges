@@ -73,7 +73,7 @@ pcapper <capture> --mitre                # map what happened to ATT&CK (Enterpri
 
 ## 🚀 Quickstart (5 minutes)
 
-**Requirements:** Python ≥ 3.9, `curl`, `7z` (p7zip), `tar`, and `tcpdump` (used to split captures ≥ 2 GB).
+**Requirements:** Python 3.12+ (or 3.9.17+, 3.10.12+, 3.11.4+ — releases with `tarfile`'s extraction filters) and `curl`; for datasets fetched from their original sources also `7z` (7-Zip or p7zip) and `tcpdump` (used to split captures ≥ 2 GB), and the `cryptography` package for the one MEGA-hosted dataset.
 For the tshark / Wireshark walkthroughs, install Wireshark (which provides `tshark` and `capinfos`).
 
 ```bash
@@ -129,10 +129,14 @@ gets each dataset from the right place:
 - **This repository's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1)**
   mirrors the **41 datasets whose licence (or authors) allow redistribution** (~345 GB of captures),
   as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
-  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation.
+  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation. If a mirror
+  download fails or does not match its checksum, `fetch.py` stops; it never falls back to the unverified source on its own
+  (ask for that with `--from-source`).
 - **The original sources** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle, MEGA, …) for the other
   **29 datasets**, which their authors published without a licence that allows re-hosting. The fetcher
-  unpacks them, keeps only the files the challenges use and writes a `PROVENANCE.md` credit file.
+  unpacks them, keeps only the files the challenges use and writes a `PROVENANCE.md` credit file. Third-party sources are
+  not checksum-verified, so everything they serve is treated as untrusted: HTTPS only, archives unpacked into an empty
+  folder with links and escaping paths refused, and the MEGA download's integrity code (MAC) checked. See [SECURITY.md](SECURITY.md).
 
 ```bash
 python3 scripts/fetch.py --list                         # every dataset: size, licence, mirror or source
@@ -161,7 +165,9 @@ exploit/C2 payloads. Work offline:
 
 - **Never replay** this traffic onto a routed, production or industrial network.
 - **Never send** the commands you find to a real PLC, RTU, IED or safety controller.
-- Treat any file you carve as **live malware** — hash it, don't run it.
+- Treat any file you carve as **live malware** — hash it, don't run it. Some captures carry Windows/Linux executables, and
+  one dataset was recorded at a real facility; the challenges that use them say so in their safety note.
+- Found a security problem in the tools or the content? Report it privately — see [SECURITY.md](SECURITY.md).
 
 ## 🙏 Credits
 
@@ -185,10 +191,12 @@ ICS-PCAP-Challenges/
 ├── scripts/
 │   ├── fetch.py             # download datasets into data/ (release mirror or original source)
 │   ├── mega_fetch.py        # public-MEGA-folder client used for one source-hosted dataset
+│   ├── test_security.py     # regression tests for the fetcher's and the pages' safety checks
 │   └── build.py             # rebuild challenges.js, datasets.js, challenges/*.md, DATASETS.md and ATTRIBUTION.md
 ├── data/                    # the captures (git-ignored; created by fetch.py)
 ├── DATASETS.md              # where every dataset's captures are + the challenges that use it (generated)
 ├── ATTRIBUTION.md           # credits and licenses for every dataset (generated)
+├── SECURITY.md              # how to report a vulnerability; what the tools defend against
 ├── CITATION.cff             # how to cite this range and its datasets
 └── LICENSE                  # MIT — code and challenge authoring only
 ```

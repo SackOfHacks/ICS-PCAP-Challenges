@@ -1,6 +1,6 @@
 # CISCN 2024 Finals ICS — 写入寄存器的值 (register-write values)
 
-**CTF & conference labs** · **Medium** · 4.5 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 4.5 MB · 1 capture file(s)
 
 > CTF: CISCN 2024 Finals ICS — 写入寄存器的值 (register-write values) (Modbus/TCP).
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-A capture-the-flag challenge from Chinese ICS competition challenges (CISCN, Fujian, Panda Cup, Qiangwang, Zhejiang, VCTF). Oil & gas station with two PLCs.
+A capture-the-flag challenge from Chinese ICS competition challenges (CISCN, Fujian, Panda Cup, Qiangwang, Zhejiang, VCTF). Oil &amp; gas station with two PLCs.
 
 ICS CTF flags usually hide in protocol fields — register values, write payloads, function codes or timing — rather than in plain text. Work it like an analyst: map the protocol, find the operations that don't belong, then decode.
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/ciscn-2024-finals-ics-register-write-valu
 pcapper 'data/ctf-cn-competitions-misc/ciscn-2024-finals-ics-register-write-values/oil.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/ciscn-2024-finals-ics-register-write-values/oil.pcapng' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
 - [Write-up / solution](https://github.com/CTF-Archives/2024-CISCN-Finals-ICS/blob/main/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

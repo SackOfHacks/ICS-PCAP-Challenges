@@ -1,6 +1,6 @@
 # CSAW 2021 — A Pain in the BAC(net)
 
-**CTF & conference labs** · **Medium** · 0.2 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.2 MB · 1 capture file(s)
 
 > CTF: A Pain in the BAC(net) (BACnet).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-csaw-2021-quals/a-pain-in-the-bac-net/bacnet.pcap' --ctf --ove
 pcapper 'data/ctf-csaw-2021-quals/a-pain-in-the-bac-net/bacnet.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-csaw-2021-quals/a-pain-in-the-bac-net/bacnet.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: CSAW CTF (NYU OSIRIS Lab); mirror of the official repo (2021) �
 
 - [Dataset source — CSAW CTF Quals 2021 — ICS](https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics)
 - [Write-up / solution](https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics/a_pain_in_the_bacnet)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

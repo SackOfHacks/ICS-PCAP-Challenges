@@ -1,10 +1,10 @@
 # ICSC 2021 — Round 3 — 异常的IEC104分析 (anomalous IEC-104)
 
-**CTF & conference labs** · **Medium** · 59.5 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 59.5 MB · 1 capture file(s)
 
 > CTF: Round 3 — 异常的IEC104分析 (anomalous IEC-104) (IEC-104).
 
-> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller. This capture carries executable files (Windows PE / Linux ELF) inside the traffic, and some may be malware: work offline, hash anything you extract and never run it.
 
 ## Scenario
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-icsc-2021/round-3-iec104-anomalous-iec-104/01.pcapng' --ctf --
 pcapper 'data/ctf-icsc-2021/round-3-iec104-anomalous-iec-104/01.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-icsc-2021/round-3-iec104-anomalous-iec-104/01.pcapng' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc202
 **Competition organisers; attachments archived by fghcvjk/icsc2021 (2021)** — license: None stated — credit the competition
 
 - [Dataset source — 工业信息安全技能大赛 2021 — Industrial Information Security Skills Com](https://github.com/fghcvjk/icsc2021)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

@@ -1,6 +1,6 @@
 # APT against a power-substation network
 
-**Power grid & substations** · **Hard** · 18.7 MB · 2 capture file(s)
+**Power grid &amp; substations** · **Hard** · 18.7 MB · 2 capture file(s)
 
 > An APT-style attack on a substation network, with a clean capture to compare.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/substation-apt-goose/APT/Attack/U4.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/substation-apt-goose/APT/Attack/U4.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Barbulescu, Cristinel; Stan, Viorel (202
 
 - [Dataset source — APT attack on a power-substation network (vs. clean login tr](https://zenodo.org/records/13912758)
 - [DOI 10.5281/zenodo.13912758](https://doi.org/10.5281/zenodo.13912758)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

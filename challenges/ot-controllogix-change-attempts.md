@@ -1,6 +1,6 @@
 # ControlLogix 5000 — change date/time and port-configuration attempts
 
-**ICS malware & intrusions** · **Hard** · 4.3 MB · 3 capture file(s)
+**ICS malware &amp; intrusions** · **Hard** · 4.3 MB · 3 capture file(s)
 
 > Someone tried to change a ControlLogix's clock and its Ethernet port configuration over EtherNet/IP. Reconstruct each attempt.
 
@@ -16,7 +16,7 @@ For each attempt, identify the CIP object/attribute targeted, the service used, 
 
 - Identify the CIP service and object/attribute targeted in each capture.
 - Determine whether each attempt succeeded (CIP general status).
-- Map each attempt to ATT&CK for ICS.
+- Map each attempt to ATT&amp;CK for ICS.
 
 ## 📥 Get the captures
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/s7comm-scenarios-jenilv07/comman/CL5000EIP-Change-Date-Attempt.pcap' --enip --cip --pccc --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/s7comm-scenarios-jenilv07/comman/CL5000EIP-Change-Date-Attempt.pcap' --mitre
@@ -75,7 +75,7 @@ capinfos 'data/s7comm-scenarios-jenilv07/comman/CL5000EIP-Change-Date-Attempt.pc
 tshark -r 'data/s7comm-scenarios-jenilv07/comman/CL5000EIP-Change-Date-Attempt.pcap' -q -z io,phs | head -40
 ```
 
-**2. Map the EtherNet/IP & CIP conversation**
+**2. Map the EtherNet/IP &amp; CIP conversation**
 
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
@@ -117,9 +117,9 @@ The response's general status tells you if the controller accepted the change.
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-Each capture holds a CIP set-attribute style request: against the controller's time/clock attributes (date, time) or the TCP/IP Interface / Ethernet Link object (port configuration). Check cip.genstat on the replies to see which attempts the controller accepted. ATT&CK for ICS: T0836 Modify Parameter; port reconfiguration also maps to T0814 Denial of Service; clock tampering degrades forensics (T0872 Indicator Removal on Host is a stretch — note it as impact on timelines).
+Each capture holds a CIP set-attribute style request: against the controller's time/clock attributes (date, time) or the TCP/IP Interface / Ethernet Link object (port configuration). Check cip.genstat on the replies to see which attempts the controller accepted. ATT&amp;CK for ICS: T0836 Modify Parameter; port reconfiguration also maps to T0814 Denial of Service; clock tampering degrades forensics (T0872 Indicator Removal on Host is a stretch — note it as impact on timelines).
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Get Attribute List ×3227, Multiple Service Packet ×243, Get Attribute Single ×10, Set Attribute List ×4, Get Attributes All ×4, Set Attribute Single ×2; dangerous-operation matches: 2 (top sources: 192.168.10.105 ×1, 192.168.10.121 ×1); top conversations in CL5000EIP-Change-Date-Attempt.pcap: 192.168.10.105↔192.168.10.120 (351 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP &amp; CIP operations — Get Attribute List ×3227, Multiple Service Packet ×243, Get Attribute Single ×10, Set Attribute List ×4, Get Attributes All ×4, Set Attribute Single ×2; dangerous-operation matches: 2 (top sources: 192.168.10.105 ×1, 192.168.10.121 ×1); top conversations in CL5000EIP-Change-Date-Attempt.pcap: 192.168.10.105↔192.168.10.120 (351 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — credit the author._
 
@@ -130,7 +130,7 @@ _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — cr
 **jenilv-07 (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

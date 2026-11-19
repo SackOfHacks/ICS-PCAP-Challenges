@@ -15,7 +15,7 @@ Every public IEC 61850 GOOSE sample in this range, deduplicated by SHA-256 acros
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the IEC 61850 GOOSE operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0856 Spoof Reporting Message · T0831 Manipulation of Control · T0814 Denial of Service).
+- Map findings to ATT&amp;CK for ICS (T0855 Unauthorized Command Message · T0856 Spoof Reporting Message · T0831 Manipulation of Control · T0814 Denial of Service).
 
 ## 📥 Get the captures
 
@@ -65,9 +65,9 @@ pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC61850/Sample_File_MMS_and_GO
 pcapper data/emreekin-ics-pcaps/ --goose --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC61850/Sample_File_MMS_and_GOOSE.pcap' --mitre
@@ -132,7 +132,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (GOOSE has no confirmed 'write' — the attack surface is the event stream itself: stNum jumping without a real state change, sqNum resets, bursts far above the retransmission curve, the test/simulation flag, or an unexpected source MAC publishing a known gocbRef). ATT&CK for ICS: T0855 Unauthorized Command Message · T0856 Spoof Reporting Message · T0831 Manipulation of Control · T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (GOOSE has no confirmed 'write' — the attack surface is the event stream itself: stNum jumping without a real state change, sqNum resets, bursts far above the retransmission curve, the test/simulation flag, or an unexpected source MAC publishing a known gocbRef). ATT&amp;CK for ICS: T0855 Unauthorized Command Message · T0856 Spoof Reporting Message · T0831 Manipulation of Control · T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 3; GOOSE streams — GEDeviceF650/LLN0$GO$gcb01 from 00:a0:f4:08:2f:77: 2 frames, 1 distinct stNum, 0 sqNum resets; 111 from 00:17:a4:dd:98:1e: 1 frames, 1 distinct stNum, 0 sqNum resets (basis: 3 of 16 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 GOOSE chosen)
 
@@ -147,7 +147,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — ICS protocol sample captures (IEC-104, MMS and more)](https://github.com/haolipeng/ics-pcaps)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (16)</summary>
 

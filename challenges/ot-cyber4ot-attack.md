@@ -1,6 +1,6 @@
 # Cyber4OT — the full attack (successful and failed) and its aftermath
 
-**Process control & PLC testbeds** · **Expert** · 37.3 MB · 7 capture file(s)
+**Process control &amp; PLC testbeds** · **Expert** · 37.3 MB · 7 capture file(s)
 
 > The end-to-end PLC hijack: successful attack, a failed attempt, the hostile connection afterwards, and normal activity + attack in one trace.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/cyber4ot/data/traces/Cyber4OT_096.pcapng' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cyber4ot/data/traces/Cyber4OT_096.pcapng' --mitre
@@ -134,7 +134,7 @@ _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak
 
 - [Dataset source — Cyber4OT: ICS network traces containing normal activity and ](https://zenodo.org/records/15005190)
 - [DOI 10.5281/zenodo.15005190](https://doi.org/10.5281/zenodo.15005190)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (7)</summary>
 

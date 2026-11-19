@@ -1,6 +1,6 @@
 # Sherlock — Semiurban topology
 
-**Power grid & substations** · **Hard** · 1.72 GB · 12 capture file(s)
+**Power grid &amp; substations** · **Hard** · 1.72 GB · 12 capture file(s)
 
 > Sherlock power-grid IDS: Semiurban topology — 12 capture(s).
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/sherlock-power-grid-ids/02-Semiurban/raw/test/pcap/switch-n406-pcap-mir2.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/sherlock-power-grid-ids/02-Semiurban/raw/test/pcap/switch-n406-pcap-mir2.pcap' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Wagner, Eric; Bader, Lennart; Wolsing, Konrad; Serror, Martin (
 
 - [Dataset source — Sherlock — process-aware intrusion detection on power-grid n](https://zenodo.org/records/18467070)
 - [DOI 10.5281/zenodo.18467070](https://doi.org/10.5281/zenodo.18467070)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (12)</summary>
 

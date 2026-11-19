@@ -1,6 +1,6 @@
 # Geothermal well SCADA — intrusion detection (2026)
 
-**Process control & PLC testbeds** · **Hard** · 3.50 GB · 17 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 3.50 GB · 17 capture file(s)
 
 > A semi-physical geothermal-well scale-inhibitor injection SCADA testbed: PLCs, operator and engineering stations. Find the attacks; the labeled CSVs are the key.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/geothermal-well-scada-ids-2026/raw/test/202608060121~202608060824.pcapng' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/geothermal-well-scada-ids-2026/raw/test/202608060121~202608060824.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Shui, Qianfeng (2026) — doi:10.5281/zenodo.23610536 · Licens
 
 - [Dataset source — Geothermal well scale-inhibitor injection SCADA — intrusion ](https://zenodo.org/records/23610536)
 - [DOI 10.5281/zenodo.23610536](https://doi.org/10.5281/zenodo.23610536)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (17)</summary>
 

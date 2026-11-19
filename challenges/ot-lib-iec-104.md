@@ -15,7 +15,7 @@ Every public IEC-104 sample in this range, deduplicated by SHA-256 across automa
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the IEC-104 operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0831 Manipulation of Control · T0846 Remote System Discovery · T0816 Device Restart/Shutdown).
+- Map findings to ATT&amp;CK for ICS (T0855 Unauthorized Command Message · T0831 Manipulation of Control · T0846 Remote System Discovery · T0816 Device Restart/Shutdown).
 
 ## 📥 Get the captures
 
@@ -73,9 +73,9 @@ pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC60870-5-104/JavaRMI_and_IEC_
 pcapper data/automayt-ics-pcap/ --iec104 --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC60870-5-104/JavaRMI_and_IEC_Misc.pcap' --mitre
@@ -140,7 +140,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (control commands (TypeID 45 single, 46 double, 47 regulating step, 48–50 set-points, 51 bitstring, 58–64 time-tagged variants), interrogations (100 general, 101 counter), read (102), clock sync (103) and reset process (105)). ATT&CK for ICS: T0855 Unauthorized Command Message · T0831 Manipulation of Control · T0846 Remote System Discovery · T0816 Device Restart/Shutdown. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (control commands (TypeID 45 single, 46 double, 47 regulating step, 48–50 set-points, 51 bitstring, 58–64 time-tagged variants), interrogations (100 general, 101 counter), read (102), clock sync (103) and reset process (105)). ATT&amp;CK for ICS: T0855 Unauthorized Command Message · T0831 Manipulation of Control · T0846 Remote System Discovery · T0816 Device Restart/Shutdown. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — M_ME_TF_1 ×6, M_SP_NA_1 ×4, 33 ×3; dangerous-operation matches: 0 for the IEC-104 filter (13 IEC-104 packets present, so the zero is real); top conversations in IEC104_SQ.pcapng: 10.104.99.22↔10.204.70.90 (1 pkts) (basis: 3 of 25 capture file(s), first 300,000 packets each, smallest files carrying IEC-104 chosen)
 
@@ -157,7 +157,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (25)</summary>
 

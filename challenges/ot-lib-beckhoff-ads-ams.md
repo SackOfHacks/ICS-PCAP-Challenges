@@ -15,7 +15,7 @@ Every public Beckhoff ADS/AMS sample in this range, deduplicated by SHA-256 acro
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the Beckhoff ADS/AMS operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter).
+- Map findings to ATT&amp;CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter).
 
 ## 📥 Get the captures
 
@@ -67,9 +67,9 @@ pcapper data/iti-ics-security-tools-pcaps/ --overview --ot-commands
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/beckoff/beckoffiplink.pcapng' --ot-commands --threats
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/beckoff/beckoffiplink.pcapng' --mitre
@@ -134,7 +134,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Write (3), WriteControl (5 — change the TwinCAT run state) and ReadWrite (9)). ATT&CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Write (3), WriteControl (5 — change the TwinCAT run state) and ReadWrite (9)). ATT&amp;CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Beckhoff ADS/AMS operations — ReadState ×35, Read ×32, ReadWrite ×14, ReadDeviceInfo ×8, AddDeviceNotification ×4, DelDeviceNotification ×2; dangerous-operation matches: 14 (top sources: 192.168.1.99 ×7, 192.168.1.8 ×7); top conversations in invokeid12.pcapng: 192.168.1.177↔192.168.1.255 (27 pkts), 192.168.1.194↔192.168.255.255 (6 pkts), 192.168.1.177↔192.168.1.8 (5 pkts) (basis: 3 of 10 capture file(s), first 300,000 packets each, smallest files carrying Beckhoff ADS/AMS chosen)
 
@@ -147,7 +147,7 @@ _Captures credited to: ITI ICS-Security-Tools — sample ICS protocol captures �
 **ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign** — license: varies by collection — see each folder's PROVENANCE.md
 
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (10)</summary>
 

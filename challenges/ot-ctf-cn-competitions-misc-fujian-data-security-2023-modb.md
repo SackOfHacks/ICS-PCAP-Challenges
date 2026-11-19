@@ -1,6 +1,6 @@
 # Fujian Data Security 2023 — ModBus
 
-**CTF & conference labs** · **Medium** · 5.9 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 5.9 MB · 1 capture file(s)
 
 > CTF: Fujian Data Security 2023 — ModBus (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/fujian-data-security-2023-modbus/flag.pca
 pcapper 'data/ctf-cn-competitions-misc/fujian-data-security-2023-modbus/flag.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/fujian-data-security-2023-modbus/flag.pcapng' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 **Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5** — license: None stated — credit each competition
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

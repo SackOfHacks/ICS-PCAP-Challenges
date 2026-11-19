@@ -1,6 +1,6 @@
-# S4x15 CTF — the PLCs (Modicon & MicroLogix)
+# S4x15 CTF — the PLCs (Modicon &amp; MicroLogix)
 
-**CTF & conference labs** · **Medium** · 11.0 MB · 2 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 11.0 MB · 2 capture file(s)
 
 > Two PLC captures from the CTF: a Schneider Modicon (Modbus/UMAS) and an Allen-Bradley MicroLogix (EtherNet/IP + PCCC).
 
@@ -60,9 +60,9 @@ pcapper 'data/digitalbond-s4x15-ctf/Modicon.pcap' --modbus --ot-commands
 pcapper 'data/digitalbond-s4x15-ctf/Modicon.pcap' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/digitalbond-s4x15-ctf/Modicon.pcap' --mitre
@@ -119,16 +119,16 @@ Score yourself on: the device's normal peers, the scanner(s), and each attack op
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×336; dangerous-operation matches: 0 for the Modbus/TCP filter (336 Modbus/TCP packets present, so the zero is real); top conversations in Modicon.pcap: 10.200.1.252↔10.50.1.52 (1,950 pkts), 10.200.1.193↔10.50.1.52 (720 pkts), 10.200.1.86↔10.50.1.52 (681 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
+_Dataset credit: Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 
 </details>
 
 ## Dataset & credit
 
-**Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
+**Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
 
 - [Dataset source — S4x15 ICS Village CTF captures (Digital Bond)](https://www.netresec.com/?page=DigitalBond_S4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

@@ -8,14 +8,14 @@
 
 ## Scenario
 
-Every public ROC Plus sample in this range, deduplicated by SHA-256 across cisa-icsnpp-test-traces, inl-malcolm-ot-artifacts. Use it to learn what the protocol looks like on the wire — roles, operations, normal cadence — and to practice spotting the operations attackers abuse: Emerson ROC Plus (oil & gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets.
+Every public ROC Plus sample in this range, deduplicated by SHA-256 across cisa-icsnpp-test-traces, inl-malcolm-ot-artifacts. Use it to learn what the protocol looks like on the wire — roles, operations, normal cadence — and to practice spotting the operations attackers abuse: Emerson ROC Plus (oil &amp; gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets.
 
 ## Objectives
 
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the ROC Plus operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0836 Modify Parameter).
+- Map findings to ATT&amp;CK for ICS (T0836 Modify Parameter).
 
 ## 📥 Get the captures
 
@@ -72,9 +72,9 @@ pcapper data/cisa-icsnpp-test-traces/ --overview --ot-commands
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-roc-plus/all_opcodes_udp.pcap' --ot-commands --threats
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-roc-plus/all_opcodes_udp.pcap' --mitre
@@ -103,7 +103,7 @@ tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-roc-plus/all_opcodes_udp.pcap' -Y
 
 **3. Hunt the dangerous operations**
 
-Flag Emerson ROC Plus (oil & gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets.
+Flag Emerson ROC Plus (oil &amp; gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets.
 
 ```bash
 tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-roc-plus/all_opcodes_udp.pcap' -Y 'tcp.port == 4000 || udp.port == 4000' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
@@ -139,7 +139,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Emerson ROC Plus (oil & gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets). ATT&CK for ICS: T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Emerson ROC Plus (oil &amp; gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets). ATT&amp;CK for ICS: T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** ROC Plus packets matching `tcp.port == 4000 || udp.port == 4000`: 666; dangerous-operation matches: 666 (top sources: 192.168.1.200 ×344, 192.168.1.100 ×322); top conversations in all_opcodes_udp.pcap: 192.168.1.100↔192.168.1.200 (109 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
@@ -153,7 +153,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

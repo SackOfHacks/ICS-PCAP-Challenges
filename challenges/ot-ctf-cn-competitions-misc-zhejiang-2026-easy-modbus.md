@@ -1,6 +1,6 @@
 # Zhejiang 2026 — easy_modbus
 
-**CTF & conference labs** · **Medium** · 0.6 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.6 MB · 1 capture file(s)
 
 > CTF: Zhejiang 2026 — easy_modbus (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-modbus/easyModbus.pcap
 pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-modbus/easyModbus.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-modbus/easyModbus.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
 - [Write-up / solution](https://github.com/yomymy/industrial-internet-security-2026-writeup)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

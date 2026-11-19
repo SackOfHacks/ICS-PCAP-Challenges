@@ -1,10 +1,10 @@
 # Medical-waste incinerator — command flooding attack
 
-**Process control & PLC testbeds** · **Hard** · 0.15 GB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.15 GB · 1 capture file(s)
 
 > A command flooding attack was injected into a real plant's S7-1500 traffic. Find it.
 
-> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller. Recorded at a real facility: device names, serial numbers and addresses are genuine. Treat them as sensitive and never use them to find or contact the site.
 
 ## Scenario
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/medical-waste-incinerator-s7-1500/traffic_with_command_flooding_attack06.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/medical-waste-incinerator-s7-1500/traffic_with_command_flooding_attack06.pcap' --mitre
@@ -142,7 +142,7 @@ _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jor
 
 - [Dataset source — Medical-waste incinerator — real Siemens S7-1500 SCADA with ](https://data.mendeley.com/datasets/vpcr4wpgfd/4)
 - [DOI 10.17632/vpcr4wpgfd.4](https://doi.org/10.17632/vpcr4wpgfd.4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

@@ -15,7 +15,7 @@ Every public POWERLINK sample in this range, deduplicated by SHA-256 across auto
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the POWERLINK operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0814 Denial of Service).
+- Map findings to ATT&amp;CK for ICS (T0814 Denial of Service).
 
 ## 📥 Get the captures
 
@@ -70,9 +70,9 @@ pcapper data/automayt-ics-pcap/ --overview --ot-commands
 pcapper 'data/automayt-ics-pcap/POWERLINK/epl/epl.pcap' --ot-commands --threats
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/automayt-ics-pcap/POWERLINK/epl/epl.pcap' --mitre
@@ -137,7 +137,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (the managing node's SoC/PReq/PRes/SoA cycle is deterministic — anything off-cycle or a second managing node is an anomaly). ATT&CK for ICS: T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (the managing node's SoC/PReq/PRes/SoA cycle is deterministic — anything off-cycle or a second managing node is an anomaly). ATT&amp;CK for ICS: T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** POWERLINK packets matching `epl`: 1,065 (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
@@ -151,7 +151,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 
 - [Dataset source — ICS-pcap collection (automayt / Jason Smith)](https://github.com/automayt/ICS-pcap)
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

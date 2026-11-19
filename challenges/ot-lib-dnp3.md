@@ -15,7 +15,7 @@ Every public DNP3 sample in this range, deduplicated by SHA-256 across automayt-
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the DNP3 operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0816 Device Restart/Shutdown · T0814 Denial of Service · T0856 Spoof Reporting Message).
+- Map findings to ATT&amp;CK for ICS (T0855 Unauthorized Command Message · T0816 Device Restart/Shutdown · T0814 Denial of Service · T0856 Spoof Reporting Message).
 
 ## 📥 Get the captures
 
@@ -67,9 +67,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-dnp3/dnp3_example.pcap' --dnp3 --ot
 pcapper data/automayt-ics-pcap/ --dnp3 --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-dnp3/dnp3_example.pcap' --mitre
@@ -134,7 +134,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (WRITE (2), SELECT/OPERATE (3/4), DIRECT_OPERATE (5/6), COLD/WARM_RESTART (13/14), INITIALIZE_DATA/APPL (15/16), START/STOP_APPL (17/18), DISABLE_UNSOLICITED (21), OPEN/DELETE_FILE (25/27), ACTIVATE_CONFIG (31)). ATT&CK for ICS: T0855 Unauthorized Command Message · T0816 Device Restart/Shutdown · T0814 Denial of Service · T0856 Spoof Reporting Message. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (WRITE (2), SELECT/OPERATE (3/4), DIRECT_OPERATE (5/6), COLD/WARM_RESTART (13/14), INITIALIZE_DATA/APPL (15/16), START/STOP_APPL (17/18), DISABLE_UNSOLICITED (21), OPEN/DELETE_FILE (25/27), ACTIVATE_CONFIG (31)). ATT&amp;CK for ICS: T0855 Unauthorized Command Message · T0816 Device Restart/Shutdown · T0814 Denial of Service · T0856 Spoof Reporting Message. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — DIRECT_OPERATE ×2, WRITE ×1; dangerous-operation matches: 3 (top sources: 192.168.10.3 ×2, 192.168.247.131 ×1); top conversations in write_binary_output.pcap: 192.168.247.131↔192.168.81.1 (1 pkts) (basis: 3 of 80 capture file(s), first 300,000 packets each, smallest files carrying DNP3 chosen)
 
@@ -152,7 +152,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [Dataset source — Suricata-verify — ICS protocol test captures](https://github.com/OISF/suricata-verify)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (80)</summary>
 

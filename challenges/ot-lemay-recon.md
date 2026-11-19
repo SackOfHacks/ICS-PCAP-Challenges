@@ -1,6 +1,6 @@
 # Lemay SCADA — characterization / reconnaissance
 
-**Process control & PLC testbeds** · **Medium** · 1.0 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 1.0 MB · 1 capture file(s)
 
 > Something inside the SCADA network starts mapping the RTUs. Find it.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-Lemay & Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
+Lemay &amp; Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
 
 Something inside the SCADA network starts mapping the RTUs. Find it.
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py lemay-scada-modbus-cset2016
 ```
 
-- **[Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
+- **[Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/antoine-lemay/Modbus_dataset](https://github.com/antoine-lemay/Modbus_dataset)
 
@@ -50,9 +50,9 @@ pcapper 'data/lemay-scada-modbus-cset2016/characterization_modbus_6RTU_with_oper
 pcapper 'data/lemay-scada-modbus-cset2016/characterization_modbus_6RTU_with_operate.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/lemay-scada-modbus-cset2016/characterization_modbus_6RTU_with_operate.pcap' --mitre
@@ -103,17 +103,17 @@ An intruder characterizes the Modbus network — sweeping unit IDs, function cod
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×6629, Read Holding Registers ×436, Read Discrete Inputs ×428, Read Coils ×420, Write Single Coil ×6; dangerous-operation matches: 6 (top sources: 192.168.1.100 ×3, 192.168.1.101 ×2, 192.168.1.103 ×1); top conversations in characterization_modbus_6RTU_with_operate.pcap: 192.168.1.101↔192.168.1.104 (6,719 pkts), 192.168.1.100↔192.168.1.104 (939 pkts), 192.168.1.100↔192.168.1.101 (936 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
+_Dataset credit: Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 
 </details>
 
 ## Dataset & credit
 
-**Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
+**Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
 
-- [Dataset source — Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
-- [Lemay & Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
+- [Lemay &amp; Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

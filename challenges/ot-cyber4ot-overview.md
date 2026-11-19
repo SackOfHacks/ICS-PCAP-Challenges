@@ -1,6 +1,6 @@
-# Cyber4OT — Modbus Recon & PLC Hijacking
+# Cyber4OT — Modbus Recon &amp; PLC Hijacking
 
-**Process control & PLC testbeds** · **Medium** · 0.40 GB · 96 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.40 GB · 96 capture file(s)
 
 > 96 small Modbus/TCP traces: normal OT activity, reconnaissance, and PLC-hijacking / interruption attacks.
 
@@ -15,7 +15,7 @@ The Cyber4OT trace set: 96 PCAPNG captures of Modbus/TCP activity spanning norma
 - Separate normal Modbus polling from recon and attack traces.
 - Identify abusive function codes (writes to coils/registers).
 - Spot an unauthorized master hijacking the PLC.
-- Map findings to ATT&CK for ICS techniques.
+- Map findings to ATT&amp;CK for ICS techniques.
 
 ## 📥 Get the captures
 
@@ -134,7 +134,7 @@ Classify each trace by its Modbus function-code profile and source set: read-onl
 
 ## Dataset & credit
 
-**Cabaj, K., Plamowski, S., Chaber, P., Ławryńczuk, M., Marusak, P., Nebeluk, R., Wojtulewicz, A. & Zarzycki, K. (2025) — DOI 10.5281/zenodo.15005190 — CC BY-NC 4.0.** — license: CC BY-NC 4.0 (non-commercial)
+**Cabaj, K., Plamowski, S., Chaber, P., Ławryńczuk, M., Marusak, P., Nebeluk, R., Wojtulewicz, A. &amp; Zarzycki, K. (2025) — DOI 10.5281/zenodo.15005190 — CC BY-NC 4.0.** — license: CC BY-NC 4.0 (non-commercial)
 
 - [Cyber4OT dataset (Zenodo)](https://zenodo.org/records/15005190)
 - [DOI 10.5281/zenodo.15005190](https://doi.org/10.5281/zenodo.15005190)

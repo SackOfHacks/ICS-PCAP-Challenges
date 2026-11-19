@@ -1,6 +1,6 @@
 # Mininet power-system — scanning attack
 
-**Power grid & substations** · **Easy** · 1.0 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Easy** · 1.0 MB · 1 capture file(s)
 
 > Scanning against an emulated cyber-physical power-system network.
 
@@ -56,9 +56,9 @@ pcapper 'data/mininet-power-system-scanning/scanningattack_packets.pcapng' --ove
 pcapper 'data/mininet-power-system-scanning/scanningattack_packets.pcapng' --strings --carve
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/mininet-power-system-scanning/scanningattack_packets.pcapng' --mitre
@@ -96,7 +96,7 @@ tshark -r 'data/mininet-power-system-scanning/scanningattack_packets.pcapng' -Y 
 
 **4. Try the industrial dissectors on that port**
 
-Replace <port> with the busiest server port from step 2. A clean decode (no malformed packets, length fields that match) identifies a standard protocol on a non-standard port.
+Replace &lt;port&gt; with the busiest server port from step 2. A clean decode (no malformed packets, length fields that match) identifies a standard protocol on a non-standard port.
 
 ```bash
 for p in tpkt mbtcp dnp3 enip iec60870_104; do echo "== $p"; tshark -r 'data/mininet-power-system-scanning/scanningattack_packets.pcapng' -d tcp.port==<port>,$p 2>/dev/null | head -4; done
@@ -134,7 +134,7 @@ _Dataset credit: May Myat Thwe; Stefanov, Alexandru (2026) — doi:10.5281/zenod
 
 - [Dataset source — Mininet cyber-physical power system — scanning attack](https://zenodo.org/records/23055644)
 - [DOI 10.5281/zenodo.23055644](https://doi.org/10.5281/zenodo.23055644)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

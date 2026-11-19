@@ -1,10 +1,10 @@
-# TU Wien Smart Factory — OT Attack & Operations
+# TU Wien Smart Factory — OT Attack &amp; Operations
 
-**Manufacturing & smart factory** · **Hard** · 127.15 GB · 73 capture file(s)
+**Manufacturing &amp; smart factory** · **Hard** · 127.15 GB · 73 capture file(s)
 
 > Real factory-cell traffic: MQTT, OPC UA and Modbus/TCP, with attack and operational days. The Tuesday DoS day is unlabeled.
 
-> ⚠️ **Safety:** OT capture is passive and safe to read. Never replay these onto a live industrial network.
+> ⚠️ **Safety:** OT capture is passive and safe to read. Never replay these onto a live industrial network. 21 of these captures carry executable files (Windows PE / Linux ELF) inside the traffic, and some may be malware: work offline, hash anything you extract and never run it.
 
 ## Scenario
 
@@ -122,7 +122,7 @@ No single answer — it's a characterization exercise. Baseline the normal days 
 
 ## Dataset & credit
 
-**Brenner, B., Fabini, J., Offermanns, M., Semper, S. & Zseby, T. (2025), TU Wien — DOI 10.48436/ghdc6-45k78 — CC BY 4.0.** — license: CC BY 4.0
+**Brenner, B., Fabini, J., Offermanns, M., Semper, S. &amp; Zseby, T. (2025), TU Wien — DOI 10.48436/ghdc6-45k78 — CC BY 4.0.** — license: CC BY 4.0
 
 - [TU Wien Smart Factory dataset](https://researchdata.tuwien.ac.at/records/ghdc6-45k78)
 - [DOI 10.48436/ghdc6-45k78](https://doi.org/10.48436/ghdc6-45k78)

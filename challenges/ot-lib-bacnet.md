@@ -15,7 +15,7 @@ Every public BACnet sample in this range, deduplicated by SHA-256 across automay
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the BACnet operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
+- Map findings to ATT&amp;CK for ICS (T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
 
 ## 📥 Get the captures
 
@@ -73,9 +73,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tag
 pcapper data/automayt-ics-pcap/ --bacnet --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' --mitre
@@ -140,7 +140,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (atomicWriteFile (7), createObject/deleteObject (10/11), writeProperty/writePropertyMultiple (15/16), deviceCommunicationControl (17 — silence a device) and reinitializeDevice (20); Who-Is (unconfirmed 8) is the discovery sweep). ATT&CK for ICS: T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (atomicWriteFile (7), createObject/deleteObject (10/11), writeProperty/writePropertyMultiple (15/16), deviceCommunicationControl (17 — silence a device) and reinitializeDevice (20); Who-Is (unconfirmed 8) is the discovery sweep). ATT&amp;CK for ICS: T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — atomicReadFile ×2, readProperty ×2, 18 ×1; dangerous-operation matches: 0 for the BACnet filter (5 BACnet packets present, so the zero is real); top conversations in PrivateTransferError.cap: 192.168.2.1↔192.168.2.122 (1 pkts) (basis: 3 of 80 capture file(s), first 300,000 packets each, smallest files carrying BACnet chosen)
 
@@ -158,7 +158,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [Dataset source — BACnet capture library (kargs.net)](https://kargs.net/captures/)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (80)</summary>
 

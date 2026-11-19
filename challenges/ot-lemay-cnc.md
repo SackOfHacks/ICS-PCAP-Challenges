@@ -1,6 +1,6 @@
-# Lemay SCADA — C&C channel uploading an executable
+# Lemay SCADA — C&amp;C channel uploading an executable
 
-**ICS malware & intrusions** · **Hard** · 0.2 MB · 1 capture file(s)
+**ICS malware &amp; intrusions** · **Hard** · 0.2 MB · 1 capture file(s)
 
 > A command-and-control channel pushes an executable onto a SCADA host. Carve it.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-Lemay & Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
+Lemay &amp; Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
 
 A command-and-control channel pushes an executable onto a SCADA host. Carve it.
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py lemay-scada-modbus-cset2016
 ```
 
-- **[Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
+- **[Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/antoine-lemay/Modbus_dataset](https://github.com/antoine-lemay/Modbus_dataset)
 
@@ -46,7 +46,7 @@ pcapper 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_ope
 
 **2. Carve the executable**
 
-Reassemble the C&C session and look for an MZ header; hash it, never run it.
+Reassemble the C&amp;C session and look for an MZ header; hash it, never run it.
 
 ```bash
 pcapper 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_operate.pcap' --files --carve --carve-out ./carved_lemay && sha256sum ./carved_lemay/* 2>/dev/null
@@ -58,9 +58,9 @@ pcapper 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_ope
 pcapper 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_operate.pcap' --modbus --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_operate.pcap' --mitre
@@ -85,7 +85,7 @@ tshark -r 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_o
 
 **3. Carve the executable**
 
-Reassemble the C&C session and look for an MZ header; hash it, never run it.
+Reassemble the C&amp;C session and look for an MZ header; hash it, never run it.
 
 ```bash
 tshark -r 'data/lemay-scada-modbus-cset2016/CnC_uploading_exe_modbus_6RTU_with_operate.pcap' -Y '!mbtcp && tcp.len>0' -q -z conv,tcp | head
@@ -113,17 +113,17 @@ A compromised host on the SCADA network receives an executable over a command-an
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×96, Read Discrete Inputs ×96, Read Coils ×96, Write Single Coil ×2; dangerous-operation matches: 2 (top sources: 192.168.1.100 ×1, 192.168.1.103 ×1); top conversations in CnC_uploading_exe_modbus_6RTU_with_operate.pcap: 192.168.1.100↔192.168.1.104 (238 pkts), 192.168.1.100↔192.168.1.103 (225 pkts), 192.168.1.100↔192.168.1.101 (216 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
+_Dataset credit: Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 
 </details>
 
 ## Dataset & credit
 
-**Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
+**Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
 
-- [Dataset source — Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
-- [Lemay & Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
+- [Lemay &amp; Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

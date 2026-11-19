@@ -1,6 +1,6 @@
 # Lemay SCADA — moving files across the control network
 
-**Process control & PLC testbeds** · **Medium** · 0.3 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.3 MB · 1 capture file(s)
 
 > Two files move between hosts on a network that should only ever carry Modbus polling.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-Lemay & Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
+Lemay &amp; Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
 
 Two files move between hosts on a network that should only ever carry Modbus polling.
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py lemay-scada-modbus-cset2016
 ```
 
-- **[Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
+- **[Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/antoine-lemay/Modbus_dataset](https://github.com/antoine-lemay/Modbus_dataset)
 
@@ -56,9 +56,9 @@ pcapper 'data/lemay-scada-modbus-cset2016/moving_two_files_modbus_6RTU.pcap' --f
 pcapper 'data/lemay-scada-modbus-cset2016/moving_two_files_modbus_6RTU.pcap' --modbus --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/lemay-scada-modbus-cset2016/moving_two_files_modbus_6RTU.pcap' --mitre
@@ -109,17 +109,17 @@ File transfers between hosts on the SCADA LAN (lateral tool transfer / staging) 
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×240, Read Discrete Inputs ×240, Read Coils ×240; dangerous-operation matches: 0 for the Modbus/TCP filter (720 Modbus/TCP packets present, so the zero is real); top conversations in moving_two_files_modbus_6RTU.pcap: 192.168.1.100↔192.168.1.104 (574 pkts), 192.168.1.100↔192.168.1.101 (540 pkts), 192.168.1.100↔192.168.1.102 (540 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
+_Dataset credit: Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 
 </details>
 
 ## Dataset & credit
 
-**Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
+**Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
 
-- [Dataset source — Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
-- [Lemay & Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
+- [Lemay &amp; Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

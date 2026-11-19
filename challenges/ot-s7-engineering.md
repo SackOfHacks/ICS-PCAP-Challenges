@@ -1,6 +1,6 @@
 # S7comm — engineering actions (downloads, passwords, mode changes)
 
-**Process control & PLC testbeds** · **Medium** · 0.0 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > Program transfer, password requests and run/stop — the S7 operations an attacker wants and a defender must catch.
 
@@ -52,9 +52,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/s7comm-scenarios-jenilv07/comman/4-S7comm-Download-DB1-with-password-request.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/s7comm-scenarios-jenilv07/comman/4-S7comm-Download-DB1-with-password-request.pcap' --mitre
@@ -120,7 +120,7 @@ _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — cr
 **jenilv-07 (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

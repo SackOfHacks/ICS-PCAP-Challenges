@@ -215,6 +215,8 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
   const $ = s=>document.querySelector(s);
   const el=(t,c,txt)=>{const e=document.createElement(t); if(c)e.className=c; if(txt!=null)e.textContent=txt; return e;};
   const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+  // links built from catalog data: only http(s)/mailto URLs become links (no javascript:, data: ...)
+  const safeHref=u=>{u=String(u==null?"":u).trim(); return /^(https?:\/\/|mailto:)[^\s<>"']+$/i.test(u)?u:"";};
   function fmtBytes(n){ if(!n) return "—"; const u=["B","KB","MB","GB","TB"]; let i=0,v=n;   // decimal units, like the pages and GitHub
     while(v>=1000&&i<u.length-1){v/=1000;i++;} return v.toFixed(v<10&&i>0?1:0)+" "+u[i]; }
 
@@ -318,13 +320,14 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
     const items=slugs.map(s=>{
       const d=DSETS[s]||{title:s}; const m=d.mirror;
       const where=m
-        ? 'Mirror: <a href="'+GH+'/releases/tag/'+esc(m.tag)+'" target="_blank" rel="noopener">'+esc(m.tag)+' release</a>, '+
+        ? 'Mirror: <a href="'+GH+'/releases/tag/'+encodeURIComponent(m.tag)+'" target="_blank" rel="noopener">'+esc(m.tag)+' release</a>, '+
           m.parts.length+' part'+(m.parts.length>1?'s':'')+' ('+fmtBytes(m.bytes_packed)+' compressed): '+
-          m.parts.map(p=>'<a href="'+GH+'/releases/download/'+esc(m.tag)+'/'+esc(p.name)+'">'+esc(p.name.split(".tar.").pop())+'</a> <span class="dl-dim">('+fmtBytes(p.size)+')</span>').join(" · ")
+          m.parts.map(p=>'<a href="'+GH+'/releases/download/'+encodeURIComponent(m.tag)+'/'+encodeURIComponent(p.name)+'">'+esc(p.name.split(".tar.").pop())+'</a> <span class="dl-dim">('+fmtBytes(p.size)+')</span>').join(" · ")
         : (d.pending?'Mirror being uploaded; until then <code>fetch.py</code> downloads it from the original source.'
                     :'Not mirrored (no licence that allows re-hosting): <code>fetch.py</code> downloads it from the original source.');
-      const src=d.source_url?'<div>Original source: <a href="'+esc(d.source_url)+'" target="_blank" rel="noopener">'+esc(shortUrl(d.source_url))+' ↗</a></div>':'';
-      return '<li><a href="'+GH+'/blob/main/DATASETS.md#'+esc(s)+'" target="_blank" rel="noopener"><b>'+esc(d.title||s)+'</b></a> <code>'+esc(s)+'</code>'+
+      const su=safeHref(d.source_url);
+      const src=su?'<div>Original source: <a href="'+esc(su)+'" target="_blank" rel="noopener">'+esc(shortUrl(su))+' ↗</a></div>':'';
+      return '<li><a href="'+GH+'/blob/main/DATASETS.md#'+encodeURIComponent(s)+'" target="_blank" rel="noopener"><b>'+esc(d.title||s)+'</b></a> <code>'+esc(s)+'</code>'+
         (d.approx_bytes?' <span class="dl-dim">~'+fmtBytes(d.approx_bytes)+' once fetched</span>':'')+
         '<div>'+where+'</div>'+src+'</li>';
     }).join("");
@@ -336,7 +339,7 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
   }
   function renderDetail(c){
     const d=$("#detail");
-    const refs=(c.references||[]).map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.label)+' ↗</a>').join("");
+    const refs=(c.references||[]).map(r=>{const h=safeHref(r.url); return h?'<a href="'+esc(h)+'" target="_blank" rel="noopener">'+esc(r.label)+' ↗</a>':'<span>'+esc(r.label)+'</span>';}).join("");
     const shownFiles=(c.files||[]).slice().sort(), moreFiles=(c.file_count||0)-shownFiles.length, fgroups=[];
     shownFiles.forEach(f=>{const i=f.lastIndexOf("/"), dir=f.slice(0,i+1), g=fgroups[fgroups.length-1];
       if(g&&g.dir===dir) g.items.push(f); else fgroups.push({dir:dir,items:[f]});});

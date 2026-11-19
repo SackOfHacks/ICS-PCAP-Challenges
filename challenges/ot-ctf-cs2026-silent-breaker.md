@@ -1,6 +1,6 @@
 # CSCTF 2026 — Silent Breaker
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: Silent Breaker (IEC-104).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-csctf-2026/silent-breaker/iec104_capture.pcap' --ctf --overvie
 pcapper 'data/ctf-csctf-2026/silent-breaker/iec104_capture.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-csctf-2026/silent-breaker/iec104_capture.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) 
 
 - [Dataset source — CSCTF 2026 — ICS / forensics](https://github.com/K0NGR3SS/CSCTF-2026-Dente)
 - [Write-up / solution](https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/Forencics/silent-breaker)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

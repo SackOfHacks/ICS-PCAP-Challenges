@@ -1,6 +1,6 @@
 # ICSC 2021 — Round 1 — Fins协议通讯 (FINS communication)
 
-**CTF & conference labs** · **Medium** · 4.2 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 4.2 MB · 1 capture file(s)
 
 > CTF: Round 1 — Fins协议通讯 (FINS communication) (Omron FINS).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-icsc-2021/round-1-fins-fins-communication/Fins协议通讯.pca
 pcapper 'data/ctf-icsc-2021/round-1-fins-fins-communication/Fins协议通讯.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-icsc-2021/round-1-fins-fins-communication/Fins协议通讯.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc202
 
 - [Dataset source — 工业信息安全技能大赛 2021 — Industrial Information Security Skills Com](https://github.com/fghcvjk/icsc2021)
 - [Write-up / solution](https://github.com/fghcvjk/icsc2021/tree/master/%E7%BA%BF%E4%B8%8A%E8%B5%9B%E7%AC%AC1%E5%9C%BA)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

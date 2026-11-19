@@ -1,6 +1,6 @@
 # 4SICS Geek Lounge — triage a live ICS lab (3 days)
 
-**CTF & conference labs** · **Medium** · 0.37 GB · 3 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.37 GB · 3 capture file(s)
 
 > Three days of a conference ICS lab — real PLCs, RTUs and HMIs open to attendees. Inventory it, then catch the attendees misbehaving.
 
@@ -55,9 +55,9 @@ Writes, PLC stop/start, program transfer — attribute each to a source.
 pcapper 'data/netresec-4sics-2015/4SICS-GeekLounge-151022.pcap' --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/netresec-4sics-2015/4SICS-GeekLounge-151020.pcap' --mitre
@@ -138,7 +138,7 @@ _Dataset credit: Netresec AB and the 4SICS (now CS3STHLM) crew (2015) · License
 **Netresec AB and the 4SICS (now CS3STHLM) crew (2015)** — license: Freely published by Netresec for research/training — credit Netresec and 4SICS/CS3STHLM
 
 - [Dataset source — 4SICS Geek Lounge ICS lab captures (2015)](https://www.netresec.com/?page=PCAP4SICS)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

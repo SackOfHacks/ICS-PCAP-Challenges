@@ -15,7 +15,7 @@ Every public IEC 61850 MMS sample in this range, deduplicated by SHA-256 across 
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the IEC 61850 MMS operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0836 Modify Parameter · T0861 Point & Tag Identification).
+- Map findings to ATT&amp;CK for ICS (T0855 Unauthorized Command Message · T0836 Modify Parameter · T0861 Point &amp; Tag Identification).
 
 ## 📥 Get the captures
 
@@ -68,9 +68,9 @@ pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC61850/piccolo.pcap' --mms --
 pcapper data/emreekin-ics-pcaps/ --mms --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/IEC61850/piccolo.pcap' --mitre
@@ -135,7 +135,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (write (service 5) changes IED settings or operates controls; getNameList (1) and getVariableAccessAttributes (6) map the IED data model; file services (fileOpen/fileRead/obtainFile) move configuration in and out). ATT&CK for ICS: T0855 Unauthorized Command Message · T0836 Modify Parameter · T0861 Point & Tag Identification. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (write (service 5) changes IED settings or operates controls; getNameList (1) and getVariableAccessAttributes (6) map the IED data model; file services (fileOpen/fileRead/obtainFile) move configuration in and out). ATT&amp;CK for ICS: T0855 Unauthorized Command Message · T0836 Modify Parameter · T0861 Point &amp; Tag Identification. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 MMS operations — identify ×1, 0 ×1; dangerous-operation matches: 0 for the IEC 61850 MMS filter (8 IEC 61850 MMS packets present, so the zero is real); top conversations in mms_top_level_remaining.pcap: 10.0.0.1↔10.0.0.2 (5 pkts) (basis: 3 of 76 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 MMS chosen)
 
@@ -151,7 +151,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ICS protocol sample captures (IEC-104, MMS and more)](https://github.com/haolipeng/ics-pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (76)</summary>
 

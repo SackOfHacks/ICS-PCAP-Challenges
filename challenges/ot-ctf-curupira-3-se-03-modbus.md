@@ -1,6 +1,6 @@
 # CTF Curupira 3.0 — SE-03 Modbus
 
-**CTF & conference labs** · **Medium** · 0.2 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.2 MB · 1 capture file(s)
 
 > CTF: SE-03 Modbus (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-curupira-3/se-03-modbus/se03-modbus.pcap' --ctf --overview
 pcapper 'data/ctf-curupira-3/se-03-modbus/se03-modbus.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-curupira-3/se-03-modbus/se03-modbus.pcap' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: GoHacking (organiser); GitHub mirror by celoramalho (MIT repo) 
 **GoHacking (organiser); GitHub mirror by celoramalho (MIT repo) (2026)** — license: None stated for the challenges — credit GoHacking
 
 - [Dataset source — CTF Curupira 3.0 (GoHacking) 2026 — OT/SCADA track](https://github.com/celoramalho/CTF_Curupira_3.0)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

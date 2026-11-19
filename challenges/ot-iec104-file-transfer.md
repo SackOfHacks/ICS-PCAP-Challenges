@@ -1,6 +1,6 @@
 # IEC-104 file transfer (FreyrSCADA)
 
-**Power grid & substations** · **Medium** · 0.2 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Medium** · 0.2 MB · 1 capture file(s)
 
 > The rarely seen file-service side of IEC-104. What was transferred?
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/netresec-iec104-file-transfer/NM_2022-12-13T14-16-00.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/netresec-iec104-file-transfer/NM_2022-12-13T14-16-00.pcap' --mitre
@@ -116,7 +116,7 @@ _Dataset credit: Netresec (2022) · License: Not stated — credit Netresec._
 **Netresec (2022)** — license: Not stated — credit Netresec
 
 - [Dataset source — IEC-104 file transfer between FreyrSCADA simulators (Netrese](https://www.netresec.com/)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

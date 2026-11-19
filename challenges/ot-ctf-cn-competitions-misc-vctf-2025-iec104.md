@@ -1,6 +1,6 @@
 # VCTF 2025 — iec104
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: VCTF 2025 — iec104 (IEC-104).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/vctf-2025-iec104/iec104.pcapng' --ctf --o
 pcapper 'data/ctf-cn-competitions-misc/vctf-2025-iec104/iec104.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/vctf-2025-iec104/iec104.pcapng' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
 - [Write-up / solution](https://github.com/ChaMd5Team/2025_vctf_challenge/tree/main/ICS)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

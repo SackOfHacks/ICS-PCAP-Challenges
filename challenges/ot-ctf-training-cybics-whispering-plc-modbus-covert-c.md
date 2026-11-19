@@ -1,6 +1,6 @@
 # CybICS — Whispering PLC — Modbus covert C2
 
-**CTF & conference labs** · **Medium** · 0.3 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.3 MB · 1 capture file(s)
 
 > CTF: Whispering PLC — Modbus covert C2 (Modbus/TCP).
 
@@ -56,9 +56,9 @@ pcapper 'data/training-cybics/whispering-plc-modbus-covert-c2/baseline.pcap' --c
 pcapper 'data/training-cybics/whispering-plc-modbus-covert-c2/baseline.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/training-cybics/whispering-plc-modbus-covert-c2/baseline.pcap' --mitre
@@ -138,7 +138,7 @@ _Dataset credit: Matthias Niedermaier (CybICS) (2026) · License: Repository MIT
 
 - [Dataset source — CybICS training platform — incident modules](https://github.com/mniedermaier/CybICS)
 - [Write-up / solution](https://github.com/mniedermaier/CybICS/blob/main/training/modbus_covert_c2/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

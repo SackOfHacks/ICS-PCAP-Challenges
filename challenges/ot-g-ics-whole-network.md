@@ -1,6 +1,6 @@
 # G-ICS — one capture, four OT protocols under load
 
-**Power grid & substations** · **Medium** · 1.53 GB · 1 capture file(s)
+**Power grid &amp; substations** · **Medium** · 1.53 GB · 1 capture file(s)
 
 > A loaded lab network carrying IEC 61850 Sampled Values, GOOSE, Modbus and PROFINET at once. Baseline it.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/g-ics-grenoble-whole-network/80mbps9SVwholenetwork.pcapng' --sv --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/g-ics-grenoble-whole-network/80mbps9SVwholenetwork.pcapng' --mitre
@@ -119,7 +119,7 @@ _Dataset credit: Altaher, Thiriet, Mocanu (Univ. Grenoble Alpes) (2020) — doi:
 
 - [Dataset source — G-ICS — whole-network capture (IEC 61850 SV/GOOSE, Modbus, P](https://data.mendeley.com/datasets/8cjkkw79z2/1)
 - [DOI 10.17632/8cjkkw79z2.1](https://doi.org/10.17632/8cjkkw79z2.1)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

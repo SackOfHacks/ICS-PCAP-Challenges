@@ -1,6 +1,6 @@
 # CIP/EtherNet-IP — including a ControlLogix reboot
 
-**Process control & PLC testbeds** · **Medium** · 13.8 MB · 6 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 13.8 MB · 6 capture file(s)
 
 > CIP/EtherNet-IP captures, including a controller reboot/restart command.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/cip-enip-engage-svg/CIP/CIP.pcap' --enip --cip --pccc --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cip-enip-engage-svg/CIP/CIP.pcap' --mitre
@@ -77,7 +77,7 @@ capinfos 'data/cip-enip-engage-svg/CIP/CIP.pcap'
 tshark -r 'data/cip-enip-engage-svg/CIP/CIP.pcap' -q -z io,phs | head -40
 ```
 
-**2. Map the EtherNet/IP & CIP conversation**
+**2. Map the EtherNet/IP &amp; CIP conversation**
 
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
@@ -113,7 +113,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Execute PCCC ×18801, Get Attribute List ×1312, Read Tag ×620, Multiple Service Packet ×116, Set Attribute List ×112, 0x8 ×86, Get Attributes All ×30, Forward Open ×23; dangerous-operation matches: 18807 (top sources: 192.168.0.65 ×9428, 192.168.0.30 ×9353, 192.168.10.105 ×13); top conversations in ENIP_CIP-CM.pcap: 192.168.100.28↔192.168.100.36 (8 pkts), 192.168.100.28↔192.168.100.35 (1 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP &amp; CIP operations — Execute PCCC ×18801, Get Attribute List ×1312, Read Tag ×620, Multiple Service Packet ×116, Set Attribute List ×112, 0x8 ×86, Get Attributes All ×30, Forward Open ×23; dangerous-operation matches: 18807 (top sources: 192.168.0.65 ×9428, 192.168.0.30 ×9353, 192.168.10.105 ×13); top conversations in ENIP_CIP-CM.pcap: 192.168.100.28↔192.168.100.36 (8 pkts), 192.168.100.28↔192.168.100.35 (1 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP &amp; CIP chosen)
 
 _Dataset credit: engage-svg (GitHub) · License: MIT._
 
@@ -124,7 +124,7 @@ _Dataset credit: engage-svg (GitHub) · License: MIT._
 **engage-svg (GitHub)** — license: MIT
 
 - [Dataset source — CIP / EtherNet-IP captures (incl. controller reboot)](https://github.com/engage-svg/ICS-PCAPs)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (6)</summary>
 

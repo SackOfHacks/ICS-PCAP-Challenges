@@ -1,6 +1,6 @@
 # JerseyCTF IV 2024 — vibrations
 
-**CTF & conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
 
 > CTF: JerseyCTF IV 2024 — vibrations (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-writeup-repos-ics/jerseyctf-iv-2024-vibrations/final.pcapng' -
 pcapper 'data/ctf-writeup-repos-ics/jerseyctf-iv-2024-vibrations/final.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-writeup-repos-ics/jerseyctf-iv-2024-vibrations/final.pcapng' --mitre
@@ -134,9 +134,9 @@ _Dataset credit: Event organisers; captures kept in participants' write-up repos
 
 **Event organisers; captures kept in participants' write-up repos** — license: None stated — credit each event
 
-- [Dataset source — ICS challenges from community write-up repos]()
+- Dataset source — ICS challenges from community write-up repos
 - [Write-up / solution](https://github.com/Nightxade/ctf-writeups/blob/master/_writeups/2024/Jersey-CTF-IV-2024/forensics/vibrations.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

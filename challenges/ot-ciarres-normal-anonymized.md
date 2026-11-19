@@ -1,6 +1,6 @@
 # CIARRES smart grid — normal operations (baseline)
 
-**Power grid & substations** · **Hard** · 2.79 GB · 2 capture file(s)
+**Power grid &amp; substations** · **Hard** · 2.79 GB · 2 capture file(s)
 
 > CIARRES smart grid: normal operations (baseline).
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ciarres-smart-grid-attacks/normal/normal_anonymized.pcap.part000.pcap' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ciarres-smart-grid-attacks/normal/normal_anonymized.pcap.part000.pcap' --mitre
@@ -124,7 +124,7 @@ _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · Licen
 **CIARRES project (Kaggle user 'javiersandeuc3m') (2025)** — license: GPL-3.0 (as declared on Kaggle)
 
 - [Dataset source — CIARRES smart-grid attacks — GOOSE, MMS and Modbus](https://www.kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-attacks)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

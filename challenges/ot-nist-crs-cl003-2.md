@@ -1,6 +1,6 @@
 # NIST robotics cell — centralised syslog (CL003.2)
 
-**Manufacturing & smart factory** · **Medium** · 0.68 GB · 4 capture file(s)
+**Manufacturing &amp; smart factory** · **Medium** · 0.68 GB · 4 capture file(s)
 
 > What does centralised syslog do to a live robotics work cell's control network?
 
@@ -71,9 +71,9 @@ pcapper 'data/nist-csms-robotics-crs/CL003.2-Syslog/pcaps/capture.pcap' --modbus
 pcapper 'data/nist-csms-robotics-crs/CL001.1-Baseline/' --overview  # then diff against this scenario
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/nist-csms-robotics-crs/CL003.2-Syslog/pcaps/capture.pcap' --mitre
@@ -146,7 +146,7 @@ _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufac
 
 - [Dataset source — NIST CSMS testbed — collaborative robotics system (21 securi](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/crs/)
 - [NIST — Cybersecurity for Smart Manufacturing Systems](https://www.nist.gov/programs-projects/cybersecurity-smart-manufacturing-systems)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

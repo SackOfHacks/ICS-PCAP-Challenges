@@ -15,7 +15,7 @@ Every public Omron FINS sample in this range, deduplicated by SHA-256 across aut
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the Omron FINS operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery).
+- Map findings to ATT&amp;CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery).
 
 ## 📥 Get the captures
 
@@ -70,9 +70,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-omron-fins/omron_test.pcap' --fins 
 pcapper data/automayt-ics-pcap/ --fins --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-omron-fins/omron_test.pcap' --mitre
@@ -137,7 +137,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (memory-area write (0x0102), RUN (0x0401) and STOP (0x0402); controller data read (0x0501) identifies the PLC). ATT&CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (memory-area write (0x0102), RUN (0x0401) and STOP (0x0402); controller data read (0x0501) identifies the PLC). ATT&amp;CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 122; top conversations in omron_test.pcap: 10.1.1.164↔10.1.1.173 (18 pkts) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Omron FINS chosen)
 
@@ -153,7 +153,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (7)</summary>
 

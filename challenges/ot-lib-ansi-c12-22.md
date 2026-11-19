@@ -15,7 +15,7 @@ Every public ANSI C12.22 sample in this range, deduplicated by SHA-256 across ci
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the ANSI C12.22 operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0836 Modify Parameter · T0831 Manipulation of Control).
+- Map findings to ATT&amp;CK for ICS (T0836 Modify Parameter · T0831 Manipulation of Control).
 
 ## 📥 Get the captures
 
@@ -75,9 +75,9 @@ pcapper data/cisa-icsnpp-test-traces/ --overview --ot-commands
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-c1222/c1222_service_error_tcp.pcap' --ot-commands --threats
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-c1222/c1222_service_error_tcp.pcap' --mitre
@@ -142,7 +142,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (C12.22 carries C12.19 table reads/writes to revenue meters — writes to configuration tables or procedure calls (e.g. disconnect) are the high-value operations). ATT&CK for ICS: T0836 Modify Parameter · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (C12.22 carries C12.19 table reads/writes to revenue meters — writes to configuration tables or procedure calls (e.g. disconnect) are the high-value operations). ATT&amp;CK for ICS: T0836 Modify Parameter · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** ANSI C12.22 packets matching `c1222`: 6; top conversations in c1222_std_example8.pcap: 10.1.1.1↔10.2.2.2 (2 pkts) (basis: 3 of 14 capture file(s), first 300,000 packets each, smallest files carrying ANSI C12.22 chosen)
 
@@ -157,7 +157,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (14)</summary>
 

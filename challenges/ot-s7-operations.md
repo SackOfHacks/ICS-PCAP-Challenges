@@ -1,6 +1,6 @@
 # S7comm — HMI monitoring vs. normal operations
 
-**Process control & PLC testbeds** · **Easy** · 0.1 MB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.1 MB · 3 capture file(s)
 
 > Variable-service reads, cyclic data and VAT monitoring: what normal S7 operations look like.
 
@@ -52,9 +52,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/s7comm-scenarios-jenilv07/comman/1-S7comm-VarService-Read-DB1DBD0.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/s7comm-scenarios-jenilv07/comman/1-S7comm-VarService-Read-DB1DBD0.pcap' --mitre
@@ -120,7 +120,7 @@ _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — cr
 **jenilv-07 (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

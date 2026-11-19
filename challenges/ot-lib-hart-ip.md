@@ -15,7 +15,7 @@ Every public HART-IP sample in this range, deduplicated by SHA-256 across cisa-i
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the HART-IP operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0888 Remote System Information Discovery · T0836 Modify Parameter).
+- Map findings to ATT&amp;CK for ICS (T0888 Remote System Information Discovery · T0836 Modify Parameter).
 
 ## 📥 Get the captures
 
@@ -64,9 +64,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-hart-ip/hart-ip_all_types_and_comma
 pcapper data/cisa-icsnpp-test-traces/ --hart --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-hart-ip/hart-ip_all_types_and_commands_sent.pcapng' --mitre
@@ -131,7 +131,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (HART-IP tunnels HART commands to field instruments — command 0 (read unique ID) is recon; write commands change instrument configuration). ATT&CK for ICS: T0888 Remote System Information Discovery · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (HART-IP tunnels HART commands to field instruments — command 0 (read unique ID) is recon; write commands change instrument configuration). ATT&amp;CK for ICS: T0888 Remote System Information Discovery · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** HART-IP packets matching `hart_ip`: 131; top conversations in hart-ip_all_messageIDs.pcapng: 10.9.0.117↔192.168.122.197 (19 pkts) (basis: 3 of 5 capture file(s), first 300,000 packets each, smallest files carrying HART-IP chosen)
 
@@ -145,7 +145,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (5)</summary>
 

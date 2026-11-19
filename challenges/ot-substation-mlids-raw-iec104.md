@@ -1,6 +1,6 @@
 # Substation ML-IDS — raw IEC-104 traffic
 
-**Power grid & substations** · **Hard** · 0.22 GB · 8 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.22 GB · 8 capture file(s)
 
 > Substation ML-IDS: raw IEC-104 traffic — 8 capture(s).
 
@@ -27,7 +27,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py substation-ml-ids-iec61850-iec104
 ```
 
-- **[Electrical-substation ML-IDS dataset — raw IEC 61850 & IEC-104](../DATASETS.md#substation-ml-ids-iec61850-iec104)** (`substation-ml-ids-iec61850-iec104`), ~4.99 GB once fetched
+- **[Electrical-substation ML-IDS dataset — raw IEC 61850 &amp; IEC-104](../DATASETS.md#substation-ml-ids-iec61850-iec104)** (`substation-ml-ids-iec61850-iec104`), ~4.99 GB once fetched
   - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.28 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/substation-ml-ids-iec61850-iec104.tar.part000) (0.28 GB)
   - **Original source:** [zenodo.org/records/15487636](https://zenodo.org/records/15487636) · [doi:10.5281/zenodo.15487636](https://doi.org/10.5281/zenodo.15487636)
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/substation-ml-ids-iec61850-iec104/raw-iec104/raw/iec104/attack-data/capture104-dosattack.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/substation-ml-ids-iec61850-iec104/raw-iec104/raw/iec104/attack-data/capture104-dosattack.pcap' --mitre
@@ -124,9 +124,9 @@ _Dataset credit: Gutierrez Mlot, Esteban Damian; Saldana, Jose; Rodríguez, Rica
 
 **Gutierrez Mlot, Esteban Damian; Saldana, Jose; Rodríguez, Ricardo J.; Kotsiuba, Igor; Hernández Gañán, Carlos (2024) — doi:10.5281/zenodo.15487636** — license: CC BY-NC-SA 4.0
 
-- [Dataset source — Electrical-substation ML-IDS dataset — raw IEC 61850 & IEC-1](https://zenodo.org/records/15487636)
+- [Dataset source — Electrical-substation ML-IDS dataset — raw IEC 61850 &amp; IEC-1](https://zenodo.org/records/15487636)
 - [DOI 10.5281/zenodo.15487636](https://doi.org/10.5281/zenodo.15487636)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (8)</summary>
 

@@ -1,6 +1,6 @@
 # S4x15 CTF — BACnet building controllers
 
-**CTF & conference labs** · **Medium** · 12.6 MB · 2 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 12.6 MB · 2 capture file(s)
 
 > BACnet/IP traffic from the ICS Village's building-automation devices during the CTF.
 
@@ -60,9 +60,9 @@ pcapper 'data/digitalbond-s4x15-ctf/BACnet_FIU.pcap' --bacnet --ot-commands
 pcapper 'data/digitalbond-s4x15-ctf/BACnet_FIU.pcap' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/digitalbond-s4x15-ctf/BACnet_FIU.pcap' --mitre
@@ -119,16 +119,16 @@ Score yourself on: the device's normal peers, the scanner(s), and each attack op
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×60048, readPropertyMultiple ×1897, atomicReadFile ×9; dangerous-operation matches: 0 for the BACnet filter (121,623 BACnet packets present, so the zero is real); top conversations in BACnet_FIU.pcap: 10.200.1.77↔131.94.238.11 (38,212 pkts), 10.200.1.202↔131.94.238.11 (36,656 pkts), 10.200.1.251↔131.94.238.11 (14,910 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 2 of 2 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
+_Dataset credit: Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 
 </details>
 
 ## Dataset & credit
 
-**Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
+**Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
 
 - [Dataset source — S4x15 ICS Village CTF captures (Digital Bond)](https://www.netresec.com/?page=DigitalBond_S4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

@@ -1,6 +1,6 @@
 # DNP3 — Info
 
-**Power grid & substations** · **Hard** · 56.1 MB · 14 capture file(s)
+**Power grid &amp; substations** · **Hard** · 56.1 MB · 14 capture file(s)
 
 > UOWM DNP3 IDS: Info — 14 capture(s).
 
@@ -10,7 +10,7 @@
 
 The University of Western Macedonia recorded DNP3 traffic with one attack type per capture set (nine attack types; the bundled ReadMe is authoritative).
 
-This challenge covers the '20200516_DNP3_Ιnfo' set (14 capture file(s)). Characterize it, find the attack (if any) and write a detection.
+This challenge covers the '20200516_DNP3_Info' set (14 capture file(s)). Characterize it, find the attack (if any) and write a detection.
 
 ## Objectives
 
@@ -46,7 +46,7 @@ Two complete walkthroughs — pick your tool. Run every command from the repo ro
 Duration, endpoints and protocol mix before you dive in. Pcapper's overview auto-detects the OT protocols and runs the matching analyzers.
 
 ```bash
-pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --overview
+pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --overview
 ```
 
 **2. Deep-dive with Pcapper (--dnp3)**
@@ -54,15 +54,15 @@ pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_in
 Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-commands normalizes every control/write across protocols.
 
 ```bash
-pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --dnp3 --ot-commands
+pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --dnp3 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
-pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --mitre
+pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' --mitre
 ```
 
 ### With tshark / Wireshark
@@ -74,8 +74,8 @@ The by-hand route: display filters, field extraction and statistics.
 Duration, endpoints and protocol mix before you dive in.
 
 ```bash
-capinfos 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap'
-tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -q -z io,phs | head -40
+capinfos 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap'
+tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -q -z io,phs | head -40
 ```
 
 **2. Map the DNP3 conversation**
@@ -83,7 +83,7 @@ tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
 ```bash
-tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -Y dnp3 -T fields -e ip.src -e ip.dst -e dnp3.src -e dnp3.dst -e dnp3.al.func | sort | uniq -c | sort -rn | head -25
+tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -Y dnp3 -T fields -e ip.src -e ip.dst -e dnp3.src -e dnp3.dst -e dnp3.al.func | sort | uniq -c | sort -rn | head -25
 ```
 
 **3. Hunt the dangerous operations**
@@ -91,7 +91,7 @@ tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_
 Flag WRITE (2), SELECT/OPERATE (3/4), DIRECT_OPERATE (5/6), COLD/WARM_RESTART (13/14), INITIALIZE_DATA/APPL (15/16), START/STOP_APPL (17/18), DISABLE_UNSOLICITED (21), OPEN/DELETE_FILE (25/27), ACTIVATE_CONFIG (31).
 
 ```bash
-tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -Y 'dnp3.al.func in {2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18, 21, 25, 27, 31}' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
+tshark -r 'data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap' -Y 'dnp3.al.func in {2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18, 21, 25, 27, 31}' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
 ```
 
 ## Hints
@@ -126,23 +126,23 @@ _Dataset credit: Panagiotis; Vasiliki; Thomas; Vasileios; Panagiotis (2022) — 
 
 - [Dataset source — DNP3 Intrusion Detection Dataset (UOWM)](https://zenodo.org/records/7348493)
 - [DOI 10.21227/s7h0-b081](https://doi.org/10.21227/s7h0-b081)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (14)</summary>
 
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_02.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_03.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Master.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_01.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_02.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_03.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_02.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_03.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Master.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_01.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_02.pcap`
-- `data/uowm-dnp3-ids/20200516_DNP3_Ιnfo/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_03.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_02.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_03.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Master.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_01.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_02.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/DNP3 PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_03.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_01.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_02.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Attacker_03.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Master.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_01.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_02.pcap`
+- `data/uowm-dnp3-ids/20200516_DNP3_Info/Total PCAP Files/20200516_DNP3_info_UOWM_DNP3_Dataset_Slave_03.pcap`
 
 </details>

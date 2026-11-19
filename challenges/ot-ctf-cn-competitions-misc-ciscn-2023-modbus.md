@@ -1,6 +1,6 @@
 # CISCN 2023 — modbus
 
-**CTF & conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
 
 > CTF: CISCN 2023 — modbus (Modbus/TCP).
 
@@ -63,9 +63,9 @@ pcapper 'data/ctf-cn-competitions-misc/ciscn-2023-modbus/modbus-fixed.pcap' --ct
 pcapper 'data/ctf-cn-competitions-misc/ciscn-2023-modbus/modbus.pcap' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/ciscn-2023-modbus/modbus.pcap' --mitre
@@ -163,7 +163,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 **Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5** — license: None stated — credit each competition
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

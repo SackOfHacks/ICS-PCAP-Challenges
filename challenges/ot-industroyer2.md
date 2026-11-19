@@ -1,6 +1,6 @@
 # Industroyer2 — the real malware's IEC-104 traffic
 
-**ICS malware & intrusions** · **Expert** · 0.0 MB · 3 capture file(s)
+**ICS malware &amp; intrusions** · **Expert** · 0.0 MB · 3 capture file(s)
 
 > In April 2022 Sandworm aimed Industroyer2 at Ukrainian substations. This is its traffic.
 
@@ -29,7 +29,7 @@ python3 scripts/fetch.py netresec-industroyer2
 
 - **[Industroyer2 — IEC-104 traffic of the real malware (Netresec)](../DATASETS.md#netresec-industroyer2)** (`netresec-industroyer2`), ~0.0 MB once fetched
   - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.0 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/netresec-industroyer2.tar.part000) (0.0 MB)
-  - **Original source:** [netresec.com/?page=Blog&month=2022-04&post=Industroyer2-I…](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
+  - **Original source:** [netresec.com/?page=Blog&amp;month=2022-04&amp;post=Industroyer2-I…](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
 
 Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/netresec-industroyer2/Industroyer2-StationAddress1.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/netresec-industroyer2/Industroyer2-StationAddress1.pcap' --mitre
@@ -132,7 +132,7 @@ _Dataset credit: Netresec (Erik Hjelmvik) (2022) · License: CC BY 4.0._
 
 - [Dataset source — Industroyer2 — IEC-104 traffic of the real malware (Netresec](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
 - [Netresec — Industroyer2 IEC-104 analysis](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

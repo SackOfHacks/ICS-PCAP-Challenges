@@ -15,7 +15,7 @@ Every public Niagara Fox sample in this range, deduplicated by SHA-256 across it
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the Niagara Fox operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0888 Remote System Information Discovery · T0859 Valid Accounts).
+- Map findings to ATT&amp;CK for ICS (T0888 Remote System Information Discovery · T0859 Valid Accounts).
 
 ## 📥 Get the captures
 
@@ -59,9 +59,9 @@ pcapper 'data/iti-ics-security-tools-pcaps/pcaps/fox/fox_info.pcap' --niagara --
 pcapper data/iti-ics-security-tools-pcaps/ --niagara --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iti-ics-security-tools-pcaps/pcaps/fox/fox_info.pcap' --mitre
@@ -126,7 +126,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (the Fox 'hello' exchange leaks station name, host OS and Niagara version; credentials and write actions follow). ATT&CK for ICS: T0888 Remote System Information Discovery · T0859 Valid Accounts. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (the Fox 'hello' exchange leaks station name, host OS and Niagara version; credentials and write actions follow). ATT&amp;CK for ICS: T0888 Remote System Information Discovery · T0859 Valid Accounts. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Niagara Fox packets matching `tcp.port in {1911, 4911}`: 10; dangerous-operation matches: 10 (top sources: 10.1.3.4 ×6, 106.68.88.119 ×4); top conversations in fox_info.pcap: 10.1.3.4↔106.68.88.119 (10 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
@@ -139,7 +139,7 @@ _Captures credited to: ITI ICS-Security-Tools — sample ICS protocol captures �
 **ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign** — license: varies by collection — see each folder's PROVENANCE.md
 
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

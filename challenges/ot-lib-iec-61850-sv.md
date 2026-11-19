@@ -15,7 +15,7 @@ Every public IEC 61850 SV sample in this range, deduplicated by SHA-256 across e
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the IEC 61850 SV operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0856 Spoof Reporting Message · T0832 Manipulation of View).
+- Map findings to ATT&amp;CK for ICS (T0856 Spoof Reporting Message · T0832 Manipulation of View).
 
 ## 📥 Get the captures
 
@@ -59,9 +59,9 @@ pcapper 'data/emreekin-ics-pcaps/IEC61850/IEC61850_SV.pcap' --sv --ot-commands
 pcapper data/emreekin-ics-pcaps/ --sv --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/emreekin-ics-pcaps/IEC61850/IEC61850_SV.pcap' --mitre
@@ -126,7 +126,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (sampled-value streams feed protection relays — look for smpCnt discontinuities, duplicate svIDs from new sources and floods). ATT&CK for ICS: T0856 Spoof Reporting Message · T0832 Manipulation of View. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (sampled-value streams feed protection relays — look for smpCnt discontinuities, duplicate svIDs from new sources and floods). ATT&amp;CK for ICS: T0856 Spoof Reporting Message · T0832 Manipulation of View. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 SV packets matching `sv`: 30 (basis: 2 of 2 capture file(s), first 300,000 packets each)
 
@@ -139,7 +139,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 **ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net)** — license: varies by collection — see each folder's PROVENANCE.md
 
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

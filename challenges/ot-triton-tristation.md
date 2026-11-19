@@ -1,6 +1,6 @@
 # TRITON/TRISIS — TriStation traffic of the SIS malware
 
-**ICS malware & intrusions** · **Expert** · 0.2 MB · 1 capture file(s)
+**ICS malware &amp; intrusions** · **Expert** · 0.2 MB · 1 capture file(s)
 
 > The engineering-protocol traffic of TRITON, the first malware built to attack a safety instrumented system (Schneider Triconex).
 
@@ -49,7 +49,7 @@ Two complete walkthroughs — pick your tool. Run every command from the repo ro
 pcapper 'data/nozomi-triton-tristation/malware_exec.pcap' --safety --overview
 ```
 
-**2. Map it to ATT&CK for ICS**
+**2. Map it to ATT&amp;CK for ICS**
 
 ```bash
 pcapper 'data/nozomi-triton-tristation/malware_exec.pcap' --mitre
@@ -76,11 +76,12 @@ tshark -r 'data/nozomi-triton-tristation/malware_exec.pcap' -Y 'udp.port == 1502
 
 **3. Decode it properly**
 
-Wireshark has no built-in TriStation dissector. Nozomi Networks' tricotools ships one as a Lua script — read it before you load it (Wireshark plugins run with your privileges).
+Wireshark has no built-in TriStation dissector; Nozomi Networks' tricotools ships one as a Lua script. The clone is pinned to the commit this walkthrough was written against, and tshark loads the script only if its SHA-256 matches. Read it first anyway: a tshark Lua plugin runs with your privileges.
 
 ```bash
-git clone https://github.com/NozomiNetworks/tricotools
-tshark -X lua_script:tricotools/TriStation.lua -r 'data/nozomi-triton-tristation/malware_exec.pcap' -Y tristation -V | less
+git clone https://github.com/NozomiNetworks/tricotools && git -C tricotools checkout --quiet 2f768c8209d96dbb58dfea40c5a5ba9eb51ad6b0
+less tricotools/TriStation.lua
+echo '05fe82c2fa90a6ca69dd7473ffb220a1bdf4bebece896906d79b2a28a7b08fed  tricotools/TriStation.lua' | sha256sum -c - && tshark -X lua_script:tricotools/TriStation.lua -r 'data/nozomi-triton-tristation/malware_exec.pcap' -Y tristation -V | less
 ```
 
 ## Hints
@@ -121,7 +122,7 @@ _Dataset credit: Nozomi Networks Labs (2018) · License: BSD-3-Clause._
 
 - [Dataset source — TRITON/TRISIS — TriStation malware execution capture (Nozomi](https://github.com/NozomiNetworks/tricotools)
 - [Nozomi Networks — tricotools](https://github.com/NozomiNetworks/tricotools)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

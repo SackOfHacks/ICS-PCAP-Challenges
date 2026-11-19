@@ -1,6 +1,6 @@
 # Modbus lab 09 — Value injection
 
-**Process control & PLC testbeds** · **Hard** · 0.1 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.1 MB · 1 capture file(s)
 
 > Process values are being changed. Which register, what values, from where?
 
@@ -14,7 +14,7 @@ Lab 9 of a 16-part Modbus/TCP lab series that walks from baseline traffic to a c
 
 - Answer the lab's question from the packets.
 - Record source, unit ID, function code and addresses for anything abnormal.
-- Note the ATT&CK for ICS technique.
+- Note the ATT&amp;CK for ICS technique.
 
 ## 📥 Get the captures
 
@@ -60,9 +60,9 @@ Pcapper's control-loop analyzer flags rate-of-change and outliers in process val
 pcapper 'data/modbus-labs-solymx/lab09_value_injection.pcap' --control-loop
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/modbus-labs-solymx/lab09_value_injection.pcap' --mitre
@@ -128,7 +128,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 **solymx (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — Modbus/TCP lab series (baseline → recon → writes)](https://github.com/solymx/modbus_pcap_test)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

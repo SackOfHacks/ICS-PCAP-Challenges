@@ -1,6 +1,6 @@
 # IEC 61850 GOOSE on RTDS — replay attack
 
-**Power grid & substations** · **Hard** · 2.77 GB · 4 capture file(s)
+**Power grid &amp; substations** · **Hard** · 2.77 GB · 4 capture file(s)
 
 > GOOSE replay against IEDs on a real-time digital simulator and a physical IED. Find the attacker's frames.
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/iec61850-goose-rtds-attacks/pcapng files/pcapng files/replay_train_total.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iec61850-goose-rtds-attacks/pcapng files/pcapng files/replay_train_total.pcapng' --mitre
@@ -134,8 +134,8 @@ _Dataset credit: Kaggle user 'johnatandeoliveira' (paper in Journal of Informati
 
 - [Dataset source — IEC 61850 GOOSE attacks — RTDS simulator + physical IED](https://www.kaggle.com/datasets/johnatandeoliveira/network-traffic-dataset-iec-61850-cyber-attacks)
 - [DOI 10.1016/j.jisa.2025.104197](https://doi.org/10.1016/j.jisa.2025.104197)
-- [Paper (J. Inf. Sec. & Appl., 2025)](https://doi.org/10.1016/j.jisa.2025.104197)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Paper (J. Inf. Sec. &amp; Appl., 2025)](https://doi.org/10.1016/j.jisa.2025.104197)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

@@ -1,6 +1,6 @@
 # AegisOT — normal operations (Normal Set2)
 
-**Process control & PLC testbeds** · **Medium** · 0.93 GB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.93 GB · 1 capture file(s)
 
 > Baseline a containerised Modbus plant before you hunt in it.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-AegisOT is a containerised OT testbed — HMIs and PLCs speaking Modbus/TCP over a simulated physical process, with each attack mapped to one ATT&CK for ICS technique. This capture is attack-free: learn the hosts, roles, function codes, registers and cadence. Every AegisOT technique challenge is measured against it.
+AegisOT is a containerised OT testbed — HMIs and PLCs speaking Modbus/TCP over a simulated physical process, with each attack mapped to one ATT&amp;CK for ICS technique. This capture is attack-free: learn the hosts, roles, function codes, registers and cadence. Every AegisOT technique challenge is measured against it.
 
 ## Objectives
 
@@ -24,7 +24,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py aegisot-ics-attacks
 ```
 
-- **[AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS techniques](../DATASETS.md#aegisot-ics-attacks)** (`aegisot-ics-attacks`), ~3.13 GB once fetched
+- **[AegisOT — Modbus OT testbed with 11 ATT&amp;CK-for-ICS techniques](../DATASETS.md#aegisot-ics-attacks)** (`aegisot-ics-attacks`), ~3.13 GB once fetched
   - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.56 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/aegisot-ics-attacks.tar.part000) (0.56 GB)
   - **Original source:** [kaggle.com/datasets/khadijadrira/industrial-cybersecurity…](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/aegisot-ics-attacks/ICS_Dataset/Normal_Data/Normal_Set2/Network_Level/Merged_Packet/output_normal_2.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/aegisot-ics-attacks/ICS_Dataset/Normal_Data/Normal_Set2/Network_Level/Merged_Packet/output_normal_2.pcap' --mitre
@@ -115,8 +115,8 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 
 **Kaggle user 'khadijadrira' (2026)** — license: CC BY-NC-SA 4.0
 
-- [Dataset source — AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS technique](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — AegisOT — Modbus OT testbed with 11 ATT&amp;CK-for-ICS technique](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

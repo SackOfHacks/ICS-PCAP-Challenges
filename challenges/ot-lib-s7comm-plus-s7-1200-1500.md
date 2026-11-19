@@ -15,7 +15,7 @@ Every public S7comm-plus (S7-1200/1500) sample in this range, deduplicated by SH
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the S7comm-plus (S7-1200/1500) operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0843 Program Download · T0855 Unauthorized Command Message · T0831 Manipulation of Control).
+- Map findings to ATT&amp;CK for ICS (T0843 Program Download · T0855 Unauthorized Command Message · T0831 Manipulation of Control).
 
 ## 📥 Get the captures
 
@@ -70,9 +70,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-s7comm/s7comm_plus.pcap' --s7 --ot-
 pcapper data/cisa-icsnpp-test-traces/ --s7 --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-s7comm/s7comm_plus.pcap' --mitre
@@ -117,7 +117,7 @@ for f in 'data/cisa-icsnpp-test-traces/icsnpp-s7comm/s7comm_plus.pcap' 'data/iti
 
 <details><summary>Hint 1</summary>
 
-Wireshark display filter for the protocol: tcp.port == 102 && tcp.payload[0:2] == 03:00 && ((tcp.payload[4:3] == 02:f0:80 && tcp.payload[7] == 0x72 && tcp.payload[8] <= 3) || (tcp.payload[4] == 2 && tcp.payload[5] == 0x72 && tcp.payload[6] <= 3))
+Wireshark display filter for the protocol: tcp.port == 102 &amp;&amp; tcp.payload[0:2] == 03:00 &amp;&amp; ((tcp.payload[4:3] == 02:f0:80 &amp;&amp; tcp.payload[7] == 0x72 &amp;&amp; tcp.payload[8] &lt;= 3) || (tcp.payload[4] == 2 &amp;&amp; tcp.payload[5] == 0x72 &amp;&amp; tcp.payload[6] &lt;= 3))
 
 </details>
 
@@ -137,7 +137,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (S7comm-plus (0x72) from TIA Portal / HMIs to S7-1200/1500 PLCs; version 3 adds a 32-byte integrity digest and tshark has no built-in dissector, so read it structurally: who talks to the PLC, how often, message sizes, and payloads that repeat (a replay repeats its digest)). ATT&CK for ICS: T0843 Program Download · T0855 Unauthorized Command Message · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (S7comm-plus (0x72) from TIA Portal / HMIs to S7-1200/1500 PLCs; version 3 adds a 32-byte integrity digest and tshark has no built-in dissector, so read it structurally: who talks to the PLC, how often, message sizes, and payloads that repeat (a replay repeats its digest)). ATT&amp;CK for ICS: T0843 Program Download · T0855 Unauthorized Command Message · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 45; top conversations in S7-1511_db6w0_HMI.pcap: 192.168.25.139↔192.168.25.146 (18 pkts) (basis: 3 of 20 capture file(s), first 300,000 packets each, smallest files carrying S7comm-plus (S7-1200/1500) chosen)
 
@@ -153,7 +153,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (20)</summary>
 

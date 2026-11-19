@@ -1,23 +1,23 @@
 # APT Sandworm — attack chain against a wide-area measurement system
 
-**ICS malware & intrusions** · **Expert** · 1.81 GB · 1 capture file(s)
+**ICS malware &amp; intrusions** · **Expert** · 1.81 GB · 1 capture file(s)
 
 > An emulated Sandworm intrusion walks from a webshell to the phasor data concentrator. Rebuild the kill chain.
 
-> ⚠️ **Safety:** Emulated APT traffic including webshell and lateral-movement payloads. Analyze offline only.
+> ⚠️ **Safety:** Emulated APT traffic including webshell and lateral-movement payloads. Analyze offline only. This capture carries executable files (Windows PE / Linux ELF) inside the traffic, and some may be malware: work offline, hash anything you extract and never run it.
 
 ## Scenario
 
 Researchers emulated a Sandworm-style APT against a wide-area measurement system (WAMS): PMUs stream IEEE C37.118 synchrophasors to an openPDC phasor data concentrator, with PTP time sync and PRP redundancy, alongside the IT services that manage it. The attacker plants a webshell, runs discovery and moves laterally (SMB/RDP/SSH) to the PDC and its database.
 
-Rebuild the kill chain from the packets and map it to ATT&CK.
+Rebuild the kill chain from the packets and map it to ATT&amp;CK.
 
 ## Objectives
 
 - Find initial access (the webshell) and the attacker's IPs.
 - Trace discovery and lateral movement to the PDC.
 - Determine whether synchrophasor data or the PDC database were affected.
-- Map each stage to ATT&CK (Enterprise + ICS).
+- Map each stage to ATT&amp;CK (Enterprise + ICS).
 
 ## 📥 Get the captures
 
@@ -131,7 +131,7 @@ _Dataset credit: Iturbe, Dalamagkas, Radoglou-Grammatikis, Rios (Tecnalia, Univ.
 
 - [Dataset source — APT Sandworm emulation — wide-area measurement system (PMU/P](https://zenodo.org/records/16911636)
 - [DOI 10.5281/zenodo.16911636](https://doi.org/10.5281/zenodo.16911636)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

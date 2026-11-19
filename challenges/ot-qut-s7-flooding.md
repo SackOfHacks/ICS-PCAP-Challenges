@@ -1,6 +1,6 @@
 # QUT S7comm — flooding the process
 
-**Process control & PLC testbeds** · **Hard** · 0.14 GB · 9 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.14 GB · 9 capture file(s)
 
 > The same process writes, sent thousands of times. What is flooded, and does it matter?
 
@@ -55,9 +55,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215191717.ChangeUpperThreshold_Flooding/20161215191717.ChangeUpperThreshold_Flooding.master.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/20161216202830/20161215191717.ChangeUpperThreshold_Flooding/20161215191717.ChangeUpperThreshold_Flooding.master.pcap' --mitre
@@ -110,7 +110,7 @@ Compare with the single-write runs in the other QUT S7comm challenges.
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-Each folder is labelled <attack>_Flooding. Answer: per flood, the write (area/address/value) and the rate; detection by write rate per source.
+Each folder is labelled &lt;attack&gt;_Flooding. Answer: per flood, the write (area/address/value) and the rate; detection by write rate per source.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×117436, Read Var ×2034; dangerous-operation matches: 117436 (top sources: 10.10.10.10 ×58718, 10.10.10.66 ×58693, 10.10.10.20 ×25); top conversations in 20161215190548.WaterTankOnManu_Flooding.master.pcap: 10.10.10.10↔10.10.10.66 (35,763 pkts), 10.10.10.10↔10.10.10.20 (1,062 pkts) (basis: 3 of 9 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
 
@@ -123,7 +123,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 S7comm — mining-refinery testbed (64 attacks, 13 ty](https://github.com/qut-infosec/2017QUT_S7comm)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (9)</summary>
 

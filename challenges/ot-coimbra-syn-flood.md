@@ -1,6 +1,6 @@
 # Coimbra Modbus SCADA — TCP SYN-flood DDoS
 
-**Process control & PLC testbeds** · **Medium** · 1.00 GB · 37 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 1.00 GB · 37 capture file(s)
 
 > A TCP SYN flood against the Modbus server. Measure it and its effect on the process data.
 
@@ -61,9 +61,9 @@ pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/tcpSYNFloodDDoS/eth2dump-tcp
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/tcpSYNFloodDDoS/eth2dump-tcpSYNFloodDDoS-15m-12h_1.pcap' --modbus --protocols --scan
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/tcpSYNFloodDDoS/eth2dump-tcpSYNFloodDDoS-15m-12h_1.pcap' --mitre
@@ -131,7 +131,7 @@ _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. �
 
 - [Dataset source — University of Coimbra — Modbus/TCP SCADA dataset #1 (CRITIS ](https://github.com/tjcruz-dei/ICS_PCAPS)
 - [DOI 10.1007/978-3-030-05849-4_19](https://doi.org/10.1007/978-3-030-05849-4_19)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (37)</summary>
 

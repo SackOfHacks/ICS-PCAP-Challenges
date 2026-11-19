@@ -1,6 +1,6 @@
 # BSides Algiers 2025 — Hart
 
-**CTF & conference labs** · **Medium** · 0.3 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.3 MB · 1 capture file(s)
 
 > CTF: BSides Algiers 2025 — Hart (HART-IP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-archive-misc-ics/bsides-algiers-2025-hart/chall.pcap' --ctf --
 pcapper 'data/ctf-archive-misc-ics/bsides-algiers-2025-hart/chall.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-archive-misc-ics/bsides-algiers-2025-hart/chall.pcap' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 **Event organisers; archived by sajjadium/ctf-archives** — license: Archive repository MIT (challenge files not separately licensed) — credit each event
 
 - [Dataset source — ICS challenges from public CTF archives (sajjadium/ctf-archi](https://github.com/sajjadium/ctf-archives)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

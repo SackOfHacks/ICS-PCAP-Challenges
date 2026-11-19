@@ -1,6 +1,6 @@
 # IEC-104 testbed traffic (QUB)
 
-**Power grid & substations** · **Medium** · 38.3 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Medium** · 38.3 MB · 1 capture file(s)
 
 > IEC 60870-5-104 from a research testbed — read the protocol's grammar, then look for abuse.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/maynard-iec104-testbed/dataset-v1.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/maynard-iec104-testbed/dataset-v1.pcap' --mitre
@@ -119,7 +119,7 @@ _Dataset credit: Peter Maynard (Queen's University Belfast) (2018) — doi:10.60
 
 - [Dataset source — IEC 60870-5-104 testbed traffic (Maynard, QUB)](https://doi.org/10.6084/m9.figshare.6133457.v1)
 - [DOI 10.6084/m9.figshare.6133457.v1](https://doi.org/10.6084/m9.figshare.6133457.v1)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

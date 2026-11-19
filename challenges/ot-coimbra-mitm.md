@@ -1,6 +1,6 @@
 # Coimbra Modbus SCADA — MITM value tampering
 
-**Process control & PLC testbeds** · **Hard** · 0.17 GB · 11 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.17 GB · 11 capture file(s)
 
 > A man-in-the-middle rewrites Modbus values in flight. Prove it from the wire.
 
@@ -61,9 +61,9 @@ pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/mitm/eth2dump-mitm-change-15
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/mitm/eth2dump-mitm-change-15m-0,5h_1.pcap' --modbus --protocols
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/mitm/eth2dump-mitm-change-15m-0,5h_1.pcap' --mitre
@@ -131,7 +131,7 @@ _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. �
 
 - [Dataset source — University of Coimbra — Modbus/TCP SCADA dataset #1 (CRITIS ](https://github.com/tjcruz-dei/ICS_PCAPS)
 - [DOI 10.1007/978-3-030-05849-4_19](https://doi.org/10.1007/978-3-030-05849-4_19)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (11)</summary>
 

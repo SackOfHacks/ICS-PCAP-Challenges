@@ -1,6 +1,6 @@
 # GOOSE false-data injection between IEDs
 
-**Power grid & substations** · **Hard** · 4.4 MB · 2 capture file(s)
+**Power grid &amp; substations** · **Hard** · 4.4 MB · 2 capture file(s)
 
 > False data injected into GOOSE messaging between IEDs, with a clean baseline.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/goose-false-data-injection/FDI/Attack/FDI_Attack_traffic.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/goose-false-data-injection/FDI/Attack/FDI_Attack_traffic.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel (202
 
 - [Dataset source — False-data injection in GOOSE communication](https://zenodo.org/records/13908638)
 - [DOI 10.5281/zenodo.13908638](https://doi.org/10.5281/zenodo.13908638)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

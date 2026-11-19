@@ -1,6 +1,6 @@
 # DFRWS 2023 — The Troubled Elevator — network trace
 
-**CTF & conference labs** · **Medium** · 30.6 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 30.6 MB · 1 capture file(s)
 
 > CTF: The Troubled Elevator — network trace (Modbus/TCP).
 
@@ -56,9 +56,9 @@ pcapper 'data/ctf-dfrws-2023/the-troubled-elevator-network-trace/142728_162728.p
 pcapper 'data/ctf-dfrws-2023/the-troubled-elevator-network-trace/142728_162728.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-dfrws-2023/the-troubled-elevator-network-trace/142728_162728.pcapng' --mitre
@@ -138,7 +138,7 @@ _Dataset credit: DFRWS (Digital Forensics Research Workshop) (2023) · License: 
 
 - [Dataset source — DFRWS 2023 Forensic Challenge — The Troubled Elevator](https://github.com/dfrws/dfrws2023-challenge)
 - [Write-up / solution](https://github.com/AmintheGHOUL/The-Troubled-Elevator-Forensic-Investigation)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

@@ -1,6 +1,6 @@
-# S4x15 CTF — the GE iFIX HMI client & server
+# S4x15 CTF — the GE iFIX HMI client &amp; server
 
-**CTF & conference labs** · **Medium** · 14.4 MB · 2 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 14.4 MB · 2 capture file(s)
 
 > The HMI side of the CTF: GE iFIX client/server traffic. What did the operators see, and did anyone bypass the HMI?
 
@@ -60,9 +60,9 @@ pcapper 'data/digitalbond-s4x15-ctf/iFix_Client86.pcap' --modbus --ot-commands
 pcapper 'data/digitalbond-s4x15-ctf/iFix_Client86.pcap' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/digitalbond-s4x15-ctf/iFix_Client86.pcap' --mitre
@@ -119,16 +119,16 @@ Score yourself on: the device's normal peers, the scanner(s), and each attack op
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×1575; dangerous-operation matches: 0 for the Modbus/TCP filter (1,575 Modbus/TCP packets present, so the zero is real); top conversations in iFix_Server119.pcap: 10.50.1.10↔10.50.1.20 (80,951 pkts), 10.50.1.10↔10.50.1.52 (3,318 pkts), 10.200.1.252↔10.50.1.10 (1,621 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
+_Dataset credit: Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 
 </details>
 
 ## Dataset & credit
 
-**Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
+**Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
 
 - [Dataset source — S4x15 ICS Village CTF captures (Digital Bond)](https://www.netresec.com/?page=DigitalBond_S4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

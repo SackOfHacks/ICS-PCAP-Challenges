@@ -1,6 +1,6 @@
 # PowerDuck — GOOSE attacks on a substation
 
-**Power grid & substations** · **Hard** · 0.96 GB · 20 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.96 GB · 20 capture file(s)
 
 > Fake trip insertion, measurement distortion, flooding and more — all against IEC 61850 GOOSE. Each attack capture has a JSON label.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/powerduck-goose-attacks/dataset/raw/Attack/01-replay-opening-switch-isolated.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/powerduck-goose-attacks/dataset/raw/Attack/01-replay-opening-switch-isolated.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Sven Zemanek; Immanuel Hacker; Konrad Wolsing; Eric Wagner; Mar
 
 - [Dataset source — PowerDuck — GOOSE cyberattack dataset (substations)](https://zenodo.org/records/6974112)
 - [DOI 10.5281/zenodo.6974112](https://doi.org/10.5281/zenodo.6974112)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (20)</summary>
 

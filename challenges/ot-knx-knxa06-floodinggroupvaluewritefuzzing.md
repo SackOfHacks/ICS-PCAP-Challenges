@@ -65,9 +65,9 @@ pcapper 'data/knxnetip-ids/KNXA06_FloodingGroupValueWriteFuzzing/KNXA06_20250619
 pcapper 'data/knxnetip-ids/KNXA06_FloodingGroupValueWriteFuzzing/KNXA06_20250619_FloodingGroupValueWriteFuzzing.pcap' --ot-commands --threats
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/knxnetip-ids/KNXA06_FloodingGroupValueWriteFuzzing/KNXA06_20250619_FloodingGroupValueWriteFuzzing.pcap' --mitre
@@ -134,7 +134,7 @@ _Dataset credit: Dalamagkas, Radoglou-Grammatikis, et al. (Univ. of Western Mace
 
 - [Dataset source — KNXnet/IP intrusion dataset — building automation attacks (U](https://zenodo.org/records/16957517)
 - [DOI 10.5281/zenodo.16957517](https://doi.org/10.5281/zenodo.16957517)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

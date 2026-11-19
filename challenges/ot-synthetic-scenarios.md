@@ -1,6 +1,6 @@
 # Synthetic OT — benign plant vs. attack scenarios
 
-**Process control & PLC testbeds** · **Easy** · 0.5 MB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.5 MB · 3 capture file(s)
 
 > Small synthetic captures: a benign plant baseline, multi-protocol OT traffic and attack scenarios — a quick warm-up.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/synthetic-ot-scenarios-lindseynguyen/samples/attack_scenarios.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/synthetic-ot-scenarios-lindseynguyen/samples/attack_scenarios.pcap' --mitre
@@ -124,7 +124,7 @@ _Dataset credit: lindseynguyen (GitHub) · License: MIT._
 **lindseynguyen (GitHub)** — license: MIT
 
 - [Dataset source — Synthetic OT scenarios — benign plant vs. attack](https://github.com/lindseynguyen/ics-pcap-analyzer)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

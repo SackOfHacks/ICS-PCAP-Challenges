@@ -1,6 +1,6 @@
 # QUT DNP3 — Triage: injection (frequent set)
 
-**Process control & PLC testbeds** · **Hard** · 0.54 GB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.54 GB · 3 capture file(s)
 
 > About 73 attacks hidden in hours of normal DNP3. Triage them all.
 
@@ -55,9 +55,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.master.pcap' --dnp3 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.master.pcap' --mitre
@@ -150,7 +150,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

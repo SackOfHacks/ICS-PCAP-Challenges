@@ -1,14 +1,14 @@
-# Synthetic OT samples mapped to ATT&CK for ICS
+# Synthetic OT samples mapped to ATT&amp;CK for ICS
 
-**Process control & PLC testbeds** · **Easy** · 0.1 MB · 7 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.1 MB · 7 capture file(s)
 
-> Benign plant, cleartext credentials, DNS tunnelling and ICS commands — map each to ATT&CK for ICS.
+> Benign plant, cleartext credentials, DNS tunnelling and ICS commands — map each to ATT&amp;CK for ICS.
 
 > ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
 
 ## Scenario
 
-Benign plant, cleartext credentials, DNS tunnelling and ICS commands — map each to ATT&CK for ICS.
+Benign plant, cleartext credentials, DNS tunnelling and ICS commands — map each to ATT&amp;CK for ICS.
 
 Sample captures from an ICS-PCAP-to-MITRE viewer: benign plant, cleartext credentials, DNS tunnelling, ICS commands.
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py synthetic-ot-mitre-samples
 ```
 
-- **[Synthetic OT samples mapped to ATT&CK for ICS](../DATASETS.md#synthetic-ot-mitre-samples)** (`synthetic-ot-mitre-samples`), ~0.1 MB once fetched
+- **[Synthetic OT samples mapped to ATT&amp;CK for ICS](../DATASETS.md#synthetic-ot-mitre-samples)** (`synthetic-ot-mitre-samples`), ~0.1 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool](https://github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool)
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/synthetic-ot-mitre-samples/public/samples/benign-plant.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/synthetic-ot-mitre-samples/public/samples/benign-plant.pcap' --mitre
@@ -121,8 +121,8 @@ _Dataset credit: AndreFroneman (GitHub) · License: No license stated in repo �
 
 **AndreFroneman (GitHub)** — license: No license stated in repo — credit the author
 
-- [Dataset source — Synthetic OT samples mapped to ATT&CK for ICS](https://github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — Synthetic OT samples mapped to ATT&amp;CK for ICS](https://github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (7)</summary>
 

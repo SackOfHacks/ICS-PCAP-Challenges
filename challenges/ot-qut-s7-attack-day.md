@@ -1,6 +1,6 @@
 # QUT S7comm — hunt the whole attack session
 
-**Process control & PLC testbeds** · **Expert** · 0.41 GB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Expert** · 0.41 GB · 3 capture file(s)
 
 > Every attack run in one long session. Find them all, in order.
 
@@ -55,9 +55,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/attacker.pcap/attacker.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-s7comm-2017/2017QUT_S7comm-master/LabelledDataset/20161215163606_s7_process_attacks/attacker.pcap/attacker.pcap' --mitre
@@ -141,7 +141,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 S7comm — mining-refinery testbed (64 attacks, 13 ty](https://github.com/qut-infosec/2017QUT_S7comm)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

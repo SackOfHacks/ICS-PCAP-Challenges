@@ -1,6 +1,6 @@
 # ELEGANT — amplification DoS against one PLC
 
-**Process control & PLC testbeds** · **Hard** · 3.59 GB · 359 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 3.59 GB · 359 capture file(s)
 
 > An amplification attack against a single PLC, in two trial runs.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-The ELEGANT project (University of Coimbra) built a digital-twin testbed of Modbus/TCP programmable logic controllers and attacked it: denial-of-service (flooding and amplification, against one PLC or many) and man-in-the-middle (ARP poisoning, then the full attack chain). Each scenario was captured as rotating 10 MB files named cap_<n>_<timestamp>.
+The ELEGANT project (University of Coimbra) built a digital-twin testbed of Modbus/TCP programmable logic controllers and attacked it: denial-of-service (flooding and amplification, against one PLC or many) and man-in-the-middle (ARP poisoning, then the full attack chain). Each scenario was captured as rotating 10 MB files named cap_&lt;n&gt;_&lt;timestamp&gt;.
 
 This challenge is **amplification DoS against one PLC**. Quantify it against the normal-traffic challenge.
 
@@ -63,9 +63,9 @@ pcapper 'data/elegant-plc-dos-mitm/IEEE_DataPort/DoS/single_amp_t1/cap_00485_202
 pcapper 'data/elegant-plc-dos-mitm/IEEE_DataPort/DoS/single_amp_t1/cap_00485_20210313201342.pcapng' --threats --scan
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/elegant-plc-dos-mitm/IEEE_DataPort/DoS/single_amp_t1/cap_00485_20210313201342.pcapng' --mitre
@@ -150,7 +150,7 @@ _Dataset credit: Sousa, B.; Arieiro, M.; Pereira, V.; Cruz, T. (University of Co
 
 - [Dataset source — ELEGANT — DoS and man-in-the-middle attacks on PLCs](https://ieee-dataport.org/open-access/denial-service-and-man-middle-attacks-programmable-logic-controllers)
 - [DOI 10.21227/mewp-g646](https://doi.org/10.21227/mewp-g646)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (359)</summary>
 

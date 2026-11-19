@@ -1,6 +1,6 @@
 # ICSC 2026 (GY10) — 时间域隐蔽通道 'scan ghost' (timing covert channel)
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: 时间域隐蔽通道 'scan ghost' (timing covert channel) (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-icsc-2026-gy10/scan-ghost-timing-covert-channel/plc_protocol_i
 pcapper 'data/ctf-icsc-2026-gy10/scan-ghost-timing-covert-channel/plc_protocol_id.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-icsc-2026-gy10/scan-ghost-timing-covert-channel/plc_protocol_id.pcapng' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives (2026) · Lice
 
 - [Dataset source — 第十届工业信息安全技能大赛 工控安全锦标赛 2026 (GY10)](https://github.com/CTF-Archives/2026-ICSC-ICS-Champ)
 - [Write-up / solution](https://github.com/CTF-Archives/2026-ICSC-ICS-Champ/blob/main/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

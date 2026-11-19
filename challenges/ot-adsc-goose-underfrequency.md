@@ -1,6 +1,6 @@
 # ADSC IEC 61850 — UnderFrequency
 
-**Power grid & substations** · **Hard** · 7.0 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Hard** · 7.0 MB · 1 capture file(s)
 
 > ADSC IEC 61850: UnderFrequency.
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/adsc-iec61850-security/IEC61850SecurityDataset-master/Disturbance/Under frequency/UnderFrequency.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/adsc-iec61850-security/IEC61850SecurityDataset-master/Disturbance/Under frequency/UnderFrequency.pcapng' --mitre
@@ -122,7 +122,7 @@ _Dataset credit: Advanced Digital Sciences Center (ADSC), Singapore (2019) · Li
 **Advanced Digital Sciences Center (ADSC), Singapore (2019)** — license: No license stated — credit ADSC
 
 - [Dataset source — ADSC IEC 61850 security dataset — GOOSE protection events an](https://github.com/smartgridadsc/IEC61850SecurityDataset)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

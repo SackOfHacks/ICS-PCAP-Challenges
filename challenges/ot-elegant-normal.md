@@ -1,6 +1,6 @@
 # ELEGANT — normal PLC traffic (baseline)
 
-**Process control & PLC testbeds** · **Easy** · 57.1 MB · 6 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 57.1 MB · 6 capture file(s)
 
 > The PLCs' ordinary Modbus/TCP polling — the yardstick for every ELEGANT attack challenge.
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-The ELEGANT project (University of Coimbra) built a digital-twin testbed of Modbus/TCP programmable logic controllers and attacked it: denial-of-service (flooding and amplification, against one PLC or many) and man-in-the-middle (ARP poisoning, then the full attack chain). Each scenario was captured as rotating 10 MB files named cap_<n>_<timestamp>.
+The ELEGANT project (University of Coimbra) built a digital-twin testbed of Modbus/TCP programmable logic controllers and attacked it: denial-of-service (flooding and amplification, against one PLC or many) and man-in-the-middle (ARP poisoning, then the full attack chain). Each scenario was captured as rotating 10 MB files named cap_&lt;n&gt;_&lt;timestamp&gt;.
 
 This challenge is **normal PLC traffic (baseline)** — the reference for the attack scenarios.
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/elegant-plc-dos-mitm/IEEE_DataPort/MiTM/normal_PLC_traffic/cap_00001_20210318035345.pcapng' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/elegant-plc-dos-mitm/IEEE_DataPort/MiTM/normal_PLC_traffic/cap_00001_20210318035345.pcapng' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Sousa, B.; Arieiro, M.; Pereira, V.; Cruz, T. (University of Co
 
 - [Dataset source — ELEGANT — DoS and man-in-the-middle attacks on PLCs](https://ieee-dataport.org/open-access/denial-service-and-man-middle-attacks-programmable-logic-controllers)
 - [DOI 10.21227/mewp-g646](https://doi.org/10.21227/mewp-g646)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (6)</summary>
 

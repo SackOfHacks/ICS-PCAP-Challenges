@@ -1,10 +1,10 @@
 # Medical-waste incinerator — 14 days of real S7-1500 plant traffic
 
-**Process control & PLC testbeds** · **Medium** · 1.88 GB · 14 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 1.88 GB · 14 capture file(s)
 
 > Two weeks of a real plant's SCADA traffic. Learn its rhythm before you hunt.
 
-> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller. Recorded at a real facility: device names, serial numbers and addresses are genuine. Treat them as sensitive and never use them to find or contact the site.
 
 ## Scenario
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/medical-waste-incinerator-s7-1500/day01.pcap' --s7 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/medical-waste-incinerator-s7-1500/day01.pcap' --mitre
@@ -129,7 +129,7 @@ _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jor
 
 - [Dataset source — Medical-waste incinerator — real Siemens S7-1500 SCADA with ](https://data.mendeley.com/datasets/vpcr4wpgfd/4)
 - [DOI 10.17632/vpcr4wpgfd.4](https://doi.org/10.17632/vpcr4wpgfd.4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (14)</summary>
 

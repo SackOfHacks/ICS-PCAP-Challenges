@@ -1,6 +1,6 @@
 # ICS Dataset — normal vs. physical fault vs. cyber attack
 
-**Process control & PLC testbeds** · **Medium** · 2.24 GB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 2.24 GB · 3 capture file(s)
 
 > Three conditions of one ICS — normal operation, process faults and a cyber attack. Can you tell a fault from an attack on the wire?
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ics-dataset-normal-fault-attack-2025/raw_data/attack/normal_traffic_2025-02-11_20_27_15.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ics-dataset-normal-fault-attack-2025/raw_data/attack/normal_traffic_2025-02-11_20_27_15.pcap' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Sudyana, Didik (2025) — doi:10.5281/zenodo.17165850 · Licens
 
 - [Dataset source — ICS Dataset — normal vs. fault vs. attack traffic (2025)](https://zenodo.org/records/17165850)
 - [DOI 10.5281/zenodo.17165850](https://doi.org/10.5281/zenodo.17165850)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

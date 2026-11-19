@@ -1,6 +1,6 @@
 # CIARRES smart grid — MMS scanner
 
-**Power grid & substations** · **Hard** · 10.5 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Hard** · 10.5 MB · 1 capture file(s)
 
 > CIARRES smart grid: MMS scanner.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ciarres-smart-grid-attacks/mms/mms_scanner_anonymized.pcap' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ciarres-smart-grid-attacks/mms/mms_scanner_anonymized.pcap' --mitre
@@ -124,7 +124,7 @@ _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · Licen
 **CIARRES project (Kaggle user 'javiersandeuc3m') (2025)** — license: GPL-3.0 (as declared on Kaggle)
 
 - [Dataset source — CIARRES smart-grid attacks — GOOSE, MMS and Modbus](https://www.kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-attacks)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

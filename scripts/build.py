@@ -38,7 +38,42 @@ def scan(files):
 
 def gb(b): return f"{b/1e9:.2f} GB" if b >= 1e8 else f"{b/1e6:.1f} MB"
 
-def mdesc(t): return str(t).replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
+CODE = re.compile(r"(`+)(.+?)(?<!`)\1(?!`)", re.S)
+SAFE_URL = re.compile(r"^(?:https?://|mailto:)[^\s<>\"']+$", re.I)
+ASSET = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")                  # release tags and asset names
+CHAL_ID = re.compile(r"^[a-z0-9][a-z0-9._-]*$")
+DOI = re.compile(r"^10\.\d{4,9}/[^\s<>\"'()]+$")
+
+def _html(t): return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def md_text(s):
+    """Catalog prose for GitHub Markdown: raw HTML is neutralised (& < > escaped outside `code spans`, where GitHub
+    shows text literally); Markdown formatting is kept. Catalog text is data, never markup."""
+    s = "" if s is None else str(s); out, pos = [], 0
+    for m in CODE.finditer(s):
+        out.append(_html(s[pos:m.start()])); out.append(m.group(0)); pos = m.end()
+    return "".join(out) + _html(s[pos:])
+
+def mdesc(t): return md_text(t).replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
+
+def url_ok(u): return isinstance(u, str) and bool(SAFE_URL.match(u.strip()))
+
+def link(label, url):
+    """A Markdown link only for http(s)/mailto URLs; anything else is shown as plain text."""
+    return f"[{mdesc(label)}]({url.strip()})" if url_ok(url) else mdesc(label)
+
+def fence(cmd, lang="bash"):
+    ticks = "`" * max([3] + [len(r) + 1 for r in re.findall(r"`{3,}", cmd)])
+    return [ticks + lang, cmd, ticks]
+
+def code_span(t):
+    ticks = "`" * (max([0] + [len(r) for r in re.findall(r"`+", t)]) + 1)
+    pad = " " if t.startswith("`") or t.endswith("`") else ""
+    return f"{ticks}{pad}{t}{pad}{ticks}"
+
+def asset(t):
+    if not ASSET.match(str(t)): raise SystemExit(f"malformed release tag/asset name in the catalog: {t!r}")
+    return t
 
 def fetch_slugs(c):
     """The datasets a challenge needs, primary first: its declared datasets plus any dataset its file paths name."""
@@ -54,16 +89,16 @@ def where_md(d):
     """Bullets saying where one dataset's captures come from (mirror parts and/or original source)."""
     m, L = d.get("mirror"), []
     if m:
-        links = " · ".join(f"[{p['name'].rsplit('.tar.', 1)[-1]}]({GH}/releases/download/{m['tag']}/{p['name']}) ({gb(p['size'])})"
+        links = " · ".join(f"[{asset(p['name']).rsplit('.tar.', 1)[-1]}]({GH}/releases/download/{asset(m['tag'])}/{p['name']}) ({gb(p['size'])})"
                            for p in m["parts"])
-        L.append(f"**Mirror:** this repo's [`{m['tag']}` release]({GH}/releases/tag/{m['tag']}), "
+        L.append(f"**Mirror:** this repo's [`{asset(m['tag'])}` release]({GH}/releases/tag/{m['tag']}), "
                  f"{len(m['parts'])} part{'s' if len(m['parts']) > 1 else ''} ({gb(m['bytes_packed'])} compressed): {links}")
     elif d.get("mirror_pending"):
         L.append("**Mirror:** being uploaded to this repo's release; until then `fetch.py` downloads it from the original source")
     else:
         L.append("**Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source")
-    src = f"[{short_url(d['source_url'])}]({d['source_url']})" if d.get("source_url") else "—"
-    if d.get("doi"): src += f" · [doi:{d['doi']}](https://doi.org/{d['doi']})"
+    src = link(short_url(d["source_url"]), d["source_url"]) if url_ok(d.get("source_url")) else "—"
+    if d.get("doi") and DOI.match(str(d["doi"])): src += f" · [doi:{mdesc(d['doi'])}](https://doi.org/{d['doi']})"
     L.append(f"**Original source:** {src}")
     return L
 
@@ -99,25 +134,25 @@ def datasets_page(datasets, by_slug):
          "| Dataset | `fetch.py` name | Size | Where | Challenges |", "|---|---|---|---|---|"]
     for d in used:
         s, m = d["slug"], d.get("mirror")
-        where = f"[mirror]({GH}/releases/tag/{m['tag']}), {len(m['parts'])} part{'s' if len(m['parts']) > 1 else ''}" if m else "original source"
+        where = f"[mirror]({GH}/releases/tag/{asset(m['tag'])}), {len(m['parts'])} part{'s' if len(m['parts']) > 1 else ''}" if m else "original source"
         L.append(f"| [{mdesc(d.get('title', s))}](#{s}) | `{s}` | {gb(d.get('approx_bytes') or 0)} | {where} | {len(by_slug[s])} |")
     for d in used:
         s, cs = d["slug"], by_slug[d["slug"]]
-        L += ["", f"### {s}", "", f"**{mdesc(d.get('title', s))}**: {d.get('authors', '—')}" + (f" ({d['year']})" if d.get("year") else ""), "",
+        L += ["", f"### {s}", "", f"**{mdesc(d.get('title', s))}**: {md_text(d.get('authors', '—'))}" + (f" ({md_text(d['year'])})" if d.get("year") else ""), "",
               "```bash", f"python3 scripts/fetch.py {s}", "```", "",
-              f"- **Size:** ~{gb(d.get('approx_bytes') or 0)} once fetched · **Licence:** {d.get('license', '—')}"]
+              f"- **Size:** ~{gb(d.get('approx_bytes') or 0)} once fetched · **Licence:** {md_text(d.get('license', '—'))}"]
         L += [f"- {x}" for x in where_md(d)]
         why = (d.get("redistribution") or {}).get("reason")
-        if why: L.append(f"- **Why {'mirrored' if (d.get('redistribution') or {}).get('mirrored') else 'not mirrored'}:** {why}")
+        if why: L.append(f"- **Why {'mirrored' if (d.get('redistribution') or {}).get('mirrored') else 'not mirrored'}:** {md_text(why)}")
         L.append(f"- **Challenges ({len(cs)}):** " + " · ".join(f"[{mdesc(c['title'])}](challenges/{c['id']}.md)" for c in cs))
     return "\n".join(L) + "\n"
 
 def md_page(c):
-    L = [f"# {c['title']}", "",
-         f"**{c['category']}** · **{c['difficulty']}** · {gb(c['bytes'])} · {c['file_count']} capture file(s)", "",
-         f"> {c['hook']}", ""]
-    if c.get("warning"): L += [f"> ⚠️ **Safety:** {c['warning']}", ""]
-    L += ["## Scenario", "", c["scenario"], "", "## Objectives", ""] + [f"- {o}" for o in c["objectives"]]
+    L = [f"# {md_text(c['title'])}", "",
+         f"**{md_text(c['category'])}** · **{md_text(c['difficulty'])}** · {gb(c['bytes'])} · {c['file_count']} capture file(s)", "",
+         f"> {md_text(c['hook'])}", ""]
+    if c.get("warning"): L += [f"> ⚠️ **Safety:** {md_text(c['warning'])}", ""]
+    L += ["## Scenario", "", md_text(c["scenario"]), "", "## Objectives", ""] + [f"- {md_text(o)}" for o in c["objectives"]]
     L += [""] + data_md(c)
     tracks = c.get("tracks") or {"pcapper": c["steps"]}
     L += ["## Work it step by step", "",
@@ -129,20 +164,20 @@ def md_page(c):
         if not steps: continue
         L += [f"### {label}", "", blurb, ""]
         for i, st in enumerate(steps, 1):
-            L += [f"**{i}. {st['title']}**", ""]
-            if st.get("note"): L += [st["note"], ""]
-            L += ["```bash", st["cmd"], "```", ""]
+            L += [f"**{i}. {md_text(st['title'])}**", ""]
+            if st.get("note"): L += [md_text(st["note"]), ""]
+            L += fence(st["cmd"]) + [""]
     L += ["## Hints", ""]
     for i, h in enumerate(c["hints"], 1):
-        L += [f"<details><summary>Hint {i}</summary>", "", h, "", "</details>", ""]
-    L += ["## Solution", "", "<details><summary>Reveal walkthrough / answer</summary>", "", c["solution"], "", "</details>", ""]
+        L += [f"<details><summary>Hint {i}</summary>", "", md_text(h), "", "</details>", ""]
+    L += ["## Solution", "", "<details><summary>Reveal walkthrough / answer</summary>", "", md_text(c["solution"]), "", "</details>", ""]
     L += ["## Dataset & credit", ""]
-    if c.get("credit"): L += [f"**{c['credit']}** — license: {c.get('license','see source')}", ""]
+    if c.get("credit"): L += [f"**{md_text(c['credit'])}** — license: {md_text(c.get('license','see source'))}", ""]
     for r in c.get("references", []):
-        L.append(f"- [{r['label']}]({r['url']})")
+        L.append(f"- {link(r.get('label', ''), r.get('url'))}")
     files = c.get("files") or []
     if files:                                   # every file, not a sample: the list is collapsed anyway
-        L += ["", f"<details><summary>Capture files ({len(files)})</summary>", ""] + [f"- `{f}`" for f in files] + ["", "</details>"]
+        L += ["", f"<details><summary>Capture files ({len(files)})</summary>", ""] + [f"- {code_span(f)}" for f in files] + ["", "</details>"]
     return "\n".join(L) + "\n"
 
 def attribution(datasets, used):
@@ -155,13 +190,14 @@ def attribution(datasets, used):
          "| Dataset | Authors / owner | Year | Licence | Source | Copy |", "|---|---|---|---|---|---|"]
     for d in datasets:
         if d["slug"] not in used: continue
-        src = f"[{('doi:' + d['doi']) if d.get('doi') else 'link'}]({('https://doi.org/' + d['doi']) if d.get('doi') else d.get('source_url')})"
-        copy = f"[{'mirrored (`' + d['mirror']['tag'] + '`)' if d.get('mirror') else 'from source'}](DATASETS.md#{d['slug']})"
-        L.append(f"| {d['title']} | {d.get('authors','—')} | {d.get('year') or '—'} | {d.get('license','—')} | {src} | {copy} |")
+        src = (f"[doi:{mdesc(d['doi'])}](https://doi.org/{d['doi']})" if d.get("doi") and DOI.match(str(d["doi"]))
+               else link("link", d.get("source_url")) if url_ok(d.get("source_url")) else "—")
+        copy = f"[{'mirrored (`' + asset(d['mirror']['tag']) + '`)' if d.get('mirror') else 'from source'}](DATASETS.md#{d['slug']})"
+        L.append(f"| {mdesc(d['title'])} | {mdesc(d.get('authors','—'))} | {mdesc(d.get('year') or '—')} | {mdesc(d.get('license','—'))} | {src} | {copy} |")
     L += ["", "## Full citations", ""]
     for d in datasets:
         if d["slug"] not in used or not d.get("citation"): continue
-        L += [f"- {d['citation']}"]
+        L += [f"- {md_text(d['citation'])}"]
     L += ["", "## Obligations", "",
           "- **Attribution:** credit the authors above and keep this file with any redistribution of challenge material.",
           "- **Non-commercial datasets** (CC BY-NC / BY-NC-SA, e.g. Cyber4OT and the electrical-substation ML-IDS set) may not be used commercially; the MIT license on this repo's code does not relicense any data.",
@@ -178,6 +214,7 @@ def main():
     for c in chals:
         b, n, present = scan(c.get("files", []))
         c = dict(c, bytes=b, file_count=n, present=n > 0, fetch=fetch_slugs(c))
+        if not CHAL_ID.match(str(c.get("id", ""))): raise SystemExit(f"unsafe challenge id: {c.get('id')!r}")
         bad = [s for s in c["fetch"] if s not in DS or not SLUG.match(s)]
         if bad: raise SystemExit(f"{c['id']}: dataset(s) {bad} missing from catalog/datasets.json or not a plain slug")
         c["files_present"] = present[:60]           # the app shows 60 and says how many more; pages list all
@@ -198,10 +235,10 @@ def main():
     for d in datasets:
         if d["slug"] not in used: continue
         m = d.get("mirror")
-        ds_app[d["slug"]] = {"title": d.get("title"), "license": d.get("license"), "source_url": d.get("source_url"), "doi": d.get("doi"),
+        ds_app[d["slug"]] = {"title": d.get("title"), "license": d.get("license"), "source_url": d.get("source_url") if url_ok(d.get("source_url")) else None, "doi": d.get("doi"),
                              "approx_bytes": d.get("approx_bytes") or 0, "pending": bool(d.get("mirror_pending")),
-                             "mirror": {"tag": m["tag"], "bytes_packed": m["bytes_packed"],
-                                        "parts": [{"name": p["name"], "size": p["size"]} for p in m["parts"]]} if m else None}
+                             "mirror": {"tag": asset(m["tag"]), "bytes_packed": m["bytes_packed"],
+                                        "parts": [{"name": asset(p["name"]), "size": p["size"]} for p in m["parts"]]} if m else None}
     with open(os.path.join(REPO, "datasets.js"), "w") as f:
         f.write("// generated by scripts/build.py — do not edit by hand\n")
         f.write("window.DATASETS=" + json.dumps(ds_app, ensure_ascii=False) + ";\n")
@@ -221,7 +258,7 @@ def main():
     for c in sorted(out, key=lambda c: (c.get("group", ""), order.get(c["difficulty"], 9), c["title"])):
         s = c["fetch"][0]; more = f" +{len(c['fetch']) - 1}" if len(c["fetch"]) > 1 else ""
         size = gb(c["bytes"]) + " · " if c["present"] else ""
-        idx.append(f"| [{mdesc(c['title'])}]({c['id']}.md) | {c['difficulty']} | {', '.join(c.get('tags', [])[:4])} | {size}[`{s}`](../DATASETS.md#{s}){more} |")
+        idx.append(f"| [{mdesc(c['title'])}]({c['id']}.md) | {c['difficulty']} | {mdesc(', '.join(c.get('tags', [])[:4]))} | {size}[`{s}`](../DATASETS.md#{s}){more} |")
     open(os.path.join(cdir, "README.md"), "w").write("\n".join(idx) + "\n")
     by_slug = {}
     for c in out:

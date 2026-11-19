@@ -1,10 +1,10 @@
 # Zhejiang 2026 — easy_MMS
 
-**CTF & conference labs** · **Medium** · 5.6 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 5.6 MB · 1 capture file(s)
 
 > CTF: Zhejiang 2026 — easy_MMS (IEC 61850 MMS).
 
-> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller. This capture carries executable files (Windows PE / Linux ELF) inside the traffic, and some may be malware: work offline, hash anything you extract and never run it.
 
 ## Scenario
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-mms/easymms.pcap' --ct
 pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-mms/easymms.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/zhejiang-2026-easy-mms/easymms.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
 - [Write-up / solution](https://github.com/yomymy/industrial-internet-security-2026-writeup)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

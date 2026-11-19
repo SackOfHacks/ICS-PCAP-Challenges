@@ -1,6 +1,6 @@
 # RSTCON 2026 — Setpoint
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: Setpoint (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-rstcon-2026/setpoint/setpoint.pcap' --ctf --overview
 pcapper 'data/ctf-rstcon-2026/setpoint/setpoint.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-rstcon-2026/setpoint/setpoint.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: RST Group (official public repo) (2026) · License: None stated
 
 - [Dataset source — RSTCON CTF 2026 — forensics](https://github.com/RST-Group/RSTCON-CTF-2026-public)
 - [Write-up / solution](https://github.com/RST-Group/RSTCON-CTF-2026-public/tree/main/forensic/setpoint)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

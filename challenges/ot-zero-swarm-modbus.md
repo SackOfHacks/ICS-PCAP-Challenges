@@ -1,6 +1,6 @@
 # Zero-SWARM — Modbus normal, flooding and Nmap
 
-**Process control & PLC testbeds** · **Easy** · 0.27 GB · 4 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.27 GB · 4 capture file(s)
 
 > Normal Modbus/TCP operation plus flooding and Nmap scanning from the Zero-SWARM project.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/zero-swarm-modbus/ZeroSWARM Normal data_v2.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/zero-swarm-modbus/ZeroSWARM Normal data_v2.pcap' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Lazaridis, George; Mpatziakas, Asterios (2025) — doi:10.5281/
 
 - [Dataset source — Zero-SWARM — Modbus normal and malicious traffic](https://zenodo.org/records/15082260)
 - [DOI 10.5281/zenodo.15082260](https://doi.org/10.5281/zenodo.15082260)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

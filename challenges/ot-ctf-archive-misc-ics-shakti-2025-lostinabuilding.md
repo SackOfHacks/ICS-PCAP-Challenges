@@ -1,6 +1,6 @@
 # Shakti 2025 — LostInABuilding
 
-**CTF & conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
 
 > CTF: Shakti 2025 — LostInABuilding (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-archive-misc-ics/shakti-2025-lostinabuilding/building.pcap' --
 pcapper 'data/ctf-archive-misc-ics/shakti-2025-lostinabuilding/building.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-archive-misc-ics/shakti-2025-lostinabuilding/building.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 
 - [Dataset source — ICS challenges from public CTF archives (sajjadium/ctf-archi](https://github.com/sajjadium/ctf-archives)
 - [Write-up / solution](https://github.com/zelebwr/ctf-writeups/blob/HEAD/shaktiCtf25/misc/lost-in-a-building/SOLVE.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

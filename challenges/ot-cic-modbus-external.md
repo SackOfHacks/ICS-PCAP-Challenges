@@ -1,6 +1,6 @@
 # CIC Modbus 2023 — attacks from an external host
 
-**Power grid & substations** · **Hard** · 0.44 GB · 8 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.44 GB · 8 capture file(s)
 
 > An outsider on the substation network attacks the Modbus devices directly.
 
@@ -66,9 +66,9 @@ ls 'data/cic-modbus-2023/Modbus Dataset/attack/external'
 pcapper 'data/cic-modbus-2023/Modbus Dataset/attack/external/' --modbus --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cic-modbus-2023/Modbus Dataset/attack/external/network-wide/network-wide-normal-0.pcap' --mitre
@@ -141,7 +141,7 @@ _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadi
 
 - [Dataset source — CIC Modbus Dataset 2023 — substation Modbus attacks](https://www.unb.ca/cic/datasets/modbus-2023.html)
 - [CIC Modbus Dataset 2023 (UNB)](https://www.unb.ca/cic/datasets/modbus-2023.html)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (8)</summary>
 

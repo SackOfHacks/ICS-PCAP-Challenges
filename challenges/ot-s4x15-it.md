@@ -1,6 +1,6 @@
-# S4x15 CTF — corporate IT host & Advantech device
+# S4x15 CTF — corporate IT host &amp; Advantech device
 
-**CTF & conference labs** · **Medium** · 3.4 MB · 2 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 3.4 MB · 2 capture file(s)
 
 > The IT side of the ICS Village: a Windows XP corporate PC and an Advantech device — the usual pivot into OT.
 
@@ -60,9 +60,9 @@ pcapper 'data/digitalbond-s4x15-ctf/WinXP.pcap' --enip --cip --pccc --ot-command
 pcapper 'data/digitalbond-s4x15-ctf/WinXP.pcap' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/digitalbond-s4x15-ctf/WinXP.pcap' --mitre
@@ -81,7 +81,7 @@ capinfos 'data/digitalbond-s4x15-ctf/WinXP.pcap'
 tshark -r 'data/digitalbond-s4x15-ctf/WinXP.pcap' -q -z io,phs | head -40
 ```
 
-**2. Map the EtherNet/IP & CIP conversation**
+**2. Map the EtherNet/IP &amp; CIP conversation**
 
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
@@ -117,18 +117,18 @@ Attribute every write/control operation to a source IP.
 
 Score yourself on: the device's normal peers, the scanner(s), and each attack operation with its source and time. The CTF is real competition traffic — there is no published per-packet key.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Execute PCCC ×10824; dangerous-operation matches: 10824 (top sources: 10.200.1.18 ×5438, 10.50.1.54 ×5386); top conversations in WinXP.pcap: 10.200.1.18↔10.50.1.54 (21,695 pkts), 10.200.1.18↔10.200.1.45 (1,738 pkts), 10.200.1.162↔10.200.1.18 (1,107 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP &amp; CIP operations — Execute PCCC ×10824; dangerous-operation matches: 10824 (top sources: 10.200.1.18 ×5438, 10.50.1.54 ×5386); top conversations in WinXP.pcap: 10.200.1.18↔10.50.1.54 (21,695 pkts), 10.200.1.18↔10.200.1.45 (1,738 pkts), 10.200.1.162↔10.200.1.18 (1,107 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
+_Dataset credit: Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 
 </details>
 
 ## Dataset & credit
 
-**Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
+**Digital Bond — Dale Peterson &amp; Reid Wightman (S4x15); published by Netresec (2015)** — license: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec
 
 - [Dataset source — S4x15 ICS Village CTF captures (Digital Bond)](https://www.netresec.com/?page=DigitalBond_S4)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

@@ -1,6 +1,6 @@
-# IEC-104 & IEC 61850 MMS sample exchanges
+# IEC-104 &amp; IEC 61850 MMS sample exchanges
 
-**Power grid & substations** · **Medium** · 4.2 MB · 88 capture file(s)
+**Power grid &amp; substations** · **Medium** · 4.2 MB · 88 capture file(s)
 
 > A collection of IEC-104 and MMS client/server exchanges — learn the substation protocols' normal grammar.
 
@@ -54,9 +54,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ics-pcaps-haolipeng/IEC104.pcap' --mms --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ics-pcaps-haolipeng/IEC104.pcap' --mitre
@@ -122,7 +122,7 @@ _Dataset credit: haolipeng (GitHub) · License: No license stated in repo — cr
 **haolipeng (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — ICS protocol sample captures (IEC-104, MMS and more)](https://github.com/haolipeng/ics-pcaps)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (88)</summary>
 

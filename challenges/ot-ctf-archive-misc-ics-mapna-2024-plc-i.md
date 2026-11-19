@@ -1,6 +1,6 @@
 # MAPNA 2024 — PLC I
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: MAPNA 2024 — PLC I (S7comm).
 
@@ -54,9 +54,9 @@ Pcapper recognises OT protocols on their standard ports, so it lists TCP/10203 w
 pcapper 'data/ctf-archive-misc-ics/mapna-2024-plc-i/plc.pcap' --services
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-archive-misc-ics/mapna-2024-plc-i/plc.pcap' --mitre
@@ -92,7 +92,7 @@ tshark -r 'data/ctf-archive-misc-ics/mapna-2024-plc-i/plc.pcap' -Y 'tcp.len > 0 
 
 **4. Try the industrial dissectors on that port**
 
-Replace <port> with the busiest server port from step 2. A clean decode (no malformed packets, length fields that match) identifies a standard protocol on a non-standard port.
+Replace &lt;port&gt; with the busiest server port from step 2. A clean decode (no malformed packets, length fields that match) identifies a standard protocol on a non-standard port.
 
 ```bash
 for p in tpkt mbtcp dnp3 enip iec60870_104; do echo "== $p"; tshark -r 'data/ctf-archive-misc-ics/mapna-2024-plc-i/plc.pcap' -d tcp.port==<port>,$p 2>/dev/null | head -4; done
@@ -160,7 +160,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 **Event organisers; archived by sajjadium/ctf-archives** — license: Archive repository MIT (challenge files not separately licensed) — credit each event
 
 - [Dataset source — ICS challenges from public CTF archives (sajjadium/ctf-archi](https://github.com/sajjadium/ctf-archives)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

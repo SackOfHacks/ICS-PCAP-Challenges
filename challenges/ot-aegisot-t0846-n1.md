@@ -1,14 +1,14 @@
 # AegisOT — Remote System Discovery (T0846)
 
-**Process control & PLC testbeds** · **Medium** · 90.8 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 90.8 MB · 1 capture file(s)
 
-> One ATT&CK for ICS technique, executed against a Modbus plant: Remote System Discovery (T0846). Find it, time it, attribute it.
+> One ATT&amp;CK for ICS technique, executed against a Modbus plant: Remote System Discovery (T0846). Find it, time it, attribute it.
 
 > ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
 
 ## Scenario
 
-AegisOT is a containerised OT testbed — HMIs and PLCs speaking Modbus/TCP over a simulated physical process. Each attack capture executes exactly one ATT&CK technique; this one is **Remote System Discovery (T0846)**, a network-level attack.
+AegisOT is a containerised OT testbed — HMIs and PLCs speaking Modbus/TCP over a simulated physical process. Each attack capture executes exactly one ATT&amp;CK technique; this one is **Remote System Discovery (T0846)**, a network-level attack.
 
 Find the attacker host, the attack window and every packet that implements the technique, and explain the process impact.
 
@@ -27,7 +27,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py aegisot-ics-attacks
 ```
 
-- **[AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS techniques](../DATASETS.md#aegisot-ics-attacks)** (`aegisot-ics-attacks`), ~3.13 GB once fetched
+- **[AegisOT — Modbus OT testbed with 11 ATT&amp;CK-for-ICS techniques](../DATASETS.md#aegisot-ics-attacks)** (`aegisot-ics-attacks`), ~3.13 GB once fetched
   - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.56 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/aegisot-ics-attacks.tar.part000) (0.56 GB)
   - **Original source:** [kaggle.com/datasets/khadijadrira/industrial-cybersecurity…](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
 
@@ -65,9 +65,9 @@ Network-level techniques show up as new conversations: scans, remote-service ses
 pcapper 'data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Network_Level_Attacks/Remote_System_Discovery_T0846/Network_Level/Merged_Packet/output_attack_n1.pcap' --scan --services --threats
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Network_Level_Attacks/Remote_System_Discovery_T0846/Network_Level/Merged_Packet/output_attack_n1.pcap' --mitre
@@ -138,7 +138,7 @@ Diff against the AegisOT normal-operations captures.
 
 <details><summary>Hint 2</summary>
 
-Read the ATT&CK page for T0846 — the procedure examples tell you what to look for.
+Read the ATT&amp;CK page for T0846 — the procedure examples tell you what to look for.
 
 </details>
 
@@ -158,9 +158,9 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 
 **Kaggle user 'khadijadrira' (2026)** — license: CC BY-NC-SA 4.0
 
-- [Dataset source — AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS technique](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
-- [ATT&CK T0846 — Remote System Discovery](https://attack.mitre.org/techniques/T0846/)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — AegisOT — Modbus OT testbed with 11 ATT&amp;CK-for-ICS technique](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
+- [ATT&amp;CK T0846 — Remote System Discovery](https://attack.mitre.org/techniques/T0846/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

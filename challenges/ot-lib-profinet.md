@@ -15,7 +15,7 @@ Every public PROFINET sample in this range, deduplicated by SHA-256 across cisa-
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the PROFINET operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0846 Remote System Discovery · T0836 Modify Parameter · T0814 Denial of Service).
+- Map findings to ATT&amp;CK for ICS (T0846 Remote System Discovery · T0836 Modify Parameter · T0814 Denial of Service).
 
 ## 📥 Get the captures
 
@@ -73,9 +73,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-profinet-io-cm/profinet_io_cm.pcap'
 pcapper data/cisa-icsnpp-test-traces/ --profinet --lldp --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-profinet-io-cm/profinet_io_cm.pcap' --mitre
@@ -140,7 +140,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (DCP Set (service 4) renames a device or changes its IP — an attacker can knock an IO-device off its controller; DCP Identify (5) is discovery). ATT&CK for ICS: T0846 Remote System Discovery · T0836 Modify Parameter · T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (DCP Set (service 4) renames a device or changes its IP — an attacker can knock an IO-device off its controller; DCP Identify (5) is discovery). ATT&amp;CK for ICS: T0846 Remote System Discovery · T0836 Modify Parameter · T0814 Denial of Service. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** PROFINET operations — DCP Hello ×2, DCP Get ×2; dangerous-operation matches: 0 for the PROFINET filter (5 PROFINET packets present, so the zero is real) (basis: 3 of 16 capture file(s), first 300,000 packets each, smallest files carrying PROFINET chosen)
 
@@ -157,7 +157,7 @@ _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and 
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (16)</summary>
 

@@ -15,7 +15,7 @@ Every public EtherCAT sample in this range, deduplicated by SHA-256 across autom
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the EtherCAT operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0857 System Firmware · T0836 Modify Parameter).
+- Map findings to ATT&amp;CK for ICS (T0857 System Firmware · T0836 Modify Parameter).
 
 ## 📥 Get the captures
 
@@ -70,9 +70,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-ethercat/ethercat_example.pcap' --e
 pcapper data/automayt-ics-pcap/ --ethercat --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-ethercat/ethercat_example.pcap' --mitre
@@ -137,7 +137,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (mailbox protocols ride on top of the cyclic datagrams — FoE (file access) can push firmware, CoE SDO writes change drive parameters). ATT&CK for ICS: T0857 System Firmware · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (mailbox protocols ride on top of the cyclic datagrams — FoE (file access) can push firmware, CoE SDO writes change drive parameters). ATT&amp;CK for ICS: T0857 System Firmware · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** EtherCAT packets matching `ecat || ecat_mailbox`: 90,688 (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying EtherCAT chosen)
 
@@ -153,7 +153,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

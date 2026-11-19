@@ -1,6 +1,6 @@
 # Modbus lab 03 — Write functions
 
-**Process control & PLC testbeds** · **Easy** · 0.2 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.2 MB · 1 capture file(s)
 
 > Identify the Modbus write functions (FC 5/6/15/16) and the values written.
 
@@ -14,7 +14,7 @@ Lab 3 of a 16-part Modbus/TCP lab series that walks from baseline traffic to a c
 
 - Answer the lab's question from the packets.
 - Record source, unit ID, function code and addresses for anything abnormal.
-- Note the ATT&CK for ICS technique.
+- Note the ATT&amp;CK for ICS technique.
 
 ## 📥 Get the captures
 
@@ -52,9 +52,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/modbus-labs-solymx/lab03_write_functions.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/modbus-labs-solymx/lab03_write_functions.pcap' --mitre
@@ -120,7 +120,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 **solymx (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — Modbus/TCP lab series (baseline → recon → writes)](https://github.com/solymx/modbus_pcap_test)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

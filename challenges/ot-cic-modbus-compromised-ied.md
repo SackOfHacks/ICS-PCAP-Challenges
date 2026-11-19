@@ -1,6 +1,6 @@
 # CIC Modbus 2023 — attacks from a compromised IED
 
-**Power grid & substations** · **Expert** · 4.08 GB · 43 capture file(s)
+**Power grid &amp; substations** · **Expert** · 4.08 GB · 43 capture file(s)
 
 > A field device has been turned against the substation. Dated attack logs are your answer key.
 
@@ -66,9 +66,9 @@ ls 'data/cic-modbus-2023/Modbus Dataset/attack/compromised-ied'
 pcapper 'data/cic-modbus-2023/Modbus Dataset/attack/compromised-ied/' --modbus --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cic-modbus-2023/Modbus Dataset/attack/compromised-ied/central-agent/central-agent-network-captures/vethffb308b-0.pcap' --mitre
@@ -141,7 +141,7 @@ _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadi
 
 - [Dataset source — CIC Modbus Dataset 2023 — substation Modbus attacks](https://www.unb.ca/cic/datasets/modbus-2023.html)
 - [CIC Modbus Dataset 2023 (UNB)](https://www.unb.ca/cic/datasets/modbus-2023.html)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (43)</summary>
 

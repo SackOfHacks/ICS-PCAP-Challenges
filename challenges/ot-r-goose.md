@@ -1,6 +1,6 @@
 # R-GOOSE and tunnelled GOOSE
 
-**Power grid & substations** · **Medium** · 1.9 MB · 10 capture file(s)
+**Power grid &amp; substations** · **Medium** · 1.9 MB · 10 capture file(s)
 
 > Routable GOOSE, GOOSE over VXLAN and GOOSE in Simplemux — substation events once they leave the bay.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/r-goose-tunnelled-goose/Traffic of R-GOOSE and tunnelled GOOSE/GOOSE inside Simplemux Blast/rasp2_eth1_simplemuxBlast_5ms-55558.pcap' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/r-goose-tunnelled-goose/Traffic of R-GOOSE and tunnelled GOOSE/GOOSE inside Simplemux Blast/rasp2_eth1_simplemuxBlast_5ms-55558.pcap' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Saldana, Jose (2026) — doi:10.5281/zenodo.22047499 · License
 
 - [Dataset source — R-GOOSE and tunnelled GOOSE traffic](https://zenodo.org/records/22047499)
 - [DOI 10.5281/zenodo.22047499](https://doi.org/10.5281/zenodo.22047499)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (10)</summary>
 

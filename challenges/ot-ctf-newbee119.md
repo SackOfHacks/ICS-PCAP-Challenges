@@ -1,6 +1,6 @@
 # ICS CTF (工控CTF) — find the flag in industrial traffic
 
-**CTF & conference labs** · **Hard** · 48.6 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Hard** · 48.6 MB · 1 capture file(s)
 
 > An industrial-control CTF capture — the flag is hidden somewhere in the OT protocol traffic.
 
@@ -60,9 +60,9 @@ strings -n 6 'data/ics-ctf-newbee119/ics.pcapng' | grep -iE 'flag|ctf|key|\{' | 
 pcapper 'data/ics-ctf-newbee119/ics.pcapng' --ctf --strings
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ics-ctf-newbee119/ics.pcapng' --mitre
@@ -135,7 +135,7 @@ _Dataset credit: NewBee119 (GitHub) · License: No license stated in repo — cr
 **NewBee119 (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — Chinese ICS CTF traffic (工控CTF) — NewBee119](https://github.com/NewBee119/ctf_ics_traffic)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

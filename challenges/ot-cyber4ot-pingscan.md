@@ -1,6 +1,6 @@
 # Cyber4OT — Nmap ping scans (-T5 … -T1)
 
-**Process control & PLC testbeds** · **Easy** · 12.9 MB · 10 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 12.9 MB · 10 capture file(s)
 
 > Nmap host-discovery ping scans of the ICS network at five timing templates, seen from the switch and the PLC port.
 
@@ -64,9 +64,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/cyber4ot/data/traces/Cyber4OT_004.pcapng' --modbus --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cyber4ot/data/traces/Cyber4OT_004.pcapng' --mitre
@@ -141,7 +141,7 @@ _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak
 
 - [Dataset source — Cyber4OT: ICS network traces containing normal activity and ](https://zenodo.org/records/15005190)
 - [DOI 10.5281/zenodo.15005190](https://doi.org/10.5281/zenodo.15005190)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (10)</summary>
 

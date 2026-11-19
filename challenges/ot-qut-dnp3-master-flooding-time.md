@@ -1,6 +1,6 @@
 # QUT DNP3 — Time-request flooding
 
-**Process control & PLC testbeds** · **Hard** · 0.4 MB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.4 MB · 3 capture file(s)
 
 > DNP3 attack, one run, three vantage points: a rogue master floods the outstation with time-related requests.
 
@@ -71,9 +71,9 @@ The attacker-side capture shows exactly what the attacker sent — the cleanest 
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20160901143106.master_flooding_time/20160901143106.master_flooding_time.attacker.pcap' --dnp3 --ot-commands
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20160901143106.master_flooding_time/20160901143106.master_flooding_time.master.pcap' --mitre
@@ -173,7 +173,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

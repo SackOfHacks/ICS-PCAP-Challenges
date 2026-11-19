@@ -1,6 +1,6 @@
 # bi0sCTF 2025 — Water Tank
 
-**CTF & conference labs** · **Medium** · 1.4 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 1.4 MB · 1 capture file(s)
 
 > CTF: Water Tank (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-bi0s-2025/water-tank/modbus_capture.pcap' --ctf --overview
 pcapper 'data/ctf-bi0s-2025/water-tank/modbus_capture.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-bi0s-2025/water-tank/modbus_capture.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: team bi0s (official repo) (2025) · License: None stated — cr
 
 - [Dataset source — bi0sCTF 2025 — hardware/ICS](https://github.com/teambi0s/bi0sCTF)
 - [Write-up / solution](https://github.com/teambi0s/bi0sCTF/tree/main/2025/HW/water%20tank)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

@@ -1,6 +1,6 @@
 # CSCTF 2026 — Water Hammer Reconciliation
 
-**CTF & conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
 
 > CTF: Water Hammer Reconciliation (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-csctf-2026/water-hammer-reconciliation/reserve-header.pcapng' 
 pcapper 'data/ctf-csctf-2026/water-hammer-reconciliation/reserve-header.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-csctf-2026/water-hammer-reconciliation/reserve-header.pcapng' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) 
 
 - [Dataset source — CSCTF 2026 — ICS / forensics](https://github.com/K0NGR3SS/CSCTF-2026-Dente)
 - [Write-up / solution](https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/Network/water-hammer-reconciliation)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

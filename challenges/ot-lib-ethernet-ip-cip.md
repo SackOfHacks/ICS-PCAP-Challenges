@@ -1,21 +1,21 @@
-# Protocol deep-dive — EtherNet/IP & CIP (84 unique captures)
+# Protocol deep-dive — EtherNet/IP &amp; CIP (84 unique captures)
 
 **Protocol library** · **Medium** · 0.39 GB · 80 capture file(s)
 
-> A deduplicated library of 84 EtherNet/IP & CIP captures from 8 public collections. Learn the protocol's grammar, then hunt its dangerous operations.
+> A deduplicated library of 84 EtherNet/IP &amp; CIP captures from 8 public collections. Learn the protocol's grammar, then hunt its dangerous operations.
 
 > ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
 
 ## Scenario
 
-Every public EtherNet/IP & CIP sample in this range, deduplicated by SHA-256 across automayt-ics-pcap, cisa-icsnpp-test-traces, emreekin-ics-pcaps, inl-malcolm-ot-artifacts, iti-ics-security-tools-pcaps, kargs-bacnet-captures, s7comm-scenarios-jenilv07, suricata-verify-ics-tests. Use it to learn what the protocol looks like on the wire — roles, operations, normal cadence — and to practice spotting the operations attackers abuse: CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), Execute PCCC (0x4B), Write Tag (0x4D), Write Tag Fragmented (0x53); ENIP ListIdentity (0x63) is the classic discovery broadcast.
+Every public EtherNet/IP &amp; CIP sample in this range, deduplicated by SHA-256 across automayt-ics-pcap, cisa-icsnpp-test-traces, emreekin-ics-pcaps, inl-malcolm-ot-artifacts, iti-ics-security-tools-pcaps, kargs-bacnet-captures, s7comm-scenarios-jenilv07, suricata-verify-ics-tests. Use it to learn what the protocol looks like on the wire — roles, operations, normal cadence — and to practice spotting the operations attackers abuse: CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), Execute PCCC (0x4B), Write Tag (0x4D), Write Tag Fragmented (0x53); ENIP ListIdentity (0x63) is the classic discovery broadcast.
 
 ## Objectives
 
 - Identify clients/masters and servers/outstations across the samples.
-- Enumerate the EtherNet/IP & CIP operations present.
+- Enumerate the EtherNet/IP &amp; CIP operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
+- Map findings to ATT&amp;CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
 
 ## 📥 Get the captures
 
@@ -79,9 +79,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_c
 pcapper data/automayt-ics-pcap/ --enip --cip --pccc --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_cip.pcapng' --mitre
@@ -100,7 +100,7 @@ capinfos 'data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_
 tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_cip.pcapng' -q -z io,phs | head -40
 ```
 
-**2. Map the EtherNet/IP & CIP conversation**
+**2. Map the EtherNet/IP &amp; CIP conversation**
 
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
@@ -146,9 +146,9 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), Execute PCCC (0x4B), Write Tag (0x4D), Write Tag Fragmented (0x53); ENIP ListIdentity (0x63) is the classic discovery broadcast). ATT&CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), Execute PCCC (0x4B), Write Tag (0x4D), Write Tag Fragmented (0x53); ENIP ListIdentity (0x63) is the classic discovery broadcast). ATT&amp;CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Set Attribute Single ×2, Start ×1; dangerous-operation matches: 3 (top sources: 192.168.10.121 ×2, 192.168.1.69 ×1); top conversations in cip-eth-set-2.pcap: 192.168.10.105↔192.168.10.121 (1 pkts) (basis: 3 of 80 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP &amp; CIP operations — Set Attribute Single ×2, Start ×1; dangerous-operation matches: 3 (top sources: 192.168.10.121 ×2, 192.168.1.69 ×1); top conversations in cip-eth-set-2.pcap: 192.168.10.105↔192.168.10.121 (1 pkts) (basis: 3 of 80 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP &amp; CIP chosen)
 
 _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Smith (automayt) · CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm) · ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign · BACnet capture library (kargs.net) — Steve Karg (BACnet Stack author) · ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium — jenilv-07 (GitHub) · Suricata-verify — ICS protocol test captures — OISF (Open Information Security Foundation)._
 
@@ -166,7 +166,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — BACnet capture library (kargs.net)](https://kargs.net/captures/)
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
 - [Dataset source — Suricata-verify — ICS protocol test captures](https://github.com/OISF/suricata-verify)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (80)</summary>
 

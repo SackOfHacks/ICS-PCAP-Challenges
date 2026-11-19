@@ -1,6 +1,6 @@
 # KubSTU 2026 — Echoes of the PLC
 
-**CTF & conference labs** · **Medium** · 9.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 9.1 MB · 1 capture file(s)
 
 > CTF: KubSTU 2026 — Echoes of the PLC (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-archive-misc-ics/kubstu-2026-echoes-of-the-plc/echoes_of_the_p
 pcapper 'data/ctf-archive-misc-ics/kubstu-2026-echoes-of-the-plc/echoes_of_the_plc.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-archive-misc-ics/kubstu-2026-echoes-of-the-plc/echoes_of_the_plc.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 
 - [Dataset source — ICS challenges from public CTF archives (sajjadium/ctf-archi](https://github.com/sajjadium/ctf-archives)
 - [Write-up / solution](https://github.com/Potato83/WriteUPs/blob/HEAD/KubCTF2026/echoes-of-the-plc/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

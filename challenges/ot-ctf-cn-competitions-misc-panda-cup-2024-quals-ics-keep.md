@@ -1,6 +1,6 @@
 # Panda Cup 2024 Quals ICS — 坚持做正确的事 (keep doing the right thing)
 
-**CTF & conference labs** · **Medium** · 5.5 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 5.5 MB · 1 capture file(s)
 
 > CTF: Panda Cup 2024 Quals ICS — 坚持做正确的事 (keep doing the right thing) (S7comm).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-cn-competitions-misc/panda-cup-2024-quals-ics-keep-doing-the-r
 pcapper 'data/ctf-cn-competitions-misc/panda-cup-2024-quals-ics-keep-doing-the-right-th/1.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-cn-competitions-misc/panda-cup-2024-quals-ics-keep-doing-the-right-th/1.pcap' --mitre
@@ -136,7 +136,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 
 - [Dataset source — Chinese ICS competition challenges (CISCN, Fujian, Panda Cup](https://github.com/CTF-Archives)
 - [Write-up / solution](https://github.com/CTF-Archives/2024-PandaCupCTF/blob/main/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

@@ -1,6 +1,6 @@
 # Modbus lab 15 — Detection rules
 
-**Process control & PLC testbeds** · **Hard** · 0.3 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Hard** · 0.3 MB · 1 capture file(s)
 
 > Write Suricata/Snort rules that catch the attacks in this capture, then test them.
 
@@ -14,7 +14,7 @@ Lab 15 of a 16-part Modbus/TCP lab series that walks from baseline traffic to a 
 
 - Answer the lab's question from the packets.
 - Record source, unit ID, function code and addresses for anything abnormal.
-- Note the ATT&CK for ICS technique.
+- Note the ATT&amp;CK for ICS technique.
 
 ## 📥 Get the captures
 
@@ -60,9 +60,9 @@ Write rules in local.rules, then run Suricata offline against the capture (Pcapp
 pcapper 'data/modbus-labs-solymx/lab15_detection_rules.pcap' --suricata --suricata-rules ./local.rules
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/modbus-labs-solymx/lab15_detection_rules.pcap' --mitre
@@ -128,7 +128,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 **solymx (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — Modbus/TCP lab series (baseline → recon → writes)](https://github.com/solymx/modbus_pcap_test)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

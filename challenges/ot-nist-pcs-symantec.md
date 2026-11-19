@@ -1,6 +1,6 @@
 # NIST process-control testbed — endpoint protection
 
-**Process control & PLC testbeds** · **Medium** · 7.05 GB · 4 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 7.05 GB · 4 capture file(s)
 
 > A chemical-process control network (EtherNet/IP-CIP) during Symantec endpoint protection deployed.
 
@@ -71,9 +71,9 @@ pcapper 'data/nist-csms-process-control-pcs/PL008.2-symantec/capture.pcap.part00
 pcapper 'data/nist-csms-process-control-pcs/PL001.1-baseline/' --overview
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/nist-csms-process-control-pcs/PL008.2-symantec/capture.pcap.part000.pcap' --mitre
@@ -92,7 +92,7 @@ capinfos 'data/nist-csms-process-control-pcs/PL008.2-symantec/capture.pcap.part0
 tshark -r 'data/nist-csms-process-control-pcs/PL008.2-symantec/capture.pcap.part000.pcap' -q -z io,phs | head -40
 ```
 
-**2. Map the EtherNet/IP & CIP conversation**
+**2. Map the EtherNet/IP &amp; CIP conversation**
 
 Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
 
@@ -136,7 +136,7 @@ Implicit (class 1) I/O is UDP 2222; explicit messaging is TCP 44818.
 
 Baseline: steady CIP implicit I/O and explicit messaging between controllers and HMIs, plus Windows/DCE-RPC management traffic. Nessus run: the same plus a scanner sweeping hosts and ports (including CIP/ENIP discovery) — quantify it and check for gaps in the cyclic I/O.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Read Tag ×265558, Get Attribute List ×26880, Write Tag ×11952, Multiple Service Packet ×1854, Read Tag Fragmented ×372, Get Attributes All ×372; dangerous-operation matches: 11952 (top sources: 172.16.4.5 ×5976, 172.16.4.102 ×5976); top conversations in capture.pcap.part003.pcap: 172.16.4.102↔172.16.4.5 (276,627 pkts), 172.16.1.5↔172.16.2.5 (7,200 pkts), 172.16.1.4↔172.16.2.5 (5,444 pkts) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP &amp; CIP operations — Read Tag ×265558, Get Attribute List ×26880, Write Tag ×11952, Multiple Service Packet ×1854, Read Tag Fragmented ×372, Get Attributes All ×372; dangerous-operation matches: 11952 (top sources: 172.16.4.5 ×5976, 172.16.4.102 ×5976); top conversations in capture.pcap.part003.pcap: 172.16.4.102↔172.16.4.5 (276,627 pkts), 172.16.1.5↔172.16.2.5 (7,200 pkts), 172.16.1.4↔172.16.2.5 (5,444 pkts) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP &amp; CIP chosen)
 
 _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program (2019) · License: No license stated — U.S. Government work (NIST); credit NIST._
 
@@ -147,7 +147,7 @@ _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufac
 **NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program (2019)** — license: No license stated — U.S. Government work (NIST); credit NIST
 
 - [Dataset source — NIST CSMS testbed — process control system (baseline vs. Nes](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/pcs/)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

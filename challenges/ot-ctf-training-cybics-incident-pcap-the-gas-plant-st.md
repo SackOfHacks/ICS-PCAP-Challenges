@@ -1,6 +1,6 @@
 # CybICS — Incident PCAP — the gas plant stops
 
-**CTF & conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.1 MB · 1 capture file(s)
 
 > CTF: Incident PCAP — the gas plant stops (Modbus/TCP).
 
@@ -56,9 +56,9 @@ pcapper 'data/training-cybics/incident-pcap-the-gas-plant-stops/incident.pcap' -
 pcapper 'data/training-cybics/incident-pcap-the-gas-plant-stops/incident.pcap' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/training-cybics/incident-pcap-the-gas-plant-stops/incident.pcap' --mitre
@@ -138,7 +138,7 @@ _Dataset credit: Matthias Niedermaier (CybICS) (2026) · License: Repository MIT
 
 - [Dataset source — CybICS training platform — incident modules](https://github.com/mniedermaier/CybICS)
 - [Write-up / solution](https://github.com/mniedermaier/CybICS/blob/main/training/incident_pcap/README.md)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

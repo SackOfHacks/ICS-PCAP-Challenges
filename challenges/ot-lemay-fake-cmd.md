@@ -1,6 +1,6 @@
 # Lemay SCADA — the fake Modbus command
 
-**Process control & PLC testbeds** · **Medium** · 0.8 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.8 MB · 1 capture file(s)
 
 > One Modbus write didn't come from the master. Which one?
 
@@ -8,7 +8,7 @@
 
 ## Scenario
 
-Lemay & Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
+Lemay &amp; Fernandez (CSET 2016) built simulated SCADA networks — a master polling Modbus RTUs — and recorded normal operation plus labelled malicious activity, to give ICS intrusion-detection research realistic data.
 
 One Modbus write didn't come from the master. Which one?
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py lemay-scada-modbus-cset2016
 ```
 
-- **[Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
+- **[Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/antoine-lemay/Modbus_dataset](https://github.com/antoine-lemay/Modbus_dataset)
 
@@ -50,9 +50,9 @@ pcapper 'data/lemay-scada-modbus-cset2016/send_a_fake_command_modbus_6RTU_with_o
 pcapper 'data/lemay-scada-modbus-cset2016/send_a_fake_command_modbus_6RTU_with_operate.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/lemay-scada-modbus-cset2016/send_a_fake_command_modbus_6RTU_with_operate.pcap' --mitre
@@ -103,17 +103,17 @@ An attacker injects a Modbus write ('operate' command) that did not come from th
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×816, Read Discrete Inputs ×816, Read Coils ×816, Write Single Coil ×18; dangerous-operation matches: 18 (top sources: 192.168.1.100 ×8, 192.168.1.101 ×5, 192.168.1.102 ×4); top conversations in send_a_fake_command_modbus_6RTU_with_operate.pcap: 192.168.1.100↔192.168.1.101 (1,872 pkts), 192.168.1.100↔192.168.1.104 (1,870 pkts), 192.168.1.100↔192.168.1.102 (1,863 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
-_Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
+_Dataset credit: Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 
 </details>
 
 ## Dataset & credit
 
-**Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
+**Antoine Lemay &amp; José M. Fernandez (Polytechnique Montréal) (2016)** — license: No license stated in repo — credit the author
 
-- [Dataset source — Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
-- [Lemay & Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [Dataset source — Lemay &amp; Fernandez SCADA Modbus dataset (CSET 2016)](https://github.com/antoine-lemay/Modbus_dataset)
+- [Lemay &amp; Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

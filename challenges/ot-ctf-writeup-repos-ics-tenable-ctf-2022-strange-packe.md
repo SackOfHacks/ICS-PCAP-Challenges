@@ -1,6 +1,6 @@
 # Tenable CTF 2022 — Strange Packets
 
-**CTF & conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
+**CTF &amp; conference labs** · **Medium** · 0.0 MB · 1 capture file(s)
 
 > CTF: Tenable CTF 2022 — Strange Packets (Modbus/TCP).
 
@@ -54,9 +54,9 @@ pcapper 'data/ctf-writeup-repos-ics/tenable-ctf-2022-strange-packets/strange_pac
 pcapper 'data/ctf-writeup-repos-ics/tenable-ctf-2022-strange-packets/strange_packets.pcapng' --ctf --strings
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ctf-writeup-repos-ics/tenable-ctf-2022-strange-packets/strange_packets.pcapng' --mitre
@@ -134,9 +134,9 @@ _Dataset credit: Event organisers; captures kept in participants' write-up repos
 
 **Event organisers; captures kept in participants' write-up repos** — license: None stated — credit each event
 
-- [Dataset source — ICS challenges from community write-up repos]()
+- Dataset source — ICS challenges from community write-up repos
 - [Write-up / solution](https://github.com/kiyotaka-akaiwa/ctf-writeups/tree/main/TenableCTF/2022/Strange_Packets)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

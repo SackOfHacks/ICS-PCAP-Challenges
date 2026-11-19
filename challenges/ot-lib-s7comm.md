@@ -15,7 +15,7 @@ Every public S7comm sample in this range, deduplicated by SHA-256 across automay
 - Identify clients/masters and servers/outstations across the samples.
 - Enumerate the S7comm operations present.
 - Flag every dangerous operation and its source.
-- Map findings to ATT&CK for ICS (T0843 Program Download · T0845 Program Upload · T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery).
+- Map findings to ATT&amp;CK for ICS (T0843 Program Download · T0845 Program Upload · T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery).
 
 ## 📥 Get the captures
 
@@ -87,9 +87,9 @@ pcapper 'data/cisa-icsnpp-test-traces/icsnpp-s7comm/s7comm_plus_port_change.pcap
 pcapper data/automayt-ics-pcap/ --s7 --ot-commands
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/cisa-icsnpp-test-traces/icsnpp-s7comm/s7comm_plus_port_change.pcap' --mitre
@@ -154,7 +154,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 <details><summary>Reveal walkthrough / answer</summary>
 
-A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (write variable (0x05), program download (0x1A–0x1C), program upload (0x1D–0x1F — logic theft), PI-service (0x28 — start/restart/compress), PLC STOP (0x29) and security/password userdata (function group 5); SZL reads (function group 4) are device recon). ATT&CK for ICS: T0843 Program Download · T0845 Program Upload · T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (write variable (0x05), program download (0x1A–0x1C), program upload (0x1D–0x1F — logic theft), PI-service (0x28 — start/restart/compress), PLC STOP (0x29) and security/password userdata (function group 5); SZL reads (function group 4) are device recon). ATT&amp;CK for ICS: T0843 Program Download · T0845 Program Upload · T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
 
 **Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Setup Communication ×3, PLC Stop ×2; dangerous-operation matches: 2 (top sources: 134.249.62.206 ×1, 134.249.61.163 ×1); top conversations in pro2.pcap: 10.10.10.10↔10.10.10.70 (2 pkts) (basis: 3 of 52 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
 
@@ -173,7 +173,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (52)</summary>
 

@@ -1,6 +1,6 @@
 # ICS practice — asset discovery
 
-**Process control & PLC testbeds** · **Easy** · 0.5 MB · 1 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 0.5 MB · 1 capture file(s)
 
 > Build an asset inventory from passive traffic.
 
@@ -50,9 +50,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/ics-practice-solymx/lab_asset_discovery.pcap' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/ics-practice-solymx/lab_asset_discovery.pcap' --mitre
@@ -112,7 +112,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 **solymx (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — ICS PCAP practice challenges (asset discovery, hidden Modbus](https://github.com/solymx/ICS_PCAP_Practice)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

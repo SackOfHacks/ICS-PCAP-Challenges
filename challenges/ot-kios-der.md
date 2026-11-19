@@ -1,6 +1,6 @@
-# KIOS — attacks on DER energy management & control
+# KIOS — attacks on DER energy management &amp; control
 
-**Power grid & substations** · **Hard** · 0.1 MB · 1 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.1 MB · 1 capture file(s)
 
 > Cyberattack scenarios against distributed-energy-resource energy management and control.
 
@@ -26,7 +26,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py kios-der-energy-mgmt-attacks
 ```
 
-- **[KIOS — cyberattack scenarios on DER energy management & control](../DATASETS.md#kios-der-energy-mgmt-attacks)** (`kios-der-energy-mgmt-attacks`), ~0.3 MB once fetched
+- **[KIOS — cyberattack scenarios on DER energy management &amp; control](../DATASETS.md#kios-der-energy-mgmt-attacks)** (`kios-der-energy-mgmt-attacks`), ~0.3 MB once fetched
   - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.3 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/kios-der-energy-mgmt-attacks.tar.part000) (0.3 MB)
   - **Original source:** [zenodo.org/records/12773981](https://zenodo.org/records/12773981) · [doi:10.5281/zenodo.12773981](https://doi.org/10.5281/zenodo.12773981)
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/kios-der-energy-mgmt-attacks/Electron_SUC1_S4_Modbus_Attack_Traffic.pcapng' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/kios-der-energy-mgmt-attacks/Electron_SUC1_S4_Modbus_Attack_Traffic.pcapng' --mitre
@@ -123,9 +123,9 @@ _Dataset credit: Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, Irina; Charalam
 
 **Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, Irina; Charalambous, Charalambos; Tekki, Eleni (2024) — doi:10.5281/zenodo.12773981** — license: CC BY 4.0
 
-- [Dataset source — KIOS — cyberattack scenarios on DER energy management & cont](https://zenodo.org/records/12773981)
+- [Dataset source — KIOS — cyberattack scenarios on DER energy management &amp; cont](https://zenodo.org/records/12773981)
 - [DOI 10.5281/zenodo.12773981](https://doi.org/10.5281/zenodo.12773981)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (1)</summary>
 

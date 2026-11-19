@@ -1,6 +1,6 @@
 # IEEE 24-bus SDN lab — R-GOOSE on primary/backup paths
 
-**Power grid & substations** · **Medium** · 0.0 MB · 4 capture file(s)
+**Power grid &amp; substations** · **Medium** · 0.0 MB · 4 capture file(s)
 
 > R-GOOSE traffic from an ONOS-controlled SDN substation lab on primary and backup paths.
 
@@ -62,9 +62,9 @@ pcapper 'data/iec61850-rgoose-sdn-lab/output/pcaps/f4_bak_3_to_9.pcap' --overvie
 pcapper 'data/iec61850-rgoose-sdn-lab/output/pcaps/f4_bak_3_to_9.pcap' --ot-commands --threats
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/iec61850-rgoose-sdn-lab/output/pcaps/f4_bak_3_to_9.pcap' --mitre
@@ -130,7 +130,7 @@ _Dataset credit: jaafaris (GitHub) · License: No license stated in repo — cre
 **jaafaris (GitHub)** — license: No license stated in repo — credit the author
 
 - [Dataset source — IEEE 24-bus SDN substation lab — IEC 61850 R-GOOSE](https://github.com/jaafaris/ieee24-onos-sdn-lab-v2-)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (4)</summary>
 

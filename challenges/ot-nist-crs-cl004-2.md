@@ -1,10 +1,10 @@
 # NIST robotics cell — full disk-image backup (CL004.2)
 
-**Manufacturing & smart factory** · **Medium** · 8.59 GB · 9 capture file(s)
+**Manufacturing &amp; smart factory** · **Medium** · 8.59 GB · 9 capture file(s)
 
 > What does full disk-image backup do to a live robotics work cell's control network?
 
-> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller. 5 of these captures carry executable files (Windows PE / Linux ELF) inside the traffic, and some may be malware: work offline, hash anything you extract and never run it.
 
 ## Scenario
 
@@ -71,9 +71,9 @@ pcapper 'data/nist-csms-robotics-crs/CL004.2-FullImageBackup/pcaps/capture.pcap'
 pcapper 'data/nist-csms-robotics-crs/CL001.1-Baseline/' --overview  # then diff against this scenario
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/nist-csms-robotics-crs/CL004.2-FullImageBackup/pcaps/capture.pcap' --mitre
@@ -146,7 +146,7 @@ _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufac
 
 - [Dataset source — NIST CSMS testbed — collaborative robotics system (21 securi](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/crs/)
 - [NIST — Cybersecurity for Smart Manufacturing Systems](https://www.nist.gov/programs-projects/cybersecurity-smart-manufacturing-systems)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (9)</summary>
 

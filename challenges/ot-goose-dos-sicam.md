@@ -1,6 +1,6 @@
 # GOOSE flooding DoS against a SICAM meter
 
-**Power grid & substations** · **Medium** · 12.9 MB · 2 capture file(s)
+**Power grid &amp; substations** · **Medium** · 12.9 MB · 2 capture file(s)
 
 > Denial of service by GOOSE flooding against a Siemens SICAM digital meter, with a clean baseline.
 
@@ -56,9 +56,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/goose-dos-sicam-meter/DoS/Attack/U3.pcapng' --goose --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/goose-dos-sicam-meter/DoS/Attack/U3.pcapng' --mitre
@@ -125,7 +125,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel (202
 
 - [Dataset source — GOOSE flooding DoS/DDoS against a SICAM digital meter](https://zenodo.org/records/13912644)
 - [DOI 10.5281/zenodo.13912644](https://doi.org/10.5281/zenodo.13912644)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (2)</summary>
 

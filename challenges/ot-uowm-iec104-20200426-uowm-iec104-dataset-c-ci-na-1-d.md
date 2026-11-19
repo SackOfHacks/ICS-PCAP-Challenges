@@ -1,6 +1,6 @@
 # IEC-104 — counter interrogation (C_CI_NA_1, TypeID 101) — flood/DoS variant
 
-**Power grid & substations** · **Hard** · 0.48 GB · 22 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.48 GB · 22 capture file(s)
 
 > UOWM IEC-104 IDS: counter interrogation (C_CI_NA_1, TypeID 101) — flood/DoS variant — 22 capture(s).
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/uowm-iec104-ids/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS_attacker1/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS_attacker1.pcap' --iec104 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/uowm-iec104-ids/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS_attacker1/20200426_UOWM_IEC104_Dataset_c_ci_na_1_DoS_attacker1.pcap' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Panagiotis; Konstantinos; Thomas; Vasileios; Panagiotis (2022) 
 
 - [Dataset source — IEC 60870-5-104 Intrusion Detection Dataset (UOWM)](https://zenodo.org/records/7108614)
 - [DOI 10.21227/fj7s-f281](https://doi.org/10.21227/fj7s-f281)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (22)</summary>
 

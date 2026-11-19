@@ -1,6 +1,6 @@
 # QUT DNP3 — Reconnaissance — nmap and DNP3 discovery
 
-**Process control & PLC testbeds** · **Medium** · 0.1 MB · 6 capture file(s)
+**Process control &amp; PLC testbeds** · **Medium** · 0.1 MB · 6 capture file(s)
 
 > DNP3 attack, one run, three vantage points: the attacker scans the network and probes for DNP3 devices.
 
@@ -71,9 +71,9 @@ The attacker-side capture shows exactly what the attacker sent — the cleanest 
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161013133003.nmap/20161013133003.nmap.attacker.pcap' --dnp3 --ot-commands
 ```
 
-**5. Map it to ATT&CK for ICS**
+**5. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161013133003.nmap/20161013133003.nmap.master.pcap' --mitre
@@ -173,7 +173,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (6)</summary>
 

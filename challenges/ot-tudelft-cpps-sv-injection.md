@@ -1,6 +1,6 @@
 # TU Delft substation — SV Injection
 
-**Power grid & substations** · **Hard** · 0.69 GB · 8 capture file(s)
+**Power grid &amp; substations** · **Hard** · 0.69 GB · 8 capture file(s)
 
 > TU Delft digital substation: SV Injection — 8 capture(s).
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/tudelft-digital-substation-cpps/2026_10_19_CPPS_Dataset_CyberSec_DigitalSubstation_TUD/Scenarios/SV Injection/HighValues/sv_injection_all_nines_during_normal_attacker_anon.pcapng' --sv --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/tudelft-digital-substation-cpps/2026_10_19_CPPS_Dataset_CyberSec_DigitalSubstation_TUD/Scenarios/SV Injection/HighValues/sv_injection_all_nines_during_normal_attacker_anon.pcapng' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Cibin, Nicola; Kabbara, Nadine; Presekal, Alfan; Semertzis, Ioa
 
 - [Dataset source — TU Delft — cyber-physical power system dataset for digital s](https://zenodo.org/records/23558261)
 - [DOI 10.5281/zenodo.23558261](https://doi.org/10.5281/zenodo.23558261)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (8)</summary>
 

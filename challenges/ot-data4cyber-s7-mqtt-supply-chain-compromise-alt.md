@@ -1,6 +1,6 @@
 # Data4Cyber — S7 — MQTT supply-chain compromise (alternate run)
 
-**Power grid & substations** · **Hard** · 22.4 MB · 3 capture file(s)
+**Power grid &amp; substations** · **Hard** · 22.4 MB · 3 capture file(s)
 
 > Data4Cyber: S7 — MQTT supply-chain compromise (alternate run) — 3 capture(s).
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/data4cyber-distribution-grid/data4cyber_dataset/S7_mqtt_supply_chain_compromise_alt/attacker_only.pcapng' --modbus --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/data4cyber-distribution-grid/data4cyber_dataset/S7_mqtt_supply_chain_compromise_alt/attacker_only.pcapng' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Sen, Ömer; Bader, Lennart; Emara, Marawan; Serror, Martin; Sch
 
 - [Dataset source — Data4Cyber — labeled cyber-physical dataset for distribution](https://zenodo.org/records/24105329)
 - [DOI 10.5281/zenodo.24105329](https://doi.org/10.5281/zenodo.24105329)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

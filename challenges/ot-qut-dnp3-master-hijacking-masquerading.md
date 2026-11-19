@@ -1,6 +1,6 @@
 # QUT DNP3 — Master session hijack + masquerading
 
-**Process control & PLC testbeds** · **Expert** · 0.4 MB · 3 capture file(s)
+**Process control &amp; PLC testbeds** · **Expert** · 0.4 MB · 3 capture file(s)
 
 > DNP3 attack, one run, three vantage points: the attacker takes over the master's session and then speaks as the master.
 
@@ -63,9 +63,9 @@ The attacker-side capture shows exactly what the attacker sent — the cleanest 
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20160828131747.master_hijacking_masquerading/20160828131747.master_hijacking_masquerading.attacker.pcap' --dnp3 --ot-commands
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20160828131747.master_hijacking_masquerading/20160828131747.master_hijacking_masquerading.master.pcap' --mitre
@@ -165,7 +165,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 **Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017)** — license: No license stated — credit the authors
 
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (3)</summary>
 

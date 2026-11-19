@@ -1,6 +1,6 @@
 # DNP3 — Enumerate
 
-**Power grid & substations** · **Hard** · 55.1 MB · 14 capture file(s)
+**Power grid &amp; substations** · **Hard** · 55.1 MB · 14 capture file(s)
 
 > UOWM DNP3 IDS: Enumerate — 14 capture(s).
 
@@ -57,9 +57,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Enumerate/DNP3 PCAP Files/20200516_DNP3_Enumerate_UOWM_DNP3_Dataset_Attacker_01.pcap' --dnp3 --ot-commands
 ```
 
-**3. Map it to ATT&CK for ICS**
+**3. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/uowm-dnp3-ids/20200516_DNP3_Enumerate/DNP3 PCAP Files/20200516_DNP3_Enumerate_UOWM_DNP3_Dataset_Attacker_01.pcap' --mitre
@@ -126,7 +126,7 @@ _Dataset credit: Panagiotis; Vasiliki; Thomas; Vasileios; Panagiotis (2022) — 
 
 - [Dataset source — DNP3 Intrusion Detection Dataset (UOWM)](https://zenodo.org/records/7348493)
 - [DOI 10.21227/s7h0-b081](https://doi.org/10.21227/s7h0-b081)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (14)</summary>
 

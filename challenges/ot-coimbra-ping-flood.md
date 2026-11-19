@@ -1,6 +1,6 @@
 # Coimbra Modbus SCADA — ICMP ping-flood DDoS
 
-**Process control & PLC testbeds** · **Easy** · 1.10 GB · 37 capture file(s)
+**Process control &amp; PLC testbeds** · **Easy** · 1.10 GB · 37 capture file(s)
 
 > An ICMP flood against the SCADA network. How big, from where, and did the Modbus polling survive?
 
@@ -61,9 +61,9 @@ pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/pingFloodDDoS/eth2dump-pingF
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/pingFloodDDoS/eth2dump-pingFloodDDoS-15m-12h_1.pcap' --modbus --protocols --scan
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Map it to ATT&amp;CK for ICS**
 
-Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+Pcapper maps its detections to MITRE ATT&amp;CK (Enterprise + ICS) and draws the attack path.
 
 ```bash
 pcapper 'data/coimbra-modbus-tcp-scada/captures1_v2/pingFloodDDoS/eth2dump-pingFloodDDoS-15m-12h_1.pcap' --mitre
@@ -131,7 +131,7 @@ _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. �
 
 - [Dataset source — University of Coimbra — Modbus/TCP SCADA dataset #1 (CRITIS ](https://github.com/tjcruz-dei/ICS_PCAPS)
 - [DOI 10.1007/978-3-030-05849-4_19](https://doi.org/10.1007/978-3-030-05849-4_19)
-- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+- [MITRE ATT&amp;CK for ICS](https://attack.mitre.org/matrices/ics/)
 
 <details><summary>Capture files (37)</summary>
 
