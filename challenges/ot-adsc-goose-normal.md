@@ -18,6 +18,18 @@ This challenge is the capture labeled **Normal**.
 - Find the malicious or abnormal activity it is labeled for.
 - Write a detection and test it against the normal capture.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py adsc-iec61850-security
+```
+
+- **[ADSC IEC 61850 security dataset — GOOSE protection events and attacks](../DATASETS.md#adsc-iec61850-security)** (`adsc-iec61850-security`), ~0.10 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/smartgridadsc/IEC61850SecurityDataset](https://github.com/smartgridadsc/IEC61850SecurityDataset)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

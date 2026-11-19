@@ -19,6 +19,20 @@ Find the malicious GOOSE frames in the full capture, explain how they differ fro
 - Explain the anomaly in stNum/sqNum/timing/content.
 - Write a detection and test it on the test split.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py iec61850-goose-rtds-attacks
+```
+
+- **[IEC 61850 GOOSE attacks — RTDS simulator + physical IED](../DATASETS.md#iec61850-goose-rtds-attacks)** (`iec61850-goose-rtds-attacks`), ~8.51 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (1.63 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/iec61850-goose-rtds-attacks.tar.part000) (1.63 GB)
+  - **Original source:** [kaggle.com/datasets/johnatandeoliveira/network-traffic-da…](https://www.kaggle.com/datasets/johnatandeoliveira/network-traffic-dataset-iec-61850-cyber-attacks) · [doi:10.1016/j.jisa.2025.104197](https://doi.org/10.1016/j.jisa.2025.104197)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

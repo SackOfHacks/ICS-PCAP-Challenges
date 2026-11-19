@@ -19,6 +19,20 @@ This scenario (CL007.2) exercises **Open-AudIT authenticated discovery scan**. Y
 - Measure the effect on Modbus/TCP polling (rate, gaps, retransmissions).
 - Compare with the baseline scenario (CL001.1) and decide whether this control is OT-safe.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py nist-csms-robotics-crs
+```
+
+- **[NIST CSMS testbed — collaborative robotics system (21 security-control scenarios)](../DATASETS.md#nist-csms-robotics-crs)** (`nist-csms-robotics-crs`), ~24.96 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 4 parts (6.44 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-robotics-crs.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-robotics-crs.tar.part001) (1.90 GB) · [part002](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-robotics-crs.tar.part002) (1.90 GB) · [part003](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-robotics-crs.tar.part003) (0.74 GB)
+  - **Original source:** [s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cyber…](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/crs/)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

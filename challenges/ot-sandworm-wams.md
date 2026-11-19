@@ -19,6 +19,20 @@ Rebuild the kill chain from the packets and map it to ATT&CK.
 - Determine whether synchrophasor data or the PDC database were affected.
 - Map each stage to ATT&CK (Enterprise + ICS).
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py sandworm-apt-wams
+```
+
+- **[APT Sandworm emulation — wide-area measurement system (PMU/PDC)](../DATASETS.md#sandworm-apt-wams)** (`sandworm-apt-wams`), ~1.82 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (1.65 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/sandworm-apt-wams.tar.part000) (1.65 GB)
+  - **Original source:** [zenodo.org/records/16911636](https://zenodo.org/records/16911636) · [doi:10.5281/zenodo.16911636](https://doi.org/10.5281/zenodo.16911636)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -18,6 +18,18 @@ IEC 60870-5-104 file-transfer traffic between FreyrSCADA simulators — the rare
 - Characterize the traffic.
 - Find and explain any attack or unusual operation.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py netresec-iec104-file-transfer
+```
+
+- **[IEC-104 file transfer between FreyrSCADA simulators (Netresec)](../DATASETS.md#netresec-iec104-file-transfer)** (`netresec-iec104-file-transfer`), ~0.2 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [netresec.com](https://www.netresec.com/)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

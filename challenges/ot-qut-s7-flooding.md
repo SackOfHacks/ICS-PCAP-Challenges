@@ -19,6 +19,18 @@ These are the master-side captures of 9 flooding runs (ChangeUpperThreshold, Con
 - Assess the process impact vs a single write.
 - Write a rate-based detection.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py qut-s7comm-2017
+```
+
+- **[QUT 2017 S7comm — mining-refinery testbed (64 attacks, 13 types)](../DATASETS.md#qut-s7comm-2017)** (`qut-s7comm-2017`), ~1.49 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/qut-infosec/2017QUT_S7comm](https://github.com/qut-infosec/2017QUT_S7comm)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

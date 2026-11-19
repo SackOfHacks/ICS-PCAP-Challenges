@@ -18,6 +18,18 @@ A protocol sample collection weighted toward IEC 60870-5-104 and IEC 61850 MMS c
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ics-pcaps-haolipeng
+```
+
+- **[ICS protocol sample captures (IEC-104, MMS and more)](../DATASETS.md#ics-pcaps-haolipeng)** (`ics-pcaps-haolipeng`), ~4.2 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/haolipeng/ics-pcaps](https://github.com/haolipeng/ics-pcaps)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

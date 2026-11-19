@@ -18,6 +18,20 @@ A full-network capture of the G-ICS lab under 80 Mbps of background load with ni
 - Characterize the traffic.
 - Find and explain any attack or unusual operation.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py g-ics-grenoble-whole-network
+```
+
+- **[G-ICS — whole-network capture (IEC 61850 SV/GOOSE, Modbus, PROFINET)](../DATASETS.md#g-ics-grenoble-whole-network)** (`g-ics-grenoble-whole-network`), ~1.53 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (80.5 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/g-ics-grenoble-whole-network.tar.part000) (80.5 MB)
+  - **Original source:** [data.mendeley.com/datasets/8cjkkw79z2/1](https://data.mendeley.com/datasets/8cjkkw79z2/1) · [doi:10.17632/8cjkkw79z2.1](https://doi.org/10.17632/8cjkkw79z2.1)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

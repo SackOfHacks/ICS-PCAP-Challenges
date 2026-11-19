@@ -18,6 +18,18 @@ For each attempt, identify the CIP object/attribute targeted, the service used, 
 - Determine whether each attempt succeeded (CIP general status).
 - Map each attempt to ATT&CK for ICS.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py s7comm-scenarios-jenilv07
+```
+
+- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~43.6 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/jenilv-07/ICS-pcap-files](https://github.com/jenilv-07/ICS-pcap-files)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

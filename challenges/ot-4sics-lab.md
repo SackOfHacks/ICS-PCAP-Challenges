@@ -19,6 +19,18 @@ You are the lab's NSM analyst. Build an asset inventory from the traffic alone, 
 - Find scanning and discovery sweeps.
 - Find write, stop/start, download and other control operations and attribute them to a source.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py netresec-4sics-2015
+```
+
+- **[4SICS Geek Lounge ICS lab captures (2015)](../DATASETS.md#netresec-4sics-2015)** (`netresec-4sics-2015`), ~0.37 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [netresec.com/?page=PCAP4SICS](https://www.netresec.com/?page=PCAP4SICS)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

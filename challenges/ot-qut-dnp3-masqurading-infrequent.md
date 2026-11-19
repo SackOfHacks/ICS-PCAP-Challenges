@@ -19,6 +19,18 @@ This is a **mixed** capture: masquerading attacks, scheduled rarely inside norma
 - Classify each attack (flooding, injection, MITM, masquerading, replay, recon).
 - Score yourself against config.txt and the labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py qut-dnp3-2017
+```
+
+- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~14.17 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/qut-infosec/2017QUT_DNP3](https://github.com/qut-infosec/2017QUT_DNP3)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

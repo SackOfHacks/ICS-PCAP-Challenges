@@ -16,6 +16,18 @@ Part of the S4x15 ICS Village CTF capture set (see the main S4x15 challenge for 
 - Find reconnaissance against it.
 - Find any control, write or exploit traffic and its source.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py digitalbond-s4x15-ctf
+```
+
+- **[S4x15 ICS Village CTF captures (Digital Bond)](../DATASETS.md#digitalbond-s4x15-ctf)** (`digitalbond-s4x15-ctf`), ~41.5 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [netresec.com/?page=DigitalBond_S4](https://www.netresec.com/?page=DigitalBond_S4)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

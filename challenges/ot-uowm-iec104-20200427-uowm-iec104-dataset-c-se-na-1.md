@@ -19,6 +19,20 @@ This challenge covers the '20200427_UOWM_IEC104_Dataset_c_se_na_1' set (22 captu
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py uowm-iec104-ids
+```
+
+- **[IEC 60870-5-104 Intrusion Detection Dataset (UOWM)](../DATASETS.md#uowm-iec104-ids)** (`uowm-iec104-ids`), ~8.50 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 2 parts (3.74 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/uowm-iec104-ids.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/uowm-iec104-ids.tar.part001) (1.84 GB)
+  - **Original source:** [zenodo.org/records/7108614](https://zenodo.org/records/7108614) · [doi:10.21227/fj7s-f281](https://doi.org/10.21227/fj7s-f281)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

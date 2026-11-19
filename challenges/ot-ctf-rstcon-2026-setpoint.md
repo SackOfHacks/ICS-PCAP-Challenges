@@ -18,6 +18,18 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ctf-rstcon-2026
+```
+
+- **[RSTCON CTF 2026 — forensics](../DATASETS.md#ctf-rstcon-2026)** (`ctf-rstcon-2026`), ~0.1 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/RST-Group/RSTCON-CTF-2026-public](https://github.com/RST-Group/RSTCON-CTF-2026-public)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -19,6 +19,20 @@ Reconstruct exactly what the malware tells a substation RTU to do.
 - List the information object addresses (IOAs) it commands and the command types and values.
 - Write a detection for it.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py netresec-industroyer2
+```
+
+- **[Industroyer2 — IEC-104 traffic of the real malware (Netresec)](../DATASETS.md#netresec-industroyer2)** (`netresec-industroyer2`), ~0.0 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.0 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/netresec-industroyer2.tar.part000) (0.0 MB)
+  - **Original source:** [netresec.com/?page=Blog&month=2022-04&post=Industroyer2-I…](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

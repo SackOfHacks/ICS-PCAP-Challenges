@@ -17,6 +17,24 @@ Every public IEC 61850 GOOSE sample in this range, deduplicated by SHA-256 acros
 - Flag every dangerous operation and its source.
 - Map findings to ATT&CK for ICS (T0855 Unauthorized Command Message · T0856 Spoof Reporting Message · T0831 Manipulation of Control · T0814 Denial of Service).
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch its 3 datasets first, from the repo root:
+
+```bash
+python3 scripts/fetch.py emreekin-ics-pcaps ics-pcaps-haolipeng iti-ics-security-tools-pcaps
+```
+
+- **[ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](../DATASETS.md#emreekin-ics-pcaps)** (`emreekin-ics-pcaps`), ~0.26 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/EmreEkin/ICS-Pcaps](https://github.com/EmreEkin/ICS-Pcaps)
+- **[ICS protocol sample captures (IEC-104, MMS and more)](../DATASETS.md#ics-pcaps-haolipeng)** (`ics-pcaps-haolipeng`), ~4.2 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/haolipeng/ics-pcaps](https://github.com/haolipeng/ics-pcaps)
+- **[ITI ICS-Security-Tools — sample ICS protocol captures](../DATASETS.md#iti-ics-security-tools-pcaps)** (`iti-ics-security-tools-pcaps`), ~0.12 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/ITI/ICS-Security-Tools/tree/master/pcaps](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

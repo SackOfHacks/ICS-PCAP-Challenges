@@ -18,6 +18,20 @@ Sandboxed power-system use case: traffic for normal operation, false-data-inject
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py kios-electron-suc4-power-attacks
+```
+
+- **[KIOS/ELECTRON SUC4 — FDI and masquerade attacks on a power system](../DATASETS.md#kios-electron-suc4-power-attacks)** (`kios-electron-suc4-power-attacks`), ~0.18 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.18 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/kios-electron-suc4-power-attacks.tar.part000) (0.18 GB)
+  - **Original source:** [zenodo.org/records/12960228](https://zenodo.org/records/12960228) · [doi:10.5281/zenodo.12960228](https://doi.org/10.5281/zenodo.12960228)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

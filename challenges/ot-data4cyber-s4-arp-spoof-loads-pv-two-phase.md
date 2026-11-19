@@ -19,6 +19,20 @@ This challenge covers the 'S4_arp_spoof_loads_pv_two_phase' set (3 capture file(
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py data4cyber-distribution-grid
+```
+
+- **[Data4Cyber — labeled cyber-physical dataset for distribution-grid management](../DATASETS.md#data4cyber-distribution-grid)** (`data4cyber-distribution-grid`), ~0.79 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.43 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/data4cyber-distribution-grid.tar.part000) (0.43 GB)
+  - **Original source:** [zenodo.org/records/24105329](https://zenodo.org/records/24105329) · [doi:10.5281/zenodo.24105329](https://doi.org/10.5281/zenodo.24105329)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

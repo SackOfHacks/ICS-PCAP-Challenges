@@ -17,6 +17,20 @@ Captures from a real TU Wien smart-factory cell, mixing normal operational traff
 - Characterize the unlabeled Tuesday DoS.
 - Distinguish attack traffic from normal process variation.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py tuwien-smart-factory
+```
+
+- **[TU Wien Smart Factory — Malware Communication in Smart Factories](../DATASETS.md#tuwien-smart-factory)** (`tuwien-smart-factory`), ~127.15 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 21 parts (39.02 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part001) (1.90 GB) · [part002](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part002) (1.90 GB) · [part003](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part003) (1.90 GB) · [part004](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part004) (1.90 GB) · [part005](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part005) (1.90 GB) · [part006](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part006) (1.90 GB) · [part007](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part007) (1.90 GB) · [part008](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part008) (1.90 GB) · [part009](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part009) (1.90 GB) · [part010](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part010) (1.90 GB) · [part011](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part011) (1.90 GB) · [part012](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part012) (1.90 GB) · [part013](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part013) (1.90 GB) · [part014](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part014) (1.90 GB) · [part015](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part015) (1.90 GB) · [part016](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part016) (1.90 GB) · [part017](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part017) (1.90 GB) · [part018](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part018) (1.90 GB) · [part019](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part019) (1.90 GB) · [part020](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tuwien-smart-factory.tar.part020) (1.02 GB)
+  - **Original source:** [researchdata.tuwien.ac.at/records/ghdc6-45k78](https://researchdata.tuwien.ac.at/records/ghdc6-45k78) · [doi:10.48436/ghdc6-45k78](https://doi.org/10.48436/ghdc6-45k78)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

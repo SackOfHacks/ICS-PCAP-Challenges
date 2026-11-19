@@ -19,6 +19,20 @@ This challenge covers the '20200516_DNP3_Ιnfo' set (14 capture file(s)). Charac
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py uowm-dnp3-ids
+```
+
+- **[DNP3 Intrusion Detection Dataset (UOWM)](../DATASETS.md#uowm-dnp3-ids)** (`uowm-dnp3-ids`), ~1.46 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.61 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/uowm-dnp3-ids.tar.part000) (0.61 GB)
+  - **Original source:** [zenodo.org/records/7348493](https://zenodo.org/records/7348493) · [doi:10.21227/s7h0-b081](https://doi.org/10.21227/s7h0-b081)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

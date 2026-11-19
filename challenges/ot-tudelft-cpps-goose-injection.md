@@ -19,6 +19,20 @@ This challenge covers the 'GOOSE Injection' set (30 capture file(s)). Characteri
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py tudelft-digital-substation-cpps
+```
+
+- **[TU Delft — cyber-physical power system dataset for digital substations](../DATASETS.md#tudelft-digital-substation-cpps)** (`tudelft-digital-substation-cpps`), ~6.12 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (1.77 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/tudelft-digital-substation-cpps.tar.part000) (1.77 GB)
+  - **Original source:** [zenodo.org/records/23558261](https://zenodo.org/records/23558261) · [doi:10.5281/zenodo.23558261](https://doi.org/10.5281/zenodo.23558261)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

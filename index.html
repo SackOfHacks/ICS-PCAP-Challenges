@@ -89,6 +89,11 @@ section.block > h2{font-size:14px;text-transform:uppercase;letter-spacing:.7px;c
 .scenario p{margin:0 0 10px}
 ul.obj{margin:0;padding-left:18px;color:var(--fg)}
 ul.obj li{margin:5px 0}
+.dlnote{color:var(--fg2);font-size:12.5px;margin-bottom:8px}
+ul.dl{margin:10px 0 0;padding-left:18px}
+ul.dl li{margin:8px 0;font-size:13.5px}
+ul.dl li div{font-size:12.5px;color:var(--fg2);margin-top:3px;overflow-wrap:anywhere}
+.dl-dim{color:var(--fg3)}
 
 .step{border:1px solid var(--line);border-radius:10px;margin-bottom:11px;background:var(--bg2);overflow:hidden}
 .step .sh{display:flex;align-items:flex-start;gap:11px;padding:11px 13px}
@@ -174,7 +179,8 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:12px;padding:
         <a href="https://github.com/SackOfHacks/pcapper" target="_blank" rel="noopener">Pcapper</a> — a modular PCAP forensics tool with
         dedicated ICS/OT analyzers (Modbus, DNP3, IEC-104, S7, EtherNet/IP &amp; CIP, IEC 61850 MMS/GOOSE/SV, BACnet, OPC UA, PROFINET,
         TriStation…). Every challenge has <b>two complete walkthroughs</b>: the Pcapper track (default) and a <code>tshark</code> / Wireshark track — switch with the toggle on each challenge.
-        Openly licensed captures are mirrored in this repo's <code>data-v1</code> release; <code>python3 scripts/fetch.py --starter</code> gets you going (mirror first, original sources for the rest).</div>
+        Openly licensed captures are mirrored in this repo's <a href="https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1" target="_blank" rel="noopener"><code>data-v1</code> release</a>,
+        and every challenge shows the command and download links for its own captures (all datasets: <a href="https://github.com/SackOfHacks/ICS-PCAP-Challenges/blob/main/DATASETS.md" target="_blank" rel="noopener">DATASETS.md</a>); <code>python3 scripts/fetch.py --starter</code> gets you going (mirror first, original sources for the rest).</div>
       <div class="cmd"><button class="copy">copy</button><pre>git clone https://github.com/SackOfHacks/pcapper &amp;&amp; (cd pcapper &amp;&amp; pip install .)
 git clone https://github.com/SackOfHacks/ICS-PCAP-Challenges &amp;&amp; cd ICS-PCAP-Challenges
 python3 scripts/fetch.py --starter &amp;&amp; python3 scripts/build.py
@@ -193,6 +199,7 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
   Captures are fetched from their original sources (see ATTRIBUTION.md). Progress is saved in this browser only.</div>
 </footer>
 
+<script src="datasets.js"></script>
 <script src="challenges.js"></script>
 <script>
 (function(){
@@ -203,8 +210,8 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
   const $ = s=>document.querySelector(s);
   const el=(t,c,txt)=>{const e=document.createElement(t); if(c)e.className=c; if(txt!=null)e.textContent=txt; return e;};
   const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-  function fmtBytes(n){ if(!n) return "—"; const u=["B","KB","MB","GB","TB"]; let i=0,v=n;
-    while(v>=1024&&i<u.length-1){v/=1024;i++;} return v.toFixed(v<10&&i>0?1:0)+" "+u[i]; }
+  function fmtBytes(n){ if(!n) return "—"; const u=["B","KB","MB","GB","TB"]; let i=0,v=n;   // decimal units, like the pages and GitHub
+    while(v>=1000&&i<u.length-1){v/=1000;i++;} return v.toFixed(v<10&&i>0?1:0)+" "+u[i]; }
 
   // progress store: { [challengeId]: { steps:{i:true}, done:bool } }
   let prog={}; try{prog=JSON.parse(localStorage.getItem(LS))||{};}catch(e){}
@@ -297,6 +304,31 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
     if(!cmd) return "";
     return '<div class="cmd"><button class="copy">copy</button><pre>'+esc(cmd)+'</pre></div>';
   }
+  const DSETS=window.DATASETS||{};
+  const GH="https://github.com/SackOfHacks/ICS-PCAP-Challenges";
+  function shortUrl(u){ u=String(u||"").replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""); return u.length>60?u.slice(0,57)+"…":u; }
+  function dataBlock(c){            // where this challenge's captures are: fetch command, release parts, original source
+    const slugs=(c.fetch&&c.fetch.length)?c.fetch:[c.dataset].filter(Boolean);
+    if(!slugs.length) return "";
+    const items=slugs.map(s=>{
+      const d=DSETS[s]||{title:s}; const m=d.mirror;
+      const where=m
+        ? 'Mirror: <a href="'+GH+'/releases/tag/'+esc(m.tag)+'" target="_blank" rel="noopener">'+esc(m.tag)+' release</a>, '+
+          m.parts.length+' part'+(m.parts.length>1?'s':'')+' ('+fmtBytes(m.bytes_packed)+' compressed): '+
+          m.parts.map(p=>'<a href="'+GH+'/releases/download/'+esc(m.tag)+'/'+esc(p.name)+'">'+esc(p.name.split(".tar.").pop())+'</a> <span class="dl-dim">('+fmtBytes(p.size)+')</span>').join(" · ")
+        : (d.pending?'Mirror being uploaded; until then <code>fetch.py</code> downloads it from the original source.'
+                    :'Not mirrored (no licence that allows re-hosting): <code>fetch.py</code> downloads it from the original source.');
+      const src=d.source_url?'<div>Original source: <a href="'+esc(d.source_url)+'" target="_blank" rel="noopener">'+esc(shortUrl(d.source_url))+' ↗</a></div>':'';
+      return '<li><a href="'+GH+'/blob/main/DATASETS.md#'+esc(s)+'" target="_blank" rel="noopener"><b>'+esc(d.title||s)+'</b></a> <code>'+esc(s)+'</code>'+
+        (d.approx_bytes?' <span class="dl-dim">~'+fmtBytes(d.approx_bytes)+' once fetched</span>':'')+
+        '<div>'+where+'</div>'+src+'</li>';
+    }).join("");
+    return '<section class="block"><h2>Get the captures</h2>'+
+      '<div class="dlnote">The commands below read the captures from <code>data/</code>. Fetch '+
+        (slugs.length>1?'its '+slugs.length+' datasets':'the dataset')+' first, from the repo root:</div>'+
+      cmdBlock("python3 scripts/fetch.py "+slugs.join(" "))+
+      '<ul class="dl">'+items+'</ul></section>';
+  }
   function renderDetail(c){
     const d=$("#detail");
     const refs=(c.references||[]).map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.label)+' ↗</a>').join("");
@@ -332,6 +364,7 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
        warn+
        '<section class="block"><h2>Scenario</h2><div class="scenario">'+scen+'</div></section>'+
        (obj?'<section class="block"><h2>Your objectives</h2><ul class="obj">'+obj+'</ul></section>':'')+
+       dataBlock(c)+
        '<section class="block"><h2>Work it step by step</h2>'+
          (c.tracks?'<div class="seg" role="group" aria-label="Analysis method">'+Object.keys(METHODS).map(m=>
            '<button type="button" data-m="'+m+'" aria-pressed="'+(m===method)+'"'+(m===method?' class="on"':'')+'>'+METHODS[m]+'</button>').join("")+'</div>':'')+

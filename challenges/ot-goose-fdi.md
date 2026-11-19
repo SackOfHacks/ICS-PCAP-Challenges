@@ -18,6 +18,20 @@ False-data-injection attack on GOOSE messaging between IEDs, with a clean baseli
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py goose-false-data-injection
+```
+
+- **[False-data injection in GOOSE communication](../DATASETS.md#goose-false-data-injection)** (`goose-false-data-injection`), ~7.1 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (3.4 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/goose-false-data-injection.tar.part000) (3.4 MB)
+  - **Original source:** [zenodo.org/records/13908638](https://zenodo.org/records/13908638) · [doi:10.5281/zenodo.13908638](https://doi.org/10.5281/zenodo.13908638)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

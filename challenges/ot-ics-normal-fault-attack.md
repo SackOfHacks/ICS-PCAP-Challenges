@@ -18,6 +18,20 @@ Raw captures of an ICS in three operating conditions — normal, process faults 
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ics-dataset-normal-fault-attack-2025
+```
+
+- **[ICS Dataset — normal vs. fault vs. attack traffic (2025)](../DATASETS.md#ics-dataset-normal-fault-attack-2025)** (`ics-dataset-normal-fault-attack-2025`), ~2.50 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.73 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/ics-dataset-normal-fault-attack-2025.tar.part000) (0.73 GB)
+  - **Original source:** [zenodo.org/records/17165850](https://zenodo.org/records/17165850) · [doi:10.5281/zenodo.17165850](https://doi.org/10.5281/zenodo.17165850)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -18,6 +18,18 @@ A Windows host on the SCADA LAN gets exploited with MS08-067 while the polling c
 - Identify the malicious activity, its source and its targets.
 - Explain how a defender would detect it.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py lemay-scada-modbus-cset2016
+```
+
+- **[Lemay & Fernandez SCADA Modbus dataset (CSET 2016)](../DATASETS.md#lemay-scada-modbus-cset2016)** (`lemay-scada-modbus-cset2016`), ~84.5 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/antoine-lemay/Modbus_dataset](https://github.com/antoine-lemay/Modbus_dataset)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

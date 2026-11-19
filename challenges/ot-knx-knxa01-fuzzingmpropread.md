@@ -19,6 +19,20 @@ This challenge covers the 'KNXA01_FuzzingMpropRead' set (1 capture file(s)). Cha
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py knxnetip-ids
+```
+
+- **[KNXnet/IP intrusion dataset — building automation attacks (UOWM)](../DATASETS.md#knxnetip-ids)** (`knxnetip-ids`), ~3.05 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (1.49 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/knxnetip-ids.tar.part000) (1.49 GB)
+  - **Original source:** [zenodo.org/records/16957517](https://zenodo.org/records/16957517) · [doi:10.5281/zenodo.16957517](https://doi.org/10.5281/zenodo.16957517)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

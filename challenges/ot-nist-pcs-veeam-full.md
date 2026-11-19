@@ -19,6 +19,20 @@ Characterize the control network, measure the footprint of this run's control on
 - For the scan run: identify the scanner, what it probed, and any disturbance to CIP traffic.
 - Relate anomalies to the process log.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py nist-csms-process-control-pcs
+```
+
+- **[NIST CSMS testbed — process control system (baseline vs. Nessus scan)](../DATASETS.md#nist-csms-process-control-pcs)** (`nist-csms-process-control-pcs`), ~87.54 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 4 parts (5.79 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-process-control-pcs.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-process-control-pcs.tar.part001) (1.90 GB) · [part002](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-process-control-pcs.tar.part002) (1.90 GB) · [part003](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nist-csms-process-control-pcs.tar.part003) (85.8 MB)
+  - **Original source:** [s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cyber…](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/pcs/)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

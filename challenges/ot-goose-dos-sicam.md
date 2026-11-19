@@ -18,6 +18,20 @@ Denial-of-service via GOOSE protocol flooding against a Siemens SICAM digital me
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py goose-dos-sicam-meter
+```
+
+- **[GOOSE flooding DoS/DDoS against a SICAM digital meter](../DATASETS.md#goose-dos-sicam-meter)** (`goose-dos-sicam-meter`), ~17.3 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (9.0 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/goose-dos-sicam-meter.tar.part000) (9.0 MB)
+  - **Original source:** [zenodo.org/records/13912644](https://zenodo.org/records/13912644) · [doi:10.5281/zenodo.13912644](https://doi.org/10.5281/zenodo.13912644)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

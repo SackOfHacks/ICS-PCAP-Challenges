@@ -19,6 +19,18 @@ This challenge is one run of **Injection ('push' variant)**: packets are injecte
 - Explain what the attack does to the DNP3 session and the process data.
 - Write a detection that survives the other runs.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py qut-dnp3-2017
+```
+
+- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~14.17 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/qut-infosec/2017QUT_DNP3](https://github.com/qut-infosec/2017QUT_DNP3)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

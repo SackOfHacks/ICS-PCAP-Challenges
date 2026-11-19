@@ -9,6 +9,7 @@
 [**▶ Open the challenge range**](https://sackofhacks.github.io/ICS-PCAP-Challenges/) &nbsp;·&nbsp;
 [Browse all challenges](challenges/README.md) &nbsp;·&nbsp;
 [Quickstart](#-quickstart-5-minutes) &nbsp;·&nbsp;
+[Where the captures are](DATASETS.md) &nbsp;·&nbsp;
 [Credits](ATTRIBUTION.md)
 
 ![challenges](https://img.shields.io/badge/challenges-331-2ea44f)
@@ -143,6 +144,12 @@ python3 scripts/build.py                                # re-index after fetchin
 
 Downloads resume if interrupted — just run the same command again.
 
+**Where is a particular capture?** [**DATASETS.md**](DATASETS.md) lists every dataset with its `fetch.py` name, size,
+direct download links (the release parts, or the original source) and the challenges that use it. Every challenge
+page, and every challenge in the web app, starts with a **Get the captures** section: the one command that fetches
+exactly what that challenge needs, plus the same links. To skip `fetch.py`: download every part of a dataset, then
+`cat <dataset>.tar.part* | tar -x` and `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 Either way you get the publishers' own packets. Two things differ from their original download, the same on both
 paths: captures over 2 GB are split into < 2 GiB parts, and captures published without a file extension get
 `.pcap`/`.pcapng` (chosen from their magic bytes), because some tools pick capture files by extension.
@@ -170,6 +177,7 @@ Special thanks to TU Wien, NIST, the University of Western Macedonia, Tecnalia, 
 ICS-PCAP-Challenges/
 ├── index.html               # the challenge range (static; open locally or via GitHub Pages)
 ├── challenges.js            # generated catalog the page reads
+├── datasets.js              # generated: where each dataset's captures are (release parts / original source)
 ├── challenges/              # one Markdown page per challenge + README index
 ├── catalog/
 │   ├── challenges.json      # challenge definitions (source of truth)
@@ -177,8 +185,9 @@ ICS-PCAP-Challenges/
 ├── scripts/
 │   ├── fetch.py             # download datasets into data/ (release mirror or original source)
 │   ├── mega_fetch.py        # public-MEGA-folder client used for one source-hosted dataset
-│   └── build.py             # rebuild challenges.js, challenges/*.md and ATTRIBUTION.md
+│   └── build.py             # rebuild challenges.js, datasets.js, challenges/*.md, DATASETS.md and ATTRIBUTION.md
 ├── data/                    # the captures (git-ignored; created by fetch.py)
+├── DATASETS.md              # where every dataset's captures are + the challenges that use it (generated)
 ├── ATTRIBUTION.md           # credits and licenses for every dataset (generated)
 ├── CITATION.cff             # how to cite this range and its datasets
 └── LICENSE                  # MIT — code and challenge authoring only

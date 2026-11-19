@@ -16,6 +16,18 @@ Lab 4 of a 16-part Modbus/TCP lab series that walks from baseline traffic to a c
 - Record source, unit ID, function code and addresses for anything abnormal.
 - Note the ATT&CK for ICS technique.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py modbus-labs-solymx
+```
+
+- **[Modbus/TCP lab series (baseline → recon → writes)](../DATASETS.md#modbus-labs-solymx)** (`modbus-labs-solymx`), ~3.4 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/solymx/modbus_pcap_test](https://github.com/solymx/modbus_pcap_test)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

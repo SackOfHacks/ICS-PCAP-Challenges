@@ -19,6 +19,20 @@ Nozomi Networks Labs captured TriStation traffic of the malware's execution agai
 - Identify the program/memory operations that correspond to TRITON's payload injection.
 - Describe how a defender could detect TriStation misuse.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py nozomi-triton-tristation
+```
+
+- **[TRITON/TRISIS — TriStation malware execution capture (Nozomi tricotools)](../DATASETS.md#nozomi-triton-tristation)** (`nozomi-triton-tristation`), ~0.2 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.1 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/nozomi-triton-tristation.tar.part000) (0.1 MB)
+  - **Original source:** [github.com/NozomiNetworks/tricotools](https://github.com/NozomiNetworks/tricotools)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -18,6 +18,18 @@ ICS CTF captures usually hide the flag in protocol fields rather than in plain t
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ics-ctf-newbee119
+```
+
+- **[Chinese ICS CTF traffic (工控CTF) — NewBee119](../DATASETS.md#ics-ctf-newbee119)** (`ics-ctf-newbee119`), ~48.6 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/NewBee119/ctf_ics_traffic](https://github.com/NewBee119/ctf_ics_traffic)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

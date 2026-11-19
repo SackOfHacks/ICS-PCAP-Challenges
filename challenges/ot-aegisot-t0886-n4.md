@@ -19,6 +19,20 @@ Find the attacker host, the attack window and every packet that implements the t
 - Explain the impact on the process (or what the attacker learned).
 - Write a detection that would not fire on the normal sets.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py aegisot-ics-attacks
+```
+
+- **[AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS techniques](../DATASETS.md#aegisot-ics-attacks)** (`aegisot-ics-attacks`), ~3.13 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.56 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/aegisot-ics-attacks.tar.part000) (0.56 GB)
+  - **Original source:** [kaggle.com/datasets/khadijadrira/industrial-cybersecurity…](https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

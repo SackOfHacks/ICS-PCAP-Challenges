@@ -18,6 +18,20 @@ IEC 61850 GOOSE attack captures: fake trip/open insertion (with and without inte
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py powerduck-goose-attacks
+```
+
+- **[PowerDuck — GOOSE cyberattack dataset (substations)](../DATASETS.md#powerduck-goose-attacks)** (`powerduck-goose-attacks`), ~0.96 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (5.6 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/powerduck-goose-attacks.tar.part000) (5.6 MB)
+  - **Original source:** [zenodo.org/records/6974112](https://zenodo.org/records/6974112) · [doi:10.5281/zenodo.6974112](https://doi.org/10.5281/zenodo.6974112)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

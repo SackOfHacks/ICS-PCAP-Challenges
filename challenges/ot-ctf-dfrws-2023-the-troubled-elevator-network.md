@@ -18,6 +18,20 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ctf-dfrws-2023
+```
+
+- **[DFRWS 2023 Forensic Challenge — The Troubled Elevator](../DATASETS.md#ctf-dfrws-2023)** (`ctf-dfrws-2023`), ~30.6 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (6.6 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/ctf-dfrws-2023.tar.part000) (6.6 MB)
+  - **Original source:** [github.com/dfrws/dfrws2023-challenge](https://github.com/dfrws/dfrws2023-challenge)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

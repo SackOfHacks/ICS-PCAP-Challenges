@@ -18,6 +18,18 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ctf-csaw-2021-quals
+```
+
+- **[CSAW CTF Quals 2021 — ICS](../DATASETS.md#ctf-csaw-2021-quals)** (`ctf-csaw-2021-quals`), ~0.3 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics](https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

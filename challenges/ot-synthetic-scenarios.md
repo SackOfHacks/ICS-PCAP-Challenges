@@ -18,6 +18,20 @@ Small synthetic captures shipped with an OT pcap analyzer: a benign plant baseli
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py synthetic-ot-scenarios-lindseynguyen
+```
+
+- **[Synthetic OT scenarios — benign plant vs. attack](../DATASETS.md#synthetic-ot-scenarios-lindseynguyen)** (`synthetic-ot-scenarios-lindseynguyen`), ~0.5 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.5 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/synthetic-ot-scenarios-lindseynguyen.tar.part000) (0.5 MB)
+  - **Original source:** [github.com/lindseynguyen/ics-pcap-analyzer](https://github.com/lindseynguyen/ics-pcap-analyzer)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

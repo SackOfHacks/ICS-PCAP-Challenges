@@ -18,6 +18,20 @@ CIP/EtherNet-IP captures gathered from various resources, including a ControlLog
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py cip-enip-engage-svg
+```
+
+- **[CIP / EtherNet-IP captures (incl. controller reboot)](../DATASETS.md#cip-enip-engage-svg)** (`cip-enip-engage-svg`), ~13.8 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (3.6 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/cip-enip-engage-svg.tar.part000) (3.6 MB)
+  - **Original source:** [github.com/engage-svg/ICS-PCAPs](https://github.com/engage-svg/ICS-PCAPs)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

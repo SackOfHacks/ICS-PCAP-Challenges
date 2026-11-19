@@ -18,6 +18,18 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ctf-icsc-2026-gy10
+```
+
+- **[第十届工业信息安全技能大赛 工控安全锦标赛 2026 (GY10)](../DATASETS.md#ctf-icsc-2026-gy10)** (`ctf-icsc-2026-gy10`), ~5.0 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/CTF-Archives/2026-ICSC-ICS-Champ](https://github.com/CTF-Archives/2026-ICSC-ICS-Champ)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

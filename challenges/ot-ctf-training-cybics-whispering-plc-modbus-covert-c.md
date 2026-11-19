@@ -18,6 +18,20 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py training-cybics
+```
+
+- **[CybICS training platform — incident modules](../DATASETS.md#training-cybics)** (`training-cybics`), ~0.3 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.1 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/training-cybics.tar.part000) (0.1 MB)
+  - **Original source:** [github.com/mniedermaier/CybICS](https://github.com/mniedermaier/CybICS)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -17,6 +17,38 @@ Every public EtherNet/IP & CIP sample in this range, deduplicated by SHA-256 acr
 - Flag every dangerous operation and its source.
 - Map findings to ATT&CK for ICS (T0858 Change Operating Mode · T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch its 7 datasets first, from the repo root:
+
+```bash
+python3 scripts/fetch.py automayt-ics-pcap cisa-icsnpp-test-traces emreekin-ics-pcaps iti-ics-security-tools-pcaps kargs-bacnet-captures s7comm-scenarios-jenilv07 suricata-verify-ics-tests
+```
+
+- **[ICS-pcap collection (automayt / Jason Smith)](../DATASETS.md#automayt-ics-pcap)** (`automayt-ics-pcap`), ~0.42 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/automayt/ICS-pcap](https://github.com/automayt/ICS-pcap)
+- **[CISA ICSNPP — Zeek ICS parser test traces](../DATASETS.md#cisa-icsnpp-test-traces)** (`cisa-icsnpp-test-traces`), ~14.8 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (3.3 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/cisa-icsnpp-test-traces.tar.part000) (3.3 MB)
+  - **Original source:** [github.com/cisagov/ICSNPP](https://github.com/cisagov/ICSNPP)
+- **[ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](../DATASETS.md#emreekin-ics-pcaps)** (`emreekin-ics-pcaps`), ~0.26 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/EmreEkin/ICS-Pcaps](https://github.com/EmreEkin/ICS-Pcaps)
+- **[ITI ICS-Security-Tools — sample ICS protocol captures](../DATASETS.md#iti-ics-security-tools-pcaps)** (`iti-ics-security-tools-pcaps`), ~0.12 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/ITI/ICS-Security-Tools/tree/master/pcaps](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+- **[BACnet capture library (kargs.net)](../DATASETS.md#kargs-bacnet-captures)** (`kargs-bacnet-captures`), ~0.24 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [kargs.net/captures](https://kargs.net/captures/)
+- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~43.6 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/jenilv-07/ICS-pcap-files](https://github.com/jenilv-07/ICS-pcap-files)
+- **[Suricata-verify — ICS protocol test captures](../DATASETS.md#suricata-verify-ics-tests)** (`suricata-verify-ics-tests`), ~0.3 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.1 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/suricata-verify-ics-tests.tar.part000) (0.1 MB)
+  - **Original source:** [github.com/OISF/suricata-verify](https://github.com/OISF/suricata-verify)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

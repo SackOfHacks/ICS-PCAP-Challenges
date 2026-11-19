@@ -18,6 +18,18 @@ Captures from an ONOS-controlled SDN lab of the IEEE 24-bus system carrying rout
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py iec61850-rgoose-sdn-lab
+```
+
+- **[IEEE 24-bus SDN substation lab — IEC 61850 R-GOOSE](../DATASETS.md#iec61850-rgoose-sdn-lab)** (`iec61850-rgoose-sdn-lab`), ~0.0 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/jaafaris/ieee24-onos-sdn-lab-v2-](https://github.com/jaafaris/ieee24-onos-sdn-lab-v2-)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

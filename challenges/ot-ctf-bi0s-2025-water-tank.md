@@ -18,6 +18,18 @@ ICS CTF flags usually hide in protocol fields — register values, write payload
 - Find the anomalous operations or payloads.
 - Extract and decode the flag.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ctf-bi0s-2025
+```
+
+- **[bi0sCTF 2025 — hardware/ICS](../DATASETS.md#ctf-bi0s-2025)** (`ctf-bi0s-2025`), ~1.4 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/teambi0s/bi0sCTF](https://github.com/teambi0s/bi0sCTF)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

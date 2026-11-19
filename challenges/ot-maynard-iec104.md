@@ -18,6 +18,20 @@ IEC 60870-5-104 traffic from a testbed used in research on IEC-104 attacks. Fetc
 - Characterize the traffic.
 - Find and explain any attack or unusual operation.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py maynard-iec104-testbed
+```
+
+- **[IEC 60870-5-104 testbed traffic (Maynard, QUB)](../DATASETS.md#maynard-iec104-testbed)** (`maynard-iec104-testbed`), ~38.3 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (22.8 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/maynard-iec104-testbed.tar.part000) (22.8 MB)
+  - **Original source:** [doi.org/10.6084/m9.figshare.6133457.v1](https://doi.org/10.6084/m9.figshare.6133457.v1) · [doi:10.6084/m9.figshare.6133457.v1](https://doi.org/10.6084/m9.figshare.6133457.v1)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

@@ -14,6 +14,18 @@ A Modbus capture hides a threat among normal traffic. Find it.
 
 - Answer the practice question from the packets.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ics-practice-solymx
+```
+
+- **[ICS PCAP practice challenges (asset discovery, hidden Modbus threat)](../DATASETS.md#ics-practice-solymx)** (`ics-practice-solymx`), ~0.7 MB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/solymx/ICS_PCAP_Practice](https://github.com/solymx/ICS_PCAP_Practice)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

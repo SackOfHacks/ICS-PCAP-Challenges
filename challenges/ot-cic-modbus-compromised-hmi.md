@@ -19,6 +19,20 @@ The SCADA HMI is compromised and used to attack the IEDs. Because the malicious 
 - Find each malicious technique and its time window.
 - Write detections that work even when the attacker uses the master's address.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py cic-modbus-2023
+```
+
+- **[CIC Modbus Dataset 2023 — substation Modbus attacks](../DATASETS.md#cic-modbus-2023)** (`cic-modbus-2023`), ~15.76 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 3 parts (3.91 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/cic-modbus-2023.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/cic-modbus-2023.tar.part001) (1.90 GB) · [part002](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/cic-modbus-2023.tar.part002) (0.11 GB)
+  - **Original source:** [unb.ca/cic/datasets/modbus-2023.html](https://www.unb.ca/cic/datasets/modbus-2023.html)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

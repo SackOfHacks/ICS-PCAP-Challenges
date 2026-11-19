@@ -18,6 +18,20 @@ This challenge is the capture labeled **smurf (ICMP broadcast) DDoS**.
 - Find the malicious or abnormal activity it is labeled for.
 - Write a detection and test it against the normal capture.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py ciarres-smart-grid-attacks
+```
+
+- **[CIARRES smart-grid attacks — GOOSE, MMS and Modbus](../DATASETS.md#ciarres-smart-grid-attacks)** (`ciarres-smart-grid-attacks`), ~11.39 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 2 parts (3.65 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/ciarres-smart-grid-attacks.tar.part000) (1.90 GB) · [part001](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/ciarres-smart-grid-attacks.tar.part001) (1.75 GB)
+  - **Original source:** [kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-at…](https://www.kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-attacks)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

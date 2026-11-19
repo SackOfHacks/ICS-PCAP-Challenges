@@ -19,6 +19,20 @@ Find the injected traffic, identify the attacker host, what it did to the PLC, a
 - Bound it in time.
 - Write a detection that would fire on it but not on the normal days.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py medical-waste-incinerator-s7-1500
+```
+
+- **[Medical-waste incinerator — real Siemens S7-1500 SCADA with injected attacks](../DATASETS.md#medical-waste-incinerator-s7-1500)** (`medical-waste-incinerator-s7-1500`), ~3.20 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.87 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/medical-waste-incinerator-s7-1500.tar.part000) (0.87 GB)
+  - **Original source:** [data.mendeley.com/datasets/vpcr4wpgfd/4](https://data.mendeley.com/datasets/vpcr4wpgfd/4) · [doi:10.17632/vpcr4wpgfd.4](https://doi.org/10.17632/vpcr4wpgfd.4)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

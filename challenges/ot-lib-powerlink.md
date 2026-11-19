@@ -17,6 +17,21 @@ Every public POWERLINK sample in this range, deduplicated by SHA-256 across auto
 - Flag every dangerous operation and its source.
 - Map findings to ATT&CK for ICS (T0814 Denial of Service).
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch its 2 datasets first, from the repo root:
+
+```bash
+python3 scripts/fetch.py automayt-ics-pcap emreekin-ics-pcaps
+```
+
+- **[ICS-pcap collection (automayt / Jason Smith)](../DATASETS.md#automayt-ics-pcap)** (`automayt-ics-pcap`), ~0.42 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/automayt/ICS-pcap](https://github.com/automayt/ICS-pcap)
+- **[ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](../DATASETS.md#emreekin-ics-pcaps)** (`emreekin-ics-pcaps`), ~0.26 GB once fetched
+  - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
+  - **Original source:** [github.com/EmreEkin/ICS-Pcaps](https://github.com/EmreEkin/ICS-Pcaps)
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

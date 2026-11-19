@@ -18,6 +18,20 @@ Modbus/TCP captures from the Zero-SWARM project: normal operation plus flooding 
 - Find and characterize the malicious activity.
 - Use the dataset's labels/companion files to check yourself.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py zero-swarm-modbus
+```
+
+- **[Zero-SWARM — Modbus normal and malicious traffic](../DATASETS.md#zero-swarm-modbus)** (`zero-swarm-modbus`), ~0.27 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (67.5 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/zero-swarm-modbus.tar.part000) (67.5 MB)
+  - **Original source:** [zenodo.org/records/15082260](https://zenodo.org/records/15082260) · [doi:10.5281/zenodo.15082260](https://doi.org/10.5281/zenodo.15082260)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.

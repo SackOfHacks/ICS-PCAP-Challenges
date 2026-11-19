@@ -19,6 +19,20 @@ This challenge covers the 'raw-iec104' set (8 capture file(s)). Characterize it,
 - Measure the attack (count, rate, window).
 - Write a detection and check it against the dataset's labels.
 
+## 📥 Get the captures
+
+The commands on this page read the captures from `data/`. Fetch the dataset first, from the repo root:
+
+```bash
+python3 scripts/fetch.py substation-ml-ids-iec61850-iec104
+```
+
+- **[Electrical-substation ML-IDS dataset — raw IEC 61850 & IEC-104](../DATASETS.md#substation-ml-ids-iec61850-iec104)** (`substation-ml-ids-iec61850-iec104`), ~4.99 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.28 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/substation-ml-ids-iec61850-iec104.tar.part000) (0.28 GB)
+  - **Original source:** [zenodo.org/records/15487636](https://zenodo.org/records/15487636) · [doi:10.5281/zenodo.15487636](https://doi.org/10.5281/zenodo.15487636)
+
+Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
+
 ## Work it step by step
 
 Two complete walkthroughs — pick your tool. Run every command from the repo root.
