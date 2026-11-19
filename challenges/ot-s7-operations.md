@@ -97,7 +97,7 @@ Program download = 0x1A/0x1B/0x1C; PLC STOP = 0x29; userdata group 5 = security/
 
 Each file demonstrates one S7 action named in its filename. Monitoring/HMI captures are dominated by Read Var (0x04) and cyclic userdata; engineering captures show download (0x1A–0x1C), upload (0x1D–0x1F), PI-service start/stop (0x28/0x29) or security (group 5) exchanges.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×201, CPU services ×25, Setup Communication ×6; dangerous-operation matches: 0 for the S7comm filter (232 S7comm packets present, so the zero is real) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×201, CPU services ×25, Setup Communication ×6; dangerous-operation matches: 0 for the S7comm filter (232 S7comm packets present, so the zero is real); top conversations in 1-S7comm-VarService-Read-DB1DBD0.pcap: 192.168.1.11↔192.168.1.180 (38 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — credit the author._
 

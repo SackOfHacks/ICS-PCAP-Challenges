@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'normal operations (baseline)'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 7,143; GOOSE streams — PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 2193 frames, 238 distinct stNum, 236 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 2164 frames, 230 distinct stNum, 228 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 1420 frames, 22 distinct stNum, 20 sqNum resets; PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 1366 frames, 4 distinct stNum, 3 sqNum resets (basis: 2 of 2 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 7,143; GOOSE streams — PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 2193 frames, 238 distinct stNum, 236 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 2164 frames, 230 distinct stNum, 228 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 1420 frames, 22 distinct stNum, 20 sqNum resets; PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 1366 frames, 4 distinct stNum, 3 sqNum resets; top conversations in normal_anonymized.pcap.part000.pcap: 10.0.0.3↔10.0.0.4 (180,757 pkts), 10.0.0.3↔10.0.2.1 (23,857 pkts), 10.0.0.3↔10.0.1.1 (23,670 pkts) (basis: 2 of 2 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · License: GPL-3.0 (as declared on Kaggle)._
 

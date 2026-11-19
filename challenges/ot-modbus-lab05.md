@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 A Modbus write from a source other than the legitimate master (or outside its normal pattern).
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×700, Read Coils ×352, Read Holding Registers ×236, Read Discrete Inputs ×176, Write Single Register ×2; dangerous-operation matches: 2 (top sources: 192.168.10.66 ×1, 192.168.10.12 ×1) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×700, Read Coils ×352, Read Holding Registers ×236, Read Discrete Inputs ×176, Write Single Register ×2; dangerous-operation matches: 2 (top sources: 192.168.10.66 ×1, 192.168.10.12 ×1); top conversations in lab05_unauth_write.pcap: 192.168.10.10↔192.168.10.12 (1,467 pkts), 192.168.10.10↔192.168.10.11 (1,467 pkts), 192.168.10.12↔192.168.10.66 (11 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

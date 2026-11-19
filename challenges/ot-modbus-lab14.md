@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 A full sequence: discovery, enumeration of function codes/registers, then writes/manipulation — order it on a timeline.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×746, Read Holding Registers ×378, Read Coils ×376, Read Discrete Inputs ×190, Write Single Coil ×4, Write Single Register ×4, Diagnostics ×2, Write Multiple Coils ×2; dangerous-operation matches: 16 (top sources: 192.168.10.66 ×8, 192.168.10.12 ×8) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×746, Read Holding Registers ×378, Read Coils ×376, Read Discrete Inputs ×190, Write Single Coil ×4, Write Single Register ×4, Diagnostics ×2, Write Multiple Coils ×2; dangerous-operation matches: 16 (top sources: 192.168.10.66 ×8, 192.168.10.12 ×8); top conversations in lab14_attack_chain.pcap: 192.168.10.10↔192.168.10.12 (1,567 pkts), 192.168.10.10↔192.168.10.13 (1,551 pkts), 192.168.10.12↔192.168.10.66 (389 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

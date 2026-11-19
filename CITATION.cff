@@ -156,12 +156,28 @@ references:
     url: "https://zenodo.org/records/15005190"
     notes: "License: CC BY-NC 4.0"
   - type: dataset
+    title: "Data4Cyber — labeled cyber-physical dataset for distribution-grid management"
+    authors:
+      - name: "Sen, Ömer; Bader, Lennart; Emara, Marawan; Serror, Martin; Schwalm, Benedikt; Tsurumi, Junichi; Oba, Tatsumi; Izawa, Tomohiro; Ujiie, Yoshihiro"
+    year: 2026
+    doi: "10.5281/zenodo.24105329"
+    url: "https://zenodo.org/records/24105329"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "S4x15 ICS Village CTF captures (Digital Bond)"
     authors:
       - name: "Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec"
     year: 2015
     url: "https://www.netresec.com/?page=DigitalBond_S4"
     notes: "License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec"
+  - type: dataset
+    title: "ELEGANT — DoS and man-in-the-middle attacks on PLCs"
+    authors:
+      - name: "Sousa, B.; Arieiro, M.; Pereira, V.; Cruz, T. (University of Coimbra)"
+    year: 2021
+    doi: "10.21227/mewp-g646"
+    url: "https://ieee-dataport.org/open-access/denial-service-and-man-middle-attacks-programmable-logic-controllers"
+    notes: "License: CC BY 4.0"
   - type: dataset
     title: "ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset"
     authors:
@@ -175,6 +191,22 @@ references:
     year: 2020
     doi: "10.17632/8cjkkw79z2.1"
     url: "https://data.mendeley.com/datasets/8cjkkw79z2/1"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "GOOSE flooding DoS/DDoS against a SICAM digital meter"
+    authors:
+      - name: "Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel"
+    year: 2024
+    doi: "10.5281/zenodo.13912644"
+    url: "https://zenodo.org/records/13912644"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "False-data injection in GOOSE communication"
+    authors:
+      - name: "Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel"
+    year: 2024
+    doi: "10.5281/zenodo.13908638"
+    url: "https://zenodo.org/records/13908638"
     notes: "License: CC BY 4.0"
   - type: dataset
     title: "Chinese ICS CTF traffic (工控CTF) — NewBee119"
@@ -235,6 +267,22 @@ references:
     url: "https://kargs.net/captures/"
     notes: "License: No license stated — credit the author"
   - type: dataset
+    title: "KIOS — cyberattack scenarios on DER energy management & control"
+    authors:
+      - name: "Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, Irina; Charalambous, Charalambos; Tekki, Eleni"
+    year: 2024
+    doi: "10.5281/zenodo.12773981"
+    url: "https://zenodo.org/records/12773981"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "KIOS/ELECTRON SUC4 — FDI and masquerade attacks on a power system"
+    authors:
+      - name: "Tekki, Eleni; Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, Irina"
+    year: 2024
+    doi: "10.5281/zenodo.12960228"
+    url: "https://zenodo.org/records/12960228"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "KNXnet/IP intrusion dataset — building automation attacks (UOWM)"
     authors:
       - name: "Dalamagkas, Radoglou-Grammatikis, et al. (Univ. of Western Macedonia)"
@@ -250,12 +298,28 @@ references:
     url: "https://github.com/antoine-lemay/Modbus_dataset"
     notes: "License: No license stated in repo — credit the author"
   - type: dataset
+    title: "IEC 60870-5-104 testbed traffic (Maynard, QUB)"
+    authors:
+      - name: "Peter Maynard (Queen's University Belfast)"
+    year: 2018
+    doi: "10.6084/m9.figshare.6133457.v1"
+    url: "https://doi.org/10.6084/m9.figshare.6133457.v1"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "Medical-waste incinerator — real Siemens S7-1500 SCADA with injected attacks"
     authors:
       - name: "Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology)"
     year: 2025
     doi: "10.17632/vpcr4wpgfd.4"
     url: "https://data.mendeley.com/datasets/vpcr4wpgfd/4"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Mininet cyber-physical power system — scanning attack"
+    authors:
+      - name: "May Myat Thwe; Stefanov, Alexandru"
+    year: 2026
+    doi: "10.5281/zenodo.23055644"
+    url: "https://zenodo.org/records/23055644"
     notes: "License: CC BY 4.0"
   - type: dataset
     title: "Modbus/TCP lab series (baseline → recon → writes)"
@@ -306,6 +370,14 @@ references:
     url: "https://github.com/NozomiNetworks/tricotools"
     notes: "License: BSD-3-Clause"
   - type: dataset
+    title: "PowerDuck — GOOSE cyberattack dataset (substations)"
+    authors:
+      - name: "Sven Zemanek; Immanuel Hacker; Konrad Wolsing; Eric Wagner; Martin Henze; Martin Serror"
+    year: 2022
+    doi: "10.5281/zenodo.6974112"
+    url: "https://zenodo.org/records/6974112"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading"
     authors:
       - name: "Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology)"
@@ -320,6 +392,14 @@ references:
     url: "https://github.com/qut-infosec/2017QUT_S7comm"
     notes: "License: No license stated — credit the authors"
   - type: dataset
+    title: "R-GOOSE and tunnelled GOOSE traffic"
+    authors:
+      - name: "Saldana, Jose"
+    year: 2026
+    doi: "10.5281/zenodo.22047499"
+    url: "https://zenodo.org/records/22047499"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium"
     authors:
       - name: "jenilv-07 (GitHub)"
@@ -333,6 +413,22 @@ references:
     doi: "10.5281/zenodo.18467070"
     url: "https://zenodo.org/records/18467070"
     notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "APT attack on a power-substation network (vs. clean login traffic)"
+    authors:
+      - name: "Enache, Bogdan-Adrian; Barbulescu, Cristinel; Stan, Viorel"
+    year: 2024
+    doi: "10.5281/zenodo.13912758"
+    url: "https://zenodo.org/records/13912758"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Electrical-substation ML-IDS dataset — raw IEC 61850 & IEC-104"
+    authors:
+      - name: "Gutierrez Mlot, Esteban Damian; Saldana, Jose; Rodríguez, Ricardo J.; Kotsiuba, Igor; Hernández Gañán, Carlos"
+    year: 2024
+    doi: "10.5281/zenodo.15487636"
+    url: "https://zenodo.org/records/15487636"
+    notes: "License: CC BY-NC-SA 4.0"
   - type: dataset
     title: "Suricata-verify — ICS protocol test captures"
     authors:
@@ -359,10 +455,42 @@ references:
     url: "https://github.com/mniedermaier/CybICS"
     notes: "License: Repository MIT (training files not separately licensed) — credit CybICS"
   - type: dataset
+    title: "TU Delft — cyber-physical power system dataset for digital substations"
+    authors:
+      - name: "Cibin, Nicola; Kabbara, Nadine; Presekal, Alfan; Semertzis, Ioannis; Rajkumar, Vetrivel; Goyel, Himanshu; Palensky, Peter; Stefanov, Alexandru"
+    year: 2026
+    doi: "10.5281/zenodo.23558261"
+    url: "https://zenodo.org/records/23558261"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "TU Wien Smart Factory — Malware Communication in Smart Factories"
     authors:
       - name: "Brenner, B., Fabini, J., Offermanns, M., Semper, S. & Zseby, T. (TU Wien)"
     year: 2025
     doi: "10.48436/ghdc6-45k78"
     url: "https://researchdata.tuwien.ac.at/records/ghdc6-45k78"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "DNP3 Intrusion Detection Dataset (UOWM)"
+    authors:
+      - name: "Panagiotis; Vasiliki; Thomas; Vasileios; Panagiotis"
+    year: 2022
+    doi: "10.21227/s7h0-b081"
+    url: "https://zenodo.org/records/7348493"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "IEC 60870-5-104 Intrusion Detection Dataset (UOWM)"
+    authors:
+      - name: "Panagiotis; Konstantinos; Thomas; Vasileios; Panagiotis"
+    year: 2022
+    doi: "10.21227/fj7s-f281"
+    url: "https://zenodo.org/records/7108614"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Zero-SWARM — Modbus normal and malicious traffic"
+    authors:
+      - name: "Lazaridis, George; Mpatziakas, Asterios"
+    year: 2025
+    doi: "10.5281/zenodo.15082260"
+    url: "https://zenodo.org/records/15082260"
     notes: "License: CC BY 4.0"

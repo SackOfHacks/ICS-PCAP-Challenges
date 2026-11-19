@@ -95,7 +95,7 @@ TRITON's known chain: connect, check controller state, append a program, then in
 
 TRITON used TriStation to (1) identify and check the controller's state, (2) download a modified program, and (3) inject its payload (the inject.bin/imain.bin stages described in public analyses) into the controller's memory, attempting to persist a backdoor in the safety controller's firmware region. On the wire this appears as an engineering session from a workstation to the Triconex on UDP 1502 with program-download/write commands and payload-sized frames. Detection: any TriStation traffic outside a planned engineering window, or from a non-engineering host, is a critical alert — SIS engineering access should be physically keyed and rare.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** TriStation packets matching `udp.port == 1502`: 896; dangerous-operation matches: 896 (top sources: 192.168.1.88 ×448, 192.168.1.2 ×448) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** TriStation packets matching `udp.port == 1502`: 896; dangerous-operation matches: 896 (top sources: 192.168.1.88 ×448, 192.168.1.2 ×448); top conversations in malware_exec.pcap: 192.168.1.2↔192.168.1.88 (896 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Nozomi Networks Labs (2018) · License: BSD-3-Clause._
 

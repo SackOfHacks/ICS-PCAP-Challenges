@@ -100,7 +100,7 @@ Look for BACnet writeProperty/reinitializeDevice against the building controller
 
 Expect classic CTF tradecraft: discovery scans, then unauthenticated Modbus/UMAS writes against the Modicon, PCCC/CIP writes or mode changes against the MicroLogix, BACnet property writes against the building controllers, and IT-side attacks (SMB/HTTP) against the Windows XP and Advantech hosts. Score yourself on the device ↔ attack ↔ protocol table and the timeline. Netresec's S4x15 page links the original CTF description.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×60048, readPropertyMultiple ×1897, atomicReadFile ×9; dangerous-operation matches: 0 for the BACnet filter (121,623 BACnet packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 2 of 8 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×60048, readPropertyMultiple ×1897, atomicReadFile ×9; dangerous-operation matches: 0 for the BACnet filter (121,623 BACnet packets present, so the zero is real); top conversations in BACnet_FIU.pcap: 10.200.1.77↔131.94.238.11 (38,212 pkts), 10.200.1.202↔131.94.238.11 (36,656 pkts), 10.200.1.251↔131.94.238.11 (14,910 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 2 of 8 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 

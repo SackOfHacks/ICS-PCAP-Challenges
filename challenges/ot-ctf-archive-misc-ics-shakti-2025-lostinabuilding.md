@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/zelebwr/ctf-writeups/blob/HEAD/shaktiCtf25/misc/lost-in-a-building/SOLVE.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×178, Read Discrete Inputs ×171, Read Coils ×169, Read Holding Registers ×165, Write Single Coil ×45, Write Multiple Coils ×38, Write Single Register ×31, Write Multiple Registers ×1; dangerous-operation matches: 115 (top sources: 192.168.86.158 ×114, 10.10.0.5 ×1); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×178, Read Discrete Inputs ×171, Read Coils ×169, Read Holding Registers ×165, Write Single Coil ×45, Write Multiple Coils ×38, Write Single Register ×31, Write Multiple Registers ×1; dangerous-operation matches: 115 (top sources: 192.168.86.158 ×114, 10.10.0.5 ×1); top conversations in building.pcap: 192.168.1.100↔192.168.86.158 (800 pkts), 192.168.1.10↔192.168.1.100 (800 pkts), 10.10.0.5↔192.168.1.100 (2 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License: Archive repository MIT (challenge files not separately licensed) — credit each event._
 

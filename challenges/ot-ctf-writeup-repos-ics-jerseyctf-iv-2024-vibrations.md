@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/Nightxade/ctf-writeups/blob/master/_writeups/2024/Jersey-CTF-IV-2024/forensics/vibrations.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×268; dangerous-operation matches: 268 (top sources: 10.0.2.15 ×134, 10.0.2.7 ×57, 10.0.2.9 ×39); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×268; dangerous-operation matches: 268 (top sources: 10.0.2.15 ×134, 10.0.2.7 ×57, 10.0.2.9 ×39); top conversations in final.pcapng: 10.0.2.15↔10.0.2.7 (178 pkts), 10.0.2.15↔10.0.2.9 (125 pkts), 10.0.2.15↔10.0.2.8 (122 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Event organisers; captures kept in participants' write-up repos · License: None stated — credit each event._
 

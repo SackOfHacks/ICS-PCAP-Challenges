@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (memory-area write (0x0102), RUN (0x0401) and STOP (0x0402); controller data read (0x0501) identifies the PLC). ATT&CK for ICS: T0858 Change Operating Mode · T0836 Modify Parameter · T0888 Remote System Information Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 122 (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Omron FINS chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 122; top conversations in omron_test.pcap: 10.1.1.164↔10.1.1.173 (18 pkts) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Omron FINS chosen)
 
 _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Smith (automayt) · CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm)._
 

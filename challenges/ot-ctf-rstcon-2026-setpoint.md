@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/RST-Group/RSTCON-CTF-2026-public/tree/main/forensic/setpoint
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×160, Read Holding Registers ×10, Write Multiple Registers ×2; dangerous-operation matches: 2 (top sources: 192.168.95.40 ×1, 192.168.95.10 ×1); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×160, Read Holding Registers ×10, Write Multiple Registers ×2; dangerous-operation matches: 2 (top sources: 192.168.95.40 ×1, 192.168.95.10 ×1); top conversations in setpoint.pcap: 192.168.95.10↔192.168.95.40 (350 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: RST Group (official public repo) (2026) · License: None stated — credit RST Group._
 

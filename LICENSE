@@ -25,6 +25,7 @@ NOTE: This MIT license covers ONLY the code and the challenge authoring in
 this repository (the web app, the build/fetch scripts, and the challenge
 scenarios/steps/hints/solutions in challenges/*.md and challenges.js).
 
-It does NOT cover the packet-capture datasets, which are NOT distributed in
-this repository. Each dataset is downloaded from its original source and
-remains under its own license — see ATTRIBUTION.md.
+It does NOT cover the packet-capture datasets. Each dataset remains under its
+own license. Datasets whose license allows it are mirrored, unmodified, as
+assets of this repository's `data-v1` release under that license; all others
+are downloaded from their original sources. See ATTRIBUTION.md.

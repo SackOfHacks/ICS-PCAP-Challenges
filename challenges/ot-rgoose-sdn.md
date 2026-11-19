@@ -107,7 +107,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 R-GOOSE packets matching `r-goose`: 128 (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 R-GOOSE chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 R-GOOSE packets matching `r-goose`: 128; top conversations in f4_pri_3_to_9.pcap: 10.100.3.30↔232.0.1.3 (42 pkts) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 R-GOOSE chosen)
 
 _Dataset credit: jaafaris (GitHub) · License: No license stated in repo — credit the author._
 

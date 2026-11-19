@@ -108,7 +108,7 @@ Compare against the normal-activity band.
 
 090–091: successful attack (attacker ends up holding the Modbus/TCP session to the slave PLC). 092–093: failed attack (legit devices reconnect first). 094: post-attack state — the master's session can't be re-established, a hostile Modbus session appears instead. 095–096: 15 minutes of normal activity followed by the full successful attack.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×7694, Write Multiple Registers ×692, Read Holding Registers ×4; dangerous-operation matches: 692 (top sources: 192.168.127.20 ×346, 192.168.127.21 ×346) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×7694, Write Multiple Registers ×692, Read Holding Registers ×4; dangerous-operation matches: 692 (top sources: 192.168.127.20 ×346, 192.168.127.21 ×346); top conversations in Cyber4OT_094.pcapng: 192.168.127.126↔192.168.127.21 (8,440 pkts), 192.168.127.20↔192.168.127.21 (1,898 pkts), 192.168.127.21↔192.168.127.6 (894 pkts) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K. (2025) — doi:10.5281/zenodo.15005190 · License: CC BY-NC 4.0._
 

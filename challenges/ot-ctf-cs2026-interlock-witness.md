@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/Forencics/interlock-witness
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Multiple Registers ×256, Read Holding Registers ×248; dangerous-operation matches: 256 (top sources: 127.0.0.1 ×256); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Multiple Registers ×256, Read Holding Registers ×248; dangerous-operation matches: 256 (top sources: 127.0.0.1 ×256); top conversations in interlock.pcapng: 127.0.0.1↔127.0.0.1 (512 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) · License: None stated — credit CSCTF._
 

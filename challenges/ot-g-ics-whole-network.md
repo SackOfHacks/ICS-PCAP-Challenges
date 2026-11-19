@@ -93,7 +93,7 @@ Pcapper --overview first, then the protocol analyzer.
 
 See the computed evidence and the dataset documentation.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 SV packets matching `sv`: 230,170 (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 SV packets matching `sv`: 230,170; top conversations in 80mbps9SVwholenetwork.pcapng: 192.168.105.1↔192.168.105.5 (195 pkts), 10.10.5.2↔10.10.5.4 (98 pkts), 10.10.4.2↔10.10.4.6 (19 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Altaher, Thiriet, Mocanu (Univ. Grenoble Alpes) (2020) — doi:10.17632/8cjkkw79z2.1 · License: CC BY 4.0._
 

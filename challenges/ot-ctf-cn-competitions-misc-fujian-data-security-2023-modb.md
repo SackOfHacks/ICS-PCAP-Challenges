@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Multiple Registers ×300; dangerous-operation matches: 300 (top sources: 192.168.233.1 ×150, 192.168.233.133 ×150); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Multiple Registers ×300; dangerous-operation matches: 300 (top sources: 192.168.233.1 ×150, 192.168.233.133 ×150); top conversations in flag.pcapng: 192.168.233.133↔61.240.218.1 (3,317 pkts), 157.148.69.80↔192.168.233.133 (983 pkts), 192.168.233.133↔36.248.54.208 (546 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

@@ -1,27 +1,30 @@
 #!/usr/bin/env python3
-"""Fetch the ICS/OT/SCADA datasets from their ORIGINAL sources into ./data/.
+"""Fetch the ICS/OT/SCADA datasets into ./data/.
 
-The captures are not stored in this repository (see ATTRIBUTION.md). This
-script downloads each dataset from its source (Zenodo, TU Wien, Netresec,
-GitHub, ...), extracts archives, keeps only packet captures plus label /
-documentation files, splits any capture >= 2 GB into < 2 GiB parts (so the
-file names match the challenge catalog), and writes a PROVENANCE.md credit
-file into every dataset folder. Downloads are resumable.
+Datasets whose licence allows redistribution are mirrored as assets of this repository's GitHub
+release (`data-v1`): the fetcher downloads the parts, verifies every SHA-256, unpacks them safely and
+restores the gzip-compressed captures. Every other dataset is downloaded from its ORIGINAL source
+(Zenodo, TU Wien, Netresec, GitHub, MEGA, ...): archives are extracted, only packet captures plus
+label / documentation files are kept, captures >= 2 GB are split into < 2 GiB parts (so the file
+names match the challenge catalog) and a PROVENANCE.md credit file is written. Downloads resume.
 
 Usage (run from the repo root):
   python3 scripts/fetch.py --list              # what's available + sizes
   python3 scripts/fetch.py --starter           # a small (< 1 GB) taste of the range
   python3 scripts/fetch.py lemay-scada-modbus-cset2016 cyber4ot   # by slug
   python3 scripts/fetch.py --all               # everything (large!)
+  python3 scripts/fetch.py cyber4ot --from-source   # skip the mirror, use the original source
+  python3 scripts/fetch.py --data-dir /big/disk ...  # put the captures somewhere else
 
-Requires: python3, curl, 7z (p7zip), tar, gunzip, tcpdump (for splitting).
+Requires: python3, curl, gunzip; for source downloads also 7z (p7zip), tar, tcpdump (splitting) and,
+for the MEGA-hosted dataset, the `cryptography` package.
 """
-import argparse, datetime, json, os, re, shutil, subprocess, sys, urllib.parse
+import argparse, datetime, gzip, hashlib, io, json, os, re, shutil, subprocess, sys, tarfile, urllib.parse
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
 CATALOG = os.path.join(REPO, "catalog", "datasets.json")
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+UA = "dataset-fetch/1.0 (research download)"
 MAGIC = (b"\xa1\xb2\xc3\xd4", b"\xd4\xc3\xb2\xa1", b"\xa1\xb2\x3c\x4d", b"\x4d\x3c\xb2\xa1", b"\x0a\x0d\x0d\x0a",
          b"\xa1\xb2\xcd\x34", b"\x34\xcd\xb2\xa1")
 ARCHIVE = re.compile(r"\.(zip|7z|rar|tar|tgz|tar\.gz|tar\.xz|tar\.bz2|xz)$", re.I)
@@ -30,6 +33,8 @@ CHUNK_MB = 1800                   # ... into ~1.8 GB parts (< 2 GiB)
 STARTER = ["lemay-scada-modbus-cset2016", "modbus-labs-solymx", "digitalbond-s4x15-ctf",
            "nozomi-triton-tristation", "cyber4ot", "powerduck-goose-attacks"]
 DEFAULT_KEEP = r"(readme|license|\.md$|\.txt$|\.csv$|\.pdf$|labels?|\.log\.labeled$)"
+MIRROR_BASE = "https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download"
+FROM_SOURCE = False
 
 def log(*a): print(*a, flush=True)
 
@@ -46,10 +51,11 @@ def resolve_kaggle(url):
     """Kaggle's anonymous dataset-download API redirects to a signed Google Cloud
     Storage URL; resolve it with a plain GET (no browser UA), then fetch from GCS."""
     if "kaggle.com/api/v1/datasets/download" not in url: return url
-    r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "-w", "%{url_effective}", "-L", "-A", "Mozilla/5.0", url],
+    r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "-w", "%{url_effective}", "-L", "-A", "dataset-fetch/1.0 (research download)", url],
                        capture_output=True, text=True)
     return r.stdout if "storage.googleapis.com" in r.stdout else url
 
+# An honest client name: Zenodo's bot protection answers a bare/fake browser UA with HTTP 403.
 def download(url, dest, referer=None):
     url = resolve_kaggle(url)
     os.makedirs(os.path.dirname(dest), exist_ok=True)
@@ -138,6 +144,21 @@ def keep_only(d, keep):
         if dp != d and not os.listdir(dp): os.rmdir(dp)
     return removed
 
+def normalize_capture_names(d):
+    """Captures identified by their magic bytes but lacking an extension get one (.pcapng for pcapng, else .pcap):
+    some tools (Pcapper among them) pick files by extension. ELEGANT's cap_<n>_<timestamp> files need this."""
+    for dp, _, fns in os.walk(d):
+        for f in fns:
+            if f.lower().endswith((".pcap", ".pcapng", ".cap")): continue
+            p = os.path.join(dp, f)
+            try:
+                with open(p, "rb") as h: m = h.read(4)
+            except OSError:
+                continue
+            if m in MAGIC:
+                ext = ".pcapng" if m == b"\x0a\x0d\x0d\x0a" else ".pcap"
+                if not os.path.exists(p + ext): os.rename(p, p + ext)
+
 def split_large(d):
     for dp, _, fns in os.walk(d):
         for f in fns:
@@ -179,13 +200,116 @@ def provenance(ds, d):
     open(os.path.join(d, "PROVENANCE.md"), "w").write("\n".join(L) + "\n")
     return n, b
 
+def sha256_file(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        for b in iter(lambda: f.read(1 << 20), b""): h.update(b)
+    return h.hexdigest()
+
+class Chain(io.RawIOBase):
+    """The archive parts read back-to-back as one stream, hashed on the way through."""
+    def __init__(self, paths): self.paths, self.f, self.h = list(paths), None, hashlib.sha256()
+    def readable(self): return True
+    def readinto(self, b):
+        while True:
+            if self.f is None:
+                if not self.paths: return 0
+                self.f = open(self.paths.pop(0), "rb")
+            n = self.f.readinto(b)
+            if n:
+                self.h.update(memoryview(b)[:n]); return n
+            self.f.close(); self.f = None
+
+def safe_members(tf, slug):
+    """Only regular files and directories inside data/<slug>/ - no absolute paths, '..', links or devices."""
+    for m in tf:
+        parts = m.name.split("/")
+        if m.name.startswith("/") or ".." in parts or parts[0] != slug:
+            sys.exit(f"refusing unsafe path in archive: {m.name}")
+        if m.isfile() or m.isdir(): yield m
+
+def fetch_mirror(ds):
+    mir = ds["mirror"]; slug = ds["slug"]
+    stage = os.path.join(DATA, ".staging", slug, "mirror"); os.makedirs(stage, exist_ok=True)
+    paths = []
+    for p in mir["parts"]:
+        dest = os.path.join(stage, p["name"])
+        if not (os.path.exists(dest) and os.path.getsize(dest) == p["size"] and sha256_file(dest) == p["sha256"]):
+            ok, err = download(f"{MIRROR_BASE}/{mir['tag']}/{p['name']}", dest)
+            if not ok: return False, f"{p['name']}: {err}"
+            if sha256_file(dest) != p["sha256"]:
+                os.remove(dest); return False, f"{p['name']}: SHA-256 mismatch"
+        paths.append(dest)
+    chain = Chain(paths); buf = io.BufferedReader(chain, 1 << 20)
+    with tarfile.open(fileobj=buf, mode="r|") as tf:
+        for m in safe_members(tf, slug):
+            if hasattr(tarfile, "data_filter"): tf.extract(m, DATA, filter="data")
+            else: tf.extract(m, DATA)
+    while buf.read(1 << 20): pass                      # drain tar padding so the whole archive is hashed
+    if chain.h.hexdigest() != mir["archive_sha256"]: return False, "archive SHA-256 mismatch"
+    d = os.path.join(DATA, slug); listing = os.path.join(d, "MIRROR-GZIPPED.txt")
+    if os.path.exists(listing):                        # restore exactly the files the mirror compressed
+        root = os.path.realpath(d)
+        for rel in open(listing, encoding="utf-8").read().splitlines():
+            if not rel.strip(): continue
+            dst = os.path.realpath(os.path.join(d, rel))
+            if os.path.commonpath([dst, root]) != root: sys.exit(f"refusing unsafe path in MIRROR-GZIPPED.txt: {rel}")
+            with gzip.open(dst + ".gz", "rb") as fi, open(dst, "wb") as fo: shutil.copyfileobj(fi, fo, 1 << 20)
+            os.remove(dst + ".gz")
+        os.remove(listing)
+    else:
+        gunzip_captures(d)                             # archives packed before the listing existed
+    shutil.rmtree(os.path.join(DATA, ".staging", slug), ignore_errors=True)
+    return True, ""
+
+def fetch_mega(f, dl):
+    mdir = os.path.join(dl, f.get("name", "mega"))
+    r = subprocess.run([sys.executable, "-I", os.path.join(REPO, "scripts", "mega_fetch.py"), f["mega_folder"], "--out", mdir])
+    return mdir if r.returncode == 0 else None
+
+def file_name(f, taken):
+    """A real, unique local name: Zenodo API URLs end in /files/<name>/content and Mendeley serves
+    'file_downloaded', so the URL basename is not a usable name; duplicates get the parent folder as prefix."""
+    n = f.get("name")
+    path = urllib.parse.urlparse(f.get("url", "")).path
+    if not n or n in ("content", "file_downloaded", "download", "download.bin"):
+        m = re.search(r"/files/([^/]+)/content$", path)
+        n = urllib.parse.unquote(m.group(1)) if m else (os.path.basename(path) or "download.bin")
+    key = (f.get("subdir", ""), n)
+    if key in taken:
+        parent = os.path.basename(os.path.dirname(path)) or "dup"
+        n = f"{parent}_{n}"; key = (f.get("subdir", ""), n)
+        i = 2
+        while key in taken: n = f"{i}_{n}"; key = (f.get("subdir", ""), n); i += 1
+    taken.add(key)
+    return n
+
 def fetch(ds):
+    if ds.get("mirror") and not FROM_SOURCE:
+        ok, err = fetch_mirror(ds)
+        if ok:
+            log(f"== {ds['slug']}: from the release mirror (all SHA-256 verified)"); return
+        log(f"  mirror failed ({err}) - falling back to the original source")
+    for t in ("7z", "tar"): need(t)                   # only the source route unpacks third-party archives
     d = os.path.join(DATA, ds["slug"]); stage = os.path.join(DATA, ".staging", ds["slug"])
     dl, xd = os.path.join(stage, "dl"), os.path.join(stage, "x")
     os.makedirs(dl, exist_ok=True); os.makedirs(xd, exist_ok=True)
-    errors = []
+    errors = []; taken = set()
     for f in ds["files"]:
-        name = f.get("name") or os.path.basename(urllib.parse.urlparse(f["url"]).path)
+        if f.get("mega_folder"):
+            mdir = fetch_mega(f, dl)
+            if not mdir: errors.append("MEGA download failed"); continue
+            for dp, _, fns in os.walk(mdir):
+                for fn in fns:
+                    fp = os.path.join(dp, fn); target = os.path.join(xd, os.path.relpath(dp, mdir))
+                    if ARCHIVE.search(fn):
+                        target = os.path.join(target, ARCHIVE.sub("", fn))   # one folder per archive: its name is the label
+                        if extract(fp, target): os.remove(fp)
+                        else: errors.append(f"{fn}: extract failed")
+                    else:
+                        os.makedirs(target, exist_ok=True); shutil.move(fp, os.path.join(target, fn))
+            continue
+        name = file_name(f, taken)
         dest = os.path.join(dl, name)
         ok, err = download(f["url"], dest, ds.get("referer"))
         if not ok:
@@ -201,6 +325,7 @@ def fetch(ds):
             os.makedirs(target, exist_ok=True); shutil.move(dest, os.path.join(target, name))
     extract_nested(xd); gunzip_captures(xd)
     prune(xd, ds.get("include_re"), ds.get("keep_extra_re"))
+    normalize_capture_names(xd)
     dropped = keep_only(xd, ds.get("keep"))
     if dropped: log(f"  scope: removed {dropped} file(s) outside the ICS/OT/SCADA catalog")
     split_large(xd)
@@ -214,16 +339,21 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("slugs", nargs="*"); ap.add_argument("--list", action="store_true")
     ap.add_argument("--all", action="store_true"); ap.add_argument("--starter", action="store_true")
+    ap.add_argument("--from-source", action="store_true", help="ignore the release mirror")
+    ap.add_argument("--data-dir", help="where to put the captures (default: ./data)")
     a = ap.parse_args()
+    global DATA, FROM_SOURCE
+    if a.data_dir: DATA = os.path.abspath(a.data_dir)
+    FROM_SOURCE = a.from_source
     cat = json.load(open(CATALOG))
     if a.list or not (a.slugs or a.all or a.starter):
         tot = 0
         for ds in cat:
             gb = (ds.get("approx_bytes") or 0) / 1e9; tot += gb
-            log(f"  {ds['slug']:42} ~{gb:7.2f} GB  {ds.get('license','')[:30]}")
+            log(f"  {ds['slug']:42} ~{gb:7.2f} GB  {'mirror' if ds.get('mirror') else 'source':6}  {ds.get('license','')[:30]}")
         log(f"\n  total ~{tot:.1f} GB.  Fetch with: python3 scripts/fetch.py <slug> ... | --starter | --all")
         return
-    for t in ("curl", "7z", "tar", "gunzip"): need(t)
+    for t in ("curl", "gunzip"): need(t)
     want = set(a.slugs) | (set(STARTER) if a.starter else set())
     for ds in cat:
         if a.all or ds["slug"] in want:

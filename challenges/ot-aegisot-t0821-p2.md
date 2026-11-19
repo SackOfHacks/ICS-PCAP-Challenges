@@ -134,7 +134,7 @@ Read the ATT&CK page for T0821 — the procedure examples tell you what to look 
 
 Labelled as Modify Controller Tasking (T0821). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×43673, Read Input Registers ×19706, Read Coils ×14780, Read Holding Registers ×9874, Write Single Coil ×132; dangerous-operation matches: 43805 (top sources: 192.168.0.21 ×31616, 192.168.0.22 ×12182, 192.168.0.33 ×7) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×43673, Read Input Registers ×19706, Read Coils ×14780, Read Holding Registers ×9874, Write Single Coil ×132; dangerous-operation matches: 43805 (top sources: 192.168.0.21 ×31616, 192.168.0.22 ×12182, 192.168.0.33 ×7); top conversations in output_attack_p2.pcap: 192.168.0.21↔192.168.0.22 (73,055 pkts), 192.168.0.100↔192.168.0.200 (72,600 pkts), 192.168.0.21↔192.168.0.31 (54,846 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

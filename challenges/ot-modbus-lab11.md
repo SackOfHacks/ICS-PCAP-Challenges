@@ -103,7 +103,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 ARP spoofing places the attacker's MAC between master and PLC; register values are altered in transit.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×1032, Read Holding Registers ×330, Read Coils ×324, Read Discrete Inputs ×164; dangerous-operation matches: 0 for the Modbus/TCP filter (1,850 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×1032, Read Holding Registers ×330, Read Coils ×324, Read Discrete Inputs ×164; dangerous-operation matches: 0 for the Modbus/TCP filter (1,850 Modbus/TCP packets present, so the zero is real); top conversations in lab11_mitm_spoof.pcap: 192.168.10.10↔192.168.10.11 (1,355 pkts), 192.168.10.10↔192.168.10.13 (1,355 pkts), 192.168.10.10↔192.168.10.12 (999 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

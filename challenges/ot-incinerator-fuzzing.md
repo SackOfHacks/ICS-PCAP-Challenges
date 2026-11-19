@@ -116,7 +116,7 @@ The plant speaks S7comm-plus with an integrity digest: judge by source, rate, si
 
 The capture is a real plant day with an injected S7 fuzzing attack (the filename is the dataset's label). Expect: malformed/random S7comm PDUs from the attacker.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 76,358 (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 76,358; top conversations in traffic_with_fuzzing_attack05.pcap: 10.0.0.1↔10.0.0.2 (228,539 pkts), 10.0.0.2↔10.0.0.3 (25 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology) (2025) — doi:10.17632/vpcr4wpgfd.4 · License: CC BY 4.0._
 

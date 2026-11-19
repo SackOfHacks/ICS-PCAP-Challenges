@@ -91,7 +91,7 @@ Count requests per function code per source — the baseline is a small, stable 
 
 A normal-operations capture: the answer is your baseline table (hosts, roles, function codes, register ranges, cadence). Use it to explain each technique capture.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×46930, Read Input Registers ×19044, Read Coils ×14282, Read Holding Registers ×9540, Write Single Coil ×134; dangerous-operation matches: 47064 (top sources: 192.168.0.21 ×35268, 192.168.0.22 ×11796) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×46930, Read Input Registers ×19044, Read Coils ×14282, Read Holding Registers ×9540, Write Single Coil ×134; dangerous-operation matches: 47064 (top sources: 192.168.0.21 ×35268, 192.168.0.22 ×11796); top conversations in output_normal_1.pcap: 192.168.0.21↔192.168.0.22 (70,751 pkts), 192.168.0.100↔192.168.0.200 (70,492 pkts), 192.168.0.21↔192.168.0.31 (52,774 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

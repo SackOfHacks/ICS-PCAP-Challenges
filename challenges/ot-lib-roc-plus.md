@@ -124,7 +124,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Emerson ROC Plus (oil & gas flow computers) has no Wireshark dissector — use CISA's Zeek ICSNPP roc-plus parser; parameter writes and configuration changes are the targets). ATT&CK for ICS: T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** ROC Plus packets matching `tcp.port == 4000 || udp.port == 4000`: 666; dangerous-operation matches: 666 (top sources: 192.168.1.200 ×344, 192.168.1.100 ×322) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** ROC Plus packets matching `tcp.port == 4000 || udp.port == 4000`: 666; dangerous-operation matches: 666 (top sources: 192.168.1.200 ×344, 192.168.1.100 ×322); top conversations in all_opcodes_udp.pcap: 192.168.1.100↔192.168.1.200 (109 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm)._
 

@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Byte-identical Modbus requests re-sent later (often with repeated transaction IDs) from the attacker.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×350, Read Coils ×176, Read Holding Registers ×118, Read Discrete Inputs ×88, Write Single Coil ×8; dangerous-operation matches: 8 (top sources: 192.168.10.11 ×4, 192.168.10.66 ×3, 192.168.10.10 ×1) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×350, Read Coils ×176, Read Holding Registers ×118, Read Discrete Inputs ×88, Write Single Coil ×8; dangerous-operation matches: 8 (top sources: 192.168.10.11 ×4, 192.168.10.66 ×3, 192.168.10.10 ×1); top conversations in lab10_replay.pcap: 192.168.10.10↔192.168.10.11 (1,471 pkts), 192.168.10.11↔192.168.10.66 (19 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

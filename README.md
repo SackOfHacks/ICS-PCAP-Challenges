@@ -4,15 +4,15 @@
 
 **A free, guided network-forensics range for industrial control systems.**
 
-261 hands-on challenges · 51 credited public datasets · 28 OT protocols · ~240 GB of real and testbed traffic
+327 hands-on challenges · 67 credited public datasets · 28 OT protocols · ~354 GB of real and testbed traffic
 
 [**▶ Open the challenge range**](https://sackofhacks.github.io/ICS-PCAP-Challenges/) &nbsp;·&nbsp;
 [Browse all challenges](challenges/README.md) &nbsp;·&nbsp;
 [Quickstart](#-quickstart-5-minutes) &nbsp;·&nbsp;
 [Credits](ATTRIBUTION.md)
 
-![challenges](https://img.shields.io/badge/challenges-261-2ea44f)
-![datasets](https://img.shields.io/badge/datasets-51-1f6feb)
+![challenges](https://img.shields.io/badge/challenges-327-2ea44f)
+![datasets](https://img.shields.io/badge/datasets-67-1f6feb)
 ![protocols](https://img.shields.io/badge/OT%20protocols-28-8250df)
 ![powered by Pcapper](https://img.shields.io/badge/powered%20by-Pcapper-orange)
 ![no server](https://img.shields.io/badge/runs-in%20your%20browser-lightgrey)
@@ -27,7 +27,7 @@
 ## What is this?
 
 Real industrial network traffic is hard to come by — and harder to *learn from*. This repo turns
-**51 public ICS/OT/SCADA packet-capture datasets** into **261 guided challenges**:
+**67 public ICS/OT/SCADA packet-capture datasets** into **327 guided challenges**:
 substation protocols under attack, PLCs being hijacked, a safety-system malware, a real incinerator
 plant, a robotics cell under security scans, building-automation attacks, CTF captures from ICS villages,
 and a deep protocol library.
@@ -38,12 +38,12 @@ can check your work), and the **credit and license** of the data it's built on.
 
 | Theme | Challenges | What you'll practise |
 |---|---:|---|
-| **Power grid & substations** | 30 | IEC-104, DNP3, IEC 61850 GOOSE/MMS/SV, synchrophasors — attacks on substations and grid operations |
-| **Process control & PLC testbeds** | 109 | Modbus and S7 testbeds and labs — recon, floods, MITM, value injection, PLC hijacking |
+| **Power grid & substations** | 77 | IEC-104, DNP3, IEC 61850 GOOSE/MMS/SV, synchrophasors — attacks on substations and grid operations |
+| **Process control & PLC testbeds** | 130 | Modbus and S7 testbeds and labs — recon, floods, MITM, value injection, PLC hijacking |
 | **ICS malware & intrusions** | 5 | TRITON/TriStation, Industroyer2, exploitation and C&C inside control networks |
 | **Building automation** | 8 | KNXnet/IP and BACnet — bus scans, floods and unauthorised group-value writes in building systems |
 | **CTF & conference labs** | 60 | ICS Village CTF and conference-lab captures — find the flag, reconstruct the competition |
-| **Manufacturing & smart factory** | 25 | Factory-cell and robotics traffic — baselines, unlabeled attack days, security-control footprints |
+| **Manufacturing & smart factory** | 23 | Factory-cell and robotics traffic — baselines, unlabeled attack days, security-control footprints |
 | **Protocol library** | 24 | one deduplicated deep-dive per OT protocol — learn each protocol's grammar and its dangerous operations |
 
 **Protocols covered:** ANSI C12.22 · BACnet · Beckhoff ADS/AMS · C37.118 synchrophasor · DLMS/COSEM · DNP3 · EtherCAT · EtherNet/IP & CIP · HART-IP · IEC 61850 GOOSE · IEC 61850 MMS · IEC 61850 R-GOOSE · IEC 61850 SV · IEC-104 · KNXnet/IP · LS XGT FEnet · LonTalk · Modbus/TCP · Niagara Fox · OPC DA (DCOM) · OPC UA · Omron FINS · POWERLINK · PROFINET · ROC Plus · S7comm · S7comm-plus (S7-1200/1500) · TriStation
@@ -93,7 +93,7 @@ xdg-open index.html        # macOS: open index.html   ·   Windows: start index.
 ```
 
 That's it — no server, no accounts, no build step to view it. Want everything? `python3 scripts/fetch.py --list`
-shows every dataset and its size; fetch by name or with `--all` (~240 GB).
+shows every dataset and its size; fetch by name or with `--all` (~354 GB).
 
 ## 🖥️ Using the challenge range
 
@@ -122,17 +122,23 @@ here on GitHub, with hints and solutions in collapsible sections.
 
 ## 🗂️ Getting the data
 
-The packet captures are **not stored in this repository** — they total ~240 GB and many files are
-far larger than GitHub allows. More importantly, they belong to their authors. `scripts/fetch.py` downloads
-each dataset from its **original source** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle…),
-verifies captures by their magic bytes, unpacks archives, splits anything ≥ 2 GB into < 2 GiB parts, and
-writes a `PROVENANCE.md` credit file into each `data/<dataset>/` folder.
+The captures are not in the git history (they total ~354 GB and belong to their authors). `scripts/fetch.py`
+gets each dataset from the right place:
+
+- **This repository's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1)**
+  mirrors the **38 datasets whose licence (or authors) allow redistribution** (~337 GB of captures),
+  unmodified, as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
+  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation. 28 of them are still being uploaded; until their parts are all there, `fetch.py` takes them from the original source.
+- **The original sources** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle, MEGA, …) for the other
+  **29 datasets**, which their authors published without a licence that allows re-hosting. The fetcher
+  unpacks them, keeps only the files the challenges use and writes a `PROVENANCE.md` credit file.
 
 ```bash
-python3 scripts/fetch.py --list                       # what's available, with sizes and licenses
-python3 scripts/fetch.py netresec-industroyer2 cyber4ot   # fetch specific datasets
-python3 scripts/fetch.py --all                        # everything
-python3 scripts/build.py                              # re-index after fetching
+python3 scripts/fetch.py --list                         # every dataset: size, licence, mirror or source
+python3 scripts/fetch.py netresec-industroyer2 cyber4ot # specific datasets
+python3 scripts/fetch.py --all                          # everything
+python3 scripts/fetch.py cyber4ot --from-source         # skip the mirror, use the original source
+python3 scripts/build.py                                # re-index after fetching
 ```
 
 Downloads resume if interrupted — just run the same command again.
@@ -150,9 +156,9 @@ exploit/C2 payloads. Work offline:
 
 This range exists because researchers, vendors and the community published their data. **Please cite
 the original authors** when you use the captures — full citations, licenses and DOIs for all
-51 datasets are in **[ATTRIBUTION.md](ATTRIBUTION.md)**, and each challenge page shows its source.
+67 datasets are in **[ATTRIBUTION.md](ATTRIBUTION.md)**, and each challenge page shows its source.
 
-Special thanks to TU Wien, NIST, the University of Western Macedonia, the University of Coimbra, Queensland University of Technology, Fraunhofer FKIE and RWTH Aachen University, Jordan University of Science and Technology, the Canadian Institute for Cybersecurity, Warsaw University of Technology, Université Grenoble Alpes, Mälardalen University, Polytechnique Montréal, ADSC Singapore, the CIARRES project, Netresec, CS3STHLM (4SICS), Digital Bond / S4, Nozomi Networks, CISA & Idaho National Laboratory, the University of Illinois ITI, OISF, the CybICS project, the ICS CTF organisers and archivists, and the community collectors credited in ATTRIBUTION.md.
+Special thanks to TU Wien, NIST, the University of Western Macedonia, the University of Coimbra, Queensland University of Technology, Fraunhofer FKIE and RWTH Aachen University, TU Delft, KIOS CoE (University of Cyprus), Jordan University of Science and Technology, the Canadian Institute for Cybersecurity, Warsaw University of Technology, Université Grenoble Alpes, Mälardalen University, Polytechnique Montréal, ADSC Singapore, the CIARRES project, Netresec, CS3STHLM (4SICS), Digital Bond / S4, Nozomi Networks, CISA & Idaho National Laboratory, the University of Illinois ITI, OISF, the CybICS project, the ICS CTF organisers and archivists, and the community collectors credited in ATTRIBUTION.md.
 
 ## 🧰 Repo layout
 
@@ -163,9 +169,10 @@ ICS-PCAP-Challenges/
 ├── challenges/              # one Markdown page per challenge + README index
 ├── catalog/
 │   ├── challenges.json      # challenge definitions (source of truth)
-│   └── datasets.json        # dataset credits, licenses and original download sources
+│   └── datasets.json        # credits, licences, mirror checksums and original download sources
 ├── scripts/
-│   ├── fetch.py             # download datasets from their original sources into data/
+│   ├── fetch.py             # download datasets into data/ (release mirror or original source)
+│   ├── mega_fetch.py        # public-MEGA-folder client used for one source-hosted dataset
 │   └── build.py             # rebuild challenges.js, challenges/*.md and ATTRIBUTION.md
 ├── data/                    # the captures (git-ignored; created by fetch.py)
 ├── ATTRIBUTION.md           # credits and licenses for every dataset (generated)
@@ -175,6 +182,7 @@ ICS-PCAP-Challenges/
 
 ## 📄 License
 
-The **code and challenge authoring** are [MIT](LICENSE). The **datasets are not covered by that license**
-and are not redistributed here — each keeps its own license at its source (several are **CC BY-NC /
-BY-NC-SA, non-commercial**). See [ATTRIBUTION.md](ATTRIBUTION.md).
+The **code and challenge authoring** are [MIT](LICENSE). The **datasets are not covered by that license**: each
+keeps its own licence. The ones mirrored in the `data-v1` release are redistributed under those licences
+(several are **CC BY-NC / BY-NC-SA — non-commercial only**, others **CC BY-SA / GPL — share-alike**); the rest are
+only downloaded from their sources. See [ATTRIBUTION.md](ATTRIBUTION.md).

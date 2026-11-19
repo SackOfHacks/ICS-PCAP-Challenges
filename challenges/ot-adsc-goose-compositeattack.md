@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'CompositeAttack'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 31,802; GOOSE streams — LIED11CTRL/LLN0$Status from 00:09:8e:21:73:32: 602 frames, 3 distinct stNum, 2 sqNum resets; LIED10CTRL/LLN0$Status from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED10PROT/LLN0$Alarm from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED10MEAS/LLN0$Measurement from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED11PROT/LLN0$Alarm from 00:09:8e:21:73:32: 600 frames, 1 distinct stNum, 0 sqNum resets (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 31,802; GOOSE streams — LIED11CTRL/LLN0$Status from 00:09:8e:21:73:32: 602 frames, 3 distinct stNum, 2 sqNum resets; LIED10CTRL/LLN0$Status from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED10PROT/LLN0$Alarm from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED10MEAS/LLN0$Measurement from 00:09:8e:21:73:33: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED11PROT/LLN0$Alarm from 00:09:8e:21:73:32: 600 frames, 1 distinct stNum, 0 sqNum resets; top conversations in CompositeAttack.pcapng: 0.0.0.0↔255.255.255.255 (746 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Advanced Digital Sciences Center (ADSC), Singapore (2019) · License: No license stated — credit ADSC._
 

@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/CTF-Archives/2024-PandaCupCTF/blob/main/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×55194; dangerous-operation matches: 55194 (top sources: 10.10.8.125 ×27597, 10.10.8.22 ×27597); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×55194; dangerous-operation matches: 55194 (top sources: 10.10.8.125 ×27597, 10.10.8.22 ×27597); top conversations in 1.pcap: 10.10.8.125↔10.10.8.22 (55,194 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

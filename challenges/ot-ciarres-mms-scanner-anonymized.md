@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'MMS scanner'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 315; GOOSE streams — PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 84 frames, 3 distinct stNum, 2 sqNum resets; PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 315; GOOSE streams — PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 84 frames, 3 distinct stNum, 2 sqNum resets; PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 77 frames, 1 distinct stNum, 0 sqNum resets; top conversations in mms_scanner_anonymized.pcap: 10.0.0.3↔10.0.0.4 (19,490 pkts), 10.0.0.4↔10.0.128.106 (8,364 pkts), 10.0.0.3↔10.0.1.1 (2,235 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · License: GPL-3.0 (as declared on Kaggle)._
 

@@ -135,7 +135,7 @@ Read the ATT&CK page for T0830 — the procedure examples tell you what to look 
 
 Labelled as AITM (T0830). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×45935, Read Input Registers ×18922, Read Coils ×14208, Read Holding Registers ×9298, Write Single Coil ×130; dangerous-operation matches: 46065 (top sources: 192.168.0.21 ×34533, 192.168.0.22 ×11532) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×45935, Read Input Registers ×18922, Read Coils ×14208, Read Holding Registers ×9298, Write Single Coil ×130; dangerous-operation matches: 46065 (top sources: 192.168.0.21 ×34533, 192.168.0.22 ×11532); top conversations in output_attack_n3.pcap: 192.168.0.100↔192.168.0.200 (69,540 pkts), 192.168.0.21↔192.168.0.22 (69,134 pkts), 192.168.0.21↔192.168.0.31 (52,821 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

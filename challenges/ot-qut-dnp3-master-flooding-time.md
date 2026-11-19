@@ -150,7 +150,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **master_flooding_time**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — WRITE ×5524, READ ×46, RESPONSE ×46, CONFIRM ×12, UNSOLICITED_RESPONSE ×8, RECORD_CURRENT_TIME ×2; dangerous-operation matches: 552 (top sources: 192.168.10.66 ×552) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — WRITE ×5524, READ ×46, RESPONSE ×46, CONFIRM ×12, UNSOLICITED_RESPONSE ×8, RECORD_CURRENT_TIME ×2; dangerous-operation matches: 552 (top sources: 192.168.10.66 ×552); top conversations in 20160901143106.master_flooding_time.attacker.pcap: 192.168.10.222↔192.168.10.66 (561 pkts), 192.168.10.20↔255.255.255.255 (9 pkts), 192.168.10.1↔192.168.10.255 (1 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

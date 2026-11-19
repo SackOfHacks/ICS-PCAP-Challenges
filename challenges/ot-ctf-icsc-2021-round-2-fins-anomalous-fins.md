@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 18,901; flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 18,901; top conversations in 10.pcapng: 172.31.0.73↔172.31.0.90 (30,317 pkts), 172.31.0.201↔239.255.255.250 (28 pkts), 172.31.0.201↔224.0.0.251 (5 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

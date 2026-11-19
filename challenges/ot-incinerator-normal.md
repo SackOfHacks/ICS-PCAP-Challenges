@@ -103,7 +103,7 @@ The plant's own S7 traffic is S7comm-plus with an integrity digest (protocol ver
 
 Normal real-plant traffic: steady S7comm-plus sessions between the HMI/engineering hosts and the PLC (version 3, integrity-protected) plus PROFINET cyclic I/O. Your baseline for the attack captures.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 197,621 (basis: 3 of 14 capture file(s), first 300,000 packets each, smallest files carrying S7comm-plus (S7-1200/1500) chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 197,621; top conversations in day14.pcap: 10.0.0.1↔10.0.0.2 (224,074 pkts), 10.0.0.2↔10.0.0.4 (26 pkts) (basis: 3 of 14 capture file(s), first 300,000 packets each, smallest files carrying S7comm-plus (S7-1200/1500) chosen)
 
 _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology) (2025) — doi:10.17632/vpcr4wpgfd.4 · License: CC BY 4.0._
 

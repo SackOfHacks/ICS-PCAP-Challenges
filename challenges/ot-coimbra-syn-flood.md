@@ -105,7 +105,7 @@ io,stat with per-protocol columns shows the attack and the process traffic side 
 
 A TCP SYN flood (many half-open connections, typically spoofed sources) against the Modbus service on TCP 502; quantify it and check the polling cycle for gaps and retransmissions. The dataset's folder/file names are the ground-truth labels.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×2212; dangerous-operation matches: 2212 (top sources: 172.27.224.250 ×2212) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×2212; dangerous-operation matches: 2212 (top sources: 172.27.224.250 ×2212); top conversations in eth2dump-tcpSYNFloodDDoS1m-0,5h_1.pcap: 172.27.224.250↔172.27.224.251 (15,399 pkts), 0.0.0.0↔255.255.255.255 (133 pkts), 10.12.70.141↔172.27.224.250 (1 pkts) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020) (2018) — doi:10.1007/978-3-030-05849-4_19 · License: CC BY 3.0 (repository content)._
 

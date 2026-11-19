@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/Network/water-hammer-reconciliation
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×136, Write Multiple Registers ×131; dangerous-operation matches: 131 (top sources: 192.0.2.10 ×66, 192.0.2.20 ×65); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×136, Write Multiple Registers ×131; dangerous-operation matches: 131 (top sources: 192.0.2.10 ×66, 192.0.2.20 ×65); top conversations in reserve-header.pcapng: 192.0.2.10↔192.0.2.20 (536 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) · License: None stated — credit CSCTF._
 

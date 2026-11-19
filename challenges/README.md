@@ -1,6 +1,6 @@
 # All challenges
 
-261 challenges. Open `index.html` (or the GitHub Pages site) for the interactive version.
+327 challenges. Open `index.html` (or the GitHub Pages site) for the interactive version.
 
 | Challenge | Difficulty | Protocols / tags | Data |
 |---|---|---|---|
@@ -124,12 +124,31 @@
 | [Cyber4OT — Nmap full port scans of each device](ot-cyber4ot-fullscan.md) | Medium | Modbus/TCP, PLC hijacking, recon | 0.31 GB |
 | [Cyber4OT — macof + tcpkill: hijacking the Modbus session](ot-cyber4ot-hijack.md) | Hard | Modbus/TCP, PLC hijacking, recon, macof | 16.8 MB |
 | [Cyber4OT — the full attack (successful and failed) and its aftermath](ot-cyber4ot-attack.md) | Expert | Modbus/TCP, PLC hijacking, recon | 37.3 MB |
+| [Data4Cyber — S0 — benign baseline](ot-data4cyber-s0-benign-baseline.md) | Medium | Modbus/TCP, academic dataset, power grid | 65.6 MB |
+| [Data4Cyber — S1 — Industroyer against the PV system](ot-data4cyber-s1-industroyer-pv.md) | Hard | Modbus/TCP, academic dataset, power grid | 63.2 MB |
+| [Data4Cyber — S1 — Industroyer against the PV system (alternate run)](ot-data4cyber-s1-industroyer-pv-alt.md) | Hard | Modbus/TCP, academic dataset, power grid | 65.5 MB |
+| [Data4Cyber — S2 — Industroyer against the battery storage system](ot-data4cyber-s2-industroyer-bss.md) | Hard | Modbus/TCP, academic dataset, power grid | 64.0 MB |
+| [Data4Cyber — S3 — ARP spoofing: battery-storage meter values halved](ot-data4cyber-s3-arp-spoof-bss-meter-half-values.md) | Hard | Modbus/TCP, academic dataset, power grid | 56.6 MB |
+| [Data4Cyber — S4 — ARP spoofing: load and PV measurements, two phases](ot-data4cyber-s4-arp-spoof-loads-pv-two-phase.md) | Hard | Modbus/TCP, academic dataset, power grid | 45.7 MB |
+| [Data4Cyber — S5 — ARP spoofing: loads, PV and battery storage, two phases](ot-data4cyber-s5-arp-spoof-loads-pv-bss-two-phase.md) | Hard | Modbus/TCP, academic dataset, power grid | 45.9 MB |
+| [Data4Cyber — S6 — MQTT supply-chain compromise](ot-data4cyber-s6-mqtt-supply-chain-compromise.md) | Hard | Modbus/TCP, academic dataset, power grid | 65.4 MB |
+| [Data4Cyber — S7 — MQTT supply-chain compromise (alternate run)](ot-data4cyber-s7-mqtt-supply-chain-compromise-alt.md) | Hard | Modbus/TCP, academic dataset, power grid | 22.4 MB |
 | [S4x15 CTF — BACnet building controllers](ot-s4x15-bacnet.md) | Medium | CTF, BACnet | 12.6 MB |
 | [S4x15 CTF — corporate IT host & Advantech device](ot-s4x15-it.md) | Medium | CTF | 3.4 MB |
 | [S4x15 CTF — the GE iFIX HMI client & server](ot-s4x15-hmi.md) | Medium | CTF, Modbus/TCP | 14.4 MB |
 | [S4x15 CTF — the PLCs (Modicon & MicroLogix)](ot-s4x15-plcs.md) | Medium | CTF, Modbus/TCP, EtherNet/IP & CIP | 11.0 MB |
 | [S4x15 ICS Village CTF — reconstruct the competition](ot-s4x15-ctf.md) | Hard | CTF, Modbus/UMAS, EtherNet/IP, PCCC | 41.4 MB |
+| [ELEGANT — normal PLC traffic (baseline)](ot-elegant-normal.md) | Easy | Modbus/TCP, PLC, ELEGANT | 57.1 MB |
+| [ELEGANT — flood against one PLC (rate 1)](ot-elegant-flood-rate1.md) | Medium | Modbus/TCP, PLC, ELEGANT, DoS | 0.16 GB |
+| [ELEGANT — flood against one PLC (rate 2)](ot-elegant-flood-rate2.md) | Medium | Modbus/TCP, PLC, ELEGANT, DoS | 4.71 GB |
+| [ELEGANT — ARP-poisoning man-in-the-middle](ot-elegant-mitm-arp.md) | Hard | Modbus/TCP, PLC, ELEGANT, MITM | 4.1 MB |
+| [ELEGANT — amplification DoS against one PLC](ot-elegant-amp-single.md) | Hard | Modbus/TCP, PLC, ELEGANT, DoS | 3.59 GB |
+| [ELEGANT — flood against multiple PLCs](ot-elegant-flood-multi.md) | Hard | Modbus/TCP, PLC, ELEGANT, DoS | 5.24 GB |
+| [ELEGANT — amplification DoS against multiple PLCs](ot-elegant-amp-multi.md) | Expert | Modbus/TCP, PLC, ELEGANT, DoS | 5.30 GB |
+| [ELEGANT — the full man-in-the-middle chain](ot-elegant-mitm-chain.md) | Expert | Modbus/TCP, PLC, ELEGANT, MITM | 5.2 MB |
 | [G-ICS — one capture, four OT protocols under load](ot-g-ics-whole-network.md) | Medium | IEC 61850 SV, GOOSE, Modbus/TCP, PROFINET | 1.53 GB |
+| [GOOSE flooding DoS against a SICAM meter](ot-goose-dos-sicam.md) | Medium | IEC 61850 GOOSE, academic dataset | 12.9 MB |
+| [GOOSE false-data injection between IEDs](ot-goose-fdi.md) | Hard | IEC 61850 GOOSE, academic dataset | 4.4 MB |
 | [ICS CTF (工控CTF) — find the flag in industrial traffic](ot-ctf-newbee119.md) | Hard | CTF, flag hunting, Modbus/TCP | 48.6 MB |
 | [ICS-Flow — ICSSIM Modbus network attacks](ot-ics-flow.md) | Medium | Modbus/TCP, ICSSIM | 1.97 GB |
 | [IEC-104 & IEC 61850 MMS sample exchanges](ot-iec104-mms-samples.md) | Medium | IEC 61850 MMS, academic dataset | 4.2 MB |
@@ -140,6 +159,8 @@
 | [IEC 61850 GOOSE on RTDS — message injection attack](ot-goose-rtds-message-injection.md) | Hard | IEC 61850 GOOSE, substation, message injection, RTDS | 2.52 GB |
 | [IEC 61850 GOOSE on RTDS — replay attack](ot-goose-rtds-replay.md) | Hard | IEC 61850 GOOSE, substation, replay, RTDS | 2.77 GB |
 | [IEEE 24-bus SDN lab — R-GOOSE on primary/backup paths](ot-rgoose-sdn.md) | Medium | IEC 61850 R-GOOSE, academic dataset | 0.0 MB |
+| [KIOS — attacks on DER energy management & control](ot-kios-der.md) | Hard | Modbus/TCP, academic dataset | 0.1 MB |
+| [KIOS/ELECTRON — FDI and masquerade on a power system](ot-kios-suc4.md) | Hard | IEC 61850 GOOSE, academic dataset | 1.0 MB |
 | [KNXnet/IP — bus scanning](ot-knx-knxa04-busscanning.md) | Hard | KNXnet/IP, academic dataset, ICS | 51.2 MB |
 | [KNXnet/IP — device reset (MReset)](ot-knx-knxa02-mreset.md) | Hard | KNXnet/IP, academic dataset, ICS | 64.4 MB |
 | [KNXnet/IP — flooding with fuzzed GroupValueReads](ot-knx-knxa07-floodinggroupvaluereadfuzzing.md) | Hard | KNXnet/IP, academic dataset, ICS | 0.24 GB |
@@ -154,12 +175,14 @@
 | [Lemay SCADA — the fake Modbus command](ot-lemay-fake-cmd.md) | Medium | Modbus/TCP, SCADA, intrusion detection | 0.8 MB |
 | [Lemay SCADA — C&C channel uploading an executable](ot-lemay-cnc.md) | Hard | Modbus/TCP, SCADA, intrusion detection, malware | 0.2 MB |
 | [Lemay SCADA — MS08-067 exploitation inside the control network](ot-lemay-ms08067.md) | Hard | Modbus/TCP, SCADA, intrusion detection, MS08-067 | 1.2 MB |
+| [IEC-104 testbed traffic (QUB)](ot-maynard-iec104.md) | Medium | IEC-104 | 38.3 MB |
 | [Medical-waste incinerator — 14 days of real S7-1500 plant traffic](ot-incinerator-normal.md) | Medium | S7comm, PROFINET, real plant, baseline | 1.88 GB |
 | [Medical-waste incinerator — S7 fuzzing attack](ot-incinerator-fuzzing.md) | Hard | S7comm-plus, real plant, S7 fuzzing | 0.15 GB |
 | [Medical-waste incinerator — command flooding attack](ot-incinerator-command-flooding.md) | Hard | S7comm-plus, real plant, command flooding | 0.15 GB |
 | [Medical-waste incinerator — man-in-the-middle attack](ot-incinerator-mitm.md) | Hard | S7comm, real plant, man-in-the-middle | 0.16 GB |
 | [Medical-waste incinerator — replay attack](ot-incinerator-replay.md) | Hard | S7comm-plus, real plant, replay | 0.14 GB |
 | [Medical-waste incinerator — data spoofing attack](ot-incinerator-data-spoofing.md) | Expert | S7comm-plus, real plant, data spoofing | 0.15 GB |
+| [Mininet power-system — scanning attack](ot-mininet-power-scan.md) | Easy | Unidentified protocol, academic dataset | 1.0 MB |
 | [Modbus lab 01 — Baseline](ot-modbus-lab01.md) | Easy | Modbus/TCP, lab series | 0.3 MB |
 | [Modbus lab 02 — Read functions](ot-modbus-lab02.md) | Easy | Modbus/TCP, lab series | 0.2 MB |
 | [Modbus lab 03 — Write functions](ot-modbus-lab03.md) | Easy | Modbus/TCP, lab series | 0.2 MB |
@@ -179,8 +202,18 @@
 | [4SICS Geek Lounge — triage a live ICS lab (3 days)](ot-4sics-lab.md) | Medium | S7comm, Modbus/TCP, EtherNet/IP, asset inventory | 0.37 GB |
 | [IEC-104 file transfer (FreyrSCADA)](ot-iec104-file-transfer.md) | Medium | IEC-104, file transfer | 0.2 MB |
 | [Industroyer2 — the real malware's IEC-104 traffic](ot-industroyer2.md) | Expert | IEC-104, Industroyer2, Sandworm, ICS malware | 0.0 MB |
+| [NIST process-control testbed — Active Directory with least privilege](ot-nist-pcs-active-directory.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 6.68 GB |
 | [NIST process-control testbed — baseline operation](ot-nist-pcs-baseline.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 7.07 GB |
+| [NIST process-control testbed — endpoint protection](ot-nist-pcs-symantec.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 7.05 GB |
+| [NIST process-control testbed — host firewalls enabled](ot-nist-pcs-firewall.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 10.62 GB |
+| [NIST process-control testbed — incremental backup](ot-nist-pcs-veeam-incremental.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 6.80 GB |
+| [NIST process-control testbed — packet capture on a host](ot-nist-pcs-wireshark.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 6.90 GB |
+| [NIST process-control testbed — process historian](ot-nist-pcs-historian.md) | Medium | EtherNet/IP, CIP, NIST CSMS, process control | 7.07 GB |
 | [NIST process-control testbed — Nessus scan in a live process network](ot-nist-pcs-nessus.md) | Hard | EtherNet/IP, CIP, NIST CSMS, process control | 8.41 GB |
+| [NIST process-control testbed — Open-AudIT asset discovery](ot-nist-pcs-open-audit.md) | Hard | EtherNet/IP, CIP, NIST CSMS, process control | 6.72 GB |
+| [NIST process-control testbed — VPN remote access](ot-nist-pcs-vpn.md) | Hard | EtherNet/IP, CIP, NIST CSMS, process control | 6.84 GB |
+| [NIST process-control testbed — endpoint protection plus backups](ot-nist-pcs-symantec-veeam.md) | Hard | EtherNet/IP, CIP, NIST CSMS, process control | 6.79 GB |
+| [NIST process-control testbed — full system backup](ot-nist-pcs-veeam-full.md) | Hard | EtherNet/IP, CIP, NIST CSMS, process control | 6.59 GB |
 | [NIST robotics cell — baseline operation (CL001.1)](ot-nist-crs-cl001-1.md) | Easy | Modbus/TCP, NIST CSMS, robotics, security controls | 0.48 GB |
 | [NIST robotics cell — Cisco ASA 5506 firewall (CL012.1)](ot-nist-crs-cl012-1.md) | Medium | Modbus/TCP, NIST CSMS, robotics, security controls | 0.63 GB |
 | [NIST robotics cell — MAC-address filtering (CL010.2)](ot-nist-crs-cl010-2.md) | Medium | Modbus/TCP, NIST CSMS, robotics, security controls | 0.69 GB |
@@ -203,6 +236,7 @@
 | [NIST robotics cell — antivirus full scan (CL005.2)](ot-nist-crs-cl005-2.md) | Hard | Modbus/TCP, NIST CSMS, robotics, security controls | 0.81 GB |
 | [NIST robotics cell — antivirus real-time scanning (CL005.1)](ot-nist-crs-cl005-1.md) | Hard | Modbus/TCP, NIST CSMS, robotics, security controls | 0.68 GB |
 | [TRITON/TRISIS — TriStation traffic of the SIS malware](ot-triton-tristation.md) | Expert | TRITON, TRISIS, TriStation, Triconex | 0.2 MB |
+| [PowerDuck — GOOSE attacks on a substation](ot-powerduck-goose.md) | Hard | IEC 61850 GOOSE, academic dataset | 0.96 GB |
 | [QUT DNP3 — the attack-free control run](ot-qut-dnp3-control.md) | Easy | DNP3, QUT, baseline | 0.18 GB |
 | [QUT DNP3 — Man-in-the-middle — forwarding only](ot-qut-dnp3-mitm-forwarding.md) | Medium | DNP3, QUT, mitm, MITM_forwarding | 0.1 MB |
 | [QUT DNP3 — Reconnaissance — nmap and DNP3 discovery](ot-qut-dnp3-reconnaissance.md) | Medium | DNP3, QUT, recon, reconnaissance | 0.1 MB |
@@ -254,14 +288,46 @@
 | [QUT S7comm — attacking the water tank](ot-qut-s7-water-tank.md) | Medium | S7comm, QUT, process manipulation, water-tank | 0.0 MB |
 | [QUT S7comm — flooding the process](ot-qut-s7-flooding.md) | Hard | S7comm, QUT, flooding | 0.14 GB |
 | [QUT S7comm — hunt the whole attack session](ot-qut-s7-attack-day.md) | Expert | S7comm, QUT, threat hunting | 0.41 GB |
+| [R-GOOSE and tunnelled GOOSE](ot-r-goose.md) | Medium | IEC 61850 GOOSE, academic dataset | 1.9 MB |
 | [S7comm — HMI monitoring vs. normal operations](ot-s7-operations.md) | Easy | S7comm, Siemens, engineering | 0.1 MB |
 | [S7comm — engineering actions (downloads, passwords, mode changes)](ot-s7-engineering.md) | Medium | S7comm, Siemens, engineering | 0.0 MB |
 | [ControlLogix 5000 — change date/time and port-configuration attempts](ot-controllogix-change-attempts.md) | Hard | EtherNet/IP, CIP, ControlLogix, Rockwell | 4.3 MB |
 | [Sherlock — Basic topology](ot-sherlock-01-basic.md) | Hard | IEC-104, academic dataset, power grid | 0.18 GB |
 | [Sherlock — Rural topology](ot-sherlock-03-rural.md) | Hard | IEC-104, academic dataset, power grid | 0.72 GB |
+| [APT against a power-substation network](ot-substation-apt.md) | Hard | IEC 61850 GOOSE, academic dataset | 18.7 MB |
+| [Substation ML-IDS — raw IEC 61850 traffic](ot-substation-mlids-raw-iec61850.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 4.77 GB |
+| [Substation ML-IDS — raw IEC-104 traffic](ot-substation-mlids-raw-iec104.md) | Hard | IEC-104, academic dataset, power grid | 0.22 GB |
 | [Synthetic OT samples mapped to ATT&CK for ICS](ot-synthetic-mitre.md) | Easy | Modbus/TCP, academic dataset | 0.1 MB |
 | [Synthetic OT — benign plant vs. attack scenarios](ot-synthetic-scenarios.md) | Easy | Modbus/TCP, academic dataset | 0.5 MB |
 | [CybICS — Incident PCAP — the gas plant stops](ot-ctf-training-cybics-incident-pcap-the-gas-plant-st.md) | Medium | CTF, Modbus/TCP, training-cybics | 0.1 MB |
 | [CybICS — Whispering PLC — Modbus covert C2](ot-ctf-training-cybics-whispering-plc-modbus-covert-c.md) | Medium | CTF, Modbus/TCP, training-cybics | 0.3 MB |
+| [TU Delft substation — Baseline](ot-tudelft-cpps-baseline.md) | Medium | IEC 61850 GOOSE, academic dataset, power grid | 0.23 GB |
+| [TU Delft substation — Fault](ot-tudelft-cpps-fault.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 0.45 GB |
+| [TU Delft substation — GOOSE Injection](ot-tudelft-cpps-goose-injection.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 1.58 GB |
+| [TU Delft substation — Reconnaissance](ot-tudelft-cpps-reconnaissance.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 1.15 GB |
+| [TU Delft substation — Resource Exhaustion](ot-tudelft-cpps-resource-exhaustion.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 1.31 GB |
+| [TU Delft substation — SV Injection](ot-tudelft-cpps-sv-injection.md) | Hard | IEC 61850 SV, academic dataset, power grid | 0.69 GB |
 | [TU Wien Smart Factory — OT Attack & Operations](ot-tuwien-overview.md) | Hard | MQTT, OPC UA, Modbus/TCP, OT attack | 127.15 GB |
 | [TU Wien Smart Factory — the unlabeled DoS attack day](ot-tuwien-dos-day.md) | Expert | DoS, OPC UA, Modbus/TCP, unlabeled | 97.52 GB |
+| [DNP3 — Cold Restart Attack](ot-uowm-dnp3-20200515-dnp3-cold-restart-attack.md) | Hard | DNP3, academic dataset, ICS | 0.28 GB |
+| [DNP3 — Disable Unsolicited Messages Attack](ot-uowm-dnp3-20200514-dnp3-disable-unsolicited-messag.md) | Hard | DNP3, academic dataset, ICS | 0.29 GB |
+| [DNP3 — Enumerate](ot-uowm-dnp3-20200516-dnp3-enumerate.md) | Hard | DNP3, academic dataset, ICS | 55.1 MB |
+| [DNP3 — Info](ot-uowm-dnp3-20200516-dnp3-nfo.md) | Hard | DNP3, academic dataset, ICS | 56.1 MB |
+| [DNP3 — Initialize Data Attack](ot-uowm-dnp3-20200518-dnp3-initialize-data-attack.md) | Hard | DNP3, academic dataset, ICS | 63.3 MB |
+| [DNP3 — MITM DoS](ot-uowm-dnp3-20200518-dnp3-mitm-dos.md) | Hard | DNP3, academic dataset, ICS | 35.7 MB |
+| [DNP3 — Replay Attack](ot-uowm-dnp3-20200518-dnp3-replay-attack.md) | Hard | DNP3, academic dataset, ICS | 27.1 MB |
+| [DNP3 — Stop Application Attack](ot-uowm-dnp3-20200519-dnp3-stop-application-attack.md) | Hard | DNP3, academic dataset, ICS | 63.3 MB |
+| [DNP3 — Warm Restart Attack](ot-uowm-dnp3-20200515-dnp3-warm-restart-attack.md) | Hard | DNP3, academic dataset, ICS | 0.28 GB |
+| [IEC-104 — MITM packet dropping](ot-uowm-iec104-20200608-uowm-iec104-dataset-mitm-drop.md) | Hard | IEC-104, academic dataset, power grid | 0.67 GB |
+| [IEC-104 — counter interrogation (C_CI_NA_1, TypeID 101)](ot-uowm-iec104-20200426-uowm-iec104-dataset-c-ci-na-1.md) | Hard | IEC-104, academic dataset, power grid | 0.47 GB |
+| [IEC-104 — counter interrogation (C_CI_NA_1, TypeID 101) — flood/DoS variant](ot-uowm-iec104-20200426-uowm-iec104-dataset-c-ci-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.48 GB |
+| [IEC-104 — read command (C_RD_NA_1, TypeID 102)](ot-uowm-iec104-20200605-uowm-iec104-dataset-c-rd-na-1.md) | Hard | IEC-104, academic dataset, power grid | 0.66 GB |
+| [IEC-104 — read command (C_RD_NA_1, TypeID 102) — flood/DoS variant](ot-uowm-iec104-20200605-uowm-iec104-dataset-c-rd-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.69 GB |
+| [IEC-104 — reset process (C_RP_NA_1, TypeID 105)](ot-uowm-iec104-20200606-uowm-iec104-dataset-c-rp-na-1.md) | Hard | IEC-104, academic dataset, power grid | 0.65 GB |
+| [IEC-104 — reset process (C_RP_NA_1, TypeID 105) — flood/DoS variant](ot-uowm-iec104-20200606-uowm-iec104-dataset-c-rp-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.65 GB |
+| [IEC-104 — set-point, normalized (C_SE_NA_1, TypeID 48)](ot-uowm-iec104-20200427-uowm-iec104-dataset-c-se-na-1.md) | Hard | IEC-104, academic dataset, power grid | 0.53 GB |
+| [IEC-104 — set-point, normalized (C_SE_NA_1, TypeID 48) — flood/DoS variant](ot-uowm-iec104-20200428-uowm-iec104-dataset-c-se-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.50 GB |
+| [IEC-104 — single command (C_SC_NA_1, TypeID 45)](ot-uowm-iec104-20200428-uowm-iec104-dataset-c-sc-na-1.md) | Hard | IEC-104, academic dataset, power grid | 0.52 GB |
+| [IEC-104 — single command (C_SC_NA_1, TypeID 45) — flood/DoS variant](ot-uowm-iec104-20200429-uowm-iec104-dataset-c-sc-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.50 GB |
+| [IEC-104 — single-point status (M_SP_NA_1, TypeID 1) — flood/DoS variant](ot-uowm-iec104-20200425-uowm-iec104-dataset-m-sp-na-1-d.md) | Hard | IEC-104, academic dataset, power grid | 0.44 GB |
+| [Zero-SWARM — Modbus normal, flooding and Nmap](ot-zero-swarm-modbus.md) | Easy | Modbus/TCP, academic dataset | 0.27 GB |

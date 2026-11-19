@@ -99,7 +99,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Execute PCCC ×18801, Get Attribute List ×1312, Read Tag ×620, Multiple Service Packet ×116, Set Attribute List ×112, 0x8 ×86, Get Attributes All ×30, Forward Open ×23; dangerous-operation matches: 18807 (top sources: 192.168.0.65 ×9428, 192.168.0.30 ×9353, 192.168.10.105 ×13) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Execute PCCC ×18801, Get Attribute List ×1312, Read Tag ×620, Multiple Service Packet ×116, Set Attribute List ×112, 0x8 ×86, Get Attributes All ×30, Forward Open ×23; dangerous-operation matches: 18807 (top sources: 192.168.0.65 ×9428, 192.168.0.30 ×9353, 192.168.10.105 ×13); top conversations in ENIP_CIP-CM.pcap: 192.168.100.28↔192.168.100.36 (8 pkts), 192.168.100.28↔192.168.100.35 (1 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
 
 _Dataset credit: engage-svg (GitHub) · License: MIT._
 

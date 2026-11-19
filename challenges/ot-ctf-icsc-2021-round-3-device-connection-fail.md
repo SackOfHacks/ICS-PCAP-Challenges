@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — UMAS ×9817; dangerous-operation matches: 9817 (top sources: 192.168.1.101 ×4909, 192.168.1.2 ×4908); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — UMAS ×9817; dangerous-operation matches: 9817 (top sources: 192.168.1.101 ×4909, 192.168.1.2 ×4908); top conversations in 06.pcap: 192.168.1.101↔192.168.1.2 (15,134 pkts), 192.168.1.202↔239.255.255.250 (36 pkts), 192.168.1.101↔239.255.255.250 (8 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

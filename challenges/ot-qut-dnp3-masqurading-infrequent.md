@@ -145,7 +145,7 @@ ARP is part of the story for MITM and masquerading.
 
 12 scheduled attack runs; config.txt is the schedule and the CSV labels every frame. Score: attacks found / attacks scheduled, and correct classifications.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×41496, RESPONSE ×41371, CONFIRM ×12633, UNSOLICITED_RESPONSE ×9244, RECORD_CURRENT_TIME ×29, ENABLE_UNSOLICITED ×27, WRITE ×21; dangerous-operation matches: 21 (top sources: 192.168.10.221 ×21) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×41496, RESPONSE ×41371, CONFIRM ×12633, UNSOLICITED_RESPONSE ×9244, RECORD_CURRENT_TIME ×29, ENABLE_UNSOLICITED ×27, WRITE ×21; dangerous-operation matches: 21 (top sources: 192.168.10.221 ×21); top conversations in 20161021132623.attacker.pcap: 192.168.10.20↔255.255.255.255 (9,353 pkts), 192.168.10.221↔192.168.10.222 (5,250 pkts), 192.168.10.1↔192.168.10.255 (2,867 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

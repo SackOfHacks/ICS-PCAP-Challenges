@@ -99,7 +99,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×270, Write Single Register ×91, Diagnostics ×2, Write Single Coil ×1, UMAS ×1, Write Multiple Registers ×1, Read Coils ×1; dangerous-operation matches: 96 (top sources: 192.168.10.66 ×93, 192.168.10.10 ×3) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×270, Write Single Register ×91, Diagnostics ×2, Write Single Coil ×1, UMAS ×1, Write Multiple Registers ×1, Read Coils ×1; dangerous-operation matches: 96 (top sources: 192.168.10.66 ×93, 192.168.10.10 ×3); top conversations in attack_scenarios.pcap: 192.168.10.10↔203.0.113.50 (300 pkts), 192.168.10.20↔192.168.10.66 (221 pkts), 192.168.10.66↔192.168.10.80 (167 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: lindseynguyen (GitHub) · License: MIT._
 

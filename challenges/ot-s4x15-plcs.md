@@ -105,7 +105,7 @@ Attribute every write/control operation to a source IP.
 
 Score yourself on: the device's normal peers, the scanner(s), and each attack operation with its source and time. The CTF is real competition traffic — there is no published per-packet key.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×336; dangerous-operation matches: 0 for the Modbus/TCP filter (336 Modbus/TCP packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×336; dangerous-operation matches: 0 for the Modbus/TCP filter (336 Modbus/TCP packets present, so the zero is real); top conversations in Modicon.pcap: 10.200.1.252↔10.50.1.52 (1,950 pkts), 10.200.1.193↔10.50.1.52 (720 pkts), 10.200.1.86↔10.50.1.52 (681 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 2 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 

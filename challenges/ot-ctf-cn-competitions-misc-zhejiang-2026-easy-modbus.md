@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/yomymy/industrial-internet-security-2026-writeup
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×702, Read Holding Registers ×702, Read Input Registers ×702, Read Discrete Inputs ×702, Write Multiple Registers ×2; dangerous-operation matches: 2 (top sources: 172.16.3.23 ×1, 172.16.1.33 ×1); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×702, Read Holding Registers ×702, Read Input Registers ×702, Read Discrete Inputs ×702, Write Multiple Registers ×2; dangerous-operation matches: 2 (top sources: 172.16.3.23 ×1, 172.16.1.33 ×1); top conversations in easyModbus.pcap: 172.16.3.224↔172.16.3.23 (4,318 pkts), 172.16.1.33↔172.16.3.23 (3,167 pkts), 172.16.3.224,172.16.3.23↔172.16.3.23,172.16.3.224 (6 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

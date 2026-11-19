@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 One source sends many different function codes; unsupported ones return exceptions (function code + 0x80).
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×328, Read Coils ×166, Read Holding Registers ×112, Read Discrete Inputs ×84, Write Single Coil ×2, Write Single Register ×2, Diagnostics ×2, Write Multiple Coils ×2; dangerous-operation matches: 12 (top sources: 192.168.10.77 ×6, 192.168.10.11 ×6) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×328, Read Coils ×166, Read Holding Registers ×112, Read Discrete Inputs ×84, Write Single Coil ×2, Write Single Register ×2, Diagnostics ×2, Write Multiple Coils ×2; dangerous-operation matches: 12 (top sources: 192.168.10.77 ×6, 192.168.10.11 ×6); top conversations in lab06_fc_scan.pcap: 192.168.10.10↔192.168.10.11 (1,367 pkts), 192.168.10.11↔192.168.10.77 (115 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

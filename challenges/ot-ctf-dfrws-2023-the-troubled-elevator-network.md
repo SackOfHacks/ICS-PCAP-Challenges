@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/AmintheGHOUL/The-Troubled-Elevator-Forensic-Investigation
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — UMAS ×123529; dangerous-operation matches: 123529 (top sources: 192.168.10.45 ×61765, 192.168.10.130 ×35387, 192.168.10.121 ×24889); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — UMAS ×123529; dangerous-operation matches: 123529 (top sources: 192.168.10.45 ×61765, 192.168.10.130 ×35387, 192.168.10.121 ×24889); top conversations in 142728_162728.pcapng: 192.168.10.121↔192.168.10.45 (113,906 pkts), 192.168.10.130↔192.168.10.45 (75,497 pkts), 192.168.10.164↔192.168.10.45 (3,264 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: DFRWS (Digital Forensics Research Workshop) (2023) · License: Repository Apache-2.0 (challenge files not separately licensed) — credit DFRWS._
 

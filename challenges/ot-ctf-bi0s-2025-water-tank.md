@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/teambi0s/bi0sCTF/tree/main/2025/HW/water%20tank
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Discrete Inputs ×2064, Read Coils ×1932, Read Input Registers ×1915, Read Holding Registers ×1902, Write Multiple Registers ×363, Write Multiple Coils ×353, Write Single Coil ×329, Write Single Register ×319; dangerous-operation matches: 1364 (top sources: 192.168.235.132 ×1364); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Discrete Inputs ×2064, Read Coils ×1932, Read Input Registers ×1915, Read Holding Registers ×1902, Write Multiple Registers ×363, Write Multiple Coils ×353, Write Single Coil ×329, Write Single Register ×319; dangerous-operation matches: 1364 (top sources: 192.168.235.132 ×1364); top conversations in modbus_capture.pcap: 192.168.1.100↔192.168.235.132 (10,000 pkts), 192.168.1.10↔192.168.1.100 (10,000 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: team bi0s (official repo) (2025) · License: None stated — credit team bi0s._
 

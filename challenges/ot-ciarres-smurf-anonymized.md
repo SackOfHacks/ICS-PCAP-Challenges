@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'smurf (ICMP broadcast) DDoS'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 88; GOOSE streams — PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 88; GOOSE streams — PM01LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM02LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM04LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; PM03LogicalDevice/LLN0$GO$securityEvent from 62:63:f9:a2:3a:5b: 22 frames, 1 distinct stNum, 0 sqNum resets; top conversations in smurf_anonymized.pcap: 10.0.1.2↔10.0.128.106 (145,579 pkts), 10.0.1.2↔10.0.255.255 (144,231 pkts), 10.0.0.3↔10.0.0.4 (5,438 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · License: GPL-3.0 (as declared on Kaggle)._
 

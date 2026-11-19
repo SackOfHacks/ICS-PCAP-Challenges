@@ -92,7 +92,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 An attacker exploits MS08-067 (the Windows Server service / NetAPI vulnerability) over SMB/DCE-RPC on TCP 445 against a Windows host on the SCADA network — the IT-style compromise that precedes OT impact. Look for SMB/DCERPC traffic to 445 that has no place on a polling network, and what that host does next. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×48, Read Discrete Inputs ×48, Read Coils ×48; dangerous-operation matches: 0 for the Modbus/TCP filter (144 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×48, Read Discrete Inputs ×48, Read Coils ×48; dangerous-operation matches: 0 for the Modbus/TCP filter (144 Modbus/TCP packets present, so the zero is real); top conversations in exploit_ms08_netapi_modbus_6RTU_with_operate.pcap: 192.168.1.101↔192.168.1.105 (1,200 pkts), 192.168.1.100↔192.168.1.105 (108 pkts), 192.168.1.100↔192.168.1.101 (108 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

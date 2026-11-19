@@ -142,7 +142,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **slave_masquerading_ObjectSpoofBinary**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — RESPONSE ×16, UNSOLICITED_RESPONSE ×14, READ ×12, CONFIRM ×10, RECORD_CURRENT_TIME ×4, WRITE ×4, ENABLE_UNSOLICITED ×2; dangerous-operation matches: 4 (top sources: 192.168.10.221 ×4) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — RESPONSE ×16, UNSOLICITED_RESPONSE ×14, READ ×12, CONFIRM ×10, RECORD_CURRENT_TIME ×4, WRITE ×4, ENABLE_UNSOLICITED ×2; dangerous-operation matches: 4 (top sources: 192.168.10.221 ×4); top conversations in 20160828190718.slave_masquerading_ObjectSpoofBinary.attacker.pcap: 192.168.10.221↔192.168.10.222 (41 pkts), 192.168.10.222↔224.0.0.251 (9 pkts), 192.168.10.1↔192.168.10.222 (4 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

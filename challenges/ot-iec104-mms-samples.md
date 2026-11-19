@@ -99,7 +99,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 MMS packets matching `mms`: 6; dangerous-operation matches: 0 for the IEC 61850 MMS filter (6 IEC 61850 MMS packets present, so the zero is real) (basis: 3 of 88 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 MMS chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 MMS packets matching `mms`: 6; dangerous-operation matches: 0 for the IEC 61850 MMS filter (6 IEC 61850 MMS packets present, so the zero is real); top conversations in mms_top_level_remaining.pcap: 10.0.0.1↔10.0.0.2 (5 pkts) (basis: 3 of 88 capture file(s), first 300,000 packets each, smallest files carrying IEC 61850 MMS chosen)
 
 _Dataset credit: haolipeng (GitHub) · License: No license stated in repo — credit the author._
 

@@ -113,7 +113,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/CTF-Archives/2026-ICSC-ICS-Champ/blob/main/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** no standard industrial dissector matched; busiest destination ports of payload packets: 15020 ×10; flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** no standard industrial dissector matched; busiest destination ports of payload packets: 15020 ×10; top conversations in traffic.pcap: 192.168.10.20↔192.168.10.50 (10 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives (2026) · License: None stated — credit the competition._
 

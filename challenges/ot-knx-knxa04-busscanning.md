@@ -108,7 +108,7 @@ Baseline the normal exchange first, then look for the operations that break it.
 
 The dataset's own labels (folder name, bundled CSV/JSON/logs and paper) are the answer key for this set.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** KNXnet/IP packets matching `kip`: 218,068; dangerous-operation matches: 14315 (top sources: 192.168.21.242 ×14315) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** KNXnet/IP packets matching `kip`: 218,068; dangerous-operation matches: 14315 (top sources: 192.168.21.242 ×14315); top conversations in KNXA04_20250618_BusScanning.pcap: 192.168.21.220↔192.168.21.242 (198,692 pkts), 10.64.117.119↔255.255.255.255 (40,281 pkts), 192.168.21.242↔192.168.21.250 (19,376 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Dalamagkas, Radoglou-Grammatikis, et al. (Univ. of Western Macedonia) (2025) — doi:10.5281/zenodo.16957517 · License: CC BY 4.0._
 

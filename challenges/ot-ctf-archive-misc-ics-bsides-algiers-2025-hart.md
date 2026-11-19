@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** HART-IP packets matching `hart_ip`: 80; flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** HART-IP packets matching `hart_ip`: 80; top conversations in chall.pcap: 192.168.10.1↔192.168.10.13 (782 pkts), 192.168.10.1↔192.168.10.11 (732 pkts), 192.168.10.1↔192.168.10.10 (728 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License: Archive repository MIT (challenge files not separately licensed) — credit each event._
 

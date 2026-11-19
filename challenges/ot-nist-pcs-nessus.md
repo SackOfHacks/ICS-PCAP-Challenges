@@ -1,6 +1,6 @@
 # NIST process-control testbed — Nessus scan in a live process network
 
-**Manufacturing & smart factory** · **Hard** · 8.41 GB · 5 capture file(s)
+**Process control & PLC testbeds** · **Hard** · 8.41 GB · 5 capture file(s)
 
 > A chemical-process control network (EtherNet/IP-CIP) during a Nessus vulnerability scan.
 
@@ -8,9 +8,9 @@
 
 ## Scenario
 
-NIST's process-control testbed runs a Tennessee-Eastman-style chemical process with PLCs and HMIs talking EtherNet/IP-CIP, plus DCE-RPC from the Windows side. The run captured here is a Nessus vulnerability scan; a process-simulation log (*_simlog.dat) sits next to the capture.
+NIST's process-control testbed runs a Tennessee-Eastman-style chemical process with PLCs and HMIs talking EtherNet/IP-CIP, plus DCE-RPC from the Windows side. NIST recorded one run per low-baseline security control; this run is a Nessus vulnerability scan. A process-simulation log (*_simlog.dat) sits next to the capture.
 
-Characterize the control network and, for the scan run, measure the scanner's footprint and any effect on the process traffic.
+Characterize the control network, measure the footprint of this run's control on it, and decide whether the control is safe for the process.
 
 ## Objectives
 
@@ -43,13 +43,21 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/nist-csms-process-control-pcs/PL006.1-nessus/capture.pcap.part000.pcap' --enip --cip --pccc --ot-commands
 ```
 
-**3. Scanner footprint**
+**3. Footprint of this run's control**
+
+New hosts, services and conversations that the baseline run doesn't have.
 
 ```bash
 pcapper 'data/nist-csms-process-control-pcs/PL006.1-nessus/capture.pcap.part000.pcap' --scan --services
 ```
 
-**4. Map it to ATT&CK for ICS**
+**4. Compare with the baseline run**
+
+```bash
+pcapper 'data/nist-csms-process-control-pcs/PL001.1-baseline/' --overview
+```
+
+**5. Map it to ATT&CK for ICS**
 
 Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
 
@@ -86,6 +94,14 @@ Flag CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), E
 tshark -r 'data/nist-csms-process-control-pcs/PL006.1-nessus/capture.pcap.part000.pcap' -Y 'cip.sc in {0x05, 0x06, 0x07, 0x10, 0x4b, 0x4d, 0x53} || enip.command == 0x63' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
 ```
 
+**4. Footprint of this run's control**
+
+New hosts, services and conversations that the baseline run doesn't have.
+
+```bash
+tshark -r 'data/nist-csms-process-control-pcs/PL006.1-nessus/capture.pcap.part000.pcap' -q -z conv,tcp | head -25
+```
+
 ## Hints
 
 <details><summary>Hint 1</summary>
@@ -106,7 +122,7 @@ Implicit (class 1) I/O is UDP 2222; explicit messaging is TCP 44818.
 
 Baseline: steady CIP implicit I/O and explicit messaging between controllers and HMIs, plus Windows/DCE-RPC management traffic. Nessus run: the same plus a scanner sweeping hosts and ports (including CIP/ENIP discovery) — quantify it and check for gaps in the cyclic I/O.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Read Tag ×202141, Get Attribute List ×20464, Write Tag ×9096, Multiple Service Packet ×1412, Read Tag Fragmented ×284, Get Attributes All ×284; dangerous-operation matches: 9096 (top sources: 172.16.4.5 ×4548, 172.16.4.102 ×4548) (basis: 3 of 5 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Read Tag ×202141, Get Attribute List ×20464, Write Tag ×9096, Multiple Service Packet ×1412, Read Tag Fragmented ×284, Get Attributes All ×284; dangerous-operation matches: 9096 (top sources: 172.16.4.5 ×4548, 172.16.4.102 ×4548); top conversations in capture.pcap.part004.pcap: 172.16.4.102↔172.16.4.5 (276,352 pkts), 172.16.1.5↔172.16.2.5 (7,134 pkts), 172.16.1.4↔172.16.2.5 (5,287 pkts) (basis: 3 of 5 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
 
 _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program (2019) · License: No license stated — U.S. Government work (NIST); credit NIST._
 

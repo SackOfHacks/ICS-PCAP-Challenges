@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — C_SC_NA_1 ×32; dangerous-operation matches: 32 (top sources: 172.16.1.40 ×16, 172.16.1.42 ×16); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — C_SC_NA_1 ×32; dangerous-operation matches: 32 (top sources: 172.16.1.40 ×16, 172.16.1.42 ×16); top conversations in 01.pcapng: 112.30.216.1↔172.16.1.40 (15,738 pkts), 117.161.100.1↔172.16.1.40 (15,704 pkts), 120.220.203.1↔172.16.1.40 (9,973 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

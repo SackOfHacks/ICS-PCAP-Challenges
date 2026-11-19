@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (Write (node 673) and Call (712, method execution); Browse (527) maps the address space; check OpenSecureChannel/CreateSession for SecurityMode None and anonymous ActivateSession). ATT&CK for ICS: T0836 Modify Parameter · T0871 Execution through API · T0861 Point & Tag Identification. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC UA operations — OpenSecureChannel ×3, 449 ×3, 452 ×3, GetEndpoints ×2, 554 ×2, 557 ×2, 431 ×1, CreateSession ×1; dangerous-operation matches: 0 for the OPC UA filter (30 OPC UA packets present, so the zero is real) (basis: 3 of 29 capture file(s), first 300,000 packets each, smallest files carrying OPC UA chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC UA operations — OpenSecureChannel ×3, 449 ×3, 452 ×3, GetEndpoints ×2, 554 ×2, 557 ×2, 431 ×1, CreateSession ×1; dangerous-operation matches: 0 for the OPC UA filter (30 OPC UA packets present, so the zero is real); top conversations in opycua_share.pcap: 192.168.1.101↔192.168.1.106 (7 pkts) (basis: 3 of 29 capture file(s), first 300,000 packets each, smallest files carrying OPC UA chosen)
 
 _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm)._
 

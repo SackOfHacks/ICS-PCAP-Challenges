@@ -90,7 +90,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 Normal polling of 3/6/12 RTUs by the SCADA master: fixed cycle, fixed function codes and register ranges per RTU, occasional operator 'operate' writes. This is the yardstick for the other Lemay challenges. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×12900, Read Discrete Inputs ×12896, Read Coils ×12892, Write Single Coil ×386; dangerous-operation matches: 386 (top sources: 192.168.1.99 ×97, 192.168.1.100 ×96, 192.168.1.103 ×74) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×12900, Read Discrete Inputs ×12896, Read Coils ×12892, Write Single Coil ×386; dangerous-operation matches: 386 (top sources: 192.168.1.99 ×97, 192.168.1.100 ×96, 192.168.1.103 ×74); top conversations in Modbus_polling_only_6RTU(2).pcap: 192.168.1.100↔192.168.1.102 (9,854 pkts), 192.168.1.100↔192.168.1.101 (9,654 pkts), 192.168.1.100↔192.168.1.106 (9,639 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

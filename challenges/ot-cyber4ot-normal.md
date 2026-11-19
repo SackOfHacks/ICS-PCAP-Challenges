@@ -99,7 +99,7 @@ Compare against the normal-activity band.
 
 Your baseline: steady master↔PLC Modbus polling.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×10772, Write Multiple Registers ×3614; dangerous-operation matches: 3614 (top sources: 192.168.127.20 ×1807, 192.168.127.21 ×1807) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×10772, Write Multiple Registers ×3614; dangerous-operation matches: 3614 (top sources: 192.168.127.20 ×1807, 192.168.127.21 ×1807); top conversations in Cyber4OT_069.pcapng: 192.168.127.20↔192.168.127.21 (2,718 pkts), 192.168.127.21↔192.168.127.6 (890 pkts), 192.168.127.127↔192.168.127.6 (11 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K. (2025) — doi:10.5281/zenodo.15005190 · License: CC BY-NC 4.0._
 

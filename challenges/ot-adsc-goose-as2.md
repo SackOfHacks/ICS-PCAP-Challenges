@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'AS2'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 63,603; GOOSE streams — LIED10CTRL/LLN0$Status from 00:09:8e:21:73:33: 1201 frames, 2 distinct stNum, 2 sqNum resets; LIED11PROT/LLN0$Alarm from 00:09:8e:21:73:32: 1201 frames, 1 distinct stNum, 1 sqNum resets; LIED12CTRL/LLN0$Status from 00:09:8e:21:73:31: 1201 frames, 2 distinct stNum, 2 sqNum resets; LIED10PROT/LLN0$Alarm from 00:09:8e:21:73:33: 1200 frames, 1 distinct stNum, 1 sqNum resets; LIED10MEAS/LLN0$Measurement from 00:09:8e:21:73:33: 1200 frames, 1 distinct stNum, 1 sqNum resets (basis: 2 of 2 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 63,603; GOOSE streams — LIED10CTRL/LLN0$Status from 00:09:8e:21:73:33: 1201 frames, 2 distinct stNum, 2 sqNum resets; LIED11PROT/LLN0$Alarm from 00:09:8e:21:73:32: 1201 frames, 1 distinct stNum, 1 sqNum resets; LIED12CTRL/LLN0$Status from 00:09:8e:21:73:31: 1201 frames, 2 distinct stNum, 2 sqNum resets; LIED10PROT/LLN0$Alarm from 00:09:8e:21:73:33: 1200 frames, 1 distinct stNum, 1 sqNum resets; LIED10MEAS/LLN0$Measurement from 00:09:8e:21:73:33: 1200 frames, 1 distinct stNum, 1 sqNum resets; top conversations in AS2.pcapng: 0.0.0.0↔255.255.255.255 (814 pkts), 192.168.0.190↔224.0.0.251 (12 pkts), 192.168.0.189↔224.0.0.251 (12 pkts) (basis: 2 of 2 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Advanced Digital Sciences Center (ADSC), Singapore (2019) · License: No license stated — credit ADSC._
 

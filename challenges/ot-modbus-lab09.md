@@ -105,7 +105,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Writes that set process registers to out-of-profile values — compare against the baseline value range.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×324, Read Coils ×162, Read Holding Registers ×108, Read Discrete Inputs ×82, Write Single Register ×6, Write Single Coil ×2; dangerous-operation matches: 8 (top sources: 192.168.10.66 ×4, 192.168.10.12 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×324, Read Coils ×162, Read Holding Registers ×108, Read Discrete Inputs ×82, Write Single Register ×6, Write Single Coil ×2; dangerous-operation matches: 8 (top sources: 192.168.10.66 ×4, 192.168.10.12 ×4); top conversations in lab09_value_injection.pcap: 192.168.10.10↔192.168.10.12 (1,355 pkts), 192.168.10.12↔192.168.10.66 (23 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

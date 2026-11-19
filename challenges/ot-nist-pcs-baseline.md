@@ -1,6 +1,6 @@
 # NIST process-control testbed — baseline operation
 
-**Manufacturing & smart factory** · **Medium** · 7.07 GB · 4 capture file(s)
+**Process control & PLC testbeds** · **Medium** · 7.07 GB · 4 capture file(s)
 
 > A chemical-process control network (EtherNet/IP-CIP) during the baseline.
 
@@ -8,9 +8,9 @@
 
 ## Scenario
 
-NIST's process-control testbed runs a Tennessee-Eastman-style chemical process with PLCs and HMIs talking EtherNet/IP-CIP, plus DCE-RPC from the Windows side. The run captured here is the baseline; a process-simulation log (*_simlog.dat) sits next to the capture.
+NIST's process-control testbed runs a Tennessee-Eastman-style chemical process with PLCs and HMIs talking EtherNet/IP-CIP, plus DCE-RPC from the Windows side. NIST recorded one run per low-baseline security control; this run is the baseline. A process-simulation log (*_simlog.dat) sits next to the capture.
 
-Characterize the control network and, for the scan run, measure the scanner's footprint and any effect on the process traffic.
+Characterize the control network, measure the footprint of this run's control on it, and decide whether the control is safe for the process.
 
 ## Objectives
 
@@ -43,7 +43,9 @@ Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-co
 pcapper 'data/nist-csms-process-control-pcs/PL001.1-baseline/capture.pcap.part000.pcap' --enip --cip --pccc --ot-commands
 ```
 
-**3. Scanner footprint**
+**3. Footprint of this run's control**
+
+New hosts, services and conversations that the baseline run doesn't have.
 
 ```bash
 pcapper 'data/nist-csms-process-control-pcs/PL001.1-baseline/capture.pcap.part000.pcap' --scan --services
@@ -86,6 +88,14 @@ Flag CIP Reset (0x05), Start (0x06), Stop (0x07), Set Attribute Single (0x10), E
 tshark -r 'data/nist-csms-process-control-pcs/PL001.1-baseline/capture.pcap.part000.pcap' -Y 'cip.sc in {0x05, 0x06, 0x07, 0x10, 0x4b, 0x4d, 0x53} || enip.command == 0x63' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
 ```
 
+**4. Footprint of this run's control**
+
+New hosts, services and conversations that the baseline run doesn't have.
+
+```bash
+tshark -r 'data/nist-csms-process-control-pcs/PL001.1-baseline/capture.pcap.part000.pcap' -q -z conv,tcp | head -25
+```
+
 ## Hints
 
 <details><summary>Hint 1</summary>
@@ -106,7 +116,7 @@ Implicit (class 1) I/O is UDP 2222; explicit messaging is TCP 44818.
 
 Baseline: steady CIP implicit I/O and explicit messaging between controllers and HMIs, plus Windows/DCE-RPC management traffic. Nessus run: the same plus a scanner sweeping hosts and ports (including CIP/ENIP discovery) — quantify it and check for gaps in the cyclic I/O.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Read Tag ×266078, Get Attribute List ×26970, Write Tag ×11987, Multiple Service Packet ×1860, Read Tag Fragmented ×372, Get Attributes All ×372; dangerous-operation matches: 11987 (top sources: 172.16.4.5 ×5994, 172.16.4.102 ×5993) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Read Tag ×266078, Get Attribute List ×26970, Write Tag ×11987, Multiple Service Packet ×1860, Read Tag Fragmented ×372, Get Attributes All ×372; dangerous-operation matches: 11987 (top sources: 172.16.4.5 ×5994, 172.16.4.102 ×5993); top conversations in capture.pcap.part003.pcap: 172.16.4.102↔172.16.4.5 (276,956 pkts), 172.16.1.5↔172.16.2.5 (7,124 pkts), 172.16.1.4↔172.16.2.5 (5,260 pkts) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying EtherNet/IP & CIP chosen)
 
 _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program (2019) · License: No license stated — U.S. Government work (NIST); credit NIST._
 

@@ -100,7 +100,7 @@ Baseline the normal exchange first, then look for the operations that break it.
 
 The dataset's own labels (folder name, bundled CSV/JSON/logs and paper) are the answer key for this set.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — M_ME_NC_1 ×30082, C_RC_NA_1 ×4, C_IC_NA_1 ×3, C_CS_NA_1 ×2, 5 ×2, M_SP_NA_1 ×1; dangerous-operation matches: 9 (top sources: 172.16.1.2 ×4, 172.16.3.13 ×3, 172.16.2.5 ×2) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying IEC-104 chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — M_ME_NC_1 ×30082, C_RC_NA_1 ×4, C_IC_NA_1 ×3, C_CS_NA_1 ×2, 5 ×2, M_SP_NA_1 ×1; dangerous-operation matches: 9 (top sources: 172.16.1.2 ×4, 172.16.3.13 ×3, 172.16.2.5 ×2); top conversations in switch-n321-pcap-mir2.pcap: 172.16.1.2↔172.16.3.13 (17,260 pkts), 172.16.3.28↔224.0.0.5 (4,320 pkts), 172.16.3.28↔224.0.0.22 (2 pkts) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying IEC-104 chosen)
 
 _Dataset credit: Wagner, Eric; Bader, Lennart; Wolsing, Konrad; Serror, Martin (2026) — doi:10.5281/zenodo.18467070 · License: CC BY 4.0._
 

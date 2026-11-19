@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/ChaMd5Team/2025_vctf_challenge/tree/main/ICS
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — 7 ×14, C_IC_NA_1 ×3, C_SE_NB_1 ×2, M_ME_NB_1 ×2, C_SE_NC_1 ×1, 113 ×1; dangerous-operation matches: 6 (top sources: 127.0.0.1 ×6); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — 7 ×14, C_IC_NA_1 ×3, C_SE_NB_1 ×2, M_ME_NB_1 ×2, C_SE_NC_1 ×1, 113 ×1; dangerous-operation matches: 6 (top sources: 127.0.0.1 ×6); top conversations in iec104.pcapng: 127.0.0.1↔127.0.0.1 (122 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

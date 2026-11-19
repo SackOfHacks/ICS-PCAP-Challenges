@@ -150,7 +150,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **reconnaissance**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×36, RESPONSE ×6; dangerous-operation matches: 0 for the DNP3 filter (22 DNP3 packets present, so the zero is real) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying DNP3 chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×36, RESPONSE ×6; dangerous-operation matches: 0 for the DNP3 filter (22 DNP3 packets present, so the zero is real); top conversations in 20161013133015.reconnaissance.master.pcap: 192.168.10.221↔192.168.10.222 (9 pkts) (basis: 3 of 6 capture file(s), first 300,000 packets each, smallest files carrying DNP3 chosen)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

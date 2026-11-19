@@ -105,7 +105,7 @@ io,stat with per-protocol columns shows the attack and the process traffic side 
 
 A Modbus query flood: valid-looking requests at a rate far above the legitimate master's cycle, typically from a different source or transaction-ID pattern — an application-layer DoS against the PLC. The dataset's folder/file names are the ground-truth labels.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×19311; dangerous-operation matches: 19311 (top sources: 172.27.224.250 ×9413, 172.27.224.80 ×6493, 172.27.224.50 ×3405) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×19311; dangerous-operation matches: 19311 (top sources: 172.27.224.250 ×9413, 172.27.224.80 ×6493, 172.27.224.50 ×3405); top conversations in eth2dump-modbusQueryFlooding1m-0,5h_1.pcap: 172.27.224.250↔172.27.224.80 (38,786 pkts), 172.27.224.250↔172.27.224.251 (15,470 pkts), 0.0.0.0↔255.255.255.255 (159 pkts) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020) (2018) — doi:10.1007/978-3-030-05849-4_19 · License: CC BY 3.0 (repository content)._
 

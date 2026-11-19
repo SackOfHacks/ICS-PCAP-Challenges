@@ -107,7 +107,7 @@ The response's general status tells you if the controller accepted the change.
 
 Each capture holds a CIP set-attribute style request: against the controller's time/clock attributes (date, time) or the TCP/IP Interface / Ethernet Link object (port configuration). Check cip.genstat on the replies to see which attempts the controller accepted. ATT&CK for ICS: T0836 Modify Parameter; port reconfiguration also maps to T0814 Denial of Service; clock tampering degrades forensics (T0872 Indicator Removal on Host is a stretch — note it as impact on timelines).
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Get Attribute List ×3227, Multiple Service Packet ×243, Get Attribute Single ×10, Set Attribute List ×4, Get Attributes All ×4, Set Attribute Single ×2; dangerous-operation matches: 2 (top sources: 192.168.10.105 ×1, 192.168.10.121 ×1) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** EtherNet/IP & CIP operations — Get Attribute List ×3227, Multiple Service Packet ×243, Get Attribute Single ×10, Set Attribute List ×4, Get Attributes All ×4, Set Attribute Single ×2; dangerous-operation matches: 2 (top sources: 192.168.10.105 ×1, 192.168.10.121 ×1); top conversations in CL5000EIP-Change-Date-Attempt.pcap: 192.168.10.105↔192.168.10.120 (351 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — credit the author._
 

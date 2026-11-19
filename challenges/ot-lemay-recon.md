@@ -89,7 +89,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 An intruder characterizes the Modbus network — sweeping unit IDs, function codes and register ranges beyond what the master normally polls. The anomalous source and its request pattern are the finding. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×6629, Read Holding Registers ×436, Read Discrete Inputs ×428, Read Coils ×420, Write Single Coil ×6; dangerous-operation matches: 6 (top sources: 192.168.1.100 ×3, 192.168.1.101 ×2, 192.168.1.103 ×1) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×6629, Read Holding Registers ×436, Read Discrete Inputs ×428, Read Coils ×420, Write Single Coil ×6; dangerous-operation matches: 6 (top sources: 192.168.1.100 ×3, 192.168.1.101 ×2, 192.168.1.103 ×1); top conversations in characterization_modbus_6RTU_with_operate.pcap: 192.168.1.101↔192.168.1.104 (6,719 pkts), 192.168.1.100↔192.168.1.104 (939 pkts), 192.168.1.100↔192.168.1.101 (936 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

@@ -134,7 +134,7 @@ Read the ATT&CK page for T0858 — the procedure examples tell you what to look 
 
 Labelled as Change Operating Mode (T0858). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×41134, Read Input Registers ×16824, Read Coils ×12618, Read Holding Registers ×8412, Write Single Coil ×324; dangerous-operation matches: 41458 (top sources: 192.168.0.21 ×30907, 192.168.0.22 ×10444, 192.168.0.33 ×107) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×41134, Read Input Registers ×16824, Read Coils ×12618, Read Holding Registers ×8412, Write Single Coil ×324; dangerous-operation matches: 41458 (top sources: 192.168.0.21 ×30907, 192.168.0.22 ×10444, 192.168.0.33 ×107); top conversations in output_attack_p4.pcap: 192.168.0.21↔192.168.0.22 (62,009 pkts), 192.168.0.100↔192.168.0.200 (61,179 pkts), 192.168.0.21↔192.168.0.31 (49,757 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

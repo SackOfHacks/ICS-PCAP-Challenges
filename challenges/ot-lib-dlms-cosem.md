@@ -124,7 +124,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (smart-meter DLMS/COSEM — set/action services and association with weak authentication). ATT&CK for ICS: T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DLMS/COSEM packets matching `dlms`: 1 (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DLMS/COSEM packets matching `dlms`: 1; top conversations in valve.pcap: 204.63.214.0↔82.94.213.34 (2,196 pkts), 204.63.214.36↔82.94.213.34 (388 pkts), 204.63.214.52↔82.94.213.34 (386 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net)._
 

@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Sequential reads across address ranges far beyond the master's normal ranges, with illegal-address exceptions (code 2) at the edges.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×432, Read Input Registers ×328, Read Coils ×164, Read Discrete Inputs ×82; dangerous-operation matches: 0 for the Modbus/TCP filter (1,006 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×432, Read Input Registers ×328, Read Coils ×164, Read Discrete Inputs ×82; dangerous-operation matches: 0 for the Modbus/TCP filter (1,006 Modbus/TCP packets present, so the zero is real); top conversations in lab07_addr_enum.pcap: 192.168.10.10↔192.168.10.11 (1,371 pkts), 192.168.10.11↔192.168.10.77 (651 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

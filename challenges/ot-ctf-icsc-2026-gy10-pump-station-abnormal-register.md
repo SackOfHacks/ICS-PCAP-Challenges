@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/CTF-Archives/2026-ICSC-ICS-Champ/blob/main/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×5, Write Multiple Registers ×1; dangerous-operation matches: 1 (top sources: 10.10.20.15 ×1); flag-like strings found by `strings`: `flag{pump_zeroed}` (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×5, Write Multiple Registers ×1; dangerous-operation matches: 1 (top sources: 10.10.20.15 ×1); top conversations in pump_station_traffic.pcap: 10.10.20.15↔10.10.20.30 (6 pkts); flag-like strings found by `strings`: `flag{pump_zeroed}` (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives (2026) · License: None stated — credit the competition._
 

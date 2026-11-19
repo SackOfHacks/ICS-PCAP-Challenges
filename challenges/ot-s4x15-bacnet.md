@@ -105,7 +105,7 @@ Attribute every write/control operation to a source IP.
 
 Score yourself on: the device's normal peers, the scanner(s), and each attack operation with its source and time. The CTF is real competition traffic — there is no published per-packet key.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×60048, readPropertyMultiple ×1897, atomicReadFile ×9; dangerous-operation matches: 0 for the BACnet filter (121,623 BACnet packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 2 of 2 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×60048, readPropertyMultiple ×1897, atomicReadFile ×9; dangerous-operation matches: 0 for the BACnet filter (121,623 BACnet packets present, so the zero is real); top conversations in BACnet_FIU.pcap: 10.200.1.77↔131.94.238.11 (38,212 pkts), 10.200.1.202↔131.94.238.11 (36,656 pkts), 10.200.1.251↔131.94.238.11 (14,910 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 2 of 2 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec (2015) · License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec._
 

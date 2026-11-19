@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/mniedermaier/CybICS/blob/main/training/modbus_covert_c2/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×2016, Read Coils ×480; dangerous-operation matches: 0 for the Modbus/TCP filter (2,496 Modbus/TCP packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×2016, Read Coils ×480; dangerous-operation matches: 0 for the Modbus/TCP filter (2,496 Modbus/TCP packets present, so the zero is real); top conversations in baseline.pcap: 172.18.0.3↔172.18.0.5 (1,824 pkts), 172.18.0.3↔172.18.0.4 (1,440 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Matthias Niedermaier (CybICS) (2026) · License: Repository MIT (training files not separately licensed) — credit CybICS._
 

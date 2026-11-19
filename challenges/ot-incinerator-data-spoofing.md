@@ -116,7 +116,7 @@ The plant speaks S7comm-plus with an integrity digest: judge by source, rate, si
 
 The capture is a real plant day with an injected data spoofing attack (the filename is the dataset's label). Expect: forged S7 responses or values presented to the HMI.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 72,280 (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 72,280; top conversations in traffic_with_data_spoofing_attack03.pcap: 10.0.0.1↔10.0.0.2 (226,094 pkts), 10.0.0.2↔10.0.0.3 (32 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology) (2025) — doi:10.17632/vpcr4wpgfd.4 · License: CC BY 4.0._
 

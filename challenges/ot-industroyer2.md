@@ -106,7 +106,7 @@ Netresec's write-up is the reference once you have your own answer.
 
 Industroyer2 opens IEC-104 sessions to the RTUs in its config, activates data transfer (STARTDT), and then issues control commands (single/double commands) to specific information object addresses to switch them — in the real attack, to trip circuit breakers. Your IOA/TypeID/value table from the computed evidence and the packets is the answer; compare with Netresec's analysis.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — C_DC_NA_1 ×80, C_SC_NA_1 ×56, C_IC_NA_1 ×9, 70 ×4, M_SP_NA_1 ×1; dangerous-operation matches: 145 (top sources: 10.82.40.105 ×91, 192.168.121.2 ×35, 192.168.122.2 ×19) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — C_DC_NA_1 ×80, C_SC_NA_1 ×56, C_IC_NA_1 ×9, 70 ×4, M_SP_NA_1 ×1; dangerous-operation matches: 145 (top sources: 10.82.40.105 ×91, 192.168.121.2 ×35, 192.168.122.2 ×19); top conversations in Industroyer2-StationAddress1.pcap: 192.168.121.2↔192.168.121.2 (140 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Netresec (Erik Hjelmvik) (2022) · License: CC BY 4.0._
 

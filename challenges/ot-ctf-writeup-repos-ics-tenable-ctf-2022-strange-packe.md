@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/kiyotaka-akaiwa/ctf-writeups/tree/main/TenableCTF/2022/Strange_Packets
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — 32 ×6, 108 ×6, 105 ×4, 115 ×4, 95 ×4, 104 ×3, 101 ×3, 102 ×3; dangerous-operation matches: 0 for the Modbus/TCP filter (56 Modbus/TCP packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — 32 ×6, 108 ×6, 105 ×4, 115 ×4, 95 ×4, 104 ×3, 101 ×3, 102 ×3; dangerous-operation matches: 0 for the Modbus/TCP filter (56 Modbus/TCP packets present, so the zero is real); top conversations in strange_packets.pcapng: 10.0.2.15↔10.10.50.7 (119 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Event organisers; captures kept in participants' write-up repos · License: None stated — credit each event._
 

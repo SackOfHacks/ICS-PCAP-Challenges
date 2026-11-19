@@ -105,7 +105,7 @@ io,stat with per-protocol columns shows the attack and the process traffic side 
 
 Steady, periodic Modbus/TCP polling between a fixed master and slave(s) — the reference you'll compare every attack set against (rate, function codes, register ranges). The dataset's folder/file names are the ground-truth labels.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×129880, Write Single Register ×7111; dangerous-operation matches: 7111 (top sources: 172.27.224.250 ×7111) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×129880, Write Single Register ×7111; dangerous-operation matches: 7111 (top sources: 172.27.224.250 ×7111); top conversations in eth2dump-clean-0,5h_1.pcap: 172.27.224.250↔172.27.224.70 (17,241 pkts), 172.27.224.250↔172.27.224.251 (15,549 pkts), 0.0.0.0↔255.255.255.255 (77 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020) (2018) — doi:10.1007/978-3-030-05849-4_19 · License: CC BY 3.0 (repository content)._
 

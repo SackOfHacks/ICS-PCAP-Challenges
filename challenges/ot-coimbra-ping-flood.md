@@ -105,7 +105,7 @@ io,stat with per-protocol columns shows the attack and the process traffic side 
 
 A volumetric ICMP echo flood toward the SCADA hosts; quantify packets/s and sources, and check whether the Modbus polling rate degrades during the flood. The dataset's folder/file names are the ground-truth labels.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×3105; dangerous-operation matches: 3105 (top sources: 172.27.224.250 ×3105) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×3105; dangerous-operation matches: 3105 (top sources: 172.27.224.250 ×3105); top conversations in eth2dump-pingFloodDDoS1m-0,5h_1.pcap: 172.27.224.250↔172.27.224.251 (15,528 pkts), 172.27.224.250↔253.193.25.212 (1 pkts), 172.27.224.250↔195.248.23.7 (1 pkts) (basis: 3 of 37 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020) (2018) — doi:10.1007/978-3-030-05849-4_19 · License: CC BY 3.0 (repository content)._
 

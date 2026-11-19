@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/CTF-Archives/2024-CISCN-Finals-ICS/blob/main/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×16912, Read Holding Registers ×8492, Write Single Coil ×196, Write Multiple Registers ×62, Write Single Register ×24; dangerous-operation matches: 282 (top sources: 192.168.1.112 ×141, 192.168.1.110 ×88, 192.168.1.169 ×53); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×16912, Read Holding Registers ×8492, Write Single Coil ×196, Write Multiple Registers ×62, Write Single Register ×24; dangerous-operation matches: 282 (top sources: 192.168.1.112 ×141, 192.168.1.110 ×88, 192.168.1.169 ×53); top conversations in oil.pcapng: 192.168.1.112↔192.168.1.169 (16,978 pkts), 192.168.1.110↔192.168.1.112 (11,427 pkts), 192.168.1.169↔224.0.0.252 (890 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

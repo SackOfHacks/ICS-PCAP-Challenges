@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (TriStation is the Triconex SIS engineering protocol — program download/upload and run/halt commands against a safety controller are the TRITON tradecraft). ATT&CK for ICS: T0843 Program Download · T0880 Loss of Safety · T0858 Change Operating Mode. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** TriStation packets matching `udp.port == 1502`: 896; dangerous-operation matches: 896 (top sources: 192.168.1.88 ×448, 192.168.1.2 ×448) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** TriStation packets matching `udp.port == 1502`: 896; dangerous-operation matches: 896 (top sources: 192.168.1.88 ×448, 192.168.1.2 ×448); top conversations in malware_exec.pcap: 192.168.1.2↔192.168.1.88 (896 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net)._
 

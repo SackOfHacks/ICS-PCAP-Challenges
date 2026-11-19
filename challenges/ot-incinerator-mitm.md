@@ -108,7 +108,7 @@ The injected traffic is classic S7comm: PLC STOP is function 0x29, writes are 0x
 
 The capture is a real plant day with an injected man-in-the-middle attack (the filename is the dataset's label). Expect: ARP-spoofed interception between HMI and PLC with altered S7 values.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×1; dangerous-operation matches: 0 for the S7comm filter (1 S7comm packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×1; dangerous-operation matches: 0 for the S7comm filter (1 S7comm packets present, so the zero is real); top conversations in traffic_with_mitm_attack03.pcap: 192.168.3.10↔192.168.3.20 (226,095 pkts), 192.168.3.20↔192.168.3.255 (32 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology) (2025) — doi:10.17632/vpcr4wpgfd.4 · License: CC BY 4.0._
 

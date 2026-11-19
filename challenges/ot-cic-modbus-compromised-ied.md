@@ -115,7 +115,7 @@ From a compromised master, look at the values and timing, not the source IP.
 
 Labeled by vantage point (the folder). The compromised-IED set ships dated attack logs as ground truth; the CIC paper documents each technique. Score yourself on the technique ↔ window ↔ target table.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×59475, Read Discrete Inputs ×29690, Read Input Registers ×29682, Read Holding Registers ×29677, Write Single Register ×256, Write Single Coil ×140; dangerous-operation matches: 396 (top sources: 185.175.0.2 ×198, 185.175.0.8 ×111, 185.175.0.4 ×45) (basis: 3 of 43 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Coils ×59475, Read Discrete Inputs ×29690, Read Input Registers ×29682, Read Holding Registers ×29677, Write Single Register ×256, Write Single Coil ×140; dangerous-operation matches: 396 (top sources: 185.175.0.2 ×198, 185.175.0.8 ×111, 185.175.0.4 ×45); top conversations in vethc76bd3f-5.pcap: 185.175.0.2↔185.175.0.5 (235,073 pkts), 185.175.0.1↔224.0.0.251 (19 pkts) (basis: 3 of 43 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadian Institute for Cybersecurity (UNB); Kaggle mirror by 'kiminya' (2023) · License: CIC dataset terms (free for research with citation); mirrored on Kaggle._
 

@@ -115,7 +115,7 @@ Attendees scan first, then poke: find the scanner, then follow that IP's subsequ
 
 There is no single flag — this is open lab traffic. A good answer is an asset table (IP ↔ vendor/model ↔ protocol), the scanner IPs, and a timeline of the control operations (S7 stop/start or downloads, Modbus writes, CIP service calls) with their sources.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×183070, Write Var ×68, Setup Communication ×16; dangerous-operation matches: 68 (top sources: 10.10.10.10 ×34, 10.10.10.30 ×23, 192.168.1.10 ×6) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×183070, Write Var ×68, Setup Communication ×16; dangerous-operation matches: 68 (top sources: 10.10.10.10 ×34, 10.10.10.30 ×23, 192.168.1.10 ×6); top conversations in 4SICS-GeekLounge-151020.pcap: 10.10.10.10↔10.10.10.20 (146,329 pkts), 10.10.10.10↔10.10.10.30 (62,611 pkts), 192.168.88.1↔192.168.88.61 (24,661 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Netresec AB and the 4SICS (now CS3STHLM) crew (2015) · License: Freely published by Netresec for research/training — credit Netresec and 4SICS/CS3STHLM._
 

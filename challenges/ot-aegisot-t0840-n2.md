@@ -134,7 +134,7 @@ Read the ATT&CK page for T0840 — the procedure examples tell you what to look 
 
 Labelled as Network Enumeration (T0840). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×45732, Read Input Registers ×19225, Read Coils ×14295, Read Holding Registers ×9424, Write Single Coil ×138; dangerous-operation matches: 45870 (top sources: 192.168.0.21 ×34361, 192.168.0.22 ×11505, 192.168.0.32 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×45732, Read Input Registers ×19225, Read Coils ×14295, Read Holding Registers ×9424, Write Single Coil ×138; dangerous-operation matches: 45870 (top sources: 192.168.0.21 ×34361, 192.168.0.22 ×11505, 192.168.0.32 ×4); top conversations in output_attack_n2.pcap: 192.168.0.100↔192.168.0.200 (69,356 pkts), 192.168.0.21↔192.168.0.22 (68,976 pkts), 192.168.0.21↔192.168.0.31 (51,616 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

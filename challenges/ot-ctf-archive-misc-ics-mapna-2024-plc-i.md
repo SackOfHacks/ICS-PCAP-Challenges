@@ -137,7 +137,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — CPU services ×24, Setup Communication ×2; dangerous-operation matches: 0 for the S7comm filter (26 S7comm packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each; decoded with -d tcp.port==10203,tpkt)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — CPU services ×24, Setup Communication ×2; dangerous-operation matches: 0 for the S7comm filter (26 S7comm packets present, so the zero is real); top conversations in plc.pcap: 10.19.31.85↔192.168.110.40 (51 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each; decoded with -d tcp.port==10203,tpkt)
 
 _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License: Archive repository MIT (challenge files not separately licensed) — credit each event._
 

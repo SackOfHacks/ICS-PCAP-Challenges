@@ -142,7 +142,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **master_hijacking_masquerading**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — RESPONSE ×230, READ ×220, CONFIRM ×50, UNSOLICITED_RESPONSE ×34, RECORD_CURRENT_TIME ×4, ENABLE_UNSOLICITED ×4, WRITE ×2; dangerous-operation matches: 2 (top sources: 192.168.10.221 ×2) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — RESPONSE ×230, READ ×220, CONFIRM ×50, UNSOLICITED_RESPONSE ×34, RECORD_CURRENT_TIME ×4, ENABLE_UNSOLICITED ×4, WRITE ×2; dangerous-operation matches: 2 (top sources: 192.168.10.221 ×2); top conversations in 20160828131747.master_hijacking_masquerading.attacker.pcap: 192.168.10.222↔192.168.10.66 (236 pkts), 192.168.10.20↔255.255.255.255 (21 pkts), 192.168.10.221↔192.168.10.222 (7 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

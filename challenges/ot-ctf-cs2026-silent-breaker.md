@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/Forencics/silent-breaker
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — M_ME_NC_1 ×60, C_SC_NA_1 ×2; dangerous-operation matches: 2 (top sources: 192.0.2.10 ×1, 198.51.100.10 ×1); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — M_ME_NC_1 ×60, C_SC_NA_1 ×2; dangerous-operation matches: 2 (top sources: 192.0.2.10 ×1, 198.51.100.10 ×1); top conversations in iec104_capture.pcap: 192.0.2.10↔198.51.100.10 (127 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) · License: None stated — credit CSCTF._
 

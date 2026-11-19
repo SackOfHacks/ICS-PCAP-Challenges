@@ -134,7 +134,7 @@ Read the ATT&CK page for T0836 — the procedure examples tell you what to look 
 
 Labelled as Modify Parameters (T0836). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×47239, Read Input Registers ×19172, Read Coils ×14384, Read Holding Registers ×9612, Write Single Coil ×162; dangerous-operation matches: 47401 (top sources: 192.168.0.21 ×35508, 192.168.0.22 ×11888, 192.168.0.33 ×5) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×47239, Read Input Registers ×19172, Read Coils ×14384, Read Holding Registers ×9612, Write Single Coil ×162; dangerous-operation matches: 47401 (top sources: 192.168.0.21 ×35508, 192.168.0.22 ×11888, 192.168.0.33 ×5); top conversations in output_attack_p3.pcap: 192.168.0.21↔192.168.0.22 (71,191 pkts), 192.168.0.100↔192.168.0.200 (70,795 pkts), 192.168.0.21↔192.168.0.31 (51,486 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

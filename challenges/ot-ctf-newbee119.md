@@ -112,7 +112,7 @@ Concatenate register values in order and decode big-endian pairs to ASCII.
 
 Work out where the flag is embedded; the computed evidence lists any flag-like strings found automatically — confirm them by locating the exact packets.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×43579, Write Multiple Registers ×60, Write Multiple Coils ×2, Read Coils ×2; dangerous-operation matches: 62 (top sources: 192.168.1.12 ×17, 192.168.1.202 ×16, 192.168.1.201 ×12); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×43579, Write Multiple Registers ×60, Write Multiple Coils ×2, Read Coils ×2; dangerous-operation matches: 62 (top sources: 192.168.1.12 ×17, 192.168.1.202 ×16, 192.168.1.201 ×12); top conversations in ics.pcapng: 192.168.1.12↔192.168.1.202 (45,302 pkts), 192.168.1.11↔192.168.1.201 (44,940 pkts), 192.168.1.10↔192.168.1.200 (42,193 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: NewBee119 (GitHub) · License: No license stated in repo — credit the author._
 

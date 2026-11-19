@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — CPU services ×174, Setup Communication ×78, PLC Stop ×10, PI-Service ×8; dangerous-operation matches: 18 (top sources: 192.168.43.115 ×9, 192.168.43.103 ×8, 39.105.136.152 ×1); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — CPU services ×174, Setup Communication ×78, PLC Stop ×10, PI-Service ×8; dangerous-operation matches: 18 (top sources: 192.168.43.115 ×9, 192.168.43.103 ×8, 39.105.136.152 ×1); top conversations in 02.pcapng: 192.168.43.103↔192.168.43.115 (857 pkts), 111.13.34.18↔192.168.43.115 (792 pkts), 192.168.43.1↔192.168.43.115 (80 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

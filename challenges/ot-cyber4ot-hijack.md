@@ -108,7 +108,7 @@ Compare against the normal-activity band.
 
 macof floods the switch CAM table (fail-open to hub mode) so the attacker sees slave-PLC traffic; tcpkill injects RSTs to kill the legitimate Modbus/TCP connection (modes -3/-5/-9). Even-numbered traces are from the PLC port, odd from the attacker.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×146, Write Multiple Registers ×40, Read Holding Registers ×6; dangerous-operation matches: 40 (top sources: 192.168.127.20 ×20, 192.168.127.21 ×20) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×146, Write Multiple Registers ×40, Read Holding Registers ×6; dangerous-operation matches: 40 (top sources: 192.168.127.20 ×20, 192.168.127.21 ×20); top conversations in Cyber4OT_088.pcapng: 192.168.127.20↔192.168.127.21 (87 pkts), 192.168.127.21↔192.168.127.6 (31 pkts), 137.255.238.103↔160.69.189.111 (1 pkts) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K. (2025) — doi:10.5281/zenodo.15005190 · License: CC BY-NC 4.0._
 

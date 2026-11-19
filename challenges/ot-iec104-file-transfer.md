@@ -93,7 +93,7 @@ Pcapper --overview first, then the protocol analyzer.
 
 See the computed evidence and the dataset documentation.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — 125 ×384, 122 ×22, 123 ×21, 124 ×21, 121 ×19, C_IC_NA_1 ×3, C_CI_NA_1 ×3, C_CS_NA_1 ×2; dangerous-operation matches: 8 (top sources: 127.0.0.1 ×8) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC-104 operations — 125 ×384, 122 ×22, 123 ×21, 124 ×21, 121 ×19, C_IC_NA_1 ×3, C_CI_NA_1 ×3, C_CS_NA_1 ×2; dangerous-operation matches: 8 (top sources: 127.0.0.1 ×8); top conversations in NM_2022-12-13T14-16-00.pcap: 127.0.0.1↔127.0.0.1 (1,857 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Netresec (2022) · License: Not stated — credit Netresec._
 

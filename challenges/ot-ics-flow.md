@@ -93,7 +93,7 @@ Pcapper --overview first, then the protocol analyzer.
 
 See the computed evidence and the dataset documentation.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×203776, Write Multiple Registers ×354; dangerous-operation matches: 354 (top sources: 192.168.0.23 ×177, 192.168.0.11 ×120, 192.168.0.12 ×57) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×203776, Write Multiple Registers ×354; dangerous-operation matches: 354 (top sources: 192.168.0.23 ×177, 192.168.0.11 ×120, 192.168.0.12 ×57); top conversations in traffic.pcap: 192.168.0.11↔192.168.0.12 (132,187 pkts), 192.168.0.11↔192.168.0.21 (101,843 pkts), 192.168.0.12↔192.168.0.21 (65,208 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Dehlaghi-Ghadim, A., et al. (Mälardalen University) (2023) · License: CC BY-NC-SA 4.0._
 

@@ -99,7 +99,7 @@ Compare attack captures against the clean/normal ones.
 
 The dataset's bundled labels and companion files are the authoritative answer key; the computed evidence below summarizes what the packets show.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×20, Write Single Coil ×13, Write Multiple Registers ×1, Write Single Register ×1; dangerous-operation matches: 15 (top sources: 10.10.1.80 ×15) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×20, Write Single Coil ×13, Write Multiple Registers ×1, Write Single Register ×1; dangerous-operation matches: 15 (top sources: 10.10.1.80 ×15); top conversations in modbus-writes.pcap: 10.10.1.30↔10.10.1.50 (7 pkts), 10.10.1.50↔10.10.1.80 (6 pkts) (basis: 3 of 7 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: AndreFroneman (GitHub) · License: No license stated in repo — credit the author._
 

@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (S7comm-plus (0x72) from TIA Portal / HMIs to S7-1200/1500 PLCs; version 3 adds a 32-byte integrity digest and tshark has no built-in dissector, so read it structurally: who talks to the PLC, how often, message sizes, and payloads that repeat (a replay repeats its digest)). ATT&CK for ICS: T0843 Program Download · T0855 Unauthorized Command Message · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 45 (basis: 3 of 20 capture file(s), first 300,000 packets each, smallest files carrying S7comm-plus (S7-1200/1500) chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm-plus (S7-1200/1500) packets (matched by the protocol filter used in the steps): 45; top conversations in S7-1511_db6w0_HMI.pcap: 192.168.25.139↔192.168.25.146 (18 pkts) (basis: 3 of 20 capture file(s), first 300,000 packets each, smallest files carrying S7comm-plus (S7-1200/1500) chosen)
 
 _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm) · ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign._
 

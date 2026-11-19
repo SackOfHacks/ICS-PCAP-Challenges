@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Requests to many unit IDs (1–247) from one source, most answered with gateway exceptions or no reply.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×324, Read Holding Registers ×228, Read Coils ×162, Read Discrete Inputs ×82; dangerous-operation matches: 0 for the Modbus/TCP filter (796 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×324, Read Holding Registers ×228, Read Coils ×162, Read Discrete Inputs ×82; dangerous-operation matches: 0 for the Modbus/TCP filter (796 Modbus/TCP packets present, so the zero is real); top conversations in lab08_unitid_scan.pcap: 192.168.10.10↔192.168.10.11 (1,355 pkts), 192.168.10.20↔192.168.10.77 (247 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

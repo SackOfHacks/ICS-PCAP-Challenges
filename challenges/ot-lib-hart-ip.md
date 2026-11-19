@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (HART-IP tunnels HART commands to field instruments — command 0 (read unique ID) is recon; write commands change instrument configuration). ATT&CK for ICS: T0888 Remote System Information Discovery · T0836 Modify Parameter. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** HART-IP packets matching `hart_ip`: 131 (basis: 3 of 5 capture file(s), first 300,000 packets each, smallest files carrying HART-IP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** HART-IP packets matching `hart_ip`: 131; top conversations in hart-ip_all_messageIDs.pcapng: 10.9.0.117↔192.168.122.197 (19 pkts) (basis: 3 of 5 capture file(s), first 300,000 packets each, smallest files carrying HART-IP chosen)
 
 _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm)._
 

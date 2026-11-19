@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Single/multiple coil and register writes — note source, unit ID, address and value of each.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×698, Read Coils ×350, Read Holding Registers ×234, Read Discrete Inputs ×176, Write Single Coil ×4, Write Single Register ×2, Write Multiple Coils ×2, Write Multiple Registers ×2; dangerous-operation matches: 10 (top sources: 192.168.10.10 ×5, 192.168.10.11 ×5) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×698, Read Coils ×350, Read Holding Registers ×234, Read Discrete Inputs ×176, Write Single Coil ×4, Write Single Register ×2, Write Multiple Coils ×2, Write Multiple Registers ×2; dangerous-operation matches: 10 (top sources: 192.168.10.10 ×5, 192.168.10.11 ×5); top conversations in lab03_write_functions.pcap: 192.168.10.10↔192.168.10.11 (1,475 pkts), 192.168.10.10↔192.168.10.13 (1,467 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

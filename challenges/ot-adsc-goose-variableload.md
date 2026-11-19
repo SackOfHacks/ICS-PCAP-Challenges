@@ -99,7 +99,7 @@ Compare against the normal/baseline capture of the same dataset.
 
 Labeled by the dataset as 'VariableLoad'. The computed evidence summarizes the operations present.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 31,800; GOOSE streams — LIED40CTRL/LLN0$Status from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED40PROT/LLN0$Alarm from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED40MEAS/LLN0$Measurement from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED31CTRL/LLN0$Status from 00:09:8e:21:73:22: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED31PROT/LLN0$Alarm from 00:09:8e:21:73:22: 600 frames, 1 distinct stNum, 0 sqNum resets (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** IEC 61850 GOOSE packets matching `goose`: 31,800; GOOSE streams — LIED40CTRL/LLN0$Status from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED40PROT/LLN0$Alarm from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED40MEAS/LLN0$Measurement from 00:09:8e:21:73:23: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED31CTRL/LLN0$Status from 00:09:8e:21:73:22: 600 frames, 1 distinct stNum, 0 sqNum resets; LIED31PROT/LLN0$Alarm from 00:09:8e:21:73:22: 600 frames, 1 distinct stNum, 0 sqNum resets; top conversations in VariableLoad.pcapng: 0.0.0.0↔255.255.255.255 (909 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Advanced Digital Sciences Center (ADSC), Singapore (2019) · License: No license stated — credit ADSC._
 

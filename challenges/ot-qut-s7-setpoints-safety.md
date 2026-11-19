@@ -105,7 +105,7 @@ The run's name tells you the effect — your job is to prove which bytes cause i
 
 Each run's folder name is its label (e.g. ReactorOn). Expected answer: a table of run → S7 write (area/DB, address, value) and the same addresses flagged as safety-relevant in your detection.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×12; dangerous-operation matches: 12 (top sources: 10.10.10.66 ×6, 10.10.10.10 ×6) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×12; dangerous-operation matches: 12 (top sources: 10.10.10.66 ×6, 10.10.10.10 ×6); top conversations in 20161215235354.GlobalReset.attacker.pcap: 10.10.10.10↔10.10.10.66 (4 pkts) (basis: 3 of 8 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

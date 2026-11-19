@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/RST-Group/RSTCON-CTF-2026-public/blob/main/forensic/coil-toss/writeup/solution.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×144, Write Single Register ×40, Write Single Coil ×12; dangerous-operation matches: 52 (top sources: 192.168.95.40 ×26, 192.168.95.10 ×26); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×144, Write Single Register ×40, Write Single Coil ×12; dangerous-operation matches: 52 (top sources: 192.168.95.40 ×26, 192.168.95.10 ×26); top conversations in coil-toss.pcap: 192.168.95.10↔192.168.95.40 (398 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: RST Group (official public repo) (2026) · License: None stated — credit RST Group._
 

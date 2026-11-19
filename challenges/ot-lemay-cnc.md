@@ -99,7 +99,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 A compromised host on the SCADA network receives an executable over a command-and-control channel. Find the non-Modbus session, reassemble it, and carve/hash the PE (MZ) payload — treat it as live malware. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×96, Read Discrete Inputs ×96, Read Coils ×96, Write Single Coil ×2; dangerous-operation matches: 2 (top sources: 192.168.1.100 ×1, 192.168.1.103 ×1) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×96, Read Discrete Inputs ×96, Read Coils ×96, Write Single Coil ×2; dangerous-operation matches: 2 (top sources: 192.168.1.100 ×1, 192.168.1.103 ×1); top conversations in CnC_uploading_exe_modbus_6RTU_with_operate.pcap: 192.168.1.100↔192.168.1.104 (238 pkts), 192.168.1.100↔192.168.1.103 (225 pkts), 192.168.1.100↔192.168.1.101 (216 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

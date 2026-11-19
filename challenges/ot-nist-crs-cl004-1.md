@@ -120,7 +120,7 @@ A control is 'OT-safe' if the Modbus cycle keeps its rate and timing while it ru
 
 Normal operation plus host backups. Expect the security tooling's protocols (e.g. SMB/RPC for backups and AV, a burst of probes from the scanner for Nessus/Open-AudIT, syslog/LDAP/Kerberos for AD and logging) layered over steady Modbus/TCP polling; the analysis deliverable is the footprint of the control and whether the polling cycle degraded. NIST published these measurements to answer exactly that question.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×234853, Read Discrete Inputs ×233990, Read Holding Registers ×173662, Read Coils ×12544, Write Single Coil ×674, Write Single Register ×6; dangerous-operation matches: 680 (top sources: 192.168.0.30 ×340, 192.168.1.101 ×172, 192.168.1.3 ×61) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×234853, Read Discrete Inputs ×233990, Read Holding Registers ×173662, Read Coils ×12544, Write Single Coil ×674, Write Single Register ×6; dangerous-operation matches: 680 (top sources: 192.168.0.30 ×340, 192.168.1.101 ×172, 192.168.1.3 ×61); top conversations in hmi.pcap: 192.168.0.30↔192.168.0.98 (54,617 pkts), 192.168.0.98↔192.168.1.104 (28,879 pkts), 192.168.0.98↔192.168.1.102 (28,758 pkts) (basis: 3 of 4 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program (2019) · License: No license stated — U.S. Government work (NIST); credit NIST._
 

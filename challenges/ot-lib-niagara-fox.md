@@ -116,7 +116,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (the Fox 'hello' exchange leaks station name, host OS and Niagara version; credentials and write actions follow). ATT&CK for ICS: T0888 Remote System Information Discovery · T0859 Valid Accounts. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Niagara Fox packets matching `tcp.port in {1911, 4911}`: 10; dangerous-operation matches: 10 (top sources: 10.1.3.4 ×6, 106.68.88.119 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Niagara Fox packets matching `tcp.port in {1911, 4911}`: 10; dangerous-operation matches: 10 (top sources: 10.1.3.4 ×6, 106.68.88.119 ×4); top conversations in fox_info.pcap: 10.1.3.4↔106.68.88.119 (10 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Captures credited to: ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign._
 

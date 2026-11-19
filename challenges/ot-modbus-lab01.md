@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Steady periodic reads from one master to the PLC — the reference for every later lab.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×802, Read Coils ×402, Read Holding Registers ×270, Read Discrete Inputs ×204; dangerous-operation matches: 0 for the Modbus/TCP filter (1,678 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×802, Read Coils ×402, Read Holding Registers ×270, Read Discrete Inputs ×204; dangerous-operation matches: 0 for the Modbus/TCP filter (1,678 Modbus/TCP packets present, so the zero is real); top conversations in lab01_baseline.pcap: 192.168.10.10↔192.168.10.11 (1,123 pkts), 192.168.10.10↔192.168.10.13 (1,123 pkts), 192.168.10.10↔192.168.10.12 (1,119 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

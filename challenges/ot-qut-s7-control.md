@@ -93,7 +93,7 @@ Count Read Var vs Write Var per source.
 
 Baseline only: HMI/PLC identities, the polled addresses and the polling interval. Use it to explain the attack sessions.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×338378, Write Var ×992, Setup Communication ×4, CPU services ×4; dangerous-operation matches: 992 (top sources: 10.10.10.20 ×496, 10.10.10.10 ×496) (basis: 2 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Read Var ×338378, Write Var ×992, Setup Communication ×4, CPU services ×4; dangerous-operation matches: 992 (top sources: 10.10.10.20 ×496, 10.10.10.10 ×496); top conversations in hmi.pcap: 10.10.10.10↔10.10.10.20 (279,629 pkts), 10.10.10.200↔255.255.255.255 (2,666 pkts), 10.10.10.20↔10.10.10.255 (93 pkts) (basis: 2 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

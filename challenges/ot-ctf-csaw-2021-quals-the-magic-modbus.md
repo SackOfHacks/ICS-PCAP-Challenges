@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics/the_magic_modbus
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×228; dangerous-operation matches: 0 for the Modbus/TCP filter (228 Modbus/TCP packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×228; dangerous-operation matches: 0 for the Modbus/TCP filter (228 Modbus/TCP packets present, so the zero is real); top conversations in modbus.pcap: 238.0.0.3↔238.0.0.4 (116 pkts), 238.0.0.5↔238.0.0.6 (68 pkts), 238.0.0.1↔238.0.0.2 (44 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CSAW CTF (NYU OSIRIS Lab); mirror of the official repo (2021) · License: None stated — credit CSAW._
 

@@ -105,7 +105,7 @@ io,stat with per-protocol columns shows the attack and the process traffic side 
 
 ARP-spoofing man-in-the-middle: the attacker's MAC appears for the PLC/HMI IPs and register values in the forwarded Modbus traffic are altered — compare values as sent by the master/PLC with what arrives after the attacker's hop. The dataset's folder/file names are the ground-truth labels.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×34500, Write Single Register ×1861; dangerous-operation matches: 1861 (top sources: 172.27.224.250 ×1861) (basis: 3 of 11 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×34500, Write Single Register ×1861; dangerous-operation matches: 1861 (top sources: 172.27.224.250 ×1861); top conversations in eth2dump-mitm-change-5m-0,5h_1.pcap: 172.27.224.250↔172.27.224.70 (17,235 pkts), 172.27.224.250↔172.27.224.251 (15,549 pkts), 0.0.0.0↔255.255.255.255 (63 pkts) (basis: 3 of 11 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020) (2018) — doi:10.1007/978-3-030-05849-4_19 · License: CC BY 3.0 (repository content)._
 

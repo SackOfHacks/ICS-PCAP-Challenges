@@ -95,7 +95,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 File transfers between hosts on the SCADA LAN (lateral tool transfer / staging) alongside the normal polling. Identify the protocol, the endpoints and the files. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×240, Read Discrete Inputs ×240, Read Coils ×240; dangerous-operation matches: 0 for the Modbus/TCP filter (720 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×240, Read Discrete Inputs ×240, Read Coils ×240; dangerous-operation matches: 0 for the Modbus/TCP filter (720 Modbus/TCP packets present, so the zero is real); top conversations in moving_two_files_modbus_6RTU.pcap: 192.168.1.100↔192.168.1.104 (574 pkts), 192.168.1.100↔192.168.1.101 (540 pkts), 192.168.1.100↔192.168.1.102 (540 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

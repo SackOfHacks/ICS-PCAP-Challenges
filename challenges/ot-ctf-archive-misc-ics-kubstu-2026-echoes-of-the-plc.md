@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/Potato83/WriteUPs/blob/HEAD/KubCTF2026/echoes-of-the-plc/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×600, Read Input Registers ×18; dangerous-operation matches: 0 for the Modbus/TCP filter (618 Modbus/TCP packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×600, Read Input Registers ×18; dangerous-operation matches: 0 for the Modbus/TCP filter (618 Modbus/TCP packets present, so the zero is real); top conversations in echoes_of_the_plc.pcap: 0.0.0.0↔255.255.255.255 (260 pkts), 10.20.60.1↔255.255.255.255 (260 pkts), 10.20.100.250↔10.20.100.42 (44 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License: Archive repository MIT (challenge files not separately licensed) — credit each event._
 

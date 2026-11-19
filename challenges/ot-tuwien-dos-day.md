@@ -106,7 +106,7 @@ Compare with the labeled attack days (a_day1/a_day2) in the same folder.
 
 Unlabeled by design — you produce the label. A good answer gives the DoS window (start/end), source IP(s), target(s), technique (e.g. SYN/UDP/application flood) and the effect on the factory protocols.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC UA operations — 49 ×1, 2480322531 ×1; dangerous-operation matches: 0 for the OPC UA filter (92 OPC UA packets present, so the zero is real) (basis: 3 of 55 capture file(s), first 300,000 packets each, smallest files carrying OPC UA chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC UA operations — 49 ×1, 2480322531 ×1; dangerous-operation matches: 0 for the OPC UA filter (92 OPC UA packets present, so the zero is real); top conversations in a_day_tuesday_dos.pcap.part032.pcap: 192.168.10.55↔192.168.10.63 (251 pkts), 192.168.10.55↔192.168.10.61 (239 pkts), 192.168.10.55↔192.168.10.62 (238 pkts) (basis: 3 of 55 capture file(s), first 300,000 packets each, smallest files carrying OPC UA chosen)
 
 _Dataset credit: Brenner, B., Fabini, J., Offermanns, M., Semper, S. & Zseby, T. (TU Wien) (2025) — doi:10.48436/ghdc6-45k78 · License: CC BY 4.0._
 

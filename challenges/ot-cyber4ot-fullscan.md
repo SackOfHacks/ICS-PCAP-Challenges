@@ -115,7 +115,7 @@ Compare against the normal-activity band.
 
 Per-device full scans — fingerprint the scanner, the targets and each timing template.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×4973, Write Multiple Registers ×2486; dangerous-operation matches: 2486 (top sources: 192.168.127.20 ×1243, 192.168.127.21 ×1243) (basis: 3 of 65 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×4973, Write Multiple Registers ×2486; dangerous-operation matches: 2486 (top sources: 192.168.127.20 ×1243, 192.168.127.21 ×1243); top conversations in Cyber4OT_081.pcapng: 192.168.127.20↔192.168.127.21 (5,419 pkts), 192.168.127.21↔192.168.127.6 (236 pkts), 192.168.127.126↔192.168.127.21 (76 pkts) (basis: 3 of 65 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K. (2025) — doi:10.5281/zenodo.15005190 · License: CC BY-NC 4.0._
 

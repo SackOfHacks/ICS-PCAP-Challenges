@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics/a_pain_in_the_bacnet
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×2800; dangerous-operation matches: 0 for the BACnet filter (3,017 BACnet packets present, so the zero is real); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — readProperty ×2800; dangerous-operation matches: 0 for the BACnet filter (3,017 BACnet packets present, so the zero is real); top conversations in bacnet.pcap: 10.159.40.200↔10.159.40.50 (800 pkts), 10.159.40.200↔10.159.40.55 (800 pkts), 10.159.40.106↔10.159.40.200 (120 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: CSAW CTF (NYU OSIRIS Lab); mirror of the official repo (2021) · License: None stated — credit CSAW._
 

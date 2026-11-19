@@ -134,7 +134,7 @@ Read the ATT&CK page for T1083 — the procedure examples tell you what to look 
 
 Labelled as File and Directory Discovery (T1083). The dataset's attack-script log names the start time and actions; the labelled flow CSV marks every malicious flow. Your answer: attacker IP, window, and the packets (with function codes / registers / services) that implement the technique.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×46821, Read Input Registers ×19165, Read Coils ×14368, Read Holding Registers ×9618, Write Single Coil ×136; dangerous-operation matches: 46957 (top sources: 192.168.0.21 ×35185, 192.168.0.22 ×11768, 192.168.0.32 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Write Single Register ×46821, Read Input Registers ×19165, Read Coils ×14368, Read Holding Registers ×9618, Write Single Coil ×136; dangerous-operation matches: 46957 (top sources: 192.168.0.21 ×35185, 192.168.0.22 ×11768, 192.168.0.32 ×4); top conversations in output_attack_n5.pcap: 192.168.0.100↔192.168.0.200 (70,858 pkts), 192.168.0.21↔192.168.0.22 (70,556 pkts), 192.168.0.21↔192.168.0.31 (53,177 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 

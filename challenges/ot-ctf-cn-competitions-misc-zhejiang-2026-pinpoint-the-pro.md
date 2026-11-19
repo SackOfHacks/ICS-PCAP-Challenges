@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/yomymy/industrial-internet-security-2026-writeup
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** LS XGT FEnet operations — Read request ×72, Read response ×72, Write request ×38, Write response ×38; dangerous-operation matches: 38 (top sources: 192.168.2.191 ×38); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** LS XGT FEnet operations — Read request ×72, Read response ×72, Write request ×38, Write response ×38; dangerous-operation matches: 38 (top sources: 192.168.2.191 ×38); top conversations in 流量信息.pcapng: 192.168.2.186↔192.168.2.191 (337 pkts), 192.168.2.191↔224.0.0.251 (164 pkts), 192.168.2.155↔224.0.0.251 (63 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5 · License: None stated — credit each competition._
 

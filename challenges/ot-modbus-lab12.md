@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 A request flood that starves the legitimate polling (gaps, retransmissions, exception responses).
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×972, Read Coils ×328, Read Holding Registers ×220, Read Discrete Inputs ×164; dangerous-operation matches: 0 for the Modbus/TCP filter (1,684 Modbus/TCP packets present, so the zero is real) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×972, Read Coils ×328, Read Holding Registers ×220, Read Discrete Inputs ×164; dangerous-operation matches: 0 for the Modbus/TCP filter (1,684 Modbus/TCP packets present, so the zero is real); top conversations in lab12_dos_flood.pcap: 192.168.10.10↔192.168.10.11 (1,367 pkts), 192.168.10.10↔192.168.10.12 (1,367 pkts), 192.168.10.11↔192.168.10.99 (923 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

@@ -97,7 +97,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Diagnostics (FC 8) and Read Device Identification (FC 43/14) requests that reveal vendor, product and firmware.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×326, Read Coils ×164, Read Holding Registers ×110, Read Discrete Inputs ×82, Diagnostics ×6, 17 ×2, Device Identification (MEI) ×2; dangerous-operation matches: 8 (top sources: 192.168.10.77 ×4, 192.168.10.12 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×326, Read Coils ×164, Read Holding Registers ×110, Read Discrete Inputs ×82, Diagnostics ×6, 17 ×2, Device Identification (MEI) ×2; dangerous-operation matches: 8 (top sources: 192.168.10.77 ×4, 192.168.10.12 ×4); top conversations in lab13_diag_enum.pcap: 192.168.10.10↔192.168.10.12 (1,367 pkts), 192.168.10.12↔192.168.10.77 (27 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

@@ -118,7 +118,7 @@ Solve the per-area QUT S7comm challenges first to know the tag map.
 
 The run folders (timestamp.AttackName) list every attack in order; the attacker logs under Logs/ give its timing. Score yourself on attacks found and correctly named.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×445623, Read Var ×249423, Setup Communication ×10, CPU services ×4; dangerous-operation matches: 445623 (top sources: 10.10.10.10 ×222813, 10.10.10.66 ×221825, 10.10.10.20 ×985) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×445623, Read Var ×249423, Setup Communication ×10, CPU services ×4; dangerous-operation matches: 445623 (top sources: 10.10.10.10 ×222813, 10.10.10.66 ×221825, 10.10.10.20 ×985); top conversations in attacker.pcap: 10.10.10.10↔10.10.10.66 (292,394 pkts), 10.10.10.200↔255.255.255.255 (466 pkts), 10.10.10.20↔10.10.10.255 (29 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

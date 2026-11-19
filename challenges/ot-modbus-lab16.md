@@ -105,7 +105,7 @@ Exception responses have the function code's high bit set (FC + 0x80).
 
 Capstone — no published key. Reconstruct who did what, to which register, and when, using everything from the series.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×1131, Read Coils ×454, Read Holding Registers ×364, Read Discrete Inputs ×182, Write Single Register ×2, Write Multiple Registers ×2; dangerous-operation matches: 4 (top sources: 192.168.10.10 ×2, 192.168.10.12 ×2) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×1131, Read Coils ×454, Read Holding Registers ×364, Read Discrete Inputs ×182, Write Single Register ×2, Write Multiple Registers ×2; dangerous-operation matches: 4 (top sources: 192.168.10.10 ×2, 192.168.10.12 ×2); top conversations in lab16_challenge_backdraft.pcap: 192.168.10.10↔192.168.10.11 (1,519 pkts), 192.168.10.10↔192.168.10.13 (1,503 pkts), 192.168.10.10↔192.168.10.12 (1,264 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

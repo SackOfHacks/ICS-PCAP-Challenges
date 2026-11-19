@@ -151,7 +151,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **MITM_modification_BinaryStatus**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×47, RESPONSE ×43, CONFIRM ×9, UNSOLICITED_RESPONSE ×5; dangerous-operation matches: 0 for the DNP3 filter (104 DNP3 packets present, so the zero is real) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×47, RESPONSE ×43, CONFIRM ×9, UNSOLICITED_RESPONSE ×5; dangerous-operation matches: 0 for the DNP3 filter (104 DNP3 packets present, so the zero is real); top conversations in 20160925205418.MITM_modification_BinaryStatus.attacker.pcap: 192.168.10.221↔192.168.10.222 (135 pkts), 192.168.10.20↔255.255.255.255 (6 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

@@ -142,7 +142,7 @@ MACs do not lie as easily as IPs on a switched LAN.
 
 Labelled run of **injection_push**. The per-packet CSV labels are the exact answer key; the attacker capture shows the attacker's actions. Expected answer: attacker IP/MAC, window, the frames that implement the attack, and how they differ from normal master↔outstation traffic.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×26, RESPONSE ×20, CONFIRM ×10, UNSOLICITED_RESPONSE ×7; dangerous-operation matches: 0 for the DNP3 filter (63 DNP3 packets present, so the zero is real) (basis: 3 of 3 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** DNP3 operations — READ ×26, RESPONSE ×20, CONFIRM ×10, UNSOLICITED_RESPONSE ×7; dangerous-operation matches: 0 for the DNP3 filter (63 DNP3 packets present, so the zero is real); top conversations in 20160815114813.injection_push.attacker.pcap: 192.168.10.221↔192.168.10.222 (13 pkts), 192.168.10.20↔255.255.255.255 (6 pkts), 192.168.10.1↔192.168.10.222 (4 pkts) (basis: 3 of 3 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

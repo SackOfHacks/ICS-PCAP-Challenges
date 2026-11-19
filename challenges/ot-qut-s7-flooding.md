@@ -100,7 +100,7 @@ Compare with the single-write runs in the other QUT S7comm challenges.
 
 Each folder is labelled <attack>_Flooding. Answer: per flood, the write (area/address/value) and the rate; detection by write rate per source.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×117436, Read Var ×2034; dangerous-operation matches: 117436 (top sources: 10.10.10.10 ×58718, 10.10.10.66 ×58693, 10.10.10.20 ×25) (basis: 3 of 9 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** S7comm operations — Write Var ×117436, Read Var ×2034; dangerous-operation matches: 117436 (top sources: 10.10.10.10 ×58718, 10.10.10.66 ×58693, 10.10.10.20 ×25); top conversations in 20161215190548.WaterTankOnManu_Flooding.master.pcap: 10.10.10.10↔10.10.10.66 (35,763 pkts), 10.10.10.10↔10.10.10.20 (1,062 pkts) (basis: 3 of 9 capture file(s), first 300,000 packets each, smallest files carrying S7comm chosen)
 
 _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology) (2017) · License: No license stated — credit the authors._
 

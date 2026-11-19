@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 No public write-up was located for this one — the computed evidence below lists any flag-like strings found automatically; confirm them by finding the packets that carry them.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC DA (DCOM) packets matching `dcerpc`: 4,394; dangerous-operation matches: 2 (top sources: 192.168.1.21 ×2); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** OPC DA (DCOM) packets matching `dcerpc`: 4,394; dangerous-operation matches: 2 (top sources: 192.168.1.21 ×2); top conversations in OPC协议分析.pcap: 192.168.1.11↔192.168.1.21 (9,586 pkts), 192.168.1.11↔192.168.1.255 (48 pkts), 192.168.1.11↔255.255.255.255 (40 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

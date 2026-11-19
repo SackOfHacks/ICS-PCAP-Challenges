@@ -115,7 +115,7 @@ Compare against the normal-activity band.
 
 Host discovery at Insane→Sneaky timing — note how detection difficulty rises as the scan slows.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×570, Write Multiple Registers ×190; dangerous-operation matches: 190 (top sources: 192.168.127.20 ×95, 192.168.127.21 ×95) (basis: 3 of 10 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Input Registers ×570, Write Multiple Registers ×190; dangerous-operation matches: 190 (top sources: 192.168.127.20 ×95, 192.168.127.21 ×95); top conversations in Cyber4OT_074.pcapng: 192.168.127.20↔192.168.127.21 (279 pkts), 192.168.127.21↔192.168.127.6 (93 pkts) (basis: 3 of 10 capture file(s), first 300,000 packets each, smallest files carrying Modbus/TCP chosen)
 
 _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K. (2025) — doi:10.5281/zenodo.15005190 · License: CC BY-NC 4.0._
 

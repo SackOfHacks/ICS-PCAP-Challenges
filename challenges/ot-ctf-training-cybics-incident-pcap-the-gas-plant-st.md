@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/mniedermaier/CybICS/blob/main/training/incident_pcap/README.md
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×242, Read Coils ×240, Write Single Register ×8; dangerous-operation matches: 8 (top sources: 172.18.0.4 ×4, 172.18.0.3 ×4); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×242, Read Coils ×240, Write Single Register ×8; dangerous-operation matches: 8 (top sources: 172.18.0.4 ×4, 172.18.0.3 ×4); top conversations in incident.pcap: 172.18.0.3↔172.18.0.4 (741 pkts), 172.18.0.3↔172.18.0.77 (43 pkts), 172.18.0.10↔172.18.0.3 (36 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Matthias Niedermaier (CybICS) (2026) · License: Repository MIT (training files not separately licensed) — credit CybICS._
 

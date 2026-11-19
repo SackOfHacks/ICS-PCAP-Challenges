@@ -89,7 +89,7 @@ Baseline first, then look for the outlier.
 
 The threat hides inside normal-looking Modbus — find the source/operation that breaks the baseline pattern.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×1456, Read Input Registers ×48, Write Single Register ×24, 17 ×6, Write Single Coil ×6; dangerous-operation matches: 30 (top sources: 61.220.48.20 ×15, 140.112.30.55 ×8, 105.112.78.34 ×7) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×1456, Read Input Registers ×48, Write Single Register ×24, 17 ×6, Write Single Coil ×6; dangerous-operation matches: 30 (top sources: 61.220.48.20 ×15, 140.112.30.55 ×8, 105.112.78.34 ×7); top conversations in lab_modbus_tw_hidden_threat.pcap: 114.34.125.10↔61.220.48.20 (828 pkts), 114.34.125.10↔118.163.72.15 (828 pkts), 114.34.125.10↔210.59.144.30 (828 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

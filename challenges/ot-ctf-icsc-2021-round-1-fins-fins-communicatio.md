@@ -112,7 +112,7 @@ Concatenate register values in order and decode the 16-bit words as ASCII.
 
 A public write-up exists — work it yourself first, then compare: https://github.com/fghcvjk/icsc2021/tree/master/%E7%BA%BF%E4%B8%8A%E8%B5%9B%E7%AC%AC1%E5%9C%BA
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 25,136; flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Omron FINS packets matching `omron`: 25,136; top conversations in Fins协议通讯.pcap: 172.31.0.73↔172.31.0.90 (40,347 pkts), 172.31.0.201↔224.0.0.251 (19 pkts), 172.31.0.90↔172.31.255.255 (10 pkts); flag-like strings found by `strings`: none in plain text (decode protocol fields) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc2021 (2021) · License: None stated — credit the competition._
 

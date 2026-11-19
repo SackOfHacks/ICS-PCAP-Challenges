@@ -89,7 +89,7 @@ Baseline first, then look for the outlier.
 
 List every device, its role and protocols from passive observation.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×3518, Read Input Registers ×32, Read Coils ×18, Write Single Register ×12; dangerous-operation matches: 12 (top sources: 172.20.10.10 ×3, 172.20.20.101 ×3, 172.20.10.88 ×3) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×3518, Read Input Registers ×32, Read Coils ×18, Write Single Register ×12; dangerous-operation matches: 12 (top sources: 172.20.10.10 ×3, 172.20.20.101 ×3, 172.20.10.88 ×3); top conversations in lab_asset_discovery.pcap: 172.20.10.1↔172.20.20.101 (1,065 pkts), 172.20.10.1↔172.20.20.102 (1,065 pkts), 172.20.10.1↔172.20.20.103 (1,065 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: solymx (GitHub) · License: No license stated in repo — credit the author._
 

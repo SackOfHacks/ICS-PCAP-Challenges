@@ -89,7 +89,7 @@ Anything that isn't Modbus on this network is suspicious by default.
 
 An attacker injects a Modbus write ('operate' command) that did not come from the legitimate SCADA master. Compare every write's source, timing, unit ID and value against the master's normal operate pattern — the outlier is the forged command. The capture's filename is the dataset's ground-truth label.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×816, Read Discrete Inputs ×816, Read Coils ×816, Write Single Coil ×18; dangerous-operation matches: 18 (top sources: 192.168.1.100 ×8, 192.168.1.101 ×5, 192.168.1.102 ×4) (basis: 1 of 1 capture file(s), first 300,000 packets each)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** Modbus/TCP operations — Read Holding Registers ×816, Read Discrete Inputs ×816, Read Coils ×816, Write Single Coil ×18; dangerous-operation matches: 18 (top sources: 192.168.1.100 ×8, 192.168.1.101 ×5, 192.168.1.102 ×4); top conversations in send_a_fake_command_modbus_6RTU_with_operate.pcap: 192.168.1.100↔192.168.1.101 (1,872 pkts), 192.168.1.100↔192.168.1.104 (1,870 pkts), 192.168.1.100↔192.168.1.102 (1,863 pkts) (basis: 1 of 1 capture file(s), first 300,000 packets each)
 
 _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2016) · License: No license stated in repo — credit the author._
 

@@ -124,7 +124,7 @@ Many library files are tiny protocol samples — read them packet by packet in W
 
 A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (C12.22 carries C12.19 table reads/writes to revenue meters — writes to configuration tables or procedure calls (e.g. disconnect) are the high-value operations). ATT&CK for ICS: T0836 Modify Parameter · T0831 Manipulation of Control. Sources are credited per collection in each folder's PROVENANCE.md.
 
-**Computed evidence (auto-extracted with tshark — verify it yourself):** ANSI C12.22 packets matching `c1222`: 6 (basis: 3 of 14 capture file(s), first 300,000 packets each, smallest files carrying ANSI C12.22 chosen)
+**Computed evidence (auto-extracted with tshark — verify it yourself):** ANSI C12.22 packets matching `c1222`: 6; top conversations in c1222_std_example8.pcap: 10.1.1.1↔10.2.2.2 (2 pkts) (basis: 3 of 14 capture file(s), first 300,000 packets each, smallest files carrying ANSI C12.22 chosen)
 
 _Captures credited to: CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm)._
 
