@@ -1,0 +1,368 @@
+cff-version: 1.2.0
+title: "ICS / OT / SCADA PCAP Challenges"
+message: >-
+  If you use this challenge range, cite it AND the original dataset authors listed under
+  references (several CC BY licenses require it). Full credits: ATTRIBUTION.md.
+type: software
+authors:
+  - alias: SackOfHacks
+license: MIT
+repository-code: "https://github.com/SackOfHacks/ICS-PCAP-Challenges"
+url: "https://sackofhacks.github.io/ICS-PCAP-Challenges/"
+keywords:
+  - ICS
+  - OT
+  - SCADA
+  - industrial control systems
+  - pcap
+  - network forensics
+  - threat hunting
+  - CTF
+  - Pcapper
+references:
+  - type: dataset
+    title: "ADSC IEC 61850 security dataset — GOOSE protection events and attacks"
+    authors:
+      - name: "Advanced Digital Sciences Center (ADSC), Singapore"
+    year: 2019
+    url: "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+    notes: "License: No license stated — credit ADSC"
+  - type: dataset
+    title: "AegisOT — Modbus OT testbed with 11 ATT&CK-for-ICS techniques"
+    authors:
+      - name: "Kaggle user 'khadijadrira'"
+    year: 2026
+    url: "https://www.kaggle.com/datasets/khadijadrira/industrial-cybersecurity-repository"
+    notes: "License: CC BY-NC-SA 4.0"
+  - type: dataset
+    title: "ICS-pcap collection (automayt / Jason Smith)"
+    authors:
+      - name: "Jason Smith (automayt)"
+    url: "https://github.com/automayt/ICS-pcap"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "CIARRES smart-grid attacks — GOOSE, MMS and Modbus"
+    authors:
+      - name: "CIARRES project (Kaggle user 'javiersandeuc3m')"
+    year: 2025
+    url: "https://www.kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-attacks"
+    notes: "License: GPL-3.0 (as declared on Kaggle)"
+  - type: dataset
+    title: "CIC Modbus Dataset 2023 — substation Modbus attacks"
+    authors:
+      - name: "Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadian Institute for Cybersecurity (UNB); Kaggle mirror by 'kiminya'"
+    year: 2023
+    url: "https://www.unb.ca/cic/datasets/modbus-2023.html"
+    notes: "License: CIC dataset terms (free for research with citation); mirrored on Kaggle"
+  - type: dataset
+    title: "CIP / EtherNet-IP captures (incl. controller reboot)"
+    authors:
+      - name: "engage-svg (GitHub)"
+    url: "https://github.com/engage-svg/ICS-PCAPs"
+    notes: "License: MIT"
+  - type: dataset
+    title: "CISA ICSNPP — Zeek ICS parser test traces"
+    authors:
+      - name: "CISA and Idaho National Laboratory (ICSNPP project)"
+    url: "https://github.com/cisagov/ICSNPP"
+    notes: "License: BSD-3-Clause"
+  - type: dataset
+    title: "University of Coimbra — Modbus/TCP SCADA dataset #1 (CRITIS 2018)"
+    authors:
+      - name: "Frazão, I., Abreu, P. H., Cruz, T., Araújo, H., Simões, P. — University of Coimbra (ATENA H2020)"
+    year: 2018
+    doi: "10.1007/978-3-030-05849-4_19"
+    url: "https://github.com/tjcruz-dei/ICS_PCAPS"
+    notes: "License: CC BY 3.0 (repository content)"
+  - type: dataset
+    title: "ICS challenges from public CTF archives (sajjadium/ctf-archives)"
+    authors:
+      - name: "Event organisers; archived by sajjadium/ctf-archives"
+    url: "https://github.com/sajjadium/ctf-archives"
+    notes: "License: Archive repository MIT (challenge files not separately licensed) — credit each event"
+  - type: dataset
+    title: "bi0sCTF 2025 — hardware/ICS"
+    authors:
+      - name: "team bi0s (official repo)"
+    year: 2025
+    url: "https://github.com/teambi0s/bi0sCTF"
+    notes: "License: None stated — credit team bi0s"
+  - type: dataset
+    title: "Chinese ICS competition challenges (CISCN, Fujian, Panda Cup, Qiangwang, Zhejiang, VCTF)"
+    authors:
+      - name: "Competition organisers; archived by CTF-Archives, C1oudfL0w0, TajangSec, ChaMd5"
+    url: "https://github.com/CTF-Archives"
+    notes: "License: None stated — credit each competition"
+  - type: dataset
+    title: "CSAW CTF Quals 2021 — ICS"
+    authors:
+      - name: "CSAW CTF (NYU OSIRIS Lab); mirror of the official repo"
+    year: 2021
+    url: "https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics"
+    notes: "License: None stated — credit CSAW"
+  - type: dataset
+    title: "CSCTF 2026 — ICS / forensics"
+    authors:
+      - name: "CSCTF (chronos-security.ro); challenge repo by K0NGR3SS"
+    year: 2026
+    url: "https://github.com/K0NGR3SS/CSCTF-2026-Dente"
+    notes: "License: None stated — credit CSCTF"
+  - type: dataset
+    title: "CTF Curupira 3.0 (GoHacking) 2026 — OT/SCADA track"
+    authors:
+      - name: "GoHacking (organiser); GitHub mirror by celoramalho (MIT repo)"
+    year: 2026
+    url: "https://github.com/celoramalho/CTF_Curupira_3.0"
+    notes: "License: None stated for the challenges — credit GoHacking"
+  - type: dataset
+    title: "DFRWS 2023 Forensic Challenge — The Troubled Elevator"
+    authors:
+      - name: "DFRWS (Digital Forensics Research Workshop)"
+    year: 2023
+    url: "https://github.com/dfrws/dfrws2023-challenge"
+    notes: "License: Repository Apache-2.0 (challenge files not separately licensed) — credit DFRWS"
+  - type: dataset
+    title: "工业信息安全技能大赛 2021 — Industrial Information Security Skills Competition"
+    authors:
+      - name: "Competition organisers; attachments archived by fghcvjk/icsc2021"
+    year: 2021
+    url: "https://github.com/fghcvjk/icsc2021"
+    notes: "License: None stated — credit the competition"
+  - type: dataset
+    title: "第十届工业信息安全技能大赛 工控安全锦标赛 2026 (GY10)"
+    authors:
+      - name: "Competition organisers; archived by CTF-Archives"
+    year: 2026
+    url: "https://github.com/CTF-Archives/2026-ICSC-ICS-Champ"
+    notes: "License: None stated — credit the competition"
+  - type: dataset
+    title: "RSTCON CTF 2026 — forensics"
+    authors:
+      - name: "RST Group (official public repo)"
+    year: 2026
+    url: "https://github.com/RST-Group/RSTCON-CTF-2026-public"
+    notes: "License: None stated — credit RST Group"
+  - type: dataset
+    title: "ICS challenges from community write-up repos"
+    authors:
+      - name: "Event organisers; captures kept in participants' write-up repos"
+    notes: "License: None stated — credit each event"
+  - type: dataset
+    title: "Cyber4OT: ICS network traces containing normal activity and full attack traffic"
+    authors:
+      - name: "Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak, P.; Nebeluk, R.; Wojtulewicz, A.; Zarzycki, K."
+    year: 2025
+    doi: "10.5281/zenodo.15005190"
+    url: "https://zenodo.org/records/15005190"
+    notes: "License: CC BY-NC 4.0"
+  - type: dataset
+    title: "S4x15 ICS Village CTF captures (Digital Bond)"
+    authors:
+      - name: "Digital Bond — Dale Peterson & Reid Wightman (S4x15); published by Netresec"
+    year: 2015
+    url: "https://www.netresec.com/?page=DigitalBond_S4"
+    notes: "License: Published by Netresec with permission from Dale Peterson and Reid Wightman — credit S4/Digital Bond and Netresec"
+  - type: dataset
+    title: "ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset"
+    authors:
+      - name: "Emre Ekin (ICS Defense, icsdefense.net)"
+    url: "https://github.com/EmreEkin/ICS-Pcaps"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "G-ICS — whole-network capture (IEC 61850 SV/GOOSE, Modbus, PROFINET)"
+    authors:
+      - name: "Altaher, Thiriet, Mocanu (Univ. Grenoble Alpes)"
+    year: 2020
+    doi: "10.17632/8cjkkw79z2.1"
+    url: "https://data.mendeley.com/datasets/8cjkkw79z2/1"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Chinese ICS CTF traffic (工控CTF) — NewBee119"
+    authors:
+      - name: "NewBee119 (GitHub)"
+    url: "https://github.com/NewBee119/ctf_ics_traffic"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "ICS-Flow — ICSSIM Modbus attacks"
+    authors:
+      - name: "Dehlaghi-Ghadim, A., et al. (Mälardalen University)"
+    year: 2023
+    url: "https://www.kaggle.com/datasets/alirezadehlaghi/icssim"
+    notes: "License: CC BY-NC-SA 4.0"
+  - type: dataset
+    title: "ICS protocol sample captures (IEC-104, MMS and more)"
+    authors:
+      - name: "haolipeng (GitHub)"
+    url: "https://github.com/haolipeng/ics-pcaps"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "ICS PCAP practice challenges (asset discovery, hidden Modbus threat)"
+    authors:
+      - name: "solymx (GitHub)"
+    url: "https://github.com/solymx/ICS_PCAP_Practice"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "IEC 61850 GOOSE attacks — RTDS simulator + physical IED"
+    authors:
+      - name: "Kaggle user 'johnatandeoliveira' (paper in Journal of Information Security and Applications)"
+    year: 2025
+    doi: "10.1016/j.jisa.2025.104197"
+    url: "https://www.kaggle.com/datasets/johnatandeoliveira/network-traffic-dataset-iec-61850-cyber-attacks"
+    notes: "License: CC BY-SA 4.0"
+  - type: dataset
+    title: "IEEE 24-bus SDN substation lab — IEC 61850 R-GOOSE"
+    authors:
+      - name: "jaafaris (GitHub)"
+    url: "https://github.com/jaafaris/ieee24-onos-sdn-lab-v2-"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "INL Malcolm test artifacts — OT protocol samples"
+    authors:
+      - name: "Idaho National Laboratory (Malcolm)"
+    year: 2025
+    url: "https://github.com/idaholab/Malcolm-Test-Artifacts"
+    notes: "License: Apache-2.0 (repository); individual captures are third-party"
+  - type: dataset
+    title: "ITI ICS-Security-Tools — sample ICS protocol captures"
+    authors:
+      - name: "Information Trust Institute (ITI), University of Illinois Urbana-Champaign"
+    url: "https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps"
+    notes: "License: CC-BY-4.0"
+  - type: dataset
+    title: "BACnet capture library (kargs.net)"
+    authors:
+      - name: "Steve Karg (BACnet Stack author)"
+    url: "https://kargs.net/captures/"
+    notes: "License: No license stated — credit the author"
+  - type: dataset
+    title: "KNXnet/IP intrusion dataset — building automation attacks (UOWM)"
+    authors:
+      - name: "Dalamagkas, Radoglou-Grammatikis, et al. (Univ. of Western Macedonia)"
+    year: 2025
+    doi: "10.5281/zenodo.16957517"
+    url: "https://zenodo.org/records/16957517"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Lemay & Fernandez SCADA Modbus dataset (CSET 2016)"
+    authors:
+      - name: "Antoine Lemay & José M. Fernandez (Polytechnique Montréal)"
+    year: 2016
+    url: "https://github.com/antoine-lemay/Modbus_dataset"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "Medical-waste incinerator — real Siemens S7-1500 SCADA with injected attacks"
+    authors:
+      - name: "Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jordan University of Science and Technology)"
+    year: 2025
+    doi: "10.17632/vpcr4wpgfd.4"
+    url: "https://data.mendeley.com/datasets/vpcr4wpgfd/4"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Modbus/TCP lab series (baseline → recon → writes)"
+    authors:
+      - name: "solymx (GitHub)"
+    url: "https://github.com/solymx/modbus_pcap_test"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "4SICS Geek Lounge ICS lab captures (2015)"
+    authors:
+      - name: "Netresec AB and the 4SICS (now CS3STHLM) crew"
+    year: 2015
+    url: "https://www.netresec.com/?page=PCAP4SICS"
+    notes: "License: Freely published by Netresec for research/training — credit Netresec and 4SICS/CS3STHLM"
+  - type: dataset
+    title: "IEC-104 file transfer between FreyrSCADA simulators (Netresec)"
+    authors:
+      - name: "Netresec"
+    year: 2022
+    url: "https://www.netresec.com/"
+    notes: "License: Not stated — credit Netresec"
+  - type: dataset
+    title: "Industroyer2 — IEC-104 traffic of the real malware (Netresec)"
+    authors:
+      - name: "Netresec (Erik Hjelmvik)"
+    year: 2022
+    url: "https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "NIST CSMS testbed — process control system (baseline vs. Nessus scan)"
+    authors:
+      - name: "NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program"
+    year: 2019
+    url: "https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/pcs/"
+    notes: "License: No license stated — U.S. Government work (NIST); credit NIST"
+  - type: dataset
+    title: "NIST CSMS testbed — collaborative robotics system (21 security-control scenarios)"
+    authors:
+      - name: "NIST Engineering Laboratory — Cybersecurity for Smart Manufacturing Systems (CSMS) program"
+    year: 2019
+    url: "https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/crs/"
+    notes: "License: No license stated — U.S. Government work (NIST); credit NIST"
+  - type: dataset
+    title: "TRITON/TRISIS — TriStation malware execution capture (Nozomi tricotools)"
+    authors:
+      - name: "Nozomi Networks Labs"
+    year: 2018
+    url: "https://github.com/NozomiNetworks/tricotools"
+    notes: "License: BSD-3-Clause"
+  - type: dataset
+    title: "QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading"
+    authors:
+      - name: "Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology)"
+    year: 2017
+    url: "https://github.com/qut-infosec/2017QUT_DNP3"
+    notes: "License: No license stated — credit the authors"
+  - type: dataset
+    title: "QUT 2017 S7comm — mining-refinery testbed (64 attacks, 13 types)"
+    authors:
+      - name: "Rodofile, N. R., Radke, K., Foo, E. (Queensland University of Technology)"
+    year: 2017
+    url: "https://github.com/qut-infosec/2017QUT_S7comm"
+    notes: "License: No license stated — credit the authors"
+  - type: dataset
+    title: "ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium"
+    authors:
+      - name: "jenilv-07 (GitHub)"
+    url: "https://github.com/jenilv-07/ICS-pcap-files"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "Sherlock — process-aware intrusion detection on power-grid networks"
+    authors:
+      - name: "Wagner, Eric; Bader, Lennart; Wolsing, Konrad; Serror, Martin"
+    year: 2026
+    doi: "10.5281/zenodo.18467070"
+    url: "https://zenodo.org/records/18467070"
+    notes: "License: CC BY 4.0"
+  - type: dataset
+    title: "Suricata-verify — ICS protocol test captures"
+    authors:
+      - name: "OISF (Open Information Security Foundation)"
+    url: "https://github.com/OISF/suricata-verify"
+    notes: "License: MIT"
+  - type: dataset
+    title: "Synthetic OT samples mapped to ATT&CK for ICS"
+    authors:
+      - name: "AndreFroneman (GitHub)"
+    url: "https://github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool"
+    notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "Synthetic OT scenarios — benign plant vs. attack"
+    authors:
+      - name: "lindseynguyen (GitHub)"
+    url: "https://github.com/lindseynguyen/ics-pcap-analyzer"
+    notes: "License: MIT"
+  - type: dataset
+    title: "CybICS training platform — incident modules"
+    authors:
+      - name: "Matthias Niedermaier (CybICS)"
+    year: 2026
+    url: "https://github.com/mniedermaier/CybICS"
+    notes: "License: Repository MIT (training files not separately licensed) — credit CybICS"
+  - type: dataset
+    title: "TU Wien Smart Factory — Malware Communication in Smart Factories"
+    authors:
+      - name: "Brenner, B., Fabini, J., Offermanns, M., Semper, S. & Zseby, T. (TU Wien)"
+    year: 2025
+    doi: "10.48436/ghdc6-45k78"
+    url: "https://researchdata.tuwien.ac.at/records/ghdc6-45k78"
+    notes: "License: CC BY 4.0"

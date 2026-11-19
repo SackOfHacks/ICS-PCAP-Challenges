@@ -1,0 +1,200 @@
+# Protocol deep-dive — BACnet (204 unique captures)
+
+**Protocol library** · **Medium** · 31.4 MB · 80 capture file(s)
+
+> A deduplicated library of 204 BACnet captures from 6 public collections. Learn the protocol's grammar, then hunt its dangerous operations.
+
+> ⚠️ **Safety:** OT capture analysis is passive and safe. Never replay this traffic onto a real industrial network or send these commands to a real controller.
+
+## Scenario
+
+Every public BACnet sample in this range, deduplicated by SHA-256 across automayt-ics-pcap, cisa-icsnpp-test-traces, emreekin-ics-pcaps, inl-malcolm-ot-artifacts, iti-ics-security-tools-pcaps, kargs-bacnet-captures. Use it to learn what the protocol looks like on the wire — roles, operations, normal cadence — and to practice spotting the operations attackers abuse: atomicWriteFile (7), createObject/deleteObject (10/11), writeProperty/writePropertyMultiple (15/16), deviceCommunicationControl (17 — silence a device) and reinitializeDevice (20); Who-Is (unconfirmed 8) is the discovery sweep.
+
+## Objectives
+
+- Identify clients/masters and servers/outstations across the samples.
+- Enumerate the BACnet operations present.
+- Flag every dangerous operation and its source.
+- Map findings to ATT&CK for ICS (T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery).
+
+## Work it step by step
+
+Two complete walkthroughs — pick your tool. Run every command from the repo root.
+
+### With Pcapper
+
+[Pcapper](https://github.com/SackOfHacks/pcapper) runs the OT protocol analyzers for you.
+
+**1. Triage the capture**
+
+Duration, endpoints and protocol mix before you dive in. Pcapper's overview auto-detects the OT protocols and runs the matching analyzers.
+
+```bash
+pcapper 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' --overview
+```
+
+**2. Deep-dive with Pcapper (--bacnet)**
+
+Pcapper's protocol analyzer decodes the operations, flags anomalies, and --ot-commands normalizes every control/write across protocols.
+
+```bash
+pcapper 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' --bacnet --ot-commands
+```
+
+**3. Sweep the whole library**
+
+```bash
+pcapper data/automayt-ics-pcap/ --bacnet --ot-commands
+```
+
+**4. Map it to ATT&CK for ICS**
+
+Pcapper maps its detections to MITRE ATT&CK (Enterprise + ICS) and draws the attack path.
+
+```bash
+pcapper 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' --mitre
+```
+
+### With tshark / Wireshark
+
+The by-hand route: display filters, field extraction and statistics.
+
+**1. Triage the capture**
+
+Duration, endpoints and protocol mix before you dive in.
+
+```bash
+capinfos 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap'
+tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' -q -z io,phs | head -40
+```
+
+**2. Map the BACnet conversation**
+
+Who polls whom? Masters/clients vs. outstations/servers, and the operation mix per pair.
+
+```bash
+tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' -Y bacapp -T fields -e ip.src -e ip.dst -e bacapp.confirmed_service -e bacapp.unconfirmed_service | sort | uniq -c | sort -rn | head -25
+```
+
+**3. Hunt the dangerous operations**
+
+Flag atomicWriteFile (7), createObject/deleteObject (10/11), writeProperty/writePropertyMultiple (15/16), deviceCommunicationControl (17 — silence a device) and reinitializeDevice (20); Who-Is (unconfirmed 8) is the discovery sweep.
+
+```bash
+tshark -r 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' -Y 'bacapp.confirmed_service in {7, 10, 11, 15, 16, 17, 20}' -T fields -e frame.time -e ip.src -e ip.dst -e _ws.col.Info | head -40
+```
+
+**4. Sweep the whole library**
+
+```bash
+for f in 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap' 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_services.pcap' 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_error_reject_abort.pcap' 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_example.pcap' 'data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_segmented_data.pcap' 'data/iti-ics-security-tools-pcaps/pcaps/BACnet/bacnet_test.pcap' 'data/automayt-ics-pcap/TRIDIUM/plugfest-tridium-2/plugfest-tridium-2.pcap' 'data/automayt-ics-pcap/TRIDIUM/plugfest-tridium-1/plugfest-tridium-1.pcap' 'data/automayt-ics-pcap/TRIDIUM/tridium-jace2/tridium-jace2.pcap' 'data/automayt-ics-pcap/BACNET/BACnet-BBMD-on-same-subnet/BACnet-BBMD-on-same-subnet.pcap'; do echo "== $f"; tshark -r "$f" -Y 'bacapp.confirmed_service in {7, 10, 11, 15, 16, 17, 20}' 2>/dev/null | head -3; done
+```
+
+## Hints
+
+<details><summary>Hint 1</summary>
+
+Wireshark display filter for the protocol: bacnet || bacapp || bvlc
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+Dangerous-operation filter: bacapp.confirmed_service in {7, 10, 11, 15, 16, 17, 20}
+
+</details>
+
+<details><summary>Hint 3</summary>
+
+Many library files are tiny protocol samples — read them packet by packet in Wireshark.
+
+</details>
+
+## Solution
+
+<details><summary>Reveal walkthrough / answer</summary>
+
+A library, not a single puzzle: the deliverable is a per-capture table of roles and operations, with the dangerous ones flagged (atomicWriteFile (7), createObject/deleteObject (10/11), writeProperty/writePropertyMultiple (15/16), deviceCommunicationControl (17 — silence a device) and reinitializeDevice (20); Who-Is (unconfirmed 8) is the discovery sweep). ATT&CK for ICS: T0836 Modify Parameter · T0816 Device Restart/Shutdown · T0846 Remote System Discovery. Sources are credited per collection in each folder's PROVENANCE.md.
+
+**Computed evidence (auto-extracted with tshark — verify it yourself):** BACnet operations — atomicReadFile ×2, readProperty ×2, 18 ×1; dangerous-operation matches: 0 for the BACnet filter (5 BACnet packets present, so the zero is real) (basis: 3 of 80 capture file(s), first 300,000 packets each, smallest files carrying BACnet chosen)
+
+_Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Smith (automayt) · CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm) · ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign · BACnet capture library (kargs.net) — Steve Karg (BACnet Stack author)._
+
+</details>
+
+## Dataset & credit
+
+**ICS-pcap collection (automayt / Jason Smith) — Jason Smith (automayt) · CISA ICSNPP — Zeek ICS parser test traces — CISA and Idaho National Laboratory (ICSNPP project) · ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset — Emre Ekin (ICS Defense, icsdefense.net) · INL Malcolm test artifacts — OT protocol samples — Idaho National Laboratory (Malcolm) · ITI ICS-Security-Tools — sample ICS protocol captures — Information Trust Institute (ITI), University of Illinois Urbana-Champaign · BACnet capture library (kargs.net) — Steve Karg (BACnet Stack author)** — license: varies by collection — see each folder's PROVENANCE.md
+
+- [Dataset source — ICS-pcap collection (automayt / Jason Smith)](https://github.com/automayt/ICS-pcap)
+- [Dataset source — CISA ICSNPP — Zeek ICS parser test traces](https://github.com/cisagov/ICSNPP)
+- [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
+- [Dataset source — INL Malcolm test artifacts — OT protocol samples](https://github.com/idaholab/Malcolm-Test-Artifacts)
+- [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+- [Dataset source — BACnet capture library (kargs.net)](https://kargs.net/captures/)
+- [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
+
+<details><summary>Capture files</summary>
+
+- `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap`
+- `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_services.pcap`
+- `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_error_reject_abort.pcap`
+- `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_example.pcap`
+- `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_segmented_data.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/BACnet/bacnet_test.pcap`
+- `data/automayt-ics-pcap/TRIDIUM/plugfest-tridium-2/plugfest-tridium-2.pcap`
+- `data/automayt-ics-pcap/TRIDIUM/plugfest-tridium-1/plugfest-tridium-1.pcap`
+- `data/automayt-ics-pcap/TRIDIUM/tridium-jace2/tridium-jace2.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnet-BBMD-on-same-subnet/BACnet-BBMD-on-same-subnet.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnet-exception-schedule-property-2/BACnet-exception-schedule-property-2.pcapng`
+- `data/automayt-ics-pcap/BACNET/BACnetIP-MSTP-Mix/BACnetIP-MSTP-Mix.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnetARRAY-element-0/BACnetARRAY-element-0.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnet-MSTP-SNAP-Mixed/BACnet-MSTP-SNAP-Mixed.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnetARRAY-elements/BACnetARRAY-elements.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnetL_SchedRPM/BACnetL_SchedRPM.pcapng`
+- `data/automayt-ics-pcap/BACNET/BACnet-exception-schedule-property-1/BACnet-exception-schedule-property-1.pcapng`
+- `data/automayt-ics-pcap/BACNET/mstp_wtap/mstp_wtap.pcap`
+- `data/automayt-ics-pcap/BACNET/BACnetDeviceObjectReference/BACnetDeviceObjectReference.pcap`
+- `data/automayt-ics-pcap/BACNET/cimetrics_mstp/cimetrics_mstp.pcap`
+- `data/emreekin-ics-pcaps/BacNET/bacnet-ethernet.pcap`
+- `data/emreekin-ics-pcaps/BacNET/mstp_20090227094623.pcap`
+- `data/emreekin-ics-pcaps/BacNET/bacnet-ethernet-device.pcap`
+- `data/emreekin-ics-pcaps/BacNET/bacnet-ip.pcap`
+- `data/emreekin-ics-pcaps/BacNET/bacnet-properties.pcap`
+- `data/kargs-bacnet-captures/TrendLogMultipleReadRange.pcap`
+- `data/kargs-bacnet-captures/mstp-whois-basrt-mix2.cap`
+- `data/kargs-bacnet-captures/TC51103_BTL-9.21.1.X3_bool_ext_3.pcap`
+- `data/kargs-bacnet-captures/Tower333%20lighting%205min%20IP.pcap`
+- `data/kargs-bacnet-captures/lmbc-300-bootload.pcap`
+- `data/kargs-bacnet-captures/mstp_20091013122451.cap`
+- `data/kargs-bacnet-captures/polarsoft-free-range-router.cap`
+- `data/kargs-bacnet-captures/SynergyReadProperties.cap`
+- `data/kargs-bacnet-captures/state_text_good.cap`
+- `data/kargs-bacnet-captures/config-tool-discover.cap`
+- `data/kargs-bacnet-captures/TestRun8%20-%20Outside%20of%20Router.pcap`
+- `data/kargs-bacnet-captures/rpm_multiple_scheduler_bug.pcap`
+- `data/kargs-bacnet-captures/ReadPropertyMultipleDeviceAll.cap`
+- `data/kargs-bacnet-captures/confirmedEventNotification.cap`
+- `data/kargs-bacnet-captures/atomic-empty-file.cap`
+- `data/kargs-bacnet-captures/whois-iam.cap`
+- `data/kargs-bacnet-captures/TestRun8%20-%20Internal%20side%20of%20Router.pcap`
+- `data/kargs-bacnet-captures/arf-empty-file.cap`
+- `data/kargs-bacnet-captures/WhoIs_I-Am_Epics.cap`
+- `data/kargs-bacnet-captures/mstp_20091013130259.cap`
+- `data/kargs-bacnet-captures/WhoIsRouterToNetwork.cap`
+- `data/kargs-bacnet-captures/bip-readwrite-test.cap`
+- `data/kargs-bacnet-captures/read-properties.cap`
+- `data/kargs-bacnet-captures/Subordinate%20List.pcap`
+- `data/kargs-bacnet-captures/plugfest-2011-delta-2.pcap`
+- `data/kargs-bacnet-captures/bvlc-fdreg-readprop-47809.cap`
+- `data/kargs-bacnet-captures/TestRun4%20-%20Internal%20side%20of%20Router.pcap`
+- `data/kargs-bacnet-captures/TrendLogMultipleReadRange2.pcap`
+- `data/kargs-bacnet-captures/atomic-read-file-1470.cap`
+- `data/kargs-bacnet-captures/mstp_20091013121410.cap`
+- `data/kargs-bacnet-captures/schedule-rpm-foreign.pcap`
+- `data/kargs-bacnet-captures/mstp_20090304110410.cap`
+- `data/kargs-bacnet-captures/log-buffer_readRange.pcap`
+- `data/kargs-bacnet-captures/PrivateTransferError.cap`
+- `data/kargs-bacnet-captures/TC51103_BTL-9.21.1.X3_int_ext_1.pcap`
+
+</details>

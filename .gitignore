@@ -1,0 +1,21 @@
+# The captures live in data/ locally but are never committed: they total hundreds of GB, many files
+# exceed GitHub's limits, and they belong to their authors. Repopulate data/ with scripts/fetch.py.
+data/
+*.pcap
+*.pcapng
+*.cap
+*.splitpart*
+
+# output you may generate while working the challenges
+zeek-out/
+suri*/
+objects/
+carved/
+*.log
+!challenges/*.md
+
+# misc
+__pycache__/
+*.pyc
+.DS_Store
+.copy.log
