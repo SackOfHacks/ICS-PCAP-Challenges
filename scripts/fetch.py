@@ -5,8 +5,9 @@ Datasets whose licence allows redistribution are mirrored as assets of this repo
 release (`data-v1`): the fetcher downloads the parts, verifies every SHA-256, unpacks them safely and
 restores the gzip-compressed captures. Every other dataset is downloaded from its ORIGINAL source
 (Zenodo, TU Wien, Netresec, GitHub, MEGA, ...): archives are extracted, only packet captures plus
-label / documentation files are kept, captures >= 2 GB are split into < 2 GiB parts (so the file
-names match the challenge catalog) and a PROVENANCE.md credit file is written. Downloads resume.
+label / documentation files are kept, captures >= 2 GB are split into < 2 GiB parts and captures published
+without a file extension get .pcap/.pcapng from their magic bytes (so the file names match the challenge
+catalog), and a PROVENANCE.md credit file is written. Downloads resume.
 
 Usage (run from the repo root):
   python3 scripts/fetch.py --list              # what's available + sizes
@@ -146,7 +147,9 @@ def keep_only(d, keep):
 
 def normalize_capture_names(d):
     """Captures identified by their magic bytes but lacking an extension get one (.pcapng for pcapng, else .pcap):
-    some tools (Pcapper among them) pick files by extension. ELEGANT's cap_<n>_<timestamp> files need this."""
+    some tools (Pcapper among them) pick files by extension. ELEGANT's cap_<n>_<timestamp> files need this.
+    Returns the number of files renamed."""
+    renamed = 0
     for dp, _, fns in os.walk(d):
         for f in fns:
             if f.lower().endswith((".pcap", ".pcapng", ".cap")): continue
@@ -157,7 +160,8 @@ def normalize_capture_names(d):
                 continue
             if m in MAGIC:
                 ext = ".pcapng" if m == b"\x0a\x0d\x0d\x0a" else ".pcap"
-                if not os.path.exists(p + ext): os.rename(p, p + ext)
+                if not os.path.exists(p + ext): os.rename(p, p + ext); renamed += 1
+    return renamed
 
 def split_large(d):
     for dp, _, fns in os.walk(d):
@@ -194,7 +198,10 @@ def provenance(ds, d):
     L += [f"- **Authors / owner:** {ds.get('authors', '—')}", f"- **Year:** {ds.get('year') or '—'}",
           f"- **License / terms:** {ds.get('license', 'see source')}",
           f"- **Retrieved:** {datetime.date.today().isoformat()} with scripts/fetch.py",
-          f"- **Captures here:** {n} files, {b/1e9:.2f} GB"]
+          f"- **Captures here:** {n} files, {b/1e9:.2f} GB",
+          "- **Changes by the fetcher:** none to the packets. Captures >= 2 GB are split into < 2 GiB `.partNNN.pcap` parts",
+          "  (tcpdump); captures published without a file extension get `.pcap`/`.pcapng` from their magic bytes; only",
+          "  the files the challenge catalog uses are kept."]
     if ds.get("citation"): L += ["", "## Cite as", "", ds["citation"]]
     L += ["", "## Files", ""] + [f"- `{r}` — {s/1e6:.1f} MB" for r, s in sorted(rows)[:400]]
     open(os.path.join(d, "PROVENANCE.md"), "w").write("\n".join(L) + "\n")
@@ -325,7 +332,8 @@ def fetch(ds):
             os.makedirs(target, exist_ok=True); shutil.move(dest, os.path.join(target, name))
     extract_nested(xd); gunzip_captures(xd)
     prune(xd, ds.get("include_re"), ds.get("keep_extra_re"))
-    normalize_capture_names(xd)
+    renamed = normalize_capture_names(xd)
+    if renamed: log(f"  named {renamed} capture(s) published without a file extension .pcap/.pcapng (by their magic bytes)")
     dropped = keep_only(xd, ds.get("keep"))
     if dropped: log(f"  scope: removed {dropped} file(s) outside the ICS/OT/SCADA catalog")
     split_large(xd)

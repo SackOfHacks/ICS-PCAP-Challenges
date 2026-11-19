@@ -127,8 +127,8 @@ gets each dataset from the right place:
 
 - **This repository's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1)**
   mirrors the **41 datasets whose licence (or authors) allow redistribution** (~346 GB of captures),
-  unmodified, as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
-  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation. 22 of them are still being uploaded; until their parts are all there, `fetch.py` takes them from the original source.
+  as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
+  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation.
 - **The original sources** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle, MEGA, …) for the other
   **29 datasets**, which their authors published without a licence that allows re-hosting. The fetcher
   unpacks them, keeps only the files the challenges use and writes a `PROVENANCE.md` credit file.
@@ -142,6 +142,10 @@ python3 scripts/build.py                                # re-index after fetchin
 ```
 
 Downloads resume if interrupted — just run the same command again.
+
+Either way you get the publishers' own packets. Two things differ from their original download, the same on both
+paths: captures over 2 GB are split into < 2 GiB parts, and captures published without a file extension get
+`.pcap`/`.pcapng` (chosen from their magic bytes), because some tools pick capture files by extension.
 
 ## 🛡️ Safety
 

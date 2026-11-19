@@ -2923,7 +2923,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "data4cyber-distribution-grid.tar.part000",
+     "size": 430755840,
+     "sha256": "24a088ce95a0e748572a7fc9ac4c7763ef2b9002a1115493439e1bee65e4bb94"
+    }
+   ],
+   "archive_sha256": "24a088ce95a0e748572a7fc9ac4c7763ef2b9002a1115493439e1bee65e4bb94",
+   "bytes_packed": 430755840
+  }
  },
  {
   "id": "digitalbond-s4x15",
@@ -4393,7 +4405,24 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "elegant-plc-dos-mitm.tar.part000",
+     "size": 1900000000,
+     "sha256": "cc65aac5d03759d63d7edc4f0bbcb0040814b8934062ab27bfc22dbd859f6e71"
+    },
+    {
+     "name": "elegant-plc-dos-mitm.tar.part001",
+     "size": 1219779840,
+     "sha256": "efc59e079e52ca2437ffcf9e3a64eb05ffa55c2cebc101c936b562d0999d2d4d"
+    }
+   ],
+   "archive_sha256": "92cae01dbbbbf6310ea27ab1746f5698c05159bbcbbc4c77b504ab1ad4805d5d",
+   "bytes_packed": 3119779840
+  }
  },
  {
   "id": "emreekin-ics-pcaps",
@@ -5518,7 +5547,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "geothermal-well-scada-ids-2026.tar.part000",
+     "size": 749649920,
+     "sha256": "f7242f1f648d2ded7a014e740490e079d6b2b63569482fc570cb384200d046ef"
+    }
+   ],
+   "archive_sha256": "f7242f1f648d2ded7a014e740490e079d6b2b63569482fc570cb384200d046ef",
+   "bytes_packed": 749649920
+  }
  },
  {
   "id": "goose-dos-sicam-meter",
@@ -5551,7 +5592,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "goose-dos-sicam-meter.tar.part000",
+     "size": 9000960,
+     "sha256": "ad21c628d9de76950966b7ec73fca8ddfdc6b27849bda7c03032ada464bf5a68"
+    }
+   ],
+   "archive_sha256": "ad21c628d9de76950966b7ec73fca8ddfdc6b27849bda7c03032ada464bf5a68",
+   "bytes_packed": 9000960
+  }
  },
  {
   "id": "goose-false-data-injection",
@@ -5584,7 +5637,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "goose-false-data-injection.tar.part000",
+     "size": 3420160,
+     "sha256": "835a7a652b7ae8e5a3e2c8703fe774aa28e4a82cd0b5d43329b9cedc8741fe76"
+    }
+   ],
+   "archive_sha256": "835a7a652b7ae8e5a3e2c8703fe774aa28e4a82cd0b5d43329b9cedc8741fe76",
+   "bytes_packed": 3420160
+  }
  },
  {
   "id": "newbee-ics-ctf",
@@ -5649,7 +5714,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "ics-dataset-normal-fault-attack-2025.tar.part000",
+     "size": 732876800,
+     "sha256": "086b840fa7614eab401d6370b0e9650f4c574fe81c8daee284938ddd7fc63653"
+    }
+   ],
+   "archive_sha256": "086b840fa7614eab401d6370b0e9650f4c574fe81c8daee284938ddd7fc63653",
+   "bytes_packed": 732876800
+  }
  },
  {
   "id": "ics-flow-icssim",
@@ -9876,7 +9953,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "kios-der-energy-mgmt-attacks.tar.part000",
+     "size": 256000,
+     "sha256": "1a5869b32d1eb5e3b347219c2a9842e9d32cefa902460632eb320d66a04c2e5e"
+    }
+   ],
+   "archive_sha256": "1a5869b32d1eb5e3b347219c2a9842e9d32cefa902460632eb320d66a04c2e5e",
+   "bytes_packed": 256000
+  }
  },
  {
   "id": "kios-electron-suc4-power-attacks",
@@ -9941,7 +10030,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "kios-electron-suc4-power-attacks.tar.part000",
+     "size": 175196160,
+     "sha256": "872f45c7f208b1c652996e2e33da2f493d986d334f41cfba734afac1c712a0b3"
+    }
+   ],
+   "archive_sha256": "872f45c7f208b1c652996e2e33da2f493d986d334f41cfba734afac1c712a0b3",
+   "bytes_packed": 175196160
+  }
  },
  {
   "id": "knxnetip-ids",
@@ -10164,7 +10265,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "maynard-iec104-testbed.tar.part000",
+     "size": 22794240,
+     "sha256": "c8a94fb5e9ad2485cd0b0e15c2624b8b9ced7d7333ccdaf36c7203b124bf545f"
+    }
+   ],
+   "archive_sha256": "c8a94fb5e9ad2485cd0b0e15c2624b8b9ced7d7333ccdaf36c7203b124bf545f",
+   "bytes_packed": 22794240
+  }
  },
  {
   "id": "medical-waste-incinerator-s7-1500",
@@ -10405,7 +10518,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "mininet-power-system-scanning.tar.part000",
+     "size": 337920,
+     "sha256": "1138165f365cbecafd53da3e1f45b4b3c51f61ae872af5ce29d0161150450da5"
+    }
+   ],
+   "archive_sha256": "1138165f365cbecafd53da3e1f45b4b3c51f61ae872af5ce29d0161150450da5",
+   "bytes_packed": 337920
+  }
  },
  {
   "id": "modbus-labs-solymx",
@@ -10725,7 +10850,34 @@
    "mirrored": true,
    "reason": "U.S. Government work (NIST): not subject to copyright in the United States (17 U.S.C. §105)"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "nist-csms-process-control-pcs.tar.part000",
+     "size": 1900000000,
+     "sha256": "812d20ca8bdccc454c7ac4e51c75cadcb34733330a5a6b528c1125c6160e5f53"
+    },
+    {
+     "name": "nist-csms-process-control-pcs.tar.part001",
+     "size": 1900000000,
+     "sha256": "8707cc86350880ab5d7ad5395b237129750838089bb37ea4d65211181332e5d2"
+    },
+    {
+     "name": "nist-csms-process-control-pcs.tar.part002",
+     "size": 1900000000,
+     "sha256": "9af2f592d6b79fedfb87ae2f5ecd00b021f5b1979c44dc3c5ccc4dfef0b78e8c"
+    },
+    {
+     "name": "nist-csms-process-control-pcs.tar.part003",
+     "size": 85804800,
+     "sha256": "599aee30a63aa67a2bac6914a4cf795eaacab39659023fbc33cb9a334c158191"
+    }
+   ],
+   "archive_sha256": "3530c4ae2e6b95b76c1b0b9204752f768c3d005e0c2142b53387897486e82f94",
+   "bytes_packed": 5785804800
+  }
  },
  {
   "id": "nist-csms-robotics-crs",
@@ -11184,7 +11336,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "powerduck-goose-attacks.tar.part000",
+     "size": 5611520,
+     "sha256": "1e7b0faa2b6cb7be13c3fb2b8d8385c2c4efecca0db5b41061a6813713f525ab"
+    }
+   ],
+   "archive_sha256": "1e7b0faa2b6cb7be13c3fb2b8d8385c2c4efecca0db5b41061a6813713f525ab",
+   "bytes_packed": 5611520
+  }
  },
  {
   "id": "qut-dnp3-2017",
@@ -16804,7 +16968,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "r-goose-tunnelled-goose.tar.part000",
+     "size": 614400,
+     "sha256": "35f70732aedee2e64e332a3d6be753ef223fcf86cb02c7878da46575a8352032"
+    }
+   ],
+   "archive_sha256": "35f70732aedee2e64e332a3d6be753ef223fcf86cb02c7878da46575a8352032",
+   "bytes_packed": 614400
+  }
  },
  {
   "id": "s7comm-scenarios-jenilv07",
@@ -17076,7 +17252,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "sandworm-apt-wams.tar.part000",
+     "size": 1648332800,
+     "sha256": "a73c699fb5e3519f5aa2fb73a64ae0c211af10cb53ef164a49f82ef4fcb2b8b3"
+    }
+   ],
+   "archive_sha256": "a73c699fb5e3519f5aa2fb73a64ae0c211af10cb53ef164a49f82ef4fcb2b8b3",
+   "bytes_packed": 1648332800
+  }
  },
  {
   "id": "sherlock-power-grid-ids",
@@ -17427,7 +17615,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "sherlock-power-grid-ids.tar.part000",
+     "size": 890501120,
+     "sha256": "50ba502f2a098323ac3aa7d3b9a11bbcfbf05ad642eb8ef2bb41ead444f39e11"
+    }
+   ],
+   "archive_sha256": "50ba502f2a098323ac3aa7d3b9a11bbcfbf05ad642eb8ef2bb41ead444f39e11",
+   "bytes_packed": 890501120
+  }
  },
  {
   "id": "substation-apt-goose",
@@ -17460,7 +17660,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "substation-apt-goose.tar.part000",
+     "size": 15544320,
+     "sha256": "07dc90bc9b65a5098e1248b1523a06f8aa83f7962c95c9f2b42253d4a97d2a34"
+    }
+   ],
+   "archive_sha256": "07dc90bc9b65a5098e1248b1523a06f8aa83f7962c95c9f2b42253d4a97d2a34",
+   "bytes_packed": 15544320
+  }
  },
  {
   "id": "substation-ml-ids-iec61850-iec104",
@@ -17517,7 +17729,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY-NC-SA 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "substation-ml-ids-iec61850-iec104.tar.part000",
+     "size": 280422400,
+     "sha256": "9aaed20b17ffe0c5c977056cad0d7c2dfc3b47a06915943b523fdc92fef4d2a5"
+    }
+   ],
+   "archive_sha256": "9aaed20b17ffe0c5c977056cad0d7c2dfc3b47a06915943b523fdc92fef4d2a5",
+   "bytes_packed": 280422400
+  }
  },
  {
   "id": "suricata-verify-ics",
@@ -18294,7 +18518,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "tudelft-digital-substation-cpps.tar.part000",
+     "size": 1765099520,
+     "sha256": "801d24f88a3f5e0a40ce197d3ea7e62797a5742303b64373833f1979cffc11f1"
+    }
+   ],
+   "archive_sha256": "801d24f88a3f5e0a40ce197d3ea7e62797a5742303b64373833f1979cffc11f1",
+   "bytes_packed": 1765099520
+  }
  },
  {
   "id": "tuwien-tuesday-dos",
@@ -18358,7 +18594,119 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "tuwien-smart-factory.tar.part000",
+     "size": 1900000000,
+     "sha256": "1f4a0590997fca214b331819a54c0de1ba5de260ac3fd021569f4296ddc49583"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part001",
+     "size": 1900000000,
+     "sha256": "c346de70cee5c974b3994e500d93a251a85cd23e971882a47383b5484d301a74"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part002",
+     "size": 1900000000,
+     "sha256": "3a541d9ba304aa4de00bdc8c1665feb8892080f8432d3f0354c036255798f496"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part003",
+     "size": 1900000000,
+     "sha256": "e1ebbe1b4d665cb01456bfdfd55997be67f393b68b3614558cce7ae4b4fd947c"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part004",
+     "size": 1900000000,
+     "sha256": "0cf9cf0bfbc030164663abf504f5cadc36e3532a6fc547177b80434746fdddcd"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part005",
+     "size": 1900000000,
+     "sha256": "86b515d969b70f2d499264851e835d203f8c5c347e5236c27ab147614719e51d"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part006",
+     "size": 1900000000,
+     "sha256": "878d7d4904f385244744b97aedfee45a0cb2d090d8a958de94ff38aead3bbf63"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part007",
+     "size": 1900000000,
+     "sha256": "cac373dbc7ddf02d13d265b74711bfdcc529093af21b52ff007e523a759dc0ce"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part008",
+     "size": 1900000000,
+     "sha256": "a6bd7473e13fa2436c0eb969657ea71e97316be59722d0e00cb5fa6e3b2d35c9"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part009",
+     "size": 1900000000,
+     "sha256": "1e7b3dffe9fc800a052e957463743206632946a1ba223afb7d8b0914951be6ca"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part010",
+     "size": 1900000000,
+     "sha256": "bd54c1bad0d7b469f763c7f28241f5ffa0afdf8741cea0a8d89a7ad9251132ed"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part011",
+     "size": 1900000000,
+     "sha256": "1fc994dbbc8510e973c5c0d2ceaec700da9a61656385180dece6d8ace520e729"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part012",
+     "size": 1900000000,
+     "sha256": "9d6d5d2401e7f1dac7f6a95258d6724b95e4c188b12a221d1872981675e3fe93"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part013",
+     "size": 1900000000,
+     "sha256": "e58b8d731bb220e836a35f1d76ed8c02f699d7f231cc4f6d89c1f04c56e5a770"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part014",
+     "size": 1900000000,
+     "sha256": "aa4f7281c48916ead712e970549dc17486c788aa6a604070813508fbfa64d426"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part015",
+     "size": 1900000000,
+     "sha256": "7edc87bee38755a758d284991bc641fd516467a456a5260da80e5258d1456fda"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part016",
+     "size": 1900000000,
+     "sha256": "55eaad1fc774e8d1998b276b6ffeb10572d6ed182f1d574206636d21772036f2"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part017",
+     "size": 1900000000,
+     "sha256": "d2209de36d3d5731fc578d4f408bf694fe4e21a9b4c324978b9c3eb83d1ba56e"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part018",
+     "size": 1900000000,
+     "sha256": "94788ac152f58195d88aa2704a696a7a03e7926da7360fe19edc0419571e3a5f"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part019",
+     "size": 1900000000,
+     "sha256": "36731c216f8414e03d34ef69140ff33a3dee5e31c937d35416da12e786701777"
+    },
+    {
+     "name": "tuwien-smart-factory.tar.part020",
+     "size": 1015311360,
+     "sha256": "3ee11756a2c3a20a492cb19aa77d963ae1b48ea18c689b5aabdebe62efe1c43d"
+    }
+   ],
+   "archive_sha256": "7da4836d84df39f7143b9e97ceebc5dc0454e75e6abc9a523d52023a5b2df39c",
+   "bytes_packed": 39015311360
+  }
  },
  {
   "id": "uowm-dnp3-ids",
@@ -19052,7 +19400,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "uowm-dnp3-ids.tar.part000",
+     "size": 605788160,
+     "sha256": "3609f1606217444d5d46c4447351bd9c06c0312e1829d2ba7e76f6289a474d27"
+    }
+   ],
+   "archive_sha256": "3609f1606217444d5d46c4447351bd9c06c0312e1829d2ba7e76f6289a474d27",
+   "bytes_packed": 605788160
+  }
  },
  {
   "id": "uowm-iec104-ids",
@@ -19759,7 +20119,24 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "uowm-iec104-ids.tar.part000",
+     "size": 1900000000,
+     "sha256": "4217e1fa94000fc9eee87d01a0b47e8538192b00379fb0621184c1a36dfc5798"
+    },
+    {
+     "name": "uowm-iec104-ids.tar.part001",
+     "size": 1835255040,
+     "sha256": "1f7ca702164d8c0ae1e669e06233575f7270e75a9ef55066a4f7bc93e924c54e"
+    }
+   ],
+   "archive_sha256": "af4ad38584b634b40368db57b547fdc961138fa93019b48c8d07f06710a3ddaf",
+   "bytes_packed": 3735255040
+  }
  },
  {
   "id": "zero-swarm-modbus",
@@ -19804,6 +20181,18 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "zero-swarm-modbus.tar.part000",
+     "size": 67461120,
+     "sha256": "7b9d43b2dd4fd220b63078e561bfd8a069faa28441f3dbf185878906346ddecd"
+    }
+   ],
+   "archive_sha256": "7b9d43b2dd4fd220b63078e561bfd8a069faa28441f3dbf185878906346ddecd",
+   "bytes_packed": 67461120
+  }
  }
 ]
