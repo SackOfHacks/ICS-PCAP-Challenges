@@ -24,7 +24,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py s7comm-scenarios-jenilv07
 ```
 
-- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~43.6 MB once fetched
+- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~34.1 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/jenilv-07/ICS-pcap-files](https://github.com/jenilv-07/ICS-pcap-files)
 
@@ -122,7 +122,7 @@ _Dataset credit: jenilv-07 (GitHub) · License: No license stated in repo — cr
 - [Dataset source — ICS sample collection (jenilv-07) — S7comm scenarios, Contro](https://github.com/jenilv-07/ICS-pcap-files)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/s7comm-scenarios-jenilv07/comman/1-S7comm-VarService-Read-DB1DBD0.pcap`
 - `data/s7comm-scenarios-jenilv07/comman/2-S7comm-VarService-CyclicData-1s.pcap`

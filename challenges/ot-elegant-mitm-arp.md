@@ -145,7 +145,7 @@ _Dataset credit: Sousa, B.; Arieiro, M.; Pereira, V.; Cruz, T. (University of Co
 - [DOI 10.21227/mewp-g646](https://doi.org/10.21227/mewp-g646)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/elegant-plc-dos-mitm/IEEE_DataPort/MiTM/MiTM_ARP_Poisoning/cap_00001_20210318034103.pcapng`
 - `data/elegant-plc-dos-mitm/IEEE_DataPort/MiTM/MiTM_ARP_Poisoning/cap_00001_20210318084952.pcapng`

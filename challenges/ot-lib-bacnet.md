@@ -37,7 +37,7 @@ python3 scripts/fetch.py automayt-ics-pcap cisa-icsnpp-test-traces emreekin-ics-
 - **[ITI ICS-Security-Tools — sample ICS protocol captures](../DATASETS.md#iti-ics-security-tools-pcaps)** (`iti-ics-security-tools-pcaps`), ~0.12 GB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/ITI/ICS-Security-Tools/tree/master/pcaps](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- **[BACnet capture library (kargs.net)](../DATASETS.md#kargs-bacnet-captures)** (`kargs-bacnet-captures`), ~0.24 GB once fetched
+- **[BACnet capture library (kargs.net)](../DATASETS.md#kargs-bacnet-captures)** (`kargs-bacnet-captures`), ~42.1 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [kargs.net/captures](https://kargs.net/captures/)
 
@@ -160,7 +160,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — BACnet capture library (kargs.net)](https://kargs.net/captures/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (80)</summary>
 
 - `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_malformed_service_tags.pcap`
 - `data/cisa-icsnpp-test-traces/icsnpp-bacnet/bacnet_services.pcap`
@@ -222,5 +222,25 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - `data/kargs-bacnet-captures/log-buffer_readRange.pcap`
 - `data/kargs-bacnet-captures/PrivateTransferError.cap`
 - `data/kargs-bacnet-captures/TC51103_BTL-9.21.1.X3_int_ext_1.pcap`
+- `data/kargs-bacnet-captures/synergy-broken-rpm.cap`
+- `data/kargs-bacnet-captures/cov-testing-3.pcap`
+- `data/kargs-bacnet-captures/wp-weekly-schedule-test.cap`
+- `data/kargs-bacnet-captures/mstp_20090304105820.cap`
+- `data/kargs-bacnet-captures/wireshark_BBMDError.pcap`
+- `data/kargs-bacnet-captures/epics-1.cap`
+- `data/kargs-bacnet-captures/atomic-write-file-3.cap`
+- `data/kargs-bacnet-captures/TA02%20MST.cap`
+- `data/kargs-bacnet-captures/ReadPropertyMultiple.cap`
+- `data/kargs-bacnet-captures/rp.cap`
+- `data/kargs-bacnet-captures/mstp_20091013124218.cap`
+- `data/kargs-bacnet-captures/who-is-i-am.cap`
+- `data/kargs-bacnet-captures/TrendLogMultipleUsage.pcap`
+- `data/kargs-bacnet-captures/getEventInformation.pcap`
+- `data/kargs-bacnet-captures/properties.cap`
+- `data/kargs-bacnet-captures/cov-testing-2.pcap`
+- `data/kargs-bacnet-captures/TAO2%20TES.39A.cap`
+- `data/kargs-bacnet-captures/action-list.pcap`
+- `data/kargs-bacnet-captures/whois-basrtp-b-1.cap`
+- `data/kargs-bacnet-captures/mstp_mix_basrt_V124_bad.cap`
 
 </details>

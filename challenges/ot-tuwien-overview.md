@@ -127,7 +127,7 @@ No single answer — it's a characterization exercise. Baseline the normal days 
 - [TU Wien Smart Factory dataset](https://researchdata.tuwien.ac.at/records/ghdc6-45k78)
 - [DOI 10.48436/ghdc6-45k78](https://doi.org/10.48436/ghdc6-45k78)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (73)</summary>
 
 - `data/tuwien-smart-factory/captures/a_day1.pcap.part000.pcap`
 - `data/tuwien-smart-factory/captures/a_day1.pcap.part001.pcap`
@@ -189,5 +189,18 @@ No single answer — it's a characterization exercise. Baseline the normal days 
 - `data/tuwien-smart-factory/captures/a_day_tuesday_dos.pcap.part052.pcap`
 - `data/tuwien-smart-factory/captures/a_day_tuesday_dos.pcap.part053.pcap`
 - `data/tuwien-smart-factory/captures/a_day_tuesday_dos.pcap.part054.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part000.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part001.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part002.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part003.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part004.pcap`
+- `data/tuwien-smart-factory/captures/s_day1.pcap.part005.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part000.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part001.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part002.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part003.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part004.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part005.pcap`
+- `data/tuwien-smart-factory/captures/s_day2.pcap.part006.pcap`
 
 </details>

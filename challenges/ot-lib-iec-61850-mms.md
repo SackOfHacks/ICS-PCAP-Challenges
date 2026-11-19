@@ -31,7 +31,7 @@ python3 scripts/fetch.py emreekin-ics-pcaps ics-pcaps-haolipeng inl-malcolm-ot-a
 - **[ICS protocol sample captures (IEC-104, MMS and more)](../DATASETS.md#ics-pcaps-haolipeng)** (`ics-pcaps-haolipeng`), ~4.2 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/haolipeng/ics-pcaps](https://github.com/haolipeng/ics-pcaps)
-- **[INL Malcolm test artifacts — OT protocol samples](../DATASETS.md#inl-malcolm-ot-artifacts)** (`inl-malcolm-ot-artifacts`), ~0.20 GB once fetched
+- **[INL Malcolm test artifacts — OT protocol samples](../DATASETS.md#inl-malcolm-ot-artifacts)** (`inl-malcolm-ot-artifacts`), ~99.2 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/idaholab/Malcolm-Test-Artifacts](https://github.com/idaholab/Malcolm-Test-Artifacts)
 - **[ITI ICS-Security-Tools — sample ICS protocol captures](../DATASETS.md#iti-ics-security-tools-pcaps)** (`iti-ics-security-tools-pcaps`), ~0.12 GB once fetched
@@ -153,7 +153,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (76)</summary>
 
 - `data/iti-ics-security-tools-pcaps/pcaps/IEC61850/piccolo.pcap`
 - `data/iti-ics-security-tools-pcaps/pcaps/IEC61850/Sample_File_MMS_and_GOOSE.pcap`
@@ -215,5 +215,21 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_mms_string.pcap`
 - `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_bit_string.pcap`
 - `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_boolean.pcap`
+- `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_binary_time.pcap`
+- `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_bcd.pcap`
+- `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_unsigned.pcap`
+- `data/ics-pcaps-haolipeng/mms_read_data_choice/iec61850_mms_read_data_visible_string.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_07_unknown_alternate_malformed_failure_response.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_03_multi_variable_struct_partial_failure.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_06_alternate_range_all_elements.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_05_alternate_component_index.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_02_domain_boolean_success_response.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_01_vmd_integer_invoke_only_response.pcap`
+- `data/ics-pcaps-haolipeng/mms_write/write_04_variable_list_name_unsigned_success.pcap`
+- `data/ics-pcaps-haolipeng/mms_firmware_write/iec61850_mms_firmware_segmented.pcap`
+- `data/ics-pcaps-haolipeng/mms_firmware_write/iec61850_mms_firmware_segmented_multi.pcap`
+- `data/ics-pcaps-haolipeng/mms_file_transfer/iec61850_mms_file_upload.pcap`
+- `data/ics-pcaps-haolipeng/mms_file_transfer/iec61850_mms_file_download.pcap`
+- `data/inl-malcolm-ot-artifacts/Malcolm-Test-Artifacts-main/pcap/protocols/S7comm.pcap`
 
 </details>

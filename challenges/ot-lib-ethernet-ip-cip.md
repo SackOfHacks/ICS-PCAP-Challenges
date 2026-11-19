@@ -37,14 +37,14 @@ python3 scripts/fetch.py automayt-ics-pcap cisa-icsnpp-test-traces emreekin-ics-
 - **[ITI ICS-Security-Tools — sample ICS protocol captures](../DATASETS.md#iti-ics-security-tools-pcaps)** (`iti-ics-security-tools-pcaps`), ~0.12 GB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/ITI/ICS-Security-Tools/tree/master/pcaps](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
-- **[BACnet capture library (kargs.net)](../DATASETS.md#kargs-bacnet-captures)** (`kargs-bacnet-captures`), ~0.24 GB once fetched
+- **[BACnet capture library (kargs.net)](../DATASETS.md#kargs-bacnet-captures)** (`kargs-bacnet-captures`), ~42.1 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [kargs.net/captures](https://kargs.net/captures/)
-- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~43.6 MB once fetched
+- **[ICS sample collection (jenilv-07) — S7comm scenarios, ControlLogix attack attempts, BACnet, Modbus, Omron, Tridium](../DATASETS.md#s7comm-scenarios-jenilv07)** (`s7comm-scenarios-jenilv07`), ~34.1 MB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/jenilv-07/ICS-pcap-files](https://github.com/jenilv-07/ICS-pcap-files)
-- **[Suricata-verify — ICS protocol test captures](../DATASETS.md#suricata-verify-ics-tests)** (`suricata-verify-ics-tests`), ~0.3 MB once fetched
-  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.1 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/suricata-verify-ics-tests.tar.part000) (0.1 MB)
+- **[Suricata-verify — ICS protocol test captures](../DATASETS.md#suricata-verify-ics-tests)** (`suricata-verify-ics-tests`), ~0.1 MB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.0 MB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/suricata-verify-ics-tests.tar.part000) (0.0 MB)
   - **Original source:** [github.com/OISF/suricata-verify](https://github.com/OISF/suricata-verify)
 
 Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
@@ -168,7 +168,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — Suricata-verify — ICS protocol test captures](https://github.com/OISF/suricata-verify)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (80)</summary>
 
 - `data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_cip.pcapng`
 - `data/cisa-icsnpp-test-traces/icsnpp-enip/set_attribute_single_service_cip.pcapng`
@@ -230,5 +230,25 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - `data/emreekin-ics-pcaps/Ethernet_IP/ENIP_CIP-CM.pcap`
 - `data/emreekin-ics-pcaps/Ethernet_IP/ENIP_CIP-CM.pcap`
 - `data/emreekin-ics-pcaps/Ethernet_IP/ControlLogix_Logix5000_download_upload_run.pcap`
+- `data/emreekin-ics-pcaps/Ethernet_IP/ControlLogix_Logix5000_download_upload_run.pcap`
+- `data/emreekin-ics-pcaps/CIP/specialCIP.pcap`
+- `data/emreekin-ics-pcaps/CIP/specialCIP.pcap`
+- `data/emreekin-ics-pcaps/CIP/CIPvalue.pcap`
+- `data/emreekin-ics-pcaps/CIP/CIPvalue.pcap`
+- `data/emreekin-ics-pcaps/COTP/cip_cotp_proces.pcap`
+- `data/emreekin-ics-pcaps/COTP/cip_cotp_proces.pcap`
+- `data/emreekin-ics-pcaps/EtherCat/valve.pcap`
+- `data/emreekin-ics-pcaps/LocalPCAP/ICSHoneypod.pcap`
+- `data/emreekin-ics-pcaps/LocalPCAP/ICSHoneypod.pcap`
+- `data/emreekin-ics-pcaps/LocalPCAP/enip.pcap`
+- `data/emreekin-ics-pcaps/LocalPCAP/enip.pcap`
+- `data/s7comm-scenarios-jenilv07/comman/only_cip.pcapng`
+- `data/s7comm-scenarios-jenilv07/comman/only_cip.pcapng`
+- `data/suricata-verify-ics-tests/tests/enip-alert/enip_test1.pcap`
+- `data/suricata-verify-ics-tests/tests/enip-cip-multiple-service-dos/input.pcap`
+- `data/suricata-verify-ics-tests/tests/enip-cip-multiple-service-dos/input.pcap`
+- `data/suricata-verify-ics-tests/tests/enip-truncated-pdu-bypass/input.pcap`
+- `data/suricata-verify-ics-tests/tests/enip-truncated-pdu-bypass/input.pcap`
+- `data/kargs-bacnet-captures/foreign-device-npdu.cap`
 
 </details>

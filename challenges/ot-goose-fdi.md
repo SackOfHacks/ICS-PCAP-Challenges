@@ -127,7 +127,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel (202
 - [DOI 10.5281/zenodo.13908638](https://doi.org/10.5281/zenodo.13908638)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/goose-false-data-injection/FDI/Attack/FDI_Attack_traffic.pcapng`
 - `data/goose-false-data-injection/FDI/Clean/clean.pcapng`

@@ -121,7 +121,7 @@ _Dataset credit: Antoine Lemay & José M. Fernandez (Polytechnique Montréal) (2
 - [Lemay & Fernandez, CSET '16 (USENIX)](https://www.usenix.org/conference/cset16/workshop-program/presentation/lemay)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/lemay-scada-modbus-cset2016/moving_two_files_modbus_6RTU.pcap`
 

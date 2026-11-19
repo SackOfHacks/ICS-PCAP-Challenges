@@ -138,7 +138,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 - [Write-up / solution](https://github.com/Potato83/WriteUPs/blob/HEAD/KubCTF2026/echoes-of-the-plc/README.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-archive-misc-ics/kubstu-2026-echoes-of-the-plc/echoes_of_the_plc.pcap`
 

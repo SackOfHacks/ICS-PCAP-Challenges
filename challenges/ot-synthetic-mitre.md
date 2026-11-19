@@ -124,7 +124,7 @@ _Dataset credit: AndreFroneman (GitHub) · License: No license stated in repo �
 - [Dataset source — Synthetic OT samples mapped to ATT&CK for ICS](https://github.com/AndreFroneman/ICS-PCAP-MITRE-Viewing-Tool)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (7)</summary>
 
 - `data/synthetic-ot-mitre-samples/public/samples/benign-plant.pcap`
 - `data/synthetic-ot-mitre-samples/public/samples/cleartext-creds.pcap`

@@ -141,7 +141,7 @@ _Captures credited to: ITI ICS-Security-Tools — sample ICS protocol captures �
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/iti-ics-security-tools-pcaps/pcaps/fox/fox_info.pcap`
 

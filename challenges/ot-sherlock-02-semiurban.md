@@ -128,7 +128,7 @@ _Dataset credit: Wagner, Eric; Bader, Lennart; Wolsing, Konrad; Serror, Martin (
 - [DOI 10.5281/zenodo.18467070](https://doi.org/10.5281/zenodo.18467070)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (12)</summary>
 
 - `data/sherlock-power-grid-ids/02-Semiurban/raw/test/pcap/switch-n406-pcap-mir2.pcap`
 - `data/sherlock-power-grid-ids/02-Semiurban/raw/test/pcap/switch-n407-pcap-mir5.pcap`

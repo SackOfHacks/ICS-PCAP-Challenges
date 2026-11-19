@@ -162,7 +162,7 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 - [ATT&CK T0846 — Remote System Discovery](https://attack.mitre.org/techniques/T0846/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Network_Level_Attacks/Remote_System_Discovery_T0846/Network_Level/Merged_Packet/output_attack_n1.pcap`
 

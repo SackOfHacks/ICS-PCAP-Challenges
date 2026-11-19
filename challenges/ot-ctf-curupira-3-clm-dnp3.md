@@ -137,7 +137,7 @@ _Dataset credit: GoHacking (organiser); GitHub mirror by celoramalho (MIT repo) 
 - [Dataset source — CTF Curupira 3.0 (GoHacking) 2026 — OT/SCADA track](https://github.com/celoramalho/CTF_Curupira_3.0)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-curupira-3/clm-dnp3/clm-dnp3.pcap`
 

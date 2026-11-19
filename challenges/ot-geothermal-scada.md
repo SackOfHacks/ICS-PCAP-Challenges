@@ -127,7 +127,7 @@ _Dataset credit: Shui, Qianfeng (2026) — doi:10.5281/zenodo.23610536 · Licens
 - [DOI 10.5281/zenodo.23610536](https://doi.org/10.5281/zenodo.23610536)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (17)</summary>
 
 - `data/geothermal-well-scada-ids-2026/raw/test/202608060121~202608060824.pcapng`
 - `data/geothermal-well-scada-ids-2026/raw/test/202608060824~202608062246.pcapng`

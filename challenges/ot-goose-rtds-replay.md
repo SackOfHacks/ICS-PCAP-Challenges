@@ -137,7 +137,7 @@ _Dataset credit: Kaggle user 'johnatandeoliveira' (paper in Journal of Informati
 - [Paper (J. Inf. Sec. & Appl., 2025)](https://doi.org/10.1016/j.jisa.2025.104197)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/iec61850-goose-rtds-attacks/pcapng files/pcapng files/replay_test_total.pcapng`
 - `data/iec61850-goose-rtds-attacks/pcapng files/pcapng files/replay_train_total.pcapng`

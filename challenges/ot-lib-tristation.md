@@ -141,7 +141,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/emreekin-ics-pcaps/Malware/malware_exec.pcap`
 

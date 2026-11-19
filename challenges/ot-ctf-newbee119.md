@@ -137,7 +137,7 @@ _Dataset credit: NewBee119 (GitHub) · License: No license stated in repo — cr
 - [Dataset source — Chinese ICS CTF traffic (工控CTF) — NewBee119](https://github.com/NewBee119/ctf_ics_traffic)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ics-ctf-newbee119/ics.pcapng`
 

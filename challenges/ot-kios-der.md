@@ -127,7 +127,7 @@ _Dataset credit: Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, Irina; Charalam
 - [DOI 10.5281/zenodo.12773981](https://doi.org/10.5281/zenodo.12773981)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/kios-der-energy-mgmt-attacks/Electron_SUC1_S4_Modbus_Attack_Traffic.pcapng`
 

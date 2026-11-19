@@ -138,7 +138,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 - [Write-up / solution](https://github.com/zelebwr/ctf-writeups/blob/HEAD/shaktiCtf25/misc/lost-in-a-building/SOLVE.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-archive-misc-ics/shakti-2025-lostinabuilding/building.pcap`
 

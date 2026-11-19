@@ -143,7 +143,7 @@ _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak
 - [DOI 10.5281/zenodo.15005190](https://doi.org/10.5281/zenodo.15005190)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (65)</summary>
 
 - `data/cyber4ot/data/traces/Cyber4OT_009.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_010.pcapng`
@@ -205,5 +205,10 @@ _Dataset credit: Cabaj, K.; Plamowski, S.; Chaber, P.; Ławryńczuk, M.; Marusak
 - `data/cyber4ot/data/traces/Cyber4OT_066.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_067.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_068.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_077.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_078.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_079.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_080.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_081.pcapng`
 
 </details>

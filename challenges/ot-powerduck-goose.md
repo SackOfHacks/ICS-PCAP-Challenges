@@ -127,7 +127,7 @@ _Dataset credit: Sven Zemanek; Immanuel Hacker; Konrad Wolsing; Eric Wagner; Mar
 - [DOI 10.5281/zenodo.6974112](https://doi.org/10.5281/zenodo.6974112)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (20)</summary>
 
 - `data/powerduck-goose-attacks/dataset/raw/Attack/01-replay-opening-switch-isolated.pcapng`
 - `data/powerduck-goose-attacks/dataset/raw/Attack/02-replay-opening-switch-w-context.pcapng`

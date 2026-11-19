@@ -136,7 +136,7 @@ _Dataset credit: Dalamagkas, Radoglou-Grammatikis, et al. (Univ. of Western Mace
 - [DOI 10.5281/zenodo.16957517](https://doi.org/10.5281/zenodo.16957517)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/knxnetip-ids/KNXA06_FloodingGroupValueWriteFuzzing/KNXA06_20250619_FloodingGroupValueWriteFuzzing.pcap`
 

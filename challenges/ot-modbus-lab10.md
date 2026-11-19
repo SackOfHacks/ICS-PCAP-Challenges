@@ -122,7 +122,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 - [Dataset source — Modbus/TCP lab series (baseline → recon → writes)](https://github.com/solymx/modbus_pcap_test)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/modbus-labs-solymx/lab10_replay.pcap`
 

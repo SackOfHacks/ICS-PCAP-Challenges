@@ -138,7 +138,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 - [Write-up / solution](https://github.com/CTF-Archives/2024-PandaCupCTF/blob/main/README.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-cn-competitions-misc/panda-cup-2024-quals-ics-keep-doing-the-right-th/1.pcap`
 

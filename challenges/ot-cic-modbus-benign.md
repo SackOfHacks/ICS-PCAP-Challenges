@@ -143,7 +143,7 @@ _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadi
 - [CIC Modbus Dataset 2023 (UNB)](https://www.unb.ca/cic/datasets/modbus-2023.html)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (62)</summary>
 
 - `data/cic-modbus-2023/Modbus Dataset/benign/central-agent/central-agent-network-capture/veth460b141-normal.pcap`
 - `data/cic-modbus-2023/Modbus Dataset/benign/ied1a/ied1a-network-capture/veth4edc015-normal-10.pcap`
@@ -205,5 +205,7 @@ _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadi
 - `data/cic-modbus-2023/Modbus Dataset/benign/scada-hmi/scada-hmi-network-capture/veth5bbeaa2-normal-27.pcap`
 - `data/cic-modbus-2023/Modbus Dataset/benign/scada-hmi/scada-hmi-network-capture/veth5bbeaa2-normal-28.pcap`
 - `data/cic-modbus-2023/Modbus Dataset/benign/scada-hmi/scada-hmi-network-capture/veth5bbeaa2-normal-29.pcap`
+- `data/cic-modbus-2023/Modbus Dataset/benign/scada-hmi/scada-hmi-network-capture/veth5bbeaa2-normal-30.pcap`
+- `data/cic-modbus-2023/Modbus Dataset/benign/scada-hmi/scada-hmi-network-capture/veth5bbeaa2-normal-31.pcap`
 
 </details>

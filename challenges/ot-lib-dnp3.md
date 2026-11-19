@@ -154,7 +154,7 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - [Dataset source — Suricata-verify — ICS protocol test captures](https://github.com/OISF/suricata-verify)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (80)</summary>
 
 - `data/cisa-icsnpp-test-traces/icsnpp-dnp3/dnp3_example.pcap`
 - `data/iti-ics-security-tools-pcaps/pcaps/bro/dnp3/dnp3.pcap`
@@ -216,5 +216,25 @@ _Captures credited to: ICS-pcap collection (automayt / Jason Smith) — Jason Sm
 - `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.2.2.2.3/dump.pcap`
 - `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/7.2/dump.pcap`
 - `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.22.2.8/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.5.6.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.6.1.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.17.2.5/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.22.2.15/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.16.2.2.4/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.20.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.6.4.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.13.2.3/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.4.1.2.10/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.16.1.2.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.6.6.2.1/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.6.4.3/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.2.1.2.3/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.4.3.2.3/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.18.2.2/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.5.3.2.1/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.22.2.12/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.16.2.2.3/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.2.1.2.11/dump.pcap`
+- `data/iti-ics-security-tools-pcaps/pcaps/dnp3/opendnp3-3/conformance/8.14.2.3/dump.pcap`
 
 </details>

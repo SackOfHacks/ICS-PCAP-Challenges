@@ -138,7 +138,7 @@ _Dataset credit: CSAW CTF (NYU OSIRIS Lab); mirror of the official repo (2021) Â
 - [Write-up / solution](https://github.com/clevernyyyy/CSAW-CTF-2021-Quals/tree/main/ics/the_magic_modbus)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-csaw-2021-quals/the-magic-modbus/modbus.pcap`
 

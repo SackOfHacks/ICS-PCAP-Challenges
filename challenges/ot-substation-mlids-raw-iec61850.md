@@ -128,7 +128,7 @@ _Dataset credit: Gutierrez Mlot, Esteban Damian; Saldana, Jose; Rodríguez, Rica
 - [DOI 10.5281/zenodo.15487636](https://doi.org/10.5281/zenodo.15487636)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (10)</summary>
 
 - `data/substation-ml-ids-iec61850-iec104/raw-iec61850/raw/iec61850/attack-data/capture61850-floodattack_withfault.pcap`
 - `data/substation-ml-ids-iec61850-iec104/raw-iec61850/raw/iec61850/attack-data/capture61850-floodattack_withoutfault.pcap`

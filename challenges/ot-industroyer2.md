@@ -134,7 +134,7 @@ _Dataset credit: Netresec (Erik Hjelmvik) (2022) · License: CC BY 4.0._
 - [Netresec — Industroyer2 IEC-104 analysis](https://www.netresec.com/?page=Blog&month=2022-04&post=Industroyer2-IEC-104-Analysis)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/netresec-industroyer2/Industroyer2-StationAddress1.pcap`
 - `data/netresec-industroyer2/Industroyer2-StationAddress2.pcap`

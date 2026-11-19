@@ -114,7 +114,7 @@ _Dataset credit: solymx (GitHub) · License: No license stated in repo — credi
 - [Dataset source — ICS PCAP practice challenges (asset discovery, hidden Modbus](https://github.com/solymx/ICS_PCAP_Practice)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ics-practice-solymx/lab_asset_discovery.pcap`
 

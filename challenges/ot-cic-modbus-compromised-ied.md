@@ -143,7 +143,7 @@ _Dataset credit: Boakye-Boateng, K., Ghorbani, A. A., Lashkari, A. H. — Canadi
 - [CIC Modbus Dataset 2023 (UNB)](https://www.unb.ca/cic/datasets/modbus-2023.html)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (43)</summary>
 
 - `data/cic-modbus-2023/Modbus Dataset/attack/compromised-ied/central-agent/central-agent-network-captures/vethffb308b-0.pcap`
 - `data/cic-modbus-2023/Modbus Dataset/attack/compromised-ied/central-agent/central-agent-network-captures/vethffb308b-1.pcap`

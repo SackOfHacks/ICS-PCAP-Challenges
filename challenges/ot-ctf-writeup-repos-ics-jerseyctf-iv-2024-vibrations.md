@@ -138,7 +138,7 @@ _Dataset credit: Event organisers; captures kept in participants' write-up repos
 - [Write-up / solution](https://github.com/Nightxade/ctf-writeups/blob/master/_writeups/2024/Jersey-CTF-IV-2024/forensics/vibrations.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-writeup-repos-ics/jerseyctf-iv-2024-vibrations/final.pcapng`
 

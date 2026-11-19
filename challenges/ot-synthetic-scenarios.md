@@ -126,7 +126,7 @@ _Dataset credit: lindseynguyen (GitHub) · License: MIT._
 - [Dataset source — Synthetic OT scenarios — benign plant vs. attack](https://github.com/lindseynguyen/ics-pcap-analyzer)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/synthetic-ot-scenarios-lindseynguyen/samples/attack_scenarios.pcap`
 - `data/synthetic-ot-scenarios-lindseynguyen/samples/benign_plant.pcap`

@@ -162,7 +162,7 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 - [ATT&CK T0893 — Data from Local System](https://attack.mitre.org/techniques/T0893/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Network_Level_Attacks/Data_from_Local_System_T0893/Network_Level/Merged_Packet/output_attack_n6.pcap`
 

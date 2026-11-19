@@ -126,7 +126,7 @@ _Dataset credit: engage-svg (GitHub) · License: MIT._
 - [Dataset source — CIP / EtherNet-IP captures (incl. controller reboot)](https://github.com/engage-svg/ICS-PCAPs)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (6)</summary>
 
 - `data/cip-enip-engage-svg/CIP/CIP.pcap`
 - `data/cip-enip-engage-svg/CIP/CIPvalue.pcap`

@@ -138,7 +138,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives, C1oudfL0w0, T
 - [Write-up / solution](https://github.com/yomymy/industrial-internet-security-2026-writeup)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-cn-competitions-misc/zhejiang-2026-easy-mms/easymms.pcap`
 

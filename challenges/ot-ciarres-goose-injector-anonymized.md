@@ -126,7 +126,7 @@ _Dataset credit: CIARRES project (Kaggle user 'javiersandeuc3m') (2025) · Licen
 - [Dataset source — CIARRES smart-grid attacks — GOOSE, MMS and Modbus](https://www.kaggle.com/datasets/javiersandeuc3m/ciarres-smart-grid-attacks)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ciarres-smart-grid-attacks/goose/goose_injector_anonymized.pcap`
 

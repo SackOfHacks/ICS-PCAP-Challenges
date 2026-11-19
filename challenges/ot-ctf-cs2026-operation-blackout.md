@@ -138,7 +138,7 @@ _Dataset credit: CSCTF (chronos-security.ro); challenge repo by K0NGR3SS (2026) 
 - [Write-up / solution](https://github.com/K0NGR3SS/CSCTF-2026-Dente/tree/main/ICS/operation-blackout)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-csctf-2026/operation-blackout/scada_network.pcap`
 

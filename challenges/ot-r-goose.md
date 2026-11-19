@@ -127,7 +127,7 @@ _Dataset credit: Saldana, Jose (2026) — doi:10.5281/zenodo.22047499 · License
 - [DOI 10.5281/zenodo.22047499](https://doi.org/10.5281/zenodo.22047499)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (10)</summary>
 
 - `data/r-goose-tunnelled-goose/Traffic of R-GOOSE and tunnelled GOOSE/GOOSE inside Simplemux Blast/rasp2_eth1_simplemuxBlast_5ms-55558.pcap`
 - `data/r-goose-tunnelled-goose/Traffic of R-GOOSE and tunnelled GOOSE/GOOSE inside VXLAN/GOOSE_over_VXLAN.pcap`

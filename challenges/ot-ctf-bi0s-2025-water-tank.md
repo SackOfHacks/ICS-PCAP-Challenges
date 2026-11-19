@@ -138,7 +138,7 @@ _Dataset credit: team bi0s (official repo) (2025) · License: None stated — cr
 - [Write-up / solution](https://github.com/teambi0s/bi0sCTF/tree/main/2025/HW/water%20tank)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-bi0s-2025/water-tank/modbus_capture.pcap`
 

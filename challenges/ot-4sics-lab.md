@@ -140,7 +140,7 @@ _Dataset credit: Netresec AB and the 4SICS (now CS3STHLM) crew (2015) · License
 - [Dataset source — 4SICS Geek Lounge ICS lab captures (2015)](https://www.netresec.com/?page=PCAP4SICS)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/netresec-4sics-2015/4SICS-GeekLounge-151020.pcap`
 - `data/netresec-4sics-2015/4SICS-GeekLounge-151021.pcap`

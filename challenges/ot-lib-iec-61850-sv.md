@@ -141,7 +141,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subset](https://github.com/EmreEkin/ICS-Pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/emreekin-ics-pcaps/IEC61850/IEC61850_SV.pcap`
 - `data/emreekin-ics-pcaps/IEC61850/9-2-sv.pcap`

@@ -131,9 +131,9 @@ def prune(d, include_re, keep_re):
         if dp != d and not os.listdir(dp): os.rmdir(dp)
 
 def keep_only(d, keep):
-    """Repo scope (ICS/OT/SCADA only): keep exactly the files the catalog lists for this dataset -
-    the captures the challenges use or that carry an industrial protocol, their ground truth and
-    the dataset's own documentation. Everything else in the upstream archive is removed."""
+    """Keep exactly the files the catalog lists for this dataset - the captures the challenges use,
+    their ground truth and the dataset's own documentation (ICS/OT/SCADA scope). Everything else in
+    the upstream archive is removed."""
     if not keep: return 0
     want = set(keep); removed = 0
     for dp, _, fns in os.walk(d):

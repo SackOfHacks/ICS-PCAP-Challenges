@@ -162,7 +162,7 @@ _Dataset credit: Event organisers; archived by sajjadium/ctf-archives · License
 - [Dataset source — ICS challenges from public CTF archives (sajjadium/ctf-archi](https://github.com/sajjadium/ctf-archives)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-archive-misc-ics/mapna-2024-plc-i/plc.pcap`
 

@@ -128,7 +128,7 @@ _Dataset credit: Cibin, Nicola; Kabbara, Nadine; Presekal, Alfan; Semertzis, Ioa
 - [DOI 10.5281/zenodo.23558261](https://doi.org/10.5281/zenodo.23558261)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (10)</summary>
 
 - `data/tudelft-digital-substation-cpps/2026_10_19_CPPS_Dataset_CyberSec_DigitalSubstation_TUD/Scenarios/Fault/faults_no_reclosure/faults_no_reclosure1/faults_no_reclosure1_anon.pcapng`
 - `data/tudelft-digital-substation-cpps/2026_10_19_CPPS_Dataset_CyberSec_DigitalSubstation_TUD/Scenarios/Fault/faults_no_reclosure/faults_no_reclosure2/faults_no_reclosure2_anon.pcapng`

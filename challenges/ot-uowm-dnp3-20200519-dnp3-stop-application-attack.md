@@ -136,7 +136,7 @@ _Dataset credit: Panagiotis; Vasiliki; Thomas; Vasileios; Panagiotis (2022) — 
 - [DOI 10.21227/s7h0-b081](https://doi.org/10.21227/s7h0-b081)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (14)</summary>
 
 - `data/uowm-dnp3-ids/20200519_DNP3_Stop_Application_Attack/DNP3 PCAP Files/20200519_Stop_Application_Attack_UOWM_DNP3_Dataset_Attacker_01.pcap`
 - `data/uowm-dnp3-ids/20200519_DNP3_Stop_Application_Attack/DNP3 PCAP Files/20200519_Stop_Application_Attack_UOWM_DNP3_Dataset_Attacker_02.pcap`

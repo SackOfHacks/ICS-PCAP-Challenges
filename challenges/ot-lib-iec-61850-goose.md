@@ -149,7 +149,7 @@ _Captures credited to: ICS-Pcaps (Emre Ekin / ICS Defense) — OT protocol subse
 - [Dataset source — ITI ICS-Security-Tools — sample ICS protocol captures](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (16)</summary>
 
 - `data/iti-ics-security-tools-pcaps/pcaps/IEC61850/Sample_File_MMS_and_GOOSE.pcap`
 - `data/iti-ics-security-tools-pcaps/pcaps/IEC61850/GOOSE/GOOSE.pcap`

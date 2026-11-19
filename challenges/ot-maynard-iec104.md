@@ -121,7 +121,7 @@ _Dataset credit: Peter Maynard (Queen's University Belfast) (2018) — doi:10.60
 - [DOI 10.6084/m9.figshare.6133457.v1](https://doi.org/10.6084/m9.figshare.6133457.v1)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/maynard-iec104-testbed/dataset-v1.pcap`
 

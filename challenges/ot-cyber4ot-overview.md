@@ -139,7 +139,7 @@ Classify each trace by its Modbus function-code profile and source set: read-onl
 - [Cyber4OT dataset (Zenodo)](https://zenodo.org/records/15005190)
 - [DOI 10.5281/zenodo.15005190](https://doi.org/10.5281/zenodo.15005190)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (96)</summary>
 
 - `data/cyber4ot/data/traces/Cyber4OT_001.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_002.pcapng`
@@ -201,5 +201,41 @@ Classify each trace by its Modbus function-code profile and source set: read-onl
 - `data/cyber4ot/data/traces/Cyber4OT_058.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_059.pcapng`
 - `data/cyber4ot/data/traces/Cyber4OT_060.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_061.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_062.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_063.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_064.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_065.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_066.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_067.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_068.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_069.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_070.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_071.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_072.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_073.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_074.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_075.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_076.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_077.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_078.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_079.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_080.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_081.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_082.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_083.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_084.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_085.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_086.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_087.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_088.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_089.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_090.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_091.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_092.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_093.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_094.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_095.pcapng`
+- `data/cyber4ot/data/traces/Cyber4OT_096.pcapng`
 
 </details>

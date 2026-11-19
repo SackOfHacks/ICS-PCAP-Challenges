@@ -27,7 +27,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py qut-dnp3-2017
 ```
 
-- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~14.17 GB once fetched
+- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~3.25 GB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/qut-infosec/2017QUT_DNP3](https://github.com/qut-infosec/2017QUT_DNP3)
 
@@ -176,7 +176,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20160925174909.MITM_modification_CounterStatus/20160925174909.MITM_modification_CounterStatus.attacker.pcap`
 - `data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20160925174909.MITM_modification_CounterStatus/20160925174909.MITM_modification_CounterStatus.master.pcap`

@@ -149,7 +149,7 @@ _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufac
 - [Dataset source — NIST CSMS testbed — process control system (baseline vs. Nes](https://s3.amazonaws.com/nist-el/mfg_trustworthysystems/ts1_cybersecurity/implementation/low_baseline/pcs/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/nist-csms-process-control-pcs/PL012.1-vpn/capture.pcap.part000.pcap`
 - `data/nist-csms-process-control-pcs/PL012.1-vpn/capture.pcap.part001.pcap`

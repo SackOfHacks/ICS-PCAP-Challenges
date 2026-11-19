@@ -126,7 +126,7 @@ _Dataset credit: Digital Bond — Dale Peterson & Reid Wightman (S4x15); publish
 - [Netresec — S4x15 ICS Village PCAPs](https://www.netresec.com/?page=DigitalBond_S4)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (8)</summary>
 
 - `data/digitalbond-s4x15-ctf/Advantech.pcap`
 - `data/digitalbond-s4x15-ctf/BACnet_FIU.pcap`

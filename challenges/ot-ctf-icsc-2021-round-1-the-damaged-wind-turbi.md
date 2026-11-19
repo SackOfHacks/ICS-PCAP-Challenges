@@ -137,7 +137,7 @@ _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc202
 - [Dataset source — 工业信息安全技能大赛 2021 — Industrial Information Security Skills Com](https://github.com/fghcvjk/icsc2021)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-icsc-2021/round-1-the-damaged-wind-turbine/损坏的风机.pcapng`
 

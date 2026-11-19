@@ -124,7 +124,7 @@ _Dataset credit: Advanced Digital Sciences Center (ADSC), Singapore (2019) · Li
 - [Dataset source — ADSC IEC 61850 security dataset — GOOSE protection events an](https://github.com/smartgridadsc/IEC61850SecurityDataset)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/adsc-iec61850-security/IEC61850SecurityDataset-master/Attack/Data Manipulation (DM)/AS3.pcapng`
 - `data/adsc-iec61850-security/IEC61850SecurityDataset-master/Attack/Message Suppression (MS)/AS3.pcapng`

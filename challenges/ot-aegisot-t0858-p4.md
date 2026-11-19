@@ -162,7 +162,7 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 - [ATT&CK T0858 — Change Operating Mode](https://attack.mitre.org/techniques/T0858/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Process_Level_Attacks/Change_Operating_Mode_T0858/Network_Level/Merged_Packet/output_attack_p4.pcap`
 

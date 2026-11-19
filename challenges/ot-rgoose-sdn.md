@@ -132,7 +132,7 @@ _Dataset credit: jaafaris (GitHub) · License: No license stated in repo — cre
 - [Dataset source — IEEE 24-bus SDN substation lab — IEC 61850 R-GOOSE](https://github.com/jaafaris/ieee24-onos-sdn-lab-v2-)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/iec61850-rgoose-sdn-lab/output/pcaps/f4_bak_3_to_9.pcap`
 - `data/iec61850-rgoose-sdn-lab/output/pcaps/f4_bak_9_to_8.pcap`

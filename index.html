@@ -112,7 +112,7 @@ ul.dl li div{font-size:12.5px;color:var(--fg2);margin-top:3px;overflow-wrap:anyw
 .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .cmd{position:relative;margin-top:9px;background:var(--bg);border:1px solid var(--line2);border-radius:8px}
 .cmd pre{margin:0;padding:10px 40px 10px 12px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;
-  color:var(--accent2);white-space:pre}
+  color:var(--accent2);white-space:pre-wrap;overflow-wrap:anywhere}   /* wrap long paths; copy uses textContent, unchanged */
 .cmd .copy{position:absolute;top:6px;right:6px;background:var(--bg3);border:1px solid var(--line2);
   color:var(--fg2);border-radius:6px;font-size:11px;padding:3px 7px;cursor:pointer}
 .cmd .copy:hover{color:var(--fg);border-color:var(--accent)}
@@ -137,8 +137,13 @@ aside.side{position:sticky;top:78px;align-self:start;display:flex;flex-direction
 .panel h3{margin:0 0 9px;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--fg2)}
 .kv{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;padding:3px 0;color:var(--fg2)}
 .kv b{color:var(--fg);font-weight:600}
-.files{font-family:var(--mono);font-size:11.5px;color:var(--fg2);max-height:200px;overflow:auto}
-.files div{padding:2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.files{font-family:var(--mono);font-size:11.5px;color:var(--fg2);max-height:360px;overflow:auto}
+.files div{line-height:1.4;overflow-wrap:anywhere}   /* full names, never clipped: folder once, then its files */
+.files .fdir{color:var(--fg3);margin-top:8px}
+.files .fdir:first-child{margin-top:0}
+.files .fname{color:var(--fg);padding:1px 0 1px 12px}
+.files .fmore{color:var(--fg3);font-style:italic;margin-top:6px}
+.kv .pathv{font-family:var(--mono);font-size:11px;overflow-wrap:anywhere;text-align:right;min-width:0}
 .reflist a{display:block;font-size:12.5px;padding:3px 0}
 .tag{display:inline-block;background:var(--bg3);border:1px solid var(--line);border-radius:6px;
   padding:1px 7px;margin:2px 3px 0 0;font-size:11px;color:var(--fg2)}
@@ -332,7 +337,12 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
   function renderDetail(c){
     const d=$("#detail");
     const refs=(c.references||[]).map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.label)+' ↗</a>').join("");
-    const files=(c.files||[]).map(f=>'<div title="'+esc(f)+'">'+esc(f)+'</div>').join("")||'<div style="color:var(--fg3)">—</div>';
+    const shownFiles=(c.files||[]).slice().sort(), moreFiles=(c.file_count||0)-shownFiles.length, fgroups=[];
+    shownFiles.forEach(f=>{const i=f.lastIndexOf("/"), dir=f.slice(0,i+1), g=fgroups[fgroups.length-1];
+      if(g&&g.dir===dir) g.items.push(f); else fgroups.push({dir:dir,items:[f]});});
+    const files=(fgroups.map(g=>'<div class="fdir">'+esc(g.dir).replace(/\//g,"/<wbr>")+'</div>'+
+        g.items.map(f=>'<div class="fname" title="'+esc(f)+'">'+esc(f.slice(g.dir.length))+'</div>').join("")).join("")+
+      (moreFiles>0?'<div class="fmore">… and '+moreFiles+' more'+' — <a href="'+GH+'/blob/main/challenges/'+encodeURIComponent(c.id)+'.md" target="_blank" rel="noopener">full list on the challenge page</a>'+'</div>':''))||'<div style="color:var(--fg3)">—</div>';
     const tags=(c.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("");
     const obj=(c.objectives||[]).map(o=>'<li>'+esc(o)+'</li>').join("");
     const scen=(c.scenario||"").split(/\n\n+/).map(p=>'<p>'+mdInline(p)+'</p>').join("");   // escape-first inline markdown
@@ -386,7 +396,7 @@ pcapper data/modbus-labs-solymx/lab01_baseline.pcap --overview</pre></div>
          '<div class="kv"><span>Difficulty</span><b>'+c.difficulty+'</b></div>'+
          '<div class="kv"><span>Size on disk</span><b>'+fmtBytes(c.bytes)+'</b></div>'+
          '<div class="kv"><span>Files</span><b>'+(c.file_count||0)+'</b></div>'+
-         (c.path?'<div class="kv"><span>Path</span><b style="font-family:var(--mono);font-size:11px">'+esc(c.path)+'</b></div>':'')+
+         (c.path?'<div class="kv"><span>Path</span><b class="pathv">'+esc(c.path).replace(/\//g,"/<wbr>")+'</b></div>':'')+
        '</div>'+
        '<div class="panel"><h3>Capture files</h3><div class="files">'+files+'</div></div>'+
        (tags?'<div class="panel"><h3>Tags</h3>'+tags+'</div>':'')+

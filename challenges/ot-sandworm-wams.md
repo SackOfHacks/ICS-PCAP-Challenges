@@ -133,7 +133,7 @@ _Dataset credit: Iturbe, Dalamagkas, Radoglou-Grammatikis, Rios (Tecnalia, Univ.
 - [DOI 10.5281/zenodo.16911636](https://doi.org/10.5281/zenodo.16911636)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/sandworm-apt-wams/SandwormAPT.pcap`
 

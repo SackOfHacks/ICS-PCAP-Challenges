@@ -127,7 +127,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel (202
 - [DOI 10.5281/zenodo.13912644](https://doi.org/10.5281/zenodo.13912644)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/goose-dos-sicam-meter/DoS/Attack/U3.pcapng`
 - `data/goose-dos-sicam-meter/DoS/Clean/Clean_traffic_login.pcapng`

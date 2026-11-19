@@ -138,7 +138,7 @@ _Dataset credit: Competition organisers; archived by CTF-Archives (2026) · Lice
 - [Write-up / solution](https://github.com/CTF-Archives/2026-ICSC-ICS-Champ/blob/main/README.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-icsc-2026-gy10/scan-ghost-timing-covert-channel/plc_protocol_id.pcapng`
 

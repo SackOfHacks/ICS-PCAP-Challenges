@@ -4,7 +4,7 @@
 
 **A free, guided network-forensics range for industrial control systems.**
 
-331 hands-on challenges · 70 credited public datasets · 28 OT protocols · ~364 GB of real and testbed traffic
+331 hands-on challenges · 70 credited public datasets · 28 OT protocols · ~351 GB of real and testbed traffic
 
 [**▶ Open the challenge range**](https://sackofhacks.github.io/ICS-PCAP-Challenges/) &nbsp;·&nbsp;
 [Browse all challenges](challenges/README.md) &nbsp;·&nbsp;
@@ -94,7 +94,7 @@ xdg-open index.html        # macOS: open index.html   ·   Windows: start index.
 ```
 
 That's it — no server, no accounts, no build step to view it. Want everything? `python3 scripts/fetch.py --list`
-shows every dataset and its size; fetch by name or with `--all` (~364 GB).
+shows every dataset and its size; fetch by name or with `--all` (~351 GB).
 
 ## 🖥️ Using the challenge range
 
@@ -123,11 +123,11 @@ here on GitHub, with hints and solutions in collapsible sections.
 
 ## 🗂️ Getting the data
 
-The captures are not in the git history (they total ~364 GB and belong to their authors). `scripts/fetch.py`
+The captures are not in the git history (they total ~351 GB and belong to their authors). `scripts/fetch.py`
 gets each dataset from the right place:
 
 - **This repository's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1)**
-  mirrors the **41 datasets whose licence (or authors) allow redistribution** (~346 GB of captures),
+  mirrors the **41 datasets whose licence (or authors) allow redistribution** (~345 GB of captures),
   as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
   before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation.
 - **The original sources** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle, MEGA, …) for the other

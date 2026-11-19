@@ -162,7 +162,7 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 - [ATT&CK T1083 — File and Directory Discovery](https://attack.mitre.org/techniques/T1083/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Network_Level_Attacks/File_and_Directory_Discovery_T1083/Network_Level/Merged_Packet/output_attack_n5.pcap`
 

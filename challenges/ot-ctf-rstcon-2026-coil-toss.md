@@ -138,7 +138,7 @@ _Dataset credit: RST Group (official public repo) (2026) · License: None stated
 - [Write-up / solution](https://github.com/RST-Group/RSTCON-CTF-2026-public/blob/main/forensic/coil-toss/writeup/solution.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-rstcon-2026/coil-toss/coil-toss.pcap`
 

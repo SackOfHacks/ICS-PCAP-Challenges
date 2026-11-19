@@ -127,7 +127,7 @@ _Dataset credit: Lazaridis, George; Mpatziakas, Asterios (2025) — doi:10.5281/
 - [DOI 10.5281/zenodo.15082260](https://doi.org/10.5281/zenodo.15082260)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/zero-swarm-modbus/ZeroSWARM Normal data_v2.pcap`
 - `data/zero-swarm-modbus/ZeroSWARM Normal data_v2b.pcap`

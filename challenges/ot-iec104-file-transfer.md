@@ -118,7 +118,7 @@ _Dataset credit: Netresec (2022) · License: Not stated — credit Netresec._
 - [Dataset source — IEC-104 file transfer between FreyrSCADA simulators (Netrese](https://www.netresec.com/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/netresec-iec104-file-transfer/NM_2022-12-13T14-16-00.pcap`
 

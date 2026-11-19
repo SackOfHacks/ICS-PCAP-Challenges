@@ -138,7 +138,7 @@ _Dataset credit: Competition organisers; attachments archived by fghcvjk/icsc202
 - [Write-up / solution](https://github.com/fghcvjk/icsc2021/tree/master/%E7%BA%BF%E4%B8%8A%E8%B5%9B%E7%AC%AC1%E5%9C%BA)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-icsc-2021/round-1-fins-fins-communication/Fins协议通讯.pcap`
 

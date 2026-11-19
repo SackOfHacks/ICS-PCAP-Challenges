@@ -27,7 +27,7 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py qut-dnp3-2017
 ```
 
-- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~14.17 GB once fetched
+- **[QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerading](../DATASETS.md#qut-dnp3-2017)** (`qut-dnp3-2017`), ~3.25 GB once fetched
   - **Not mirrored** (no licence that allows re-hosting): `fetch.py` downloads it from the original source
   - **Original source:** [github.com/qut-infosec/2017QUT_DNP3](https://github.com/qut-infosec/2017QUT_DNP3)
 
@@ -70,15 +70,6 @@ config.txt lists every attack run (timestamp.attack) in this capture; the CSVs l
 ```bash
 cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.config.txt'
 awk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.csv' | sort | uniq -c | sort -rn
-```
-
-**5. More practice**
-
-The training sets of the same family, with their own schedules.
-
-```bash
-ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'
-ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'
 ```
 
 ### With tshark / Wireshark
@@ -128,15 +119,6 @@ cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161
 awk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.csv' | sort | uniq -c | sort -rn
 ```
 
-**6. More practice**
-
-The training sets of the same family, with their own schedules.
-
-```bash
-ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'
-ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'
-```
-
 ## Hints
 
 <details><summary>Hint 1</summary>
@@ -170,7 +152,7 @@ _Dataset credit: Rodofile, N. R., Radke, K., Foo, E. (Queensland University of T
 - [Dataset source — QUT 2017 DNP3 — replay, MITM, injection, flooding, masquerad](https://github.com/qut-infosec/2017QUT_DNP3)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.attacker.pcap`
 - `data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.pcap`

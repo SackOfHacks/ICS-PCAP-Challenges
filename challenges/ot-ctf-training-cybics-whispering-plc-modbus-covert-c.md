@@ -140,7 +140,7 @@ _Dataset credit: Matthias Niedermaier (CybICS) (2026) · License: Repository MIT
 - [Write-up / solution](https://github.com/mniedermaier/CybICS/blob/main/training/modbus_covert_c2/README.md)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/training-cybics/whispering-plc-modbus-covert-c2/baseline.pcap`
 

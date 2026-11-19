@@ -27,8 +27,8 @@ The commands on this page read the captures from `data/`. Fetch the dataset firs
 python3 scripts/fetch.py medical-waste-incinerator-s7-1500
 ```
 
-- **[Medical-waste incinerator — real Siemens S7-1500 SCADA with injected attacks](../DATASETS.md#medical-waste-incinerator-s7-1500)** (`medical-waste-incinerator-s7-1500`), ~3.20 GB once fetched
-  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.87 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/medical-waste-incinerator-s7-1500.tar.part000) (0.87 GB)
+- **[Medical-waste incinerator — real Siemens S7-1500 SCADA with injected attacks](../DATASETS.md#medical-waste-incinerator-s7-1500)** (`medical-waste-incinerator-s7-1500`), ~2.63 GB once fetched
+  - **Mirror:** this repo's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1), 1 part (0.71 GB compressed): [part000](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/download/data-v1/medical-waste-incinerator-s7-1500.tar.part000) (0.71 GB)
   - **Original source:** [data.mendeley.com/datasets/vpcr4wpgfd/4](https://data.mendeley.com/datasets/vpcr4wpgfd/4) · [doi:10.17632/vpcr4wpgfd.4](https://doi.org/10.17632/vpcr4wpgfd.4)
 
 Without `fetch.py`: download every part of the dataset, run `cat <dataset>.tar.part* | tar -x`, then `gunzip` the files listed in its `MIRROR-GZIPPED.txt`.
@@ -144,7 +144,7 @@ _Dataset credit: Al-Duwairi, B., Shatnawi, A., Al-Hammouri, A., Ababneh, M. (Jor
 - [DOI 10.17632/vpcr4wpgfd.4](https://doi.org/10.17632/vpcr4wpgfd.4)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/medical-waste-incinerator-s7-1500/traffic_with_fuzzing_attack05.pcap`
 

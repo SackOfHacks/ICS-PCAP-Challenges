@@ -162,7 +162,7 @@ _Dataset credit: Kaggle user 'khadijadrira' (2026) · License: CC BY-NC-SA 4.0._
 - [ATT&CK T0836 — Modify Parameters](https://attack.mitre.org/techniques/T0836/)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/aegisot-ics-attacks/ICS_Dataset/Attack_Data/Process_Level_Attacks/Modify_Parameters_T0836/Network_Level/Merged_Packet/output_attack_p3.pcap`
 

@@ -128,7 +128,7 @@ _Dataset credit: Sen, Ömer; Bader, Lennart; Emara, Marawan; Serror, Martin; Sch
 - [DOI 10.5281/zenodo.24105329](https://doi.org/10.5281/zenodo.24105329)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/data4cyber-distribution-grid/data4cyber_dataset/S5_arp_spoof_loads_pv_bss_two_phase/attacker_only.pcapng`
 - `data/data4cyber-distribution-grid/data4cyber_dataset/S5_arp_spoof_loads_pv_bss_two_phase/benign_only.pcapng`

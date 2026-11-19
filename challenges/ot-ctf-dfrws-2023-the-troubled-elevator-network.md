@@ -140,7 +140,7 @@ _Dataset credit: DFRWS (Digital Forensics Research Workshop) (2023) · License: 
 - [Write-up / solution](https://github.com/AmintheGHOUL/The-Troubled-Elevator-Forensic-Investigation)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-dfrws-2023/the-troubled-elevator-network-trace/142728_162728.pcapng`
 

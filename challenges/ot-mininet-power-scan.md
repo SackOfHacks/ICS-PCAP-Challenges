@@ -136,7 +136,7 @@ _Dataset credit: May Myat Thwe; Stefanov, Alexandru (2026) — doi:10.5281/zenod
 - [DOI 10.5281/zenodo.23055644](https://doi.org/10.5281/zenodo.23055644)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/mininet-power-system-scanning/scanningattack_packets.pcapng`
 

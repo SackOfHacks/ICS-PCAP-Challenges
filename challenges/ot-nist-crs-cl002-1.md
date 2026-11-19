@@ -148,7 +148,7 @@ _Dataset credit: NIST Engineering Laboratory — Cybersecurity for Smart Manufac
 - [NIST — Cybersecurity for Smart Manufacturing Systems](https://www.nist.gov/programs-projects/cybersecurity-smart-manufacturing-systems)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/nist-csms-robotics-crs/CL002.1-ActiveDirectory/pcaps/capture.pcap`
 - `data/nist-csms-robotics-crs/CL002.1-ActiveDirectory/pcaps/hmi.pcap`

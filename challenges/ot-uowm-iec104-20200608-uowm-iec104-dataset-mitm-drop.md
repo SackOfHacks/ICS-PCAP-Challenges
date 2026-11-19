@@ -128,7 +128,7 @@ _Dataset credit: Panagiotis; Konstantinos; Thomas; Vasileios; Panagiotis (2022) 
 - [DOI 10.21227/fj7s-f281](https://doi.org/10.21227/fj7s-f281)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (11)</summary>
 
 - `data/uowm-iec104-ids/20200608_UOWM_IEC104_Dataset_mitm_drop/20200608_UOWM_IEC104_Dataset_mitm_drop/20200608_UOWM_IEC104_Dataset_mitm_drop_attacker1/20200608_UOWM_IEC104_Dataset_mitm_drop_attacker1.pcap`
 - `data/uowm-iec104-ids/20200608_UOWM_IEC104_Dataset_mitm_drop/20200608_UOWM_IEC104_Dataset_mitm_drop/20200608_UOWM_IEC104_Dataset_mitm_drop_attacker2/20200608_UOWM_IEC104_Dataset_mitm_drop_attacker2.pcap`

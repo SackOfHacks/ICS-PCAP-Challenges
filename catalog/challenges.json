@@ -36959,11 +36959,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
    }
   ],
   "hints": [
@@ -37007,11 +37002,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
     }
    ],
    "tshark": [
@@ -37039,11 +37029,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/frequent/20161021142316/20161021142316/20161021142316.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
     }
    ]
   },
@@ -37097,11 +37082,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
    }
   ],
   "hints": [
@@ -37145,11 +37125,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
     }
    ],
    "tshark": [
@@ -37177,11 +37152,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/testing/infrequent/20161021143145/20161021143145/20161021143145.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/frequent/20161021143503/20161021143503'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Attacks/attacks/training/infrequent/20161021143435/20161021143435'"
     }
    ]
   },
@@ -37235,11 +37205,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
    }
   ],
   "hints": [
@@ -37283,11 +37248,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
     }
    ],
    "tshark": [
@@ -37315,11 +37275,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/frequent/20161021131057/20161021131057/20161021131057.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
     }
    ]
   },
@@ -37373,11 +37328,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
    }
   ],
   "hints": [
@@ -37421,11 +37371,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
     }
    ],
    "tshark": [
@@ -37453,11 +37398,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/testing/infrequent/20161021130954/20161021130954/20161021130954.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/frequent/20161021130706/20161021130706'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Flooding/flooding/training/infrequent/20161021130632/20161021130632'"
     }
    ]
   },
@@ -37511,11 +37451,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
    }
   ],
   "hints": [
@@ -37559,11 +37494,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
     }
    ],
    "tshark": [
@@ -37591,11 +37521,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/frequent/20161021132413/20161021132413/20161021132413.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
     }
    ]
   },
@@ -37649,11 +37574,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
    }
   ],
   "hints": [
@@ -37697,11 +37617,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
     }
    ],
    "tshark": [
@@ -37729,11 +37644,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/testing/infrequent/20161021132318/20161021132318/20161021132318.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/frequent/20161021132150/20161021132150'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Injection/injection/training/infrequent/20161021132245/20161021132245'"
     }
    ]
   },
@@ -37787,11 +37697,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
    }
   ],
   "hints": [
@@ -37835,11 +37740,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
     }
    ],
    "tshark": [
@@ -37867,11 +37767,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/frequent/20161021132936/20161021132936/20161021132936.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
     }
    ]
   },
@@ -37925,11 +37820,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
    }
   ],
   "hints": [
@@ -37973,11 +37863,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
     }
    ],
    "tshark": [
@@ -38005,11 +37890,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/testing/infrequent/20161021132859/20161021132859/20161021132859.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/frequent/20161021140907/20161021140907'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/MITM/MITM/training/infrequent/20161021135759/20161021135759'"
     }
    ]
   },
@@ -38063,11 +37943,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
    }
   ],
   "hints": [
@@ -38111,11 +37986,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
     }
    ],
    "tshark": [
@@ -38143,11 +38013,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/frequent/20161021132643/20161021132643/20161021132643.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
     }
    ]
   },
@@ -38201,11 +38066,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
    }
   ],
   "hints": [
@@ -38249,11 +38109,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
     }
    ],
    "tshark": [
@@ -38281,11 +38136,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/testing/infrequent/20161021132623/20161021132623/20161021132623.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/frequent/20161021132756/20161021132756'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Masqurading/masquerading/training/infrequent/20161021132730/20161021132730'"
     }
    ]
   },
@@ -38339,11 +38189,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
    }
   ],
   "hints": [
@@ -38387,11 +38232,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
     }
    ],
    "tshark": [
@@ -38419,11 +38259,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/frequent/20161021142117/20161021142117/20161021142117.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
     }
    ]
   },
@@ -38477,11 +38312,6 @@
     "title": "Check yourself against the schedule",
     "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
     "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.master.csv' | sort | uniq -c | sort -rn"
-   },
-   {
-    "title": "More practice",
-    "note": "The training sets of the same family, with their own schedules.",
-    "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
    }
   ],
   "hints": [
@@ -38525,11 +38355,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
     }
    ],
    "tshark": [
@@ -38557,11 +38382,6 @@
      "title": "Check yourself against the schedule",
      "note": "config.txt lists every attack run (timestamp.attack) in this capture; the CSVs label every frame.",
      "cmd": "cat 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.config.txt'\nawk -F, '{print $NF}' 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/testing/infrequent/20161021142221/20161021142221/20161021142221.master.csv' | sort | uniq -c | sort -rn"
-    },
-    {
-     "title": "More practice",
-     "note": "The training sets of the same family, with their own schedules.",
-     "cmd": "ls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/frequent/20161021142021/20161021142021'\nls 'data/qut-dnp3-2017/2017QUT_DNP3-master/Replay/replay/training/infrequent/20161021141910/20161021141910'"
     }
    ]
   },

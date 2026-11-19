@@ -138,7 +138,7 @@ _Dataset credit: Event organisers; captures kept in participants' write-up repos
 - [Write-up / solution](https://github.com/kiyotaka-akaiwa/ctf-writeups/tree/main/TenableCTF/2022/Strange_Packets)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ctf-writeup-repos-ics/tenable-ctf-2022-strange-packets/strange_packets.pcapng`
 

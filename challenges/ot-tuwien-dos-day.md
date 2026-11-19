@@ -134,7 +134,7 @@ _Dataset credit: Brenner, B., Fabini, J., Offermanns, M., Semper, S. & Zseby, T.
 - [DOI 10.48436/ghdc6-45k78](https://doi.org/10.48436/ghdc6-45k78)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (55)</summary>
 
 - `data/tuwien-smart-factory/captures/a_day_tuesday_dos.pcap.part000.pcap`
 - `data/tuwien-smart-factory/captures/a_day_tuesday_dos.pcap.part001.pcap`

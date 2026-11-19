@@ -120,7 +120,7 @@ _Dataset credit: Dehlaghi-Ghadim, A., et al. (Mälardalen University) (2023) · 
 - [Dataset source — ICS-Flow — ICSSIM Modbus attacks](https://www.kaggle.com/datasets/alirezadehlaghi/icssim)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/ics-flow-icssim/traffic.pcap`
 

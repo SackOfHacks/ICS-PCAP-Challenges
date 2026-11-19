@@ -127,7 +127,7 @@ _Dataset credit: Sudyana, Didik (2025) — doi:10.5281/zenodo.17165850 · Licens
 - [DOI 10.5281/zenodo.17165850](https://doi.org/10.5281/zenodo.17165850)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (3)</summary>
 
 - `data/ics-dataset-normal-fault-attack-2025/raw_data/attack/normal_traffic_2025-02-11_20_27_15.pcap`
 - `data/ics-dataset-normal-fault-attack-2025/raw_data/fault/faults_traffic_2025-01-10_03_22_36.pcap`

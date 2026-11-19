@@ -124,7 +124,7 @@ _Dataset credit: haolipeng (GitHub) · License: No license stated in repo — cr
 - [Dataset source — ICS protocol sample captures (IEC-104, MMS and more)](https://github.com/haolipeng/ics-pcaps)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (88)</summary>
 
 - `data/ics-pcaps-haolipeng/IEC104.pcap`
 - `data/ics-pcaps-haolipeng/cancel_response.pcap`
@@ -186,5 +186,33 @@ _Dataset credit: haolipeng (GitHub) · License: No license stated in repo — cr
 - `data/ics-pcaps-haolipeng/profinet/PROFINET-RT.pcap`
 - `data/ics-pcaps-haolipeng/profinet/dcp-vlan.pcap`
 - `data/ics-pcaps-haolipeng/profinet/profinet-vlan.pcap`
+- `data/ics-pcaps-haolipeng/profinet/profinet_pure_dcp.pcap`
+- `data/ics-pcaps-haolipeng/profinet_synthetic/synthetic-get-dcp.pcap`
+- `data/ics-pcaps-haolipeng/profinet_synthetic/synthetic-hello-dcp.pcap`
+- `data/ics-pcaps-haolipeng/profinet_synthetic/synthetic-malformed-dcp.pcap`
+- `data/ics-pcaps-haolipeng/profinet_synthetic/synthetic-non-dcp.pcap`
+- `data/ics-pcaps-haolipeng/read_response_with_data.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_downloading_block_db1.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_plc_control_full.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_plc_stop_full.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_program_blocklist_onlineview.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_reading_plc_status.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_reading_setting_plc_time.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_varservice_libnodavedemo.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/s7comm_varservice_libnodavedemo_bench.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/snap7_s300_stop.pcap`
+- `data/ics-pcaps-haolipeng/s7_common/step7_s300_stop.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/ftp_banner.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/ftp_proftpd.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/http_apache.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/http_nginx.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/mysql_complete.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/pgsql.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/redis_hello.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/redis_info.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/ssh.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/ssh_traffic.pcap`
+- `data/ics-pcaps-haolipeng/software_version_test/telnet.pcap`
+- `data/ics-pcaps-haolipeng/unconfirmed_information_report.pcap`
 
 </details>

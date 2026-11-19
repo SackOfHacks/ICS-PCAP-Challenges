@@ -121,7 +121,7 @@ _Dataset credit: Altaher, Thiriet, Mocanu (Univ. Grenoble Alpes) (2020) — doi:
 - [DOI 10.17632/8cjkkw79z2.1](https://doi.org/10.17632/8cjkkw79z2.1)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/g-ics-grenoble-whole-network/80mbps9SVwholenetwork.pcapng`
 

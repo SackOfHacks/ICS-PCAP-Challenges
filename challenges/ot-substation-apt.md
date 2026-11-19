@@ -127,7 +127,7 @@ _Dataset credit: Enache, Bogdan-Adrian; Barbulescu, Cristinel; Stan, Viorel (202
 - [DOI 10.5281/zenodo.13912758](https://doi.org/10.5281/zenodo.13912758)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (2)</summary>
 
 - `data/substation-apt-goose/APT/Attack/U4.pcapng`
 - `data/substation-apt-goose/APT/Clean/Clean_traffic_login.pcapng`

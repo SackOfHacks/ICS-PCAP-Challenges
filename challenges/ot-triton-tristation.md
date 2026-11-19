@@ -123,7 +123,7 @@ _Dataset credit: Nozomi Networks Labs (2018) · License: BSD-3-Clause._
 - [Nozomi Networks — tricotools](https://github.com/NozomiNetworks/tricotools)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (1)</summary>
 
 - `data/nozomi-triton-tristation/malware_exec.pcap`
 

@@ -127,7 +127,7 @@ _Dataset credit: Tekki, Eleni; Hadjidemetriou, Lenos; Asprou, Markos; Ciornei, I
 - [DOI 10.5281/zenodo.12960228](https://doi.org/10.5281/zenodo.12960228)
 - [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/)
 
-<details><summary>Capture files</summary>
+<details><summary>Capture files (4)</summary>
 
 - `data/kios-electron-suc4-power-attacks/Electron_SUC4_S1_FDI_Attack_Traffic.pcapng`
 - `data/kios-electron-suc4-power-attacks/Electron_SUC4_S1_Without_Attack_Traffic.pcapng`
