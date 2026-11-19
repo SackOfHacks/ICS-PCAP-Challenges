@@ -4,15 +4,15 @@
 
 **A free, guided network-forensics range for industrial control systems.**
 
-327 hands-on challenges · 67 credited public datasets · 28 OT protocols · ~354 GB of real and testbed traffic
+331 hands-on challenges · 70 credited public datasets · 28 OT protocols · ~364 GB of real and testbed traffic
 
 [**▶ Open the challenge range**](https://sackofhacks.github.io/ICS-PCAP-Challenges/) &nbsp;·&nbsp;
 [Browse all challenges](challenges/README.md) &nbsp;·&nbsp;
 [Quickstart](#-quickstart-5-minutes) &nbsp;·&nbsp;
 [Credits](ATTRIBUTION.md)
 
-![challenges](https://img.shields.io/badge/challenges-327-2ea44f)
-![datasets](https://img.shields.io/badge/datasets-67-1f6feb)
+![challenges](https://img.shields.io/badge/challenges-331-2ea44f)
+![datasets](https://img.shields.io/badge/datasets-70-1f6feb)
 ![protocols](https://img.shields.io/badge/OT%20protocols-28-8250df)
 ![powered by Pcapper](https://img.shields.io/badge/powered%20by-Pcapper-orange)
 ![no server](https://img.shields.io/badge/runs-in%20your%20browser-lightgrey)
@@ -27,7 +27,7 @@
 ## What is this?
 
 Real industrial network traffic is hard to come by — and harder to *learn from*. This repo turns
-**67 public ICS/OT/SCADA packet-capture datasets** into **327 guided challenges**:
+**70 public ICS/OT/SCADA packet-capture datasets** into **331 guided challenges**:
 substation protocols under attack, PLCs being hijacked, a safety-system malware, a real incinerator
 plant, a robotics cell under security scans, building-automation attacks, CTF captures from ICS villages,
 and a deep protocol library.
@@ -38,9 +38,9 @@ can check your work), and the **credit and license** of the data it's built on.
 
 | Theme | Challenges | What you'll practise |
 |---|---:|---|
-| **Power grid & substations** | 77 | IEC-104, DNP3, IEC 61850 GOOSE/MMS/SV, synchrophasors — attacks on substations and grid operations |
-| **Process control & PLC testbeds** | 130 | Modbus and S7 testbeds and labs — recon, floods, MITM, value injection, PLC hijacking |
-| **ICS malware & intrusions** | 5 | TRITON/TriStation, Industroyer2, exploitation and C&C inside control networks |
+| **Power grid & substations** | 78 | IEC-104, DNP3, IEC 61850 GOOSE/MMS/SV, synchrophasors — attacks on substations and grid operations |
+| **Process control & PLC testbeds** | 132 | Modbus and S7 testbeds and labs — recon, floods, MITM, value injection, PLC hijacking |
+| **ICS malware & intrusions** | 6 | TRITON/TriStation, Industroyer2, exploitation and C&C inside control networks |
 | **Building automation** | 8 | KNXnet/IP and BACnet — bus scans, floods and unauthorised group-value writes in building systems |
 | **CTF & conference labs** | 60 | ICS Village CTF and conference-lab captures — find the flag, reconstruct the competition |
 | **Manufacturing & smart factory** | 23 | Factory-cell and robotics traffic — baselines, unlabeled attack days, security-control footprints |
@@ -93,7 +93,7 @@ xdg-open index.html        # macOS: open index.html   ·   Windows: start index.
 ```
 
 That's it — no server, no accounts, no build step to view it. Want everything? `python3 scripts/fetch.py --list`
-shows every dataset and its size; fetch by name or with `--all` (~354 GB).
+shows every dataset and its size; fetch by name or with `--all` (~364 GB).
 
 ## 🖥️ Using the challenge range
 
@@ -122,13 +122,13 @@ here on GitHub, with hints and solutions in collapsible sections.
 
 ## 🗂️ Getting the data
 
-The captures are not in the git history (they total ~354 GB and belong to their authors). `scripts/fetch.py`
+The captures are not in the git history (they total ~364 GB and belong to their authors). `scripts/fetch.py`
 gets each dataset from the right place:
 
 - **This repository's [`data-v1` release](https://github.com/SackOfHacks/ICS-PCAP-Challenges/releases/tag/data-v1)**
-  mirrors the **38 datasets whose licence (or authors) allow redistribution** (~337 GB of captures),
+  mirrors the **41 datasets whose licence (or authors) allow redistribution** (~346 GB of captures),
   unmodified, as gzip-compressed parts under 2 GiB. Every part is SHA-256-checked against `catalog/datasets.json`
-  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation. 28 of them are still being uploaded; until their parts are all there, `fetch.py` takes them from the original source.
+  before it is unpacked, and each dataset carries a `LICENSE-NOTICE.md` with its licence and required citation. 22 of them are still being uploaded; until their parts are all there, `fetch.py` takes them from the original source.
 - **The original sources** (Zenodo, Mendeley Data, NIST, TU Wien, Netresec, GitHub, Kaggle, MEGA, …) for the other
   **29 datasets**, which their authors published without a licence that allows re-hosting. The fetcher
   unpacks them, keeps only the files the challenges use and writes a `PROVENANCE.md` credit file.
@@ -156,9 +156,9 @@ exploit/C2 payloads. Work offline:
 
 This range exists because researchers, vendors and the community published their data. **Please cite
 the original authors** when you use the captures — full citations, licenses and DOIs for all
-67 datasets are in **[ATTRIBUTION.md](ATTRIBUTION.md)**, and each challenge page shows its source.
+70 datasets are in **[ATTRIBUTION.md](ATTRIBUTION.md)**, and each challenge page shows its source.
 
-Special thanks to TU Wien, NIST, the University of Western Macedonia, the University of Coimbra, Queensland University of Technology, Fraunhofer FKIE and RWTH Aachen University, TU Delft, KIOS CoE (University of Cyprus), Jordan University of Science and Technology, the Canadian Institute for Cybersecurity, Warsaw University of Technology, Université Grenoble Alpes, Mälardalen University, Polytechnique Montréal, ADSC Singapore, the CIARRES project, Netresec, CS3STHLM (4SICS), Digital Bond / S4, Nozomi Networks, CISA & Idaho National Laboratory, the University of Illinois ITI, OISF, the CybICS project, the ICS CTF organisers and archivists, and the community collectors credited in ATTRIBUTION.md.
+Special thanks to TU Wien, NIST, the University of Western Macedonia, Tecnalia, the University of Coimbra, Queensland University of Technology, Fraunhofer FKIE and RWTH Aachen University, TU Delft, KIOS CoE (University of Cyprus), Jordan University of Science and Technology, the Canadian Institute for Cybersecurity, Warsaw University of Technology, Université Grenoble Alpes, Mälardalen University, Polytechnique Montréal, ADSC Singapore, the CIARRES project, Netresec, CS3STHLM (4SICS), Digital Bond / S4, Nozomi Networks, CISA & Idaho National Laboratory, the University of Illinois ITI, OISF, the CybICS project, the ICS CTF organisers and archivists, and the community collectors credited in ATTRIBUTION.md.
 
 ## 🧰 Repo layout
 

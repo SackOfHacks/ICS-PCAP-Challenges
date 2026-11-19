@@ -1,6 +1,6 @@
 # All challenges
 
-327 challenges. Open `index.html` (or the GitHub Pages site) for the interactive version.
+331 challenges. Open `index.html` (or the GitHub Pages site) for the interactive version.
 
 | Challenge | Difficulty | Protocols / tags | Data |
 |---|---|---|---|
@@ -147,9 +147,11 @@
 | [ELEGANT — amplification DoS against multiple PLCs](ot-elegant-amp-multi.md) | Expert | Modbus/TCP, PLC, ELEGANT, DoS | 5.30 GB |
 | [ELEGANT — the full man-in-the-middle chain](ot-elegant-mitm-chain.md) | Expert | Modbus/TCP, PLC, ELEGANT, MITM | 5.2 MB |
 | [G-ICS — one capture, four OT protocols under load](ot-g-ics-whole-network.md) | Medium | IEC 61850 SV, GOOSE, Modbus/TCP, PROFINET | 1.53 GB |
+| [Geothermal well SCADA — intrusion detection (2026)](ot-geothermal-scada.md) | Hard | S7comm, academic dataset | 3.50 GB |
 | [GOOSE flooding DoS against a SICAM meter](ot-goose-dos-sicam.md) | Medium | IEC 61850 GOOSE, academic dataset | 12.9 MB |
 | [GOOSE false-data injection between IEDs](ot-goose-fdi.md) | Hard | IEC 61850 GOOSE, academic dataset | 4.4 MB |
 | [ICS CTF (工控CTF) — find the flag in industrial traffic](ot-ctf-newbee119.md) | Hard | CTF, flag hunting, Modbus/TCP | 48.6 MB |
+| [ICS Dataset — normal vs. physical fault vs. cyber attack](ot-ics-normal-fault-attack.md) | Medium | Modbus/TCP, academic dataset | 2.24 GB |
 | [ICS-Flow — ICSSIM Modbus network attacks](ot-ics-flow.md) | Medium | Modbus/TCP, ICSSIM | 1.97 GB |
 | [IEC-104 & IEC 61850 MMS sample exchanges](ot-iec104-mms-samples.md) | Medium | IEC 61850 MMS, academic dataset | 4.2 MB |
 | [ICS practice — asset discovery](ot-practice-asset-discovery.md) | Easy | Modbus/TCP, practice | 0.5 MB |
@@ -292,8 +294,10 @@
 | [S7comm — HMI monitoring vs. normal operations](ot-s7-operations.md) | Easy | S7comm, Siemens, engineering | 0.1 MB |
 | [S7comm — engineering actions (downloads, passwords, mode changes)](ot-s7-engineering.md) | Medium | S7comm, Siemens, engineering | 0.0 MB |
 | [ControlLogix 5000 — change date/time and port-configuration attempts](ot-controllogix-change-attempts.md) | Hard | EtherNet/IP, CIP, ControlLogix, Rockwell | 4.3 MB |
+| [APT Sandworm — attack chain against a wide-area measurement system](ot-sandworm-wams.md) | Expert | C37.118, Sandworm, APT, WAMS | 1.81 GB |
 | [Sherlock — Basic topology](ot-sherlock-01-basic.md) | Hard | IEC-104, academic dataset, power grid | 0.18 GB |
 | [Sherlock — Rural topology](ot-sherlock-03-rural.md) | Hard | IEC-104, academic dataset, power grid | 0.72 GB |
+| [Sherlock — Semiurban topology](ot-sherlock-02-semiurban.md) | Hard | IEC-104, academic dataset, power grid | 1.72 GB |
 | [APT against a power-substation network](ot-substation-apt.md) | Hard | IEC 61850 GOOSE, academic dataset | 18.7 MB |
 | [Substation ML-IDS — raw IEC 61850 traffic](ot-substation-mlids-raw-iec61850.md) | Hard | IEC 61850 GOOSE, academic dataset, power grid | 4.77 GB |
 | [Substation ML-IDS — raw IEC-104 traffic](ot-substation-mlids-raw-iec104.md) | Hard | IEC-104, academic dataset, power grid | 0.22 GB |

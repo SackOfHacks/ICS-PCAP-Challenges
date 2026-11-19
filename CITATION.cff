@@ -193,6 +193,14 @@ references:
     url: "https://data.mendeley.com/datasets/8cjkkw79z2/1"
     notes: "License: CC BY 4.0"
   - type: dataset
+    title: "Geothermal well scale-inhibitor injection SCADA — intrusion dataset (2026)"
+    authors:
+      - name: "Shui, Qianfeng"
+    year: 2026
+    doi: "10.5281/zenodo.23610536"
+    url: "https://zenodo.org/records/23610536"
+    notes: "License: CC BY 4.0"
+  - type: dataset
     title: "GOOSE flooding DoS/DDoS against a SICAM digital meter"
     authors:
       - name: "Enache, Bogdan-Adrian; Stan, Viorel; Barbulescu, Cristinel"
@@ -214,6 +222,14 @@ references:
       - name: "NewBee119 (GitHub)"
     url: "https://github.com/NewBee119/ctf_ics_traffic"
     notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "ICS Dataset — normal vs. fault vs. attack traffic (2025)"
+    authors:
+      - name: "Sudyana, Didik"
+    year: 2025
+    doi: "10.5281/zenodo.17165850"
+    url: "https://zenodo.org/records/17165850"
+    notes: "License: CC BY 4.0"
   - type: dataset
     title: "ICS-Flow — ICSSIM Modbus attacks"
     authors:
@@ -405,6 +421,14 @@ references:
       - name: "jenilv-07 (GitHub)"
     url: "https://github.com/jenilv-07/ICS-pcap-files"
     notes: "License: No license stated in repo — credit the author"
+  - type: dataset
+    title: "APT Sandworm emulation — wide-area measurement system (PMU/PDC)"
+    authors:
+      - name: "Iturbe, Dalamagkas, Radoglou-Grammatikis, Rios (Tecnalia, Univ. of Western Macedonia, PPC)"
+    year: 2025
+    doi: "10.5281/zenodo.16911636"
+    url: "https://zenodo.org/records/16911636"
+    notes: "License: CC BY 4.0"
   - type: dataset
     title: "Sherlock — process-aware intrusion detection on power-grid networks"
     authors:

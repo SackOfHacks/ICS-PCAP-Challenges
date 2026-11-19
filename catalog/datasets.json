@@ -5471,6 +5471,56 @@
   }
  },
  {
+  "id": "geothermal-well-scada-ids-2026",
+  "slug": "geothermal-well-scada-ids-2026",
+  "title": "Geothermal well scale-inhibitor injection SCADA — intrusion dataset (2026)",
+  "authors": "Shui, Qianfeng",
+  "year": 2026,
+  "license": "CC BY 4.0",
+  "doi": "10.5281/zenodo.23610536",
+  "source_url": "https://zenodo.org/records/23610536",
+  "citation": "Shui, Qianfeng (2026). A Network Intrusion Detection Dataset for Geothermal Well Scale inhibitor Injection Control Systems. Zenodo. https://doi.org/10.5281/zenodo.23610536",
+  "notes": "Semi-physical SCADA testbed for geothermal-well scale-inhibitor injection: raw pcapng among PLCs, operator station, engineering station and collector, split train/test, plus labeled CSV samples (malicious flag + attack category) that serve as the answer key.\n\nOriginal record title: \"A Network Intrusion Detection Dataset for Geothermal Well Scale inhibitor Injection Control Systems\".",
+  "files": [
+   {
+    "url": "https://zenodo.org/api/records/23610536/files/feature_index_map.xlsx/content",
+    "name": "feature_index_map.xlsx"
+   },
+   {
+    "url": "https://zenodo.org/api/records/23610536/files/data.zip/content",
+    "name": "data.zip"
+   }
+  ],
+  "keep_extra_re": "(readme|license|\\.md$|\\.txt$|\\.csv$|\\.pdf$|labels?|\\.log\\.labeled$)|\\.xlsx$",
+  "approx_bytes": 3503025797,
+  "keep": [
+   "PROVENANCE.md",
+   "raw/test/202608060121~202608060824.pcapng",
+   "raw/test/202608060824~202608062246.pcapng",
+   "raw/test/202608062246~202608070821.pcapng",
+   "raw/test/202608070821~202608072228.pcapng",
+   "raw/train/20251004_1430~20251005_1322.pcapng",
+   "raw/train/20251005_1322~20251006_1337.pcapng",
+   "raw/train/20251006_1337~20251007_1227.pcapng",
+   "raw/train/20251007_1227~20251008_1355.pcapng",
+   "raw/train/20251008_1355~20251009_1323.pcapng",
+   "raw/train/20251009_1323~20251010_1221.pcapng",
+   "raw/train/20251010_1221~20251011_1412.pcapng",
+   "raw/train/20251011_1412~20251012_1410.pcapng",
+   "raw/train/20251012_1410~20251013_1250.pcapng",
+   "raw/train/20251013_1250~20251014_1250.pcapng",
+   "raw/train/20251014_1250~20251015_1216.pcapng",
+   "raw/train/20251015_1216~20251016_1242.pcapng",
+   "raw/train/20251016_1242~20251017_2204.pcapng"
+  ],
+  "scope_note": "ICS/OT/SCADA scope: only these files are kept after download (see scripts/fetch.py keep_only)",
+  "redistribution": {
+   "mirrored": true,
+   "reason": "open licence: CC BY 4.0"
+  },
+  "mirror_pending": true
+ },
+ {
   "id": "goose-dos-sicam-meter",
   "slug": "goose-dos-sicam-meter",
   "title": "GOOSE flooding DoS/DDoS against a SICAM digital meter",
@@ -5564,6 +5614,44 @@
   }
  },
  {
+  "id": "ics-dataset-normal-fault-attack-2025",
+  "slug": "ics-dataset-normal-fault-attack-2025",
+  "title": "ICS Dataset — normal vs. fault vs. attack traffic (2025)",
+  "authors": "Sudyana, Didik",
+  "year": 2025,
+  "license": "CC BY 4.0",
+  "doi": "10.5281/zenodo.17165850",
+  "source_url": "https://zenodo.org/records/17165850",
+  "citation": "Sudyana, Didik (2025). ICS Dataset. Zenodo. https://doi.org/10.5281/zenodo.17165850",
+  "notes": "Raw captures of an ICS in three operating conditions — normal, process faults and cyber attack — with CSV/log companions. A good exercise in telling a physical fault from an attack on the wire.\n\nOriginal record title: \"ICS Dataset\".",
+  "files": [
+   {
+    "url": "https://zenodo.org/api/records/17165850/files/raw_data.zip/content",
+    "name": "raw_data.zip"
+   }
+  ],
+  "keep_extra_re": "(readme|license|\\.md$|\\.txt$|\\.csv$|\\.pdf$|labels?|\\.log\\.labeled$)|\\.log$",
+  "approx_bytes": 2497659407,
+  "keep": [
+   "PROVENANCE.md",
+   "raw_data/analysis/Result/syslog/syslog_test_data_with_labels.csv",
+   "raw_data/analysis/Result/traffic/logs/traffic_dataset_generation.log",
+   "raw_data/attack/attack_snapshots_PLC1.csv",
+   "raw_data/attack/attack_snapshots_PLC2.csv",
+   "raw_data/attack/normal_traffic_2025-02-11_20_27_15.pcap",
+   "raw_data/fault/all_logs.log",
+   "raw_data/fault/faults_traffic_2025-01-10_03_22_36.pcap",
+   "raw_data/normal/all_logs.log",
+   "raw_data/normal/normal_traffic_2025-01-09_22_43_09.pcap"
+  ],
+  "scope_note": "ICS/OT/SCADA scope: only these files are kept after download (see scripts/fetch.py keep_only)",
+  "redistribution": {
+   "mirrored": true,
+   "reason": "open licence: CC BY 4.0"
+  },
+  "mirror_pending": true
+ },
+ {
   "id": "ics-flow-icssim",
   "slug": "ics-flow-icssim",
   "title": "ICS-Flow — ICSSIM Modbus attacks",
@@ -5597,7 +5685,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY-NC-SA 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "ics-flow-icssim.tar.part000",
+     "size": 489205760,
+     "sha256": "d52906b6657396e9c04426d4718d4ad08b4f04048d2a4fd172fbc99d2b9edab2"
+    }
+   ],
+   "archive_sha256": "d52906b6657396e9c04426d4718d4ad08b4f04048d2a4fd172fbc99d2b9edab2",
+   "bytes_packed": 489205760
+  }
  },
  {
   "id": "ics-pcaps-haolipeng",
@@ -6229,7 +6329,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY-SA 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "iec61850-goose-rtds-attacks.tar.part000",
+     "size": 1632317440,
+     "sha256": "4c4e531f80cb9650d18373aee22f4b877b15475e8c12e1e0f85ba752120fd774"
+    }
+   ],
+   "archive_sha256": "4c4e531f80cb9650d18373aee22f4b877b15475e8c12e1e0f85ba752120fd774",
+   "bytes_packed": 1632317440
+  }
  },
  {
   "id": "iec61850-rgoose-sdn-lab",
@@ -9916,7 +10028,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "knxnetip-ids.tar.part000",
+     "size": 1492101120,
+     "sha256": "dffa580fd4e100e121624291bf6763624c5bb992094861667e31ceececf9bcb1"
+    }
+   ],
+   "archive_sha256": "dffa580fd4e100e121624291bf6763624c5bb992094861667e31ceececf9bcb1",
+   "bytes_packed": 1492101120
+  }
  },
  {
   "id": "lemay-modbus",
@@ -10234,7 +10358,19 @@
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "medical-waste-incinerator-s7-1500.tar.part000",
+     "size": 867655680,
+     "sha256": "01e5363eaf0c43b4c1c1afaeebd9d927b972bcb9ca170f96310119be44b5733a"
+    }
+   ],
+   "archive_sha256": "01e5363eaf0c43b4c1c1afaeebd9d927b972bcb9ca170f96310119be44b5733a",
+   "bytes_packed": 867655680
+  }
  },
  {
   "id": "mininet-power-system-scanning",
@@ -10930,7 +11066,34 @@
    "mirrored": true,
    "reason": "U.S. Government work (NIST): not subject to copyright in the United States (17 U.S.C. §105)"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "nist-csms-robotics-crs.tar.part000",
+     "size": 1900000000,
+     "sha256": "a3895fd8a8cedde06fca3c6cce077332e11a37078e8e068f217190bcf253f432"
+    },
+    {
+     "name": "nist-csms-robotics-crs.tar.part001",
+     "size": 1900000000,
+     "sha256": "c6b38a5390fbafb06283d6e0a43f59c5a412b606007e01eab56598dc7233dd08"
+    },
+    {
+     "name": "nist-csms-robotics-crs.tar.part002",
+     "size": 1900000000,
+     "sha256": "66ed1a88a603605dd7efceedc1e277733ad71cd23b475a8fcc29249669418b1b"
+    },
+    {
+     "name": "nist-csms-robotics-crs.tar.part003",
+     "size": 741932800,
+     "sha256": "604ed7e1229231826ed53d23f5d9c874a6360e2d35bfb7b582761e48b0bf209b"
+    }
+   ],
+   "archive_sha256": "5aa5b2dbedc8037e5e306ebf0e10265ce61ae4687d7cc2f3196b4f5056f41272",
+   "bytes_packed": 6441932800
+  }
  },
  {
   "id": "nozomi-tristation",
@@ -10960,7 +11123,19 @@
    "mirrored": true,
    "reason": "open licence: BSD-3-Clause"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "nozomi-triton-tristation.tar.part000",
+     "size": 51200,
+     "sha256": "d25f6f61e15c7d407ea3effc992cfb98d8c2bf3a6861a0955b38083ed6605d99"
+    }
+   ],
+   "archive_sha256": "d25f6f61e15c7d407ea3effc992cfb98d8c2bf3a6861a0955b38083ed6605d99",
+   "bytes_packed": 51200
+  }
  },
  {
   "id": "powerduck-goose-attacks",
@@ -16863,6 +17038,47 @@
   }
  },
  {
+  "id": "sandworm-apt-wams",
+  "slug": "sandworm-apt-wams",
+  "title": "APT Sandworm emulation — wide-area measurement system (PMU/PDC)",
+  "authors": "Iturbe, Dalamagkas, Radoglou-Grammatikis, Rios (Tecnalia, Univ. of Western Macedonia, PPC)",
+  "year": 2025,
+  "license": "CC BY 4.0",
+  "doi": "10.5281/zenodo.16911636",
+  "source_url": "https://zenodo.org/records/16911636",
+  "citation": null,
+  "notes": "An emulated Sandworm attack chain against a wide-area measurement system: synchrophasor (PMU → openPDC), PTP and PRP traffic alongside HTTP/SSH/SMB/RDP — webshell, discovery and lateral movement to the phasor data concentrator and its database. Flow labels included.",
+  "public": null,
+  "files": [
+   {
+    "url": "https://zenodo.org/api/records/16911636/files/SandwormAPT_flow_labelled.csv/content",
+    "name": "SandwormAPT_flow_labelled.csv"
+   },
+   {
+    "url": "https://zenodo.org/api/records/16911636/files/SandwormAPT.pcap/content",
+    "name": "SandwormAPT.pcap"
+   },
+   {
+    "url": "https://zenodo.org/api/records/16911636/files/APT_Dataset_Readme.pdf/content",
+    "name": "APT_Dataset_Readme.pdf"
+   }
+  ],
+  "keep_extra_re": "(readme|license|\\.md$|\\.txt$|\\.csv$|\\.pdf$|labels?|\\.log\\.labeled$)",
+  "approx_bytes": 1816086578,
+  "keep": [
+   "APT_Dataset_Readme.pdf",
+   "PROVENANCE.md",
+   "SandwormAPT.pcap",
+   "SandwormAPT_flow_labelled.csv"
+  ],
+  "scope_note": "ICS/OT/SCADA scope: only these files are kept after download (see scripts/fetch.py keep_only)",
+  "redistribution": {
+   "mirrored": true,
+   "reason": "open licence: CC BY 4.0"
+  },
+  "mirror_pending": true
+ },
+ {
   "id": "sherlock-power-grid-ids",
   "slug": "sherlock-power-grid-ids",
   "title": "Sherlock — process-aware intrusion detection on power-grid networks",
@@ -16880,7 +17096,7 @@
    }
   ],
   "keep_extra_re": "(readme|license|\\.md$|\\.txt$|\\.csv$|\\.pdf$|labels?|\\.log\\.labeled$)|\\.log$|\\.json$|\\.svg$|\\.state$",
-  "approx_bytes": 944989478,
+  "approx_bytes": 2677750557,
   "keep": [
    "01-Basic/raw/test/docs/combined.pdf",
    "01-Basic/raw/test/docs/network.pdf",
@@ -16964,6 +17180,172 @@
    "01-Basic/raw/train/pcap/switch-n303-pcap-mir6.pcap",
    "01-Basic/raw/train/pcap/switch-n318-pcap-mir3.pcap",
    "01-Basic/raw/train/pcap/switch-n321-pcap-mir2.pcap",
+   "02-Semiurban/raw/test/docs/combined.pdf",
+   "02-Semiurban/raw/test/docs/network.pdf",
+   "02-Semiurban/raw/test/docs/power-grid.pdf",
+   "02-Semiurban/raw/test/log/mtu-n1-ccx-service.log",
+   "02-Semiurban/raw/test/log/mtu-n1-vcc-service.log",
+   "02-Semiurban/raw/test/log/rtu-n101-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n102-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n103-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n104-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n105-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n106-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n107-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n108-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n109-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n110-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n111-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n112-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n113-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n114-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n115-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n116-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n117-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n118-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n119-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n120-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n121-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n122-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n123-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n124-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n125-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n126-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n127-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n128-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n129-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n130-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n131-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n132-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n133-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n134-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n135-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n136-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n137-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n138-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n139-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n140-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n141-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n142-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n143-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n144-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n145-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n146-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n147-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n148-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n149-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n150-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n151-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n152-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n153-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n154-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n155-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n156-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n157-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n158-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n159-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n160-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n161-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n162-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n163-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n164-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n165-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n166-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n167-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n168-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n169-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n170-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n171-rtu-service.log",
+   "02-Semiurban/raw/test/log/rtu-n172-rtu-service.log",
+   "02-Semiurban/raw/test/pcap/switch-n406-pcap-mir2.pcap",
+   "02-Semiurban/raw/test/pcap/switch-n407-pcap-mir5.pcap",
+   "02-Semiurban/raw/test/pcap/switch-n495-pcap-mir4.pcap",
+   "02-Semiurban/raw/test/pcap/switch-n502-pcap-mir3.pcap",
+   "02-Semiurban/raw/test/pcap/switch-n523-pcap-mir4.pcap",
+   "02-Semiurban/raw/test/pcap/switch-n532-pcap-mir2.pcap",
+   "02-Semiurban/raw/train/docs/combined.pdf",
+   "02-Semiurban/raw/train/docs/network.pdf",
+   "02-Semiurban/raw/train/docs/power-grid.pdf",
+   "02-Semiurban/raw/train/log/mtu-n1-ccx-service.log",
+   "02-Semiurban/raw/train/log/mtu-n1-vcc-service.log",
+   "02-Semiurban/raw/train/log/rtu-n101-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n102-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n103-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n104-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n105-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n106-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n107-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n108-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n109-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n110-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n111-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n112-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n113-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n114-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n115-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n116-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n117-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n118-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n119-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n120-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n121-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n122-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n123-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n124-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n125-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n126-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n127-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n128-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n129-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n130-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n131-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n132-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n133-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n134-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n135-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n136-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n137-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n138-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n139-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n140-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n141-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n142-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n143-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n144-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n145-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n146-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n147-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n148-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n149-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n150-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n151-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n152-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n153-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n154-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n155-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n156-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n157-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n158-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n159-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n160-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n161-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n162-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n163-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n164-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n165-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n166-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n167-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n168-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n169-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n170-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n171-rtu-service.log",
+   "02-Semiurban/raw/train/log/rtu-n172-rtu-service.log",
+   "02-Semiurban/raw/train/pcap/switch-n406-pcap-mir2.pcap",
+   "02-Semiurban/raw/train/pcap/switch-n407-pcap-mir5.pcap",
+   "02-Semiurban/raw/train/pcap/switch-n495-pcap-mir4.pcap",
+   "02-Semiurban/raw/train/pcap/switch-n502-pcap-mir3.pcap",
+   "02-Semiurban/raw/train/pcap/switch-n523-pcap-mir2.pcap",
+   "02-Semiurban/raw/train/pcap/switch-n532-pcap-mir2.pcap",
    "03-Rural/raw/test/docs/combined.pdf",
    "03-Rural/raw/test/docs/network.pdf",
    "03-Rural/raw/test/docs/power-grid.pdf",
@@ -17044,7 +17426,8 @@
   "redistribution": {
    "mirrored": true,
    "reason": "open licence: CC BY 4.0"
-  }
+  },
+  "mirror_pending": true
  },
  {
   "id": "substation-apt-goose",
@@ -17405,7 +17788,19 @@
    "mirrored": true,
    "reason": "open licence: MIT"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "suricata-verify-ics-tests.tar.part000",
+     "size": 112640,
+     "sha256": "9afbedf4c5664b8ada1c41c71a06be5a12f00527d6a6c88d37a2d8fa4b71bdd5"
+    }
+   ],
+   "archive_sha256": "9afbedf4c5664b8ada1c41c71a06be5a12f00527d6a6c88d37a2d8fa4b71bdd5",
+   "bytes_packed": 112640
+  }
  },
  {
   "id": "synthetic-ot-mitre-samples",
@@ -17512,7 +17907,19 @@
    "mirrored": true,
    "reason": "open licence: MIT"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "synthetic-ot-scenarios-lindseynguyen.tar.part000",
+     "size": 460800,
+     "sha256": "b8aea3f88bb68bbfa7a783f63196630b442db96791d7294d14ce816c124682c5"
+    }
+   ],
+   "archive_sha256": "b8aea3f88bb68bbfa7a783f63196630b442db96791d7294d14ce816c124682c5",
+   "bytes_packed": 460800
+  }
  },
  {
   "id": "training-cybics",
@@ -17550,7 +17957,19 @@
    "mirrored": true,
    "reason": "published by its author in the CybICS repository under MIT"
   },
-  "mirror_pending": true
+  "mirror": {
+   "tag": "data-v1",
+   "format": "tar of the dataset folder; packet captures gzip-compressed (*.pcap.gz)",
+   "parts": [
+    {
+     "name": "training-cybics.tar.part000",
+     "size": 112640,
+     "sha256": "58a854df260d69d9e34e2b9e4c3b387f829cb1476ec93aeed55fbb823351ce44"
+    }
+   ],
+   "archive_sha256": "58a854df260d69d9e34e2b9e4c3b387f829cb1476ec93aeed55fbb823351ce44",
+   "bytes_packed": 112640
+  }
  },
  {
   "id": "tudelft-digital-substation-cpps",
